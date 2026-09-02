@@ -1,65 +1,86 @@
+// Normaliza la base completa de KR y asegura que todos los trimestres estén disponibles.
+// Esta capa corrige la diferencia entre el JSON original de la planilla
+// y el esquema usado por el dashboard.
 (function(){
-  const DEFAULT_START = '2026/Q3';
-  const DEFAULT_END = '2030/Q4';
+  const ALL_PERIODS = [
+    '2026/Q3','2026/Q4',
+    '2027/Q1','2027/Q2','2027/Q3','2027/Q4',
+    '2028/Q1','2028/Q2','2028/Q3','2028/Q4',
+    '2029/Q1','2029/Q2','2029/Q3','2029/Q4',
+    '2030/Q1','2030/Q2','2030/Q3','2030/Q4'
+  ];
 
-  function periodOrder(period){
-    const m = String(period || '').match(/(20\d{2})\s*\/\s*Q([1-4])/i);
-    if(!m) return null;
-    return Number(m[1]) * 4 + Number(m[2]);
+  function periodIndex(label){
+    const m = String(label || '').match(/(20\d{2})\s*\/\s*Q([1-4])/i);
+    return m ? Number(m[1]) * 4 + Number(m[2]) : null;
   }
 
-  function periodLabel(order){
-    let year = Math.floor(order / 4);
-    let quarter = order % 4;
-    if(quarter === 0){ year -= 1; quarter = 4; }
-    return `${year}/Q${quarter}`;
-  }
+  function expandPeriods(kr){
+    if(Array.isArray(kr.periodos) && kr.periodos.length > 2){
+      return kr.periodos.filter(p => ALL_PERIODS.includes(p));
+    }
+    let start = periodIndex(kr.periodo_inicio || kr.periodo_meta_original || kr.periodo_reporte);
+    let end = periodIndex(kr.periodo_fin || kr.periodo_inicio || kr.periodo_meta_original || kr.periodo_reporte);
 
-  function periodRange(start, end){
-    const a = periodOrder(start);
-    const b = periodOrder(end || start);
-    if(a == null || b == null || b < a) return [];
-    const out = [];
-    for(let i = a; i <= b; i++) out.push(periodLabel(i));
-    return out;
-  }
+    if(!start && Array.isArray(kr.periodos) && kr.periodos.length){
+      start = periodIndex(kr.periodos[0]);
+      end = periodIndex(kr.periodos[kr.periodos.length - 1]);
+    }
+    if(start && !end) end = start;
+    if(end && start && end < start) end = start;
+    if(!start || !end) return Array.isArray(kr.periodos) ? kr.periodos : [];
 
-  function sortPeriods(values){
-    return [...new Set(values.filter(Boolean))]
-      .sort((a,b) => (periodOrder(a) || 0) - (periodOrder(b) || 0));
-  }
-
-  function normalizePeriods(){
-    if(typeof D === 'undefined' || !Array.isArray(D.krs) || !D.krs.length) return false;
-
-    const full = periodRange(DEFAULT_START, DEFAULT_END);
-    const fromData = Array.isArray(D.periodos) ? D.periodos : [];
-    const fromKrs = [];
-
-    D.krs.forEach(k => {
-      const range = periodRange(k.periodo_inicio, k.periodo_fin);
-      const current = Array.isArray(k.periodos) ? k.periodos : [];
-      k.periodos = sortPeriods([...current, ...range]);
-      fromKrs.push(...k.periodos);
+    return ALL_PERIODS.filter(p => {
+      const i = periodIndex(p);
+      return i >= start && i <= end;
     });
+  }
 
-    D.periodos = sortPeriods([...full, ...fromData, ...fromKrs]);
+  function normalizeData(){
+    if(typeof D === 'undefined' || !D) return false;
+
+    if((!Array.isArray(D.krs) || D.krs.length === 0) && Array.isArray(D.key_results)){
+      D.krs = D.key_results;
+    }
+    if((!Array.isArray(D.avances) || D.avances.length === 0) && Array.isArray(D.avances_kr)){
+      D.avances = D.avances_kr;
+    }
+    if(!Array.isArray(D.krs) || D.krs.length === 0) return false;
+
+    D.periodos = ALL_PERIODS;
+    D.krs = D.krs.map(kr => ({
+      ...kr,
+      periodos: expandPeriods(kr)
+    }));
+    D.avances = Array.isArray(D.avances) ? D.avances : [];
     return true;
   }
 
-  function rerenderCurrentPage(){
+  function currentRenderer(){
     const page = (document.body.dataset.page || 'panel').replace('-', '_');
-    const renderers = { panel, key_results: krs, detalle_kr: det, historico: hist, metodologia: met };
-    if(renderers[page]) renderers[page]();
+    if(page === 'key_results' && typeof krs === 'function') return krs;
+    if(page === 'detalle_kr' && typeof det === 'function') return det;
+    if(page === 'historico' && typeof hist === 'function') return hist;
+    if(page === 'metodologia' && typeof met === 'function') return met;
+    if(typeof panel === 'function') return panel;
+    return null;
   }
 
-  function applyFix(attempt = 0){
-    if(normalizePeriods()){
-      rerenderCurrentPage();
-      return;
+  function applyFix(){
+    if(!normalizeData()) return false;
+    const render = currentRenderer();
+    if(render) render();
+    return true;
+  }
+
+  let attempts = 0;
+  const timer = setInterval(() => {
+    attempts += 1;
+    try{
+      if(applyFix()) clearInterval(timer);
+    }catch(e){
+      if(attempts > 80) clearInterval(timer);
     }
-    if(attempt < 80) setTimeout(() => applyFix(attempt + 1), 100);
-  }
-
-  applyFix();
+    if(attempts > 80) clearInterval(timer);
+  }, 100);
 })();
