@@ -1,26 +1,37 @@
 # Dashboard OKR Corfo
 
-Maqueta funcional HTML/CSS/JS para seguimiento ejecutivo de OKR Corfo 2026.
+Maqueta funcional HTML/CSS/JS para seguimiento ejecutivo de la Estrategia Institucional Corfo 2026-2030.
+
+## Versión actual
+
+Versión V15 preparada para prueba en GitHub Pages.
 
 ## Contenido
 
-El repositorio contiene una versión lista para GitHub Pages en un único archivo:
+- `index.html`: panel general por trimestre.
+- `key-results.html`: vista filtrable de Key Results.
+- `detalle-kr.html`: ficha de detalle por KR, con gráfico e historial de comentarios.
+- `historico-avances.html`: tabla consolidada de avances.
+- `metodologia.html`: definiciones estratégicas y metodología de seguimiento.
+- `assets/okr-corfo.css`: estilos visuales del dashboard.
+- `assets/okr-corfo.js`: lógica de carga, filtros y visualizaciones.
+- `assets/logo-corfo-blanco.png`: logo Corfo del encabezado.
+- `data/okr-data.json`: datos demo generados desde la planilla base.
 
-- `index.html`: dashboard completo con panel general, detalle por gerencia, ranking, histórico, carga simulada y gráficos interactivos de evolución por resultado clave.
+## Datos
 
-## Publicar con GitHub Pages
+Los datos de avance para Q3 y Q4 2026 son ficticios y sirven únicamente para probar visualizaciones, filtros, semáforos, comentarios históricos y navegación.
 
-1. Entrar al repositorio en GitHub.
-2. Ir a `Settings`.
-3. Entrar a `Pages`.
-4. En `Build and deployment`, seleccionar `Deploy from a branch`.
-5. En `Branch`, elegir `main` y carpeta `/root`.
-6. Guardar.
+## Uso local
 
-La URL esperada será:
+Para probar correctamente la lectura del JSON, abrir la carpeta con un servidor local:
 
-`https://estrategiacorfo.github.io/okr-corfo-dashboard/`
+```bash
+python -m http.server 8000
+```
 
-## Nota
+Luego entrar a:
 
-Los datos actuales son simulados para maqueta. La siguiente iteración recomendada es separar los datos en un archivo editable, por ejemplo `data/okr-data.json`, o conectar el dashboard a una planilla publicada como CSV.
+```text
+http://localhost:8000
+```
