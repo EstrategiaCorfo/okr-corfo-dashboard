@@ -1,0 +1,10 @@
+# El repositorio y GitHub Pages son públicos. Los datos generados se conservan fuera de Git.
+data/strategy.json
+data/tracking.json
+data/objective-notes.json
+*.xlsx
+*.xls
+*.docx
+*.pptx
+__pycache__/
+.pytest_cache/

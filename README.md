@@ -1,37 +1,17 @@
-# Dashboard OKR Corfo
+# Dashboard OKR Corfo V2
 
-Maqueta funcional HTML/CSS/JS para seguimiento ejecutivo de la Estrategia Institucional Corfo 2026-2030.
+Sitio estático de seguimiento de la Estrategia Corporativa 2026-2030. Incluye panel general, Key Results, detalle de KR, histórico y esquema interactivo de Estrategia.
 
-## Versión actual
+## Modelo de datos
 
-Versión V15 preparada para prueba en GitHub Pages.
+El dashboard lee `data/strategy.json` y `data/tracking.json`, generados desde las hojas **Estrategia** y **Seguimiento** de la planilla maestra. El ID KR relaciona ambas hojas. Todas las filas de Seguimiento se conservan; la vista actual prioriza Confirmado GE y luego la fecha más reciente, con Propuesta Owner como alternativa.
 
-## Contenido
+Estado de ejecución, progreso numérico y estatus cualitativo son tres variables independientes. Los hitos sin variables cuantitativas no reciben un progreso estimado.
 
-- `index.html`: panel general por trimestre.
-- `key-results.html`: vista filtrable de Key Results.
-- `detalle-kr.html`: ficha de detalle por KR, con gráfico e historial de comentarios.
-- `historico-avances.html`: tabla consolidada de avances.
-- `metodologia.html`: definiciones estratégicas y metodología de seguimiento.
-- `assets/okr-corfo.css`: estilos visuales del dashboard.
-- `assets/okr-corfo.js`: lógica de carga, filtros y visualizaciones.
-- `assets/logo-corfo-blanco.png`: logo Corfo del encabezado.
-- `data/okr-data.json`: datos demo generados desde la planilla base.
+La gráfica de Estrategia recrea las capas y el orden visual del PPT institucional. Los textos de justificación del manual se cargan solo desde el archivo local opcional `data/objective-notes.json`.
 
-## Datos
+## Uso y privacidad
 
-Los datos de avance para Q3 y Q4 2026 son ficticios y sirven únicamente para probar visualizaciones, filtros, semáforos, comentarios históricos y navegación.
+Vea [README_ACTUALIZACION.md](README_ACTUALIZACION.md) para validar la planilla, generar los JSON y probar el sitio.
 
-## Uso local
-
-Para probar correctamente la lectura del JSON, abrir la carpeta con un servidor local:
-
-```bash
-python -m http.server 8000
-```
-
-Luego entrar a:
-
-```text
-http://localhost:8000
-```
+Este repositorio y GitHub Pages son públicos. Los JSON, la planilla y el manual contienen datos internos y están excluidos de Git. Sin los JSON el sitio muestra un aviso, por diseño. La planilla recibida para desarrollar esta versión contiene 51 reportes marcados **[DEMO]**; no son avances oficiales.
