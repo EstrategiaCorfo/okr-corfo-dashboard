@@ -118,6 +118,8 @@ td a{font-weight:800}
 .role .strategy-nodes,.enablers .strategy-nodes{grid-template-columns:repeat(2,minmax(0,1fr))}
 .strategy-node{display:block;width:100%;min-height:118px;text-align:left;background:#fff;border:1px solid var(--line);border-left:4px solid #21c99b;border-radius:11px;padding:12px;cursor:pointer;transition:transform .15s,box-shadow .15s}
 .strategy-node:hover,.strategy-node.selected{box-shadow:0 8px 18px rgba(23,24,59,.16);transform:translateY(-2px);border-color:var(--blue)}
+.strategy-layout.static .strategy-node{cursor:default}
+.strategy-layout.static .strategy-node:hover{box-shadow:none;transform:none;border-color:var(--line)}
 .strategy-node span{display:block;font-size:11px;color:var(--muted);font-weight:800;margin-bottom:7px}
 .strategy-node strong{display:block;color:var(--blue);line-height:1.25;font-size:13px}
 .role .strategy-node{border-left-color:#ec5d69}

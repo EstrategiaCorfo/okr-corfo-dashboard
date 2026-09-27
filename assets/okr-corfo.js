@@ -160,7 +160,7 @@
       if(!Array.isArray(S.krs)||!Array.isArray(S.objectives)||!Array.isArray(T.records))throw new Error('Los JSON no tienen la estructura esperada.');
       render();
     }).catch(error=>{
-      app.innerHTML=`<section class="card empty"><h1>Datos de seguimiento no publicados</h1><p>Esta versión requiere los JSON generados localmente desde la planilla maestra. Los archivos contienen información interna y no se incluyen en el repositorio público.</p><p class="small">${esc(error.message)}</p></section>`;
+      if(page!=='strategy') app.innerHTML=`<section class="card empty"><h1>Datos de seguimiento no publicados</h1><p>Los reportes de la planilla contienen información interna y todavía no se publican en este sitio. Puede consultar el <a href="./estrategia.html">esquema de la Estrategia</a>.</p></section>`;
       console.warn('Datos no disponibles:',error.message);
     });
 })();
