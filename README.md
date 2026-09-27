@@ -14,4 +14,4 @@ La gráfica de Estrategia recrea las capas y el orden visual del PPT institucion
 
 Vea [README_ACTUALIZACION.md](README_ACTUALIZACION.md) para validar la planilla, generar los JSON y probar el sitio.
 
-Este repositorio y GitHub Pages son públicos. Los JSON, la planilla y el manual contienen datos internos y están excluidos de Git. Sin los JSON, la página Estrategia muestra el esquema público de ocho objetivos y las vistas de seguimiento muestran un aviso. La planilla recibida para desarrollar esta versión contiene 51 reportes marcados **[DEMO]**; no son avances oficiales.
+Este repositorio y GitHub Pages son públicos. El sitio carga `data/public/strategy.json` y `data/public/tracking.json`, generados desde el Excel con `--public`. Incluyen 161 KR y 51 reportes ficticios señalados como **DEMO**. Los nombres de Owners y suplentes, comentarios, evidencias, aprendizajes y pendientes se omiten de los JSON públicos. Los JSON internos, la planilla y el manual permanecen fuera de Git.

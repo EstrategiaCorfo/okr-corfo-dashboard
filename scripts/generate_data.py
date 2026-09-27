@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""Valida la planilla maestra y genera los datos locales del dashboard.
-
-Los JSON resultantes contienen información interna y están excluidos de Git.
-"""
+"""Valida la planilla maestra y genera JSON internos o una versión pública depurada."""
 
 import argparse
 import json
@@ -68,6 +65,10 @@ MOMENTS = {'Confirmado GE', 'Propuesta Owner'}
 PERIOD = re.compile(r'^(20\d{2})/Q([1-4])$')
 RANGE_SAME_YEAR = re.compile(r'^(20\d{2})/Q([1-4])-Q([1-4])$')
 RANGE_YEARS = re.compile(r'^(20\d{2})/Q([1-4])\s*-\s*(20\d{2})/Q([1-4])$')
+PUBLIC_KR_FIELDS = ('id', 'name', 'objective', 'subobjective', 'dimension',
+                    'target_period', 'periods', 'target_date', 'area')
+PUBLIC_RECORD_FIELDS = ('id', 'period', 'date', 'instance', 'moment', 'execution',
+                        'baseline', 'target', 'current', 'progress', 'status', 'source_row')
 
 
 def txt(value):
@@ -291,12 +292,35 @@ def build(path):
     return strategy, tracking
 
 
+def public_view(strategy, tracking):
+    """Usa una lista cerrada de campos para evitar divulgar notas o responsables."""
+    records = []
+    for record in tracking['records']:
+        safe_record = {key: record[key] for key in PUBLIC_RECORD_FIELDS}
+        safe_record['demo'] = any('[DEMO]' in str(value) for value in record.values())
+        records.append(safe_record)
+    public_strategy = {
+        'metadata': {'publication': 'public', 'kr_count': len(strategy['krs'])},
+        'objectives': strategy['objectives'],
+        'krs': [{key: kr[key] for key in PUBLIC_KR_FIELDS} for kr in strategy['krs']],
+    }
+    public_tracking = {
+        'metadata': {
+            'publication': 'public', 'record_count': len(records),
+            'demo_records': sum(record['demo'] for record in records),
+        },
+        'records': records,
+    }
+    return public_strategy, public_tracking
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input', required=True, type=Path, help='Ruta del Excel con hojas Estrategia y Seguimiento')
-    parser.add_argument('--output', type=Path, default=Path('data'), help='Carpeta de JSON locales (por defecto data/)')
+    parser.add_argument('--output', type=Path, help='Carpeta de salida (por defecto data/ o data/public/ con --public)')
     parser.add_argument('--validate-only', action='store_true', help='No escribir JSON')
     parser.add_argument('--require-real', action='store_true', help='Rechazar filas marcadas [DEMO]')
+    parser.add_argument('--public', action='store_true', help='Generar JSON públicos sin responsables ni campos cualitativos internos')
     args = parser.parse_args()
     try:
         strategy, tracking = build(args.input)
@@ -311,6 +335,10 @@ def main():
     if tracking['metadata']['demo_records']:
         print(f"ADVERTENCIA: {tracking['metadata']['demo_records']} reportes están marcados [DEMO]. No presentarlos como avances reales.")
     if not args.validate_only:
+        if args.public:
+            strategy, tracking = public_view(strategy, tracking)
+            print('Vista pública: omitidos Owners, suplentes, comentarios, evidencia, aprendizajes y pendientes.')
+        args.output = args.output or Path('data/public' if args.public else 'data')
         args.output.mkdir(parents=True, exist_ok=True)
         for name, content in (('strategy.json', strategy), ('tracking.json', tracking)):
             target = args.output / name
