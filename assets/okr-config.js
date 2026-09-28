@@ -14,9 +14,9 @@ window.OKRConfig = Object.freeze({
     ],
   },
   status: {
-    'On Track': {label: 'En cumplimiento', icon: '●', hint: 'On Track'},
-    'Off Track': {label: 'Alerta de cumplimiento', icon: '▲', hint: 'Off Track'},
-    'At Risk': {label: 'Riesgo de cumplimiento', icon: '■', hint: 'At Risk'},
+    'On Track': {label: 'En cumplimiento', icon: '●', hint: 'Trayectoria prevista de cumplimiento'},
+    'Off Track': {label: 'Alerta de cumplimiento', icon: '▲', hint: 'Requiere atención y medidas correctivas'},
+    'At Risk': {label: 'Riesgo de cumplimiento', icon: '■', hint: 'Riesgo relevante de incumplimiento'},
   },
   execution: {
     'No iniciado': 'No iniciado', 'En proceso': 'En curso', 'Completado': 'Cumplido',
