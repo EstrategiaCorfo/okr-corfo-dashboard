@@ -19,9 +19,12 @@
       })[0] || null;
   }
   function visibleKrs(krs, records, filters) {
+    const normalized = value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const needle = normalized(filters.q);
     return krs.filter(kr =>
       (!filters.objective || kr.objective === filters.objective) &&
       (!filters.owner || (filters.owner === '__vacio__' ? !kr.owner : kr.owner === filters.owner)) &&
+      (!needle || normalized(`${kr.id} ${kr.name}`).includes(needle)) &&
       (filters.period === 'todos' || (kr.periods || []).includes(filters.period) ||
         records.some(row => row.id === kr.id && row.period === filters.period)));
   }

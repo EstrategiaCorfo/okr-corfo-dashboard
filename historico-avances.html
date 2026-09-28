@@ -4,16 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Histórico | OKR Corfo</title>
-  <link rel="stylesheet" href="./assets/okr-corfo.css?v=5">
+  <link rel="stylesheet" href="./assets/okr-corfo.css?v=7">
 </head>
 <body data-page="history">
-  <header class="topbar">
-    <a class="brand" href="./index.html" aria-label="Ir al panel general"><img src="./assets/logo-corfo-blanco.svg" alt="Corfo"><span><strong>Panel OKR Corfo</strong><small>Estrategia Corporativa 2026-2030</small></span></a>
-    <nav class="nav" aria-label="Navegación principal"><a data-target="index.html" href="./index.html">Panel general</a><a data-target="key-results.html" href="./key-results.html">Key Results</a><a data-target="historico-avances.html" href="./historico-avances.html" class="active">Histórico</a><a data-target="estrategia.html" href="./estrategia.html">Estrategia</a></nav>
-  </header>
-  <main id="app" class="shell"><section class="card"><h1>Cargando datos...</h1></section></main>
-  <footer class="site-footer"><div class="footer-wrap"><strong>Corfo · Estrategia Corporativa 2026-2030</strong><span>Seguimiento de Resultados Clave</span></div></footer>
-  <script src="./assets/okr-model.js?v=2"></script>
-  <script src="./assets/okr-corfo.js?v=6"></script>
+  <header class="topbar"><div class="topbar-inner">
+    <a class="brand" href="./index.html" aria-label="Ir al panel general"><img src="./assets/logo-corfo-blanco.png" alt="Corfo"><span><strong>Panel OKR Corfo</strong><small>Estrategia Corporativa 2026 a 2030</small></span></a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menú</button>
+    <nav class="nav" id="main-nav" aria-label="Navegación principal"><a data-target="index.html" href="./index.html">Panel general</a><a data-target="estrategia.html" href="./estrategia.html">Estrategia</a><a data-target="key-results.html" href="./key-results.html">Resultados Clave</a><a data-target="historico-avances.html" href="./historico-avances.html" aria-current="page">Histórico</a><a data-target="como-leer.html" href="./como-leer.html">Cómo leer este panel</a></nav>
+  </div></header>
+  <div id="demo-banner"></div>
+  <main id="app" class="shell"><section class="empty"><h1>Cargando datos</h1></section></main>
+  <footer class="site-footer"><div class="footer-wrap"><strong>Corfo · Estrategia Corporativa 2026 a 2030</strong><span>Seguimiento de Resultados Clave</span></div></footer>
+  <script src="./assets/okr-config.js?v=1"></script>
+  <script src="./assets/okr-model.js?v=3"></script>
+  <script src="./assets/okr-corfo.js?v=7"></script>
 </body>
 </html>

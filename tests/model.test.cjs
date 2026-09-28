@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict');
 const M = require('../assets/okr-model.js');
 
-const kr = {id:'KR-001',objective:'Objetivo 1: Impacto',owner:'Gerencia A',periods:['2026/Q3','2026/Q4']};
+const kr = {id:'KR-001',name:'Crédito Verde',objective:'Objetivo 01: Financiamiento',owner:'Gerencia A',periods:['2026/Q3','2026/Q4']};
 const records = [
   {id:'KR-001',period:'2026/Q3',date:'2026-09-30',moment:'Propuesta Owner',execution:'Completado',progress:90,status:'Off Track',source_row:2},
   {id:'KR-001',period:'2026/Q3',date:'2026-08-15',moment:'Confirmado GE',execution:'En proceso',progress:10,status:'At Risk',source_row:3},
@@ -13,6 +13,8 @@ assert.equal(M.latest(records,kr.id,'todos').source_row,4,'todos los periodos mu
 assert.equal(M.latest(records,kr.id,'2027/Q1'),null,'un Q sin reporte conserva la ausencia de información');
 assert.deepEqual(M.visibleKrs([kr],records,{period:'2026/Q3',objective:kr.objective,owner:kr.owner}),[kr]);
 assert.deepEqual(M.visibleKrs([kr],records,{period:'2026/Q3',objective:kr.objective,owner:'Otra persona'}),[]);
+assert.deepEqual(M.visibleKrs([kr],records,{period:'2026/Q3',q:'credito'}),[kr],'la búsqueda ignora tildes');
+assert.deepEqual(M.visibleKrs([kr],records,{period:'2026/Q3',q:'no existe'}),[]);
 const summary=M.summarize([kr],records,'2026/Q3');
 assert.equal(summary.executions['En proceso'],1);
 assert.equal(summary.statuses['At Risk'],1);
