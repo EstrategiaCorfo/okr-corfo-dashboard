@@ -31,6 +31,8 @@ STRATEGY_COLUMNS = {
     'owner': 'Owner (Lider y responsable)',
     'substitutes': 'Suplentes (apoyan ejecución)',
     'comments': 'Comentarios',
+    'kr_type': 'Tipo de KR',
+    'cdc': 'Asociado a CDC',
 }
 TRACKING_COLUMNS = {
     'id': 'ID KR',
@@ -188,7 +190,18 @@ def build(path):
             'owner': txt(value(row, hs, 'owner')),
             'substitutes': txt(value(row, hs, 'substitutes')),
             'comments': txt(value(row, hs, 'comments')),
+            'kr_type': txt(value(row, hs, 'kr_type')) or None,
+            'cdc': None,
         }
+        if info['kr_type'] and info['kr_type'] not in {'Resultado final', 'Paso intermedio'}:
+            errors.append(f'{location}, Tipo de KR: usar Resultado final o Paso intermedio')
+        cdc_value = txt(value(row, hs, 'cdc')).lower()
+        if cdc_value in {'sí', 'si', '1', 'true'}:
+            info['cdc'] = True
+        elif cdc_value in {'no', '0', 'false'}:
+            info['cdc'] = False
+        elif cdc_value:
+            errors.append(f'{location}, Asociado a CDC: usar Sí o No')
         krs.append(info)
         by_name[ident] = info['name']
         if obj_key and obj_key not in objectives:
@@ -289,6 +302,41 @@ def build(path):
     return strategy, tracking
 
 
+def normalize_strategy(strategy, catalog_path):
+    """Aplica el catálogo oficial sin alterar los ID de KR ni la planilla original."""
+    catalog = json.loads(catalog_path.read_text(encoding='utf-8'))['objectives']
+    if len(catalog) != 8 or {item['number'] for item in catalog} != set(range(1, 9)):
+        raise ValueError('El catálogo debe contener los ocho objetivos oficiales.')
+    source_map = {item['source_name']: item for item in catalog}
+    current_map = {item['name']: item for item in catalog}
+    if len(source_map) != 8 or len(current_map) != 8:
+        raise ValueError('El catálogo contiene nombres de objetivo duplicados.')
+    official_dimensions = {'Impulso Corfo', 'Rol de Corfo', 'Habilitantes', 'Impacto'}
+    if {item['dimension'] for item in catalog} != official_dimensions:
+        raise ValueError('El catálogo contiene una dimensión fuera de las cuatro oficiales.')
+    for kr in strategy['krs']:
+        entry = source_map.get(kr['objective']) or current_map.get(kr['objective'])
+        if not entry:
+            raise ValueError(f"{kr['id']}: objetivo ausente del catálogo oficial: {kr['objective']}")
+        if kr['objective'] in source_map and kr['dimension'] != entry['source_dimension']:
+            raise ValueError(f"{kr['id']}: dimensión de origen no coincide con el catálogo.")
+        if kr['objective'] in current_map and kr['dimension'] != entry['dimension']:
+            raise ValueError(f"{kr['id']}: dimensión oficial inválida.")
+        match = re.match(r'^SO(\d+)\.(\d+)(?:\b|:)', kr['subobjective'])
+        expected = entry['old_number'] if kr['objective'] in source_map else entry['number']
+        if not match or int(match[1]) != expected or not 1 <= int(match[2]) <= len(entry['subobjectives']):
+            raise ValueError(f"{kr['id']}: subobjetivo ausente del catálogo oficial: {kr['subobjective']}")
+        kr.update({
+            'objective': entry['name'], 'subobjective': entry['subobjectives'][int(match[2]) - 1],
+            'dimension': entry['dimension'], 'vision': entry['vision'],
+        })
+    strategy['objectives'] = [{
+        'name': item['name'], 'number': item['number'], 'dimension': item['dimension'],
+        'vision': item['vision'], 'subobjectives': item['subobjectives'],
+    } for item in catalog]
+    return {item['name']: item['justification'] for item in catalog}, source_map
+
+
 def public_view(strategy, tracking):
     """Publica los campos de la planilla y marca cada reporte de demostración."""
     records = []
@@ -318,20 +366,22 @@ def main():
     parser.add_argument('--validate-only', action='store_true', help='No escribir JSON')
     parser.add_argument('--require-real', action='store_true', help='Rechazar filas marcadas [DEMO]')
     parser.add_argument('--public', action='store_true', help='Generar JSON públicos con todos los campos de la planilla')
-    parser.add_argument('--notes', type=Path, help='Archivo local de justificaciones por objetivo para publicar con --public')
+    parser.add_argument('--notes', type=Path, help='Justificaciones opcionales; por defecto se usa el catálogo oficial')
+    parser.add_argument('--catalog', type=Path, default=Path(__file__).resolve().parent.parent / 'data/strategy-catalog.json', help='Catálogo oficial de objetivos y justificaciones')
     args = parser.parse_args()
     try:
         strategy, tracking = build(args.input)
+        notes, source_map = normalize_strategy(strategy, args.catalog)
         if args.require_real and tracking['metadata']['demo_records']:
             raise ValueError(f"Seguimiento: {tracking['metadata']['demo_records']} registros contienen [DEMO]; se requieren datos reales.")
-        if args.notes and not args.public:
-            raise ValueError('--notes requiere --public.')
-        notes = None
         if args.notes:
-            notes = json.loads(args.notes.read_text(encoding='utf-8'))
-            names = {objective['name'] for objective in strategy['objectives']}
-            if not isinstance(notes, dict) or set(notes) != names or not all(isinstance(text, str) and text.strip() for text in notes.values()):
+            overrides = json.loads(args.notes.read_text(encoding='utf-8'))
+            if not isinstance(overrides, dict):
+                raise ValueError('Las justificaciones deben ser un objeto JSON.')
+            remapped = {entry['name']: overrides.get(entry['name'], overrides.get(source_name)) for source_name, entry in source_map.items()}
+            if set(remapped) != set(notes) or not all(isinstance(text, str) and text.strip() for text in remapped.values()):
                 raise ValueError('Las justificaciones deben ser textos no vacíos para todos los objetivos de la planilla.')
+            notes = remapped
     except (OSError, ValueError) as exc:
         print(f'ERROR de validación:\n{exc}', file=sys.stderr)
         return 1
@@ -352,12 +402,11 @@ def main():
             tmp.write_text(json.dumps(content, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
             tmp.replace(target)
             print(f'Generado: {target}')
-        if notes is not None:
-            target = args.output / 'objective-notes.json'
-            tmp = target.with_suffix('.json.tmp')
-            tmp.write_text(json.dumps(notes, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-            tmp.replace(target)
-            print(f'Generado: {target}')
+        target = args.output / 'objective-notes.json'
+        tmp = target.with_suffix('.json.tmp')
+        tmp.write_text(json.dumps(notes, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        tmp.replace(target)
+        print(f'Generado: {target}')
     return 0
 
 

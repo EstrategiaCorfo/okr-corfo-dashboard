@@ -26,17 +26,17 @@ El programa informa la hoja, la fila y el campo si detecta columnas faltantes, I
 python scripts/generate_data.py --input "/ruta/Planilla_Maestra_Dashboard_OKR_V2.xlsx"
 ```
 
-Se crean `data/strategy.json` y `data/tracking.json`. No edite el HTML o JavaScript. Revise el total de KR, reportes, Owners sin informar y advertencias DEMO que aparecen en la terminal. El script calcula el progreso solo si existen Línea base, Meta y Valor actual; el estatus se conserva según la evaluación informada.
+Se crean `data/strategy.json`, `data/tracking.json` y `data/objective-notes.json`. Para actualizar los datos no es necesario editar el HTML o JavaScript. Revise el total de KR, reportes, Owners sin informar y advertencias DEMO que aparecen en la terminal. El script calcula el progreso solo si existen Línea base, Meta y Valor actual; el estatus se conserva según la evaluación informada.
 
-El archivo local `data/objective-notes.json` guarda las justificaciones tomadas del manual. Se prepara una vez con la clave exacta de cada Objetivo Estratégico. Si cambia el nombre de un objetivo, actualice esa clave para mantener la justificación visible. El documento original no forma parte del repositorio.
+El archivo `data/strategy-catalog.json` contiene la numeración, dimensiones, enunciados, subobjetivos y justificaciones oficiales de los ocho objetivos, extraídos de la especificación recibida. La planilla original conserva su numeración antigua; el generador traduce sus datos al catálogo sin alterar los códigos de KR. Revise el catálogo antes de cambiarlo.
 
 Para generar los archivos destinados al sitio público, ejecute también:
 
 ```bash
-python scripts/generate_data.py --input "/ruta/Planilla_Maestra_Dashboard_OKR_V2.xlsx" --public --notes data/objective-notes.json
+python scripts/generate_data.py --input "/ruta/Planilla_Maestra_Dashboard_OKR_V2.xlsx" --public
 ```
 
-Esta opción crea `data/public/strategy.json`, `data/public/tracking.json` y, si se indica `--notes`, `data/public/objective-notes.json`. Publica todos los campos extraídos de la planilla, incluidos los Owners, suplentes, comentarios de estrategia, evidencias, aprendizajes y pendientes. El tercer archivo contiene las justificaciones extraídas del manual, pero no el documento. Si hay reportes `[DEMO]`, el sitio los identifica como ficticios. Revise los tres JSON antes de publicarlos.
+Esta opción crea `data/public/strategy.json`, `data/public/tracking.json` y `data/public/objective-notes.json`. Publica todos los campos extraídos de la planilla, incluidos Owners, suplentes, comentarios de estrategia, evidencias, aprendizajes y pendientes. El tercer archivo contiene las justificaciones del catálogo, pero no el documento original. Si hay reportes `[DEMO]`, el sitio los identifica como ficticios. Revise los tres JSON antes de publicarlos. Las columnas opcionales `Tipo de KR` y `Asociado a CDC` se aceptan cuando existan en una planilla futura; no se infieren del nombre.
 
 ## 4. Probar localmente
 
@@ -44,7 +44,7 @@ Esta opción crea `data/public/strategy.json`, `data/public/tracking.json` y, si
 python -m http.server 8000
 ```
 
-Abra `http://localhost:8000` para revisar los archivos locales. Abra `http://localhost:8000/?publico=1` para comprobar exactamente la versión que verá el público. De forma predeterminada se muestran todos los KR. Revise Panel general, Key Results, Detalle, Histórico y Estrategia; pruebe los filtros de periodo y Owner, los campos de cada reporte y los enlaces. Use `Ctrl+C` para detener el servidor.
+Abra `http://localhost:8000` para revisar los archivos locales. Abra `http://localhost:8000/?publico=1` para comprobar la versión pública. De forma predeterminada se muestran todos los KR. Revise Panel general, Estrategia, Resultados Clave, Histórico y Cómo leer este panel; pruebe los filtros, la búsqueda, la vista de tabla, las fichas y el menú móvil. `assets/okr-config.js` declara **Apertura, semana 1** como estado simulado de Q3 2026. Cambie esa configuración solo cuando exista un estado de seguimiento validado. Use `Ctrl+C` para detener el servidor.
 
 ## 5. Publicar con autorización
 

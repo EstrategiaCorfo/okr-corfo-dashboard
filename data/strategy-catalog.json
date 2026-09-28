@@ -1,0 +1,127 @@
+{
+  "version": "Manual de Implementación, v1.0, anexos A y B",
+  "objectives": [
+    {
+      "number": 1,
+      "old_number": 2,
+      "name": "Objetivo 01: Financiamiento que Impulsa la Inversión y el Crecimiento",
+      "dimension": "Impulso Corfo",
+      "vision": "Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
+      "subobjectives": [
+        "SO1.1 Fortalecer la industria de capital de riesgo mediante un Fondo de Inversión internacional o institucional participando directamente, o través de otro fondo, del financiamiento aportado por Corfo.",
+        "SO1.2 Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación.",
+        "SO1.3 Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento."
+      ],
+      "justification": "Responde al mandato ministerial de movilizar mayor inversión y busca fortalecer el rol de Corfo como plataforma de financiamiento productivo a través de intermediarios financieros, aumentando las colocaciones de los programas de cobertura, consolidando los programas de fondeo y profundizando el desarrollo del capital de riesgo, de modo que el financiamiento de Corfo opere como palanca para movilizar capital privado a mayor escala.",
+      "source_name": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
+      "source_dimension": "Impulso Corfo"
+    },
+    {
+      "number": 2,
+      "old_number": 3,
+      "name": "Objetivo 02: Capacidades Tecnológicas al Servicio de las Empresas",
+      "dimension": "Impulso Corfo",
+      "vision": "Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
+      "subobjectives": [
+        "SO2.1 Posicionar la Red de Centros Tecnológicos para generar demanda empresarial.",
+        "SO2.2 Integrar la Red a la oferta de desarrollo productivo y al ecosistema.",
+        "SO2.3 Consolidar modelo de sostenibilidad financiera."
+      ],
+      "justification": "La Red de Centros Tecnológicos constituye una infraestructura pública subutilizada en relación con su potencial; el objetivo busca consolidarla como plataforma nacional de transferencia tecnológica, con cobertura territorial efectiva, integración sistemática con los instrumentos de fomento y un modelo de financiamiento que asegure su sostenibilidad en el largo plazo, aportando más sofisticación productiva y más capacidades en las empresas para competir en mercados de mayor valor.",
+      "source_name": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
+      "source_dimension": "Impulso Corfo"
+    },
+    {
+      "number": 3,
+      "old_number": 4,
+      "name": "Objetivo 03: Desarrollo desde los Territorios",
+      "dimension": "Impulso Corfo",
+      "vision": "Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
+      "subobjectives": [
+        "SO3.1 Homologación y madurez institucional y operacional de los CDPR.",
+        "SO3.2 Desarrollar un sistema integrado de inteligencia territorial que entregue información, indicadores y herramientas para apoyar la planificación, priorización y seguimiento del desarrollo productivo en las regiones.",
+        "SO3.3 Creación de un modelo de relacionamiento territorial para impulsar el encadenamiento productivo."
+      ],
+      "justification": "El fortalecimiento de los Comités de Desarrollo Productivo Regional como plataforma descentralizada de articulación es la apuesta de Corfo por llevar el fomento productivo al territorio con pertinencia, gobernanza y poder de decisión local, consolidando el modelo de descentralización productiva para que opere de manera regular dentro la gestión institucional, más allá de los ciclos de gobierno (inconsistencia dinámica).",
+      "source_name": "Objetivo 4: Desarrollo desde los Territorios",
+      "source_dimension": "Impulso Corfo"
+    },
+    {
+      "number": 4,
+      "old_number": 5,
+      "name": "Objetivo 04: Conexión Empresarial: Soluciones que Escalan",
+      "dimension": "Rol de Corfo",
+      "vision": "Habilitar el crecimiento empresarial en Chile, conectando a emprendimientos y empresas con el mercado para la validación temprana, la tracción comercial y la inversión privada que necesitan para escalar y consolidarse.",
+      "subobjectives": [
+        "SO4.1 Lograr la validación temprana de soluciones innovadoras mediante un modelo de conexión con el mercado.",
+        "SO4.2 Aumentar la tracción comercial y ventas de soluciones innovadoras mediante un modelo de conexión con el mercado.",
+        "SO4.3 Aumentar la sobrevivencia de las empresas mediante un modelo de fortalecimiento de gestión empresarial y conexión con actores del ecosistema de financiamiento."
+      ],
+      "justification": "Este objetivo responde a una brecha estructural del ecosistema productivo chileno: la dificultad de los emprendimientos y pymes innovadoras para validar su oferta en el mercado, escalar comercialmente y atraer inversión privada. A través de mecanismos de matchmaking, compra privada de innovación y articulación con empresas ancla, Corfo busca conectar soluciones con demanda real, reduciendo la dependencia del apoyo público como única fuente de sostenibilidad, aportando más crecimiento para las empresas apoyadas y más empleo formal asociado a ese crecimiento.",
+      "source_name": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
+      "source_dimension": "Rol Corfo"
+    },
+    {
+      "number": 5,
+      "old_number": 6,
+      "name": "Objetivo 05: Un Estado más Coordinado para el Desarrollo Productivo",
+      "dimension": "Rol de Corfo",
+      "vision": "Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
+      "subobjectives": [
+        "SO5.1 Alinear y visibilizar las prioridades de Corfo con las prioridades ministeriales, mediante un mapeo conjunto, presentaciones y agendas compartidas.",
+        "SO5.2 Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución.",
+        "SO5.3 Institucionalizar la gobernanza del esquema de coordinación, estableciendo una mecánica operativa de seguimiento y métricas que asegure su sostenibilidad más allá del ciclo político."
+      ],
+      "justification": "Una Corfo que actúa en solitario desperdicia potencial de impacto; este objetivo sistematiza la coordinación con ministerios y servicios afines para alinear agendas, evitar duplicidades y mejorar la asignación conjunta de recursos públicos, con la meta de que esa coordinación se traduzca en mayor eficiencia del gasto público y en una oferta programática más coherente para las empresas y territorios.",
+      "source_name": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
+      "source_dimension": "Rol Corfo"
+    },
+    {
+      "number": 6,
+      "old_number": 7,
+      "name": "Objetivo 06: Personas y Talento",
+      "dimension": "Habilitantes",
+      "vision": "Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
+      "subobjectives": [
+        "SO6.1 Crear un programa de desarrollo de talento interno en Corfo.",
+        "SO6.2 Formalización de la política de Desarrollo de Talentos.",
+        "SO6.3 Evaluación y mejoras de la política implementada."
+      ],
+      "justification": "Este objetivo es un Habilitante que sostiene la implementación del resto de la estrategia. El capital humano de Corfo es su principal activo; el objetivo crea un programa formal de identificación y desarrollo del talento institucional, con metodología de mapeo de desempeño y potencial, oportunidades de exposición técnica y mecanismos de reconocimiento, con la meta de proyectar a Corfo como un servicio público de alto rendimiento, capaz de atraer, retener y desarrollar a las personas que hacen posible su misión.",
+      "source_name": "Objetivo 7: Personas y Talento Interno",
+      "source_dimension": "Habilitante"
+    },
+    {
+      "number": 7,
+      "old_number": 8,
+      "name": "Objetivo 07: Tecnología, Datos y Procesos",
+      "dimension": "Habilitantes",
+      "vision": "Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
+      "subobjectives": [
+        "SO7.1 Facilitar la toma de decisiones y la visibilización de resultados mediante el desarrollo de una capacidad institucional de datos.",
+        "SO7.2 Mejorar la confiabilidad, consistencia y seguridad de la información mediante la implementación de una gobernanza de datos con estándares internacionales.",
+        "SO7.3 Aumentar la agregación de valor de los colaboradores mediante la digitalización y automatización de procesos.",
+        "SO7.4 Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales."
+      ],
+      "justification": "Este objetivo es un Habilitante que sostiene la implementación del resto de la estrategia. La eficiencia interna de Corfo es condición de su credibilidad externa; el objetivo busca unificar la base de datos corporativa, implementar una gobernanza de datos alineada con la Ley N° 21.180, y automatizar procesos críticos tanto de cara a los equipos internos como a los beneficiarios, con la meta de una reducción del 20% en tiempos de gestión interna y un aumento equivalente en satisfacción usuaria.",
+      "source_name": "Objetivo 8: Tecnología, Datos y Procesos",
+      "source_dimension": "Habilitante"
+    },
+    {
+      "number": 8,
+      "old_number": 1,
+      "name": "Objetivo 08: Impacto",
+      "dimension": "Impacto",
+      "vision": "Ser un motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
+      "subobjectives": [
+        "SO8.1 Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica.",
+        "SO8.2 Diseñar un plan de desarrollo de cultura interna sobre los indicadores de impacto de Corfo.",
+        "SO8.3 Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar al entorno nuestro impacto.",
+        "SO8.4 Desarrollar las capacidades institucionales para la medición y evaluación de impacto mediante el uso integrado de datos internos y externos."
+      ],
+      "justification": "Este es el objetivo agregador que consolida los ejes +Productividad, +Inversión y +Crecimiento de la estrategia corporativa. Sin evidencia de resultados, la credibilidad del gasto público en fomento es frágil; el objetivo establece un marco común de indicadores de impacto adoptado por todas las gerencias, con mediciones post intervención, seguimiento sistemático y reporte anual, siendo la base para tomar mejores decisiones sobre qué instrumentos funcionan, para quién y en qué condiciones.",
+      "source_name": "Objetivo 1: Impacto",
+      "source_dimension": "Marco global"
+    }
+  ]
+}
