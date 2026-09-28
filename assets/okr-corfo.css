@@ -55,7 +55,7 @@ body{background:#f8f9fc}
 .evolution-card{background:#fff;border:1px solid var(--line);padding:20px;margin:26px 0}
 .evolution-card .section-heading{margin:0 0 14px}
 .chart-scroll{max-width:100%;overflow-x:auto;border-radius:var(--radius-sm);background:#f7f8fb}
-.evolution-chart{display:block;width:100%;height:auto}
+.evolution-chart{display:block;width:100%;max-width:900px;height:auto;margin:auto}
 .chart-note{margin:10px 2px 0;color:var(--muted);font-size:12px}
 .chart-empty{padding:28px;text-align:center;border:1px dashed var(--line);background:var(--surface);color:var(--muted)}
 /* Proporciones y contenidos del pie institucional, con el azul del dashboard. */

@@ -192,7 +192,7 @@
     const log=T.records.filter(x=>x.id===kr.id).sort((a,b)=>M.periodSort(a.period,b.period)||(a.date||'').localeCompare(b.date||'')||a.source_row-b.source_row);
     const groups=unique(log.map(x=>x.period));
     app.innerHTML=hero('Detalle de Resultado Clave','Definición, avance y trayectoria del Resultado Clave.',f,krs.length)+
-      `<a class="back-link" href="${esc(href('key-results.html'))}">← Volver a Resultados Clave</a><div class="detail-grid"><section class="detail-main"><span class="kr-code">${esc(kr.id)} ${demoLabel(r)}</span><h2>${esc(krName(kr))}</h2><dl class="facts">${[
+      `<a class="back-link" href="${esc(href('key-results.html'))}">← Volver a Resultados Clave</a>${evolutionChart(log,kr,f.period)}<div class="detail-grid"><section class="detail-main"><span class="kr-code">${esc(kr.id)} ${demoLabel(r)}</span><h2>${esc(krName(kr))}</h2><dl class="facts">${[
         fact('Objetivo Estratégico',value(kr.objective)),fact('Subobjetivo',value(kr.subobjective)),
         fact('Dimensión',value(kr.dimension)),fact('Enunciado del Objetivo Estratégico',value(kr.vision)),
         fact('Periodo meta',value(periodLabel(kr.target_period))),fact('Año KR',value(kr.target_year)),
@@ -201,7 +201,6 @@
         fact('Producto asociado estimado',value(kr.product)),fact('Medio de verificación estimado',value(kr.verification)),
         fact('Comentarios de estrategia',value(kr.comments)),
       ].join('')}</dl></section><section class="detail-report"><h2>Último reporte ${r?`<span class="report-moment">${momentLabel(r.moment)}</span>`:''}</h2>${r?`<div class="snapshot-grid"><div><small>Estatus (semáforo)</small>${statusBadge(r.status)}</div><div><small>Progreso numérico (%)</small><strong>${percent(r.progress)}</strong>${progressBar(r.progress,r.status,kr.cdc)}</div><div><small>Estado del hito</small>${badge(executionLabel(r.execution))}</div></div><p>${metricPath(r)}</p>${reportFacts(r)}`:'<p>Sin reporte en este periodo.</p>'}</section></div>
-      ${evolutionChart(log,kr,f.period)}
       <div class="section-heading"><div><h2>Historial del Resultado Clave</h2><p>${log.length} reportes, por trimestre e instancia.</p></div></div>
       ${log.length?`<div class="timeline">${groups.map(period=>`<section><h3>${esc(periodLabel(period))}</h3>${log.filter(x=>x.period===period).map(x=>`<article class="history-item"><div class="history-top"><strong>${instanceLabel(x.instance)} · ${day(x.date)}</strong><span>${momentLabel(x.moment)}</span></div><div class="inline-badges">${demoLabel(x)}${statusBadge(x.status)}${badge(executionLabel(x.execution))}<span>${percent(x.progress)}</span></div><p>${value(x.comment)}</p><details class="report-more"><summary>Ver todos los campos del reporte</summary>${reportFacts(x)}</details></article>`).join('')}</section>`).join('')}</div>`:'<div class="empty">Sin reportes históricos.</div>'}`;
   }
