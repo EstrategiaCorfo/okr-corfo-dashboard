@@ -67,6 +67,16 @@ async function render(page, search = '') {
     assert.ok(detail.includes(`<dt>${label}</dt>`), label);
   }
   assert.match(detail, /Ver todos los campos del reporte/);
+  const numeric = (await render('detail', '?kr=KR-104&periodo=2026%2FQ3')).html;
+  assert.match(numeric, /Progreso numérico por reporte/);
+  assert.match(numeric, /Referencia 80%/);
+  assert.match(numeric, /100%/);
+  const milestone = (await render('detail', '?kr=KR-037&periodo=2026%2FQ3')).html;
+  assert.match(milestone, /Estado del hito por reporte/);
+  assert.match(milestone, /no representa un porcentaje de progreso/);
+  const unreported = strategy.krs.find(k => !tracking.records.some(r => r.id === k.id));
+  assert.match((await render('detail', `?kr=${unreported.id}`)).html,
+    /Todavía no hay reportes para graficar/);
   const history = (await render('history')).html;
   assert.equal((history.match(/<tr>/g) || []).length, 52);
   assert.match(history, /<th>Owner<\/th>/);
