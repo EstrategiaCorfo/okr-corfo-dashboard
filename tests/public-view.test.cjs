@@ -71,6 +71,7 @@ async function render(page, search = '') {
   assert.match(numeric, /Progreso numérico por reporte/);
   assert.match(numeric, /Referencia 80%/);
   assert.match(numeric, /100%/);
+  assert.ok(numeric.indexOf('class="evolution-card"') < numeric.indexOf('class="detail-grid"'));
   const milestone = (await render('detail', '?kr=KR-037&periodo=2026%2FQ3')).html;
   assert.match(milestone, /Estado del hito por reporte/);
   assert.match(milestone, /no representa un porcentaje de progreso/);
