@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Panel general | Panel de Seguimiento Corfo</title>
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/base.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/styles.css">
+  <script src="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/_ds_bundle.js"></script>
+  <script src="okr-app.js"></script>
+  <style>
+    html,body{margin:0;background:#FFFFFF;color:#3F3F3F;font-family:var(--font-sans);font-size:15px;-webkit-font-smoothing:antialiased}
+    *{box-sizing:border-box}
+    a{color:#221E7C;text-decoration:none}
+    a:hover{color:#D64045}
+    button,select,input{font-family:inherit}
+    :focus-visible{outline:2px solid #D64045;outline-offset:2px}
+    @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+    @media print{[data-noprint]{display:none!important}[data-printonly]{display:block!important}[data-avoid]{break-inside:avoid}@page{size:letter landscape;margin:12mm}}
+  </style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#FFFFFF">
+  <dc-import name="Site Header" active="panel" filters="{{ false }}" hint-size="100%,64px" style="position:sticky;top:0;z-index:20;display:block"></dc-import>
+
+  <sc-if value="{{ showDemo }}" hint-placeholder-val="{{ true }}">
+    <div role="note" data-noprint="" style="background:#EDF0F5;border-bottom:1px solid #C9CAD5">
+      <div style="max-width:1320px;margin:0 auto;padding:0 24px;min-height:40px;display:flex;align-items:center;gap:12px">
+        <span aria-hidden="true" style="width:10px;height:10px;background:#D64045;flex:none"></span>
+        <p style="margin:0;font-size:14px;color:#17183B;flex:1;min-width:0;text-wrap:pretty;padding:8px 0"><strong>Versión de demostración:</strong> los reportes de seguimiento son ficticios y no representan avances oficiales de Corfo.</p>
+        <button type="button" onClick="{{ hideDemo }}" style="min-height:32px;padding:0 12px;background:transparent;border:1px solid #17183B;color:#17183B;font-size:13px;font-weight:600;cursor:pointer" style-hover="background:#17183B;color:#FFFFFF">Entendido</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <main style="flex:1;width:100%;max-width:1320px;margin:0 auto;padding:24px 24px 48px;display:flex;flex-direction:column;gap:32px">
+    <section style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px 32px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:8px;min-width:0">
+        <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C">Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
+        <h1 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.4vw,30px);line-height:1.1;letter-spacing:-0.022em;color:#17183B">Panel general</h1>
+        <span aria-hidden="true" style="display:block;width:56px;height:4px;background:#D64045"></span>
+        <p style="margin:4px 0 0;font-size:16px;color:#3F3F3F;text-wrap:pretty">Avance de la Estrategia Corporativa en el trimestre seleccionado.</p>
+        <p data-printonly="" style="display:none;margin:0;font-size:13px;color:#3F3F3F">Periodo: {{ periodText }} · Generado el {{ todayText }}</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+        <p style="margin:0;font-size:15px;color:#3F3F3F"><strong style="font-family:var(--font-display);font-size:22px;color:#17183B;font-variant-numeric:tabular-nums">{{ total }}</strong> Resultados Clave mostrados</p>
+        <button data-noprint="" type="button" onClick="{{ doPrint }}" style="min-height:40px;padding:0 16px;background:#FFFFFF;border:1px solid #17183B;color:#17183B;font-size:14px;font-weight:600;cursor:pointer" style-hover="background:#17183B;color:#FFFFFF">Imprimir o guardar PDF</button>
+      </div>
+    </section>
+
+    <div role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">{{ liveText }}</div>
+
+    <sc-if value="{{ showCycle }}" hint-placeholder-val="{{ true }}">
+      <section data-avoid="" aria-labelledby="cycle-title" style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <h2 id="cycle-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Ciclo trimestral · {{ cycleText }}</h2>
+          <span style="font-size:14px;font-weight:600;color:#D64045">Hoy · semana {{ week }} de 13</span>
+        </div>
+        <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0 16px">
+          <sc-for list="{{ cycle }}" as="st" hint-placeholder-count="4">
+            <li aria-current="{{ st.aria }}" style="display:flex;flex-direction:column;gap:10px;padding-bottom:4px">
+              <div style="position:relative;height:20px;display:flex;align-items:center">
+                <span aria-hidden="true" style="position:absolute;left:0;right:-16px;top:9px;height:2px;background:#C9CAD5"></span>
+                <span aria-hidden="true" style="{{ st.dot }}"></span>
+              </div>
+              <div style="{{ st.card }}">
+                <strong style="{{ st.nameStyle }}">{{ st.name }}</strong>
+                <span style="{{ st.whenStyle }}">{{ st.when }}</span>
+                <span style="{{ st.tagStyle }}">{{ st.tag }}</span>
+              </div>
+            </li>
+          </sc-for>
+        </ol>
+      </section>
+    </sc-if>
+
+    <dc-import name="Filter Bar" on-change="{{ onFilters }}" hint-size="100%,120px" style="position:sticky;top:64px;z-index:15;display:block"></dc-import>
+
+    <section aria-label="Indicadores principales" style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+        <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+          <article data-avoid="" style="{{ s.style }}">
+            <span style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#17183B"><span aria-hidden="true" style="{{ s.glyphStyle }}">{{ s.glyph }}</span>{{ s.label }}</span>
+            <strong style="font-family:var(--font-display);font-weight:700;font-size:36px;line-height:1;letter-spacing:-0.02em;color:#17183B;font-variant-numeric:tabular-nums">{{ s.value }}</strong>
+            <small style="font-size:13px;color:#3F3F3F">{{ s.sub }}</small>
+          </article>
+        </sc-for>
+      </div>
+      <p style="margin:0;font-size:13px;color:#3F3F3F">{{ noStatusText }}</p>
+    </section>
+
+    <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px;align-items:stretch">
+      <article data-avoid="" style="background:#EDF0F5;padding:20px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <h2 style="margin:0;display:flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:700;font-size:18px;color:#17183B">Estatus (semáforo)
+            <span style="position:relative;display:inline-flex">
+              <button type="button" aria-label="Qué es el estatus" aria-describedby="tip-estatus" aria-expanded="{{ tips.estatus.expanded }}" onClick="{{ tips.estatus.toggle }}" onMouseEnter="{{ tips.estatus.open }}" onMouseLeave="{{ tips.estatus.close }}" onFocus="{{ tips.estatus.open }}" style="width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid #9197AE;color:#221E7C;font-family:var(--font-sans);font-size:13px;font-weight:700;cursor:pointer">i</button>
+              <sc-if value="{{ tips.estatus.show }}" hint-placeholder-val="{{ false }}">
+                <span role="tooltip" id="tip-estatus" onMouseEnter="{{ tips.estatus.open }}" onMouseLeave="{{ tips.estatus.close }}" style="position:absolute;top:34px;left:-8px;z-index:30;width:280px;padding:12px 14px;background:#17183B;color:#FFFFFF;font-family:var(--font-sans);font-size:13px;font-weight:400;line-height:1.45;display:flex;flex-direction:column;gap:8px">{{ tips.estatus.text }}<a href="{{ tips.estatus.href }}" style="color:#FFFFFF;text-decoration:underline;font-weight:600">Ver más</a></span>
+              </sc-if>
+            </span>
+          </h2>
+          <p style="margin:0;font-size:14px;color:#3F3F3F;text-wrap:pretty">Lectura experta del owner sobre el cumplimiento de cada KR.</p>
+        </div>
+        <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+          <div role="img" aria-label="{{ donutAria }}" style="position:relative;width:148px;height:148px;border-radius:50%;background:{{ donutBg }};flex:none">
+            <div style="position:absolute;inset:22px;border-radius:50%;background:#EDF0F5;display:flex;flex-direction:column;align-items:center;justify-content:center">
+              <strong style="font-family:var(--font-display);font-size:30px;line-height:1;color:#17183B;font-variant-numeric:tabular-nums">{{ total }}</strong>
+              <span style="font-size:12px;color:#3F3F3F">KR</span>
+            </div>
+          </div>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;flex:1;min-width:160px">
+            <sc-for list="{{ legend }}" as="l" hint-placeholder-count="4">
+              <li style="display:flex;align-items:center;gap:8px;font-size:14px;color:#17183B;border-bottom:1px solid #C9CAD5;padding-bottom:8px">
+                <span aria-hidden="true" style="{{ l.glyphStyle }}">{{ l.glyph }}</span>
+                <span style="flex:1">{{ l.label }}</span>
+                <strong style="font-variant-numeric:tabular-nums">{{ l.count }}</strong>
+                <span style="width:44px;text-align:right;color:#3F3F3F;font-variant-numeric:tabular-nums">{{ l.pct }}</span>
+              </li>
+            </sc-for>
+          </ul>
+        </div>
+      </article>
+
+      <article data-avoid="" style="background:#EDF0F5;padding:20px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <h2 style="margin:0;display:flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:700;font-size:18px;color:#17183B">Progreso numérico promedio
+            <span style="position:relative;display:inline-flex">
+              <button type="button" aria-label="Cómo se calcula el progreso numérico" aria-describedby="tip-progreso" aria-expanded="{{ tips.progreso.expanded }}" onClick="{{ tips.progreso.toggle }}" onMouseEnter="{{ tips.progreso.open }}" onMouseLeave="{{ tips.progreso.close }}" onFocus="{{ tips.progreso.open }}" style="width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid #9197AE;color:#221E7C;font-family:var(--font-sans);font-size:13px;font-weight:700;cursor:pointer">i</button>
+              <sc-if value="{{ tips.progreso.show }}" hint-placeholder-val="{{ false }}">
+                <span role="tooltip" id="tip-progreso" onMouseEnter="{{ tips.progreso.open }}" onMouseLeave="{{ tips.progreso.close }}" style="position:absolute;top:34px;left:-120px;z-index:30;width:280px;padding:12px 14px;background:#17183B;color:#FFFFFF;font-family:var(--font-sans);font-size:13px;font-weight:400;line-height:1.45;display:flex;flex-direction:column;gap:8px">{{ tips.progreso.text }}<a href="{{ tips.progreso.href }}" style="color:#FFFFFF;text-decoration:underline;font-weight:600">Ver más</a></span>
+              </sc-if>
+            </span>
+          </h2>
+          
+        </div>
+        <sc-if value="{{ progressEnough }}" hint-placeholder-val="{{ false }}">
+          <strong style="font-family:var(--font-display);font-size:44px;line-height:1;color:#17183B;font-variant-numeric:tabular-nums">{{ progressMean }}</strong>
+          <div role="img" aria-label="{{ progressAria }}" style="position:relative;height:10px;background:#C9CAD5">
+            <span style="position:absolute;left:0;top:0;bottom:0;width:{{ progressWidth }};background:#17183B"></span>
+            <span style="position:absolute;left:80%;top:-4px;bottom:-4px;width:2px;background:#D64045"></span>
+          </div>
+          <span style="font-size:12px;color:#3F3F3F">Umbral de éxito 80% (100% en KR asociados a CDC)</span>
+        </sc-if>
+        <sc-if value="{{ progressFew }}" hint-placeholder-val="{{ true }}">
+          <strong style="font-family:var(--font-display);font-size:24px;line-height:1.1;color:#17183B">Muestra insuficiente</strong>
+          <p style="margin:0;font-size:14px;line-height:1.45;color:#3F3F3F;text-wrap:pretty">Aún no hay suficientes KR cuantificables para un promedio representativo.</p>
+        </sc-if>
+        <p style="margin:0;font-size:13px;color:#3F3F3F"><strong style="color:#17183B">{{ progressCount }} de {{ total }}</strong> KR cuantificables · mínimo para promediar: {{ minSample }}</p>
+        <div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #C9CAD5;padding-top:14px">
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <h2 style="margin:0;display:flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:700;font-size:16px;color:#17183B">Estado del hito
+            <span style="position:relative;display:inline-flex">
+              <button type="button" aria-label="Qué es el estado del hito" aria-describedby="tip-hito" aria-expanded="{{ tips.hito.expanded }}" onClick="{{ tips.hito.toggle }}" onMouseEnter="{{ tips.hito.open }}" onMouseLeave="{{ tips.hito.close }}" onFocus="{{ tips.hito.open }}" style="width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid #9197AE;color:#221E7C;font-family:var(--font-sans);font-size:13px;font-weight:700;cursor:pointer">i</button>
+              <sc-if value="{{ tips.hito.show }}" hint-placeholder-val="{{ false }}">
+                <span role="tooltip" id="tip-hito" onMouseEnter="{{ tips.hito.open }}" onMouseLeave="{{ tips.hito.close }}" style="position:absolute;top:34px;right:-8px;z-index:30;width:260px;padding:12px 14px;background:#17183B;color:#FFFFFF;font-family:var(--font-sans);font-size:13px;font-weight:400;line-height:1.45;display:flex;flex-direction:column;gap:8px">{{ tips.hito.text }}<a href="{{ tips.hito.href }}" style="color:#FFFFFF;text-decoration:underline;font-weight:600">Ver más</a></span>
+              </sc-if>
+            </span>
+          </h2>
+          <p style="margin:0;font-size:14px;color:#3F3F3F;text-wrap:pretty">Situación de cada hito según el último reporte.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <sc-for list="{{ execRows }}" as="e" hint-placeholder-count="3">
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <div style="display:flex;justify-content:space-between;font-size:14px;color:#17183B"><span>{{ e.label }}</span><strong style="font-variant-numeric:tabular-nums">{{ e.count }}</strong></div>
+              <div style="height:8px;background:#FFFFFF"><span style="display:block;height:100%;width:{{ e.width }};background:{{ e.color }}"></span></div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin:0;font-size:13px;color:#3F3F3F">Métrica secundaria. No reemplaza al estatus.</p>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="obj-title" style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <h2 id="obj-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Estatus por Objetivo Estratégico</h2>
+        <p style="margin:0;font-size:14px;color:#3F3F3F">Vista única de los ocho semáforos. Cada tarjeta abre el objetivo en Estrategia.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));gap:16px">
+        <sc-for list="{{ objCards }}" as="o" hint-placeholder-count="8">
+          <a data-avoid="" href="{{ o.href }}" style="{{ o.style }}" style-hover="background:#E2E6EE">
+            <div style="display:flex;align-items:flex-start;gap:12px">
+              <span style="font-family:var(--font-display);font-weight:700;font-size:32px;line-height:1;letter-spacing:-0.03em;color:#221E7C;font-variant-numeric:tabular-nums">{{ o.code }}</span>
+              <span style="display:flex;flex-direction:column;gap:2px;min-width:0">
+                <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3F3F3F">{{ o.dim }}</span>
+                <strong style="font-family:var(--font-display);font-weight:700;font-size:16px;line-height:1.2;color:#17183B;text-wrap:pretty">{{ o.name }}</strong>
+              </span>
+            </div>
+            <div role="img" aria-label="{{ o.aria }}" style="display:flex;height:8px;background:#C9CAD5;gap:2px">
+              <span style="background:#13815F;flex:{{ o.ok }}"></span>
+              <span style="background:#F5C400;flex:{{ o.warn }}"></span>
+              <span style="background:#B92F3F;flex:{{ o.risk }}"></span>
+              <span style="background:#C9CAD5;flex:{{ o.none }}"></span>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#17183B"><span><strong style="font-variant-numeric:tabular-nums">{{ o.total }}</strong> KR del periodo</span><span style="{{ o.attStyle }}">{{ o.attention }} en alerta o riesgo</span></div>
+            <span style="font-size:12px;color:#3F3F3F">Progreso numérico: {{ o.progress }}</span>
+          </a>
+        </sc-for>
+      </div>
+      <p style="margin:0;font-size:13px;color:#3F3F3F;display:flex;flex-wrap:wrap;gap:6px 18px">
+        <span><span aria-hidden="true" style="color:#13815F">●</span> En cumplimiento</span>
+        <span><span aria-hidden="true" style="color:#7A5C00">▲</span> Alerta de cumplimiento</span>
+        <span><span aria-hidden="true" style="color:#B92F3F">■</span> Riesgo de cumplimiento</span>
+        <span><span aria-hidden="true" style="color:#9197AE">■</span> Sin reporte</span>
+      </p>
+    </section>
+
+    <section aria-labelledby="alert-title" style="display:flex;flex-direction:column;gap:14px;margin-top:24px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <h2 id="alert-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Resultados Clave que requieren atención</h2>
+          <p style="margin:0;font-size:14px;color:#3F3F3F">KR en alerta o en riesgo de cumplimiento.</p>
+        </div>
+        <a data-noprint="" href="{{ krsHref }}" style="min-height:40px;padding:0 16px;display:flex;align-items:center;background:#17183B;color:#FFFFFF;font-size:14px;font-weight:600" style-hover="background:#0C0D22;color:#FFFFFF">Ver todos los Resultados Clave</a>
+      </div>
+      <sc-if value="{{ noAlerts }}" hint-placeholder-val="{{ false }}">
+        <p style="margin:0;padding:16px;background:#EDF0F5;font-size:14px;color:#17183B">{{ noAlertsText }}</p>
+      </sc-if>
+      <div style="display:flex;flex-direction:column;border-top:3px solid #17183B">
+        <sc-for list="{{ alerts }}" as="k" hint-placeholder-count="3">
+          <article data-avoid="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px 32px;padding:18px 0;border-bottom:1px solid #C9CAD5">
+            <div style="display:flex;flex-direction:column;gap:8px;min-width:0">
+              <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px">
+                <strong style="color:#17183B;font-variant-numeric:tabular-nums">{{ k.id }}</strong>
+                <span style="color:#3F3F3F">{{ k.periodText }}</span>
+                <sc-if value="{{ k.demo }}" hint-placeholder-val="{{ true }}"><span style="padding:2px 8px;background:#EDF0F5;color:#3F3F3F;font-size:12px">Dato ficticio (demostración)</span></sc-if>
+              </div>
+              <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:17px;line-height:1.3;letter-spacing:-0.01em;text-wrap:pretty"><a href="{{ k.href }}" style="color:#221E7C;text-decoration:underline;text-decoration-color:#9197AE;text-decoration-thickness:1px;text-underline-offset:4px" style-hover="color:#D64045;text-decoration-color:#D64045">{{ k.name }}</a></h3>
+              <p style="margin:0;font-size:13px;line-height:1.45;color:#3F3F3F;text-wrap:pretty"><strong style="color:#221E7C">{{ k.objLabel }}</strong> · {{ k.so }}</p>
+              <p style="margin:0;font-size:13px;color:#3F3F3F"><strong>Fecha meta:</strong> {{ k.due }}</p>
+              <a href="{{ k.href }}" aria-hidden="true" tabindex="-1" style="align-self:flex-start;min-height:32px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#221E7C" style-hover="color:#D64045">Ver detalle del KR →</a>
+            </div>
+            <dl style="margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-content:start;background:#EDF0F5;padding:14px 16px">
+              <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Estatus</dt><dd style="margin:0"><span title="{{ k.statusEn }}" style="{{ k.badgeStyle }}"><span aria-hidden="true">{{ k.glyph }}</span>{{ k.statusLabel }}</span></dd></div>
+              <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Progreso numérico</dt><dd style="margin:0;font-size:13px;font-weight:600;color:#17183B">{{ k.progress }}</dd></div>
+              <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Estado del hito</dt><dd style="margin:0"><span style="display:inline-block;padding:3px 8px;background:#FFFFFF;border:1px solid #C9CAD5;color:#3F3F3F;font-size:13px;font-weight:600">{{ k.exec }}</span></dd></div>
+            </dl>
+          </article>
+        </sc-for>
+      </div>
+    </section>
+
+    <section data-avoid="" aria-labelledby="evo-title" style="display:flex;flex-direction:column;gap:10px;border-top:3px solid #17183B;padding-top:16px">
+      <h2 id="evo-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:18px;color:#17183B">Evolución trimestral</h2>
+      <p style="margin:0;font-size:14px;color:#3F3F3F;text-wrap:pretty">{{ evolutionText }}</p>
+    </section>
+  </main>
+
+  <footer style="border-top:1px solid #C9CAD5">
+    <div style="max-width:1320px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:#3F3F3F">
+      <span>Corfo - Gerencia de Estrategia</span>
+      <span>Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { d:null, f:null, demoHidden:false, tip:null };
+
+  componentDidMount() {
+    try { if (sessionStorage.getItem('okr-demo-ok') === '1') this.setState({demoHidden:true}); } catch (e) {}
+    this._esc = e => { if (e.key === 'Escape') this.setState({tip:null}); };
+    window.addEventListener('keydown', this._esc);
+    const wait = () => window.OKR ? window.OKR.load().then(d => this.setState({d, f:window.OKR.readFilters()})) : setTimeout(wait, 20);
+    wait();
+  }
+  componentWillUnmount() { window.removeEventListener('keydown', this._esc); }
+
+  tipsFor(keys) {
+    const O = window.OKR, tip = this.state.tip, tips = {};
+    keys.forEach(k => {
+      const g = O ? O.GLOSSARY[k] : {text:'', href:'#'};
+      tips[k] = {show: tip === k, expanded: tip === k ? 'true' : 'false', text:g.text, href:g.href,
+        toggle: () => this.setState(s => ({tip: s.tip === k ? null : k})),
+        open: () => this.setState({tip:k}),
+        close: () => this.setState(s => s.tip === k ? {tip:null} : null)};
+    });
+    return tips;
+  }
+
+  renderVals() {
+    const O = window.OKR, {d, f} = this.state;
+    const base = {
+      onFilters: nf => this.setState({f:nf}), tips: this.tipsFor(['estatus','progreso','hito']),
+      showDemo: !this.state.demoHidden,
+      hideDemo: () => { try { sessionStorage.setItem('okr-demo-ok','1'); } catch (e) {} this.setState({demoHidden:true}); },
+      doPrint: () => window.print()
+    };
+    if (!O || !d || !f) return Object.assign(base, {total:'', stats:[], objCards:[], alerts:[], legend:[], execRows:[], cycle:[], showCycle:false, progressFew:false, progressEnough:false, noAlerts:false});
+
+    const krs = O.visibleKrs(d.krs, d.records, f), s = O.summarize(krs, d.records, f.period), total = s.total;
+    const st = s.statuses, key = {ok:'On Track', warn:'Off Track', risk:'At Risk'};
+    const card = top => `background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid ${top}`;
+    const stats = [{label:'Resultados Clave del periodo', value:total, sub:O.periodLabel(f.period), glyph:'', glyphStyle:'display:none', style:card('#17183B')},
+      ...['ok','warn','risk'].map(k => { const S = O.STATUS[key[k]]; return {label:S.label, value:st[key[k]], sub:O.pctOf(st[key[k]], total) + ' del total', glyph:S.glyph, glyphStyle:`color:${S.color};font-size:13px`, style:card(S.fill)}; })];
+
+    const periodKrs = O.visibleKrs(d.krs, d.records, Object.assign({}, f, {objective:''}));
+    const objCards = O.OBJECTIVES.map(o => {
+      const sub = periodKrs.filter(k => k.obj === o.n), ss = O.summarize(sub, d.records, f.period);
+      const ok = ss.statuses['On Track'], warn = ss.statuses['Off Track'], risk = ss.statuses['At Risk'];
+      const sel = f.objective === String(o.n), dim = f.objective && !sel;
+      return {code:o.code, dim:o.dim, name:o.name, total:ss.total, attention:warn + risk, ok, warn, risk, none:ss.noStatus,
+        attStyle:`font-weight:700;font-variant-numeric:tabular-nums;color:${warn + risk ? '#B92F3F' : '#3F3F3F'}`,
+        progress: ss.progressCount >= O.MIN_PROGRESS_SAMPLE ? O.pct(Math.round(ss.progressMean)) : 'Muestra insuficiente',
+        aria:`Objetivo ${o.code}: ${ok} en cumplimiento, ${warn} en alerta, ${risk} en riesgo, ${ss.noStatus} sin reporte`,
+        href:O.href('estrategia', {eje:o.n}),
+        style:`display:flex;flex-direction:column;gap:14px;padding:16px 18px;background:#EDF0F5;color:#17183B;text-decoration:none;border-top:3px solid ${sel ? '#D64045' : '#17183B'};opacity:${dim ? 0.55 : 1}`};
+    });
+
+    const alerts = s.rows.filter(({record:r}) => r && (r.status === 'Off Track' || r.status === 'At Risk')).map(({kr, record:r}) => {
+      const S = O.status(r.status);
+      return {id:kr.id, periodText:O.periodLabel(r.period), name:kr.name, so:`${kr.subCode}: ${kr.subText}`, objLabel:`${kr.objCode} · ${kr.objName}`,
+        due:O.longDate(kr.target_date), href:O.href('detalle', {kr:kr.id}), demo:!!r.demo,
+        statusLabel:S.label, statusEn:S.en, glyph:S.glyph,
+        badgeStyle:`display:inline-flex;align-items:center;gap:6px;padding:3px 8px;background:${S.bg};color:${S.color};font-size:13px;font-weight:700;line-height:1.3`,
+        progress: r.progress == null ? 'No aplica (KR tipo hito)' : O.pct(r.progress),
+        exec: r.execution ? O.EXEC[r.execution].label : 'No informado'};
+    });
+
+    const a = total ? st['On Track'] / total * 100 : 0, b = total ? (st['On Track'] + st['Off Track']) / total * 100 : 0, c = total ? (total - s.noStatus) / total * 100 : 0;
+    const donutBg = total ? `conic-gradient(#13815F 0 ${a}%, #F5C400 ${a}% ${b}%, #B92F3F ${b}% ${c}%, #C9CAD5 ${c}% 100%)` : '#C9CAD5';
+    const legend = [...Object.keys(O.STATUS).map(k => ({label:O.STATUS[k].label, count:st[k], pct:O.pctOf(st[k], total), glyph:O.STATUS[k].glyph, glyphStyle:`color:${O.STATUS[k].color};width:14px`})),
+      {label:'Sin reporte', count:s.noStatus, pct:O.pctOf(s.noStatus, total), glyph:'■', glyphStyle:'color:#9197AE;width:14px'}];
+
+    const enough = s.progressCount >= O.MIN_PROGRESS_SAMPLE, mean = s.progressMean == null ? 0 : Math.round(s.progressMean);
+    const execRows = Object.keys(O.EXEC).map(k => ({label:O.EXEC[k].label, count:s.executions[k], width:O.pctOf(s.executions[k], total), color:O.EXEC[k].color}));
+
+    const cur = O.currentPeriod(), week = O.quarterWeek();
+    const steps = [{name:'Apertura', when:'Semana 1', start:1}, {name:'Revisión intermedia', when:'Semanas 6 a 7', start:6}, {name:'Cierre de Q', when:'Semana 13', start:13}, {name:'Presentación a Vicepresidencia', when:'Semanas 1 a 2 del Q siguiente', start:14}];
+    let ci = 0; steps.forEach((x, i) => { if (week >= x.start) ci = i; });
+    const cycle = steps.map((x, i) => {
+      const stt = i < ci ? 'done' : i === ci ? 'current' : 'next';
+      return {name:x.name, when:x.when, aria: stt === 'current' ? 'step' : undefined,
+        tag: stt === 'done' ? 'Realizado' : stt === 'current' ? 'En curso' : 'Próximo',
+        tagStyle:`font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:${stt === 'current' ? '#A3262C' : '#3F3F3F'}`,
+        nameStyle:`font-family:var(--font-display);font-size:15px;color:#17183B`,
+        whenStyle:`font-size:13px;color:${stt === 'current' ? '#17183B' : '#3F3F3F'}`,
+        dot:`position:relative;width:20px;height:20px;background:${stt === 'current' ? '#E9595D' : stt === 'done' ? '#17183B' : '#FFFFFF'};border:2px solid ${stt === 'current' ? '#E9595D' : '#17183B'}`,
+        card:`display:flex;flex-direction:column;gap:4px;padding:12px 14px;background:${stt === 'current' ? 'repeating-linear-gradient(135deg,#FDE9EA 0 6px,#F9D3D5 6px 12px)' : '#EDF0F5'};border:1px solid ${stt === 'current' ? '#E9595D' : '#EDF0F5'};height:100%`};
+    });
+
+    const withData = [...new Set(d.records.map(r => r.period))].sort(O.periodSort);
+    const idx = withData.indexOf(f.period);
+    const evolutionText = idx > 0 ? `Comparación con ${O.periodLabel(withData[idx - 1])} disponible en la Bitácora de avances.` : 'La comparación estará disponible desde el segundo trimestre de seguimiento.';
+
+    return Object.assign(base, {
+      total, periodText:O.periodLabel(f.period), todayText:O.longDate(new Date()),
+      liveText:`${total} Resultados Clave mostrados`, stats, noStatusText:`${s.noStatus} sin estatus informado`,
+      objCards, alerts, noAlerts:alerts.length === 0,
+      noAlertsText: total ? 'Ningún Resultado Clave en alerta o en riesgo de cumplimiento.' : 'Sin reporte en este periodo.',
+      krsHref:O.href('krs'),
+      donutBg, legend, donutAria:`${st['On Track']} en cumplimiento, ${st['Off Track']} en alerta, ${st['At Risk']} en riesgo, ${s.noStatus} sin reporte, de ${total} KR`,
+      progressEnough:enough, progressFew:!enough, progressMean:mean + '%', progressWidth:O.clamp(mean) + '%', progressAria:`Progreso ${mean}%, umbral de éxito 80%`,
+      progressCount:s.progressCount, minSample:O.MIN_PROGRESS_SAMPLE, execRows,
+      cycleText:O.periodLabel(cur), showCycle: f.period === cur || (f.period === 'todos' && O.PERIODS.includes(cur)), week, cycle, evolutionText
+    });
+  }
+}
+</script>
+</body>
+</html>

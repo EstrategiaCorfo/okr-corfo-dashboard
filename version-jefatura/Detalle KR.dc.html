@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Detalle de Resultado Clave | Panel de Seguimiento Corfo</title>
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/base.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/styles.css">
+  <script src="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/_ds_bundle.js"></script>
+  <script src="okr-app.js"></script>
+  <style>
+    html,body{margin:0;background:#FFFFFF;color:#3F3F3F;font-family:var(--font-sans);font-size:15px;-webkit-font-smoothing:antialiased}
+    *{box-sizing:border-box}
+    a{color:#221E7C;text-decoration:none}
+    a:hover{color:#D64045}
+    button,select,input{font-family:inherit}
+    :focus-visible{outline:2px solid #D64045;outline-offset:2px}
+    @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+    @media print{[data-noprint]{display:none!important}}
+  </style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#FFFFFF">
+  <dc-import name="Site Header" active="krs" filters="{{ false }}" hint-size="100%,64px" style="position:sticky;top:0;z-index:20;display:block"></dc-import>
+
+  <sc-if value="{{ showDemo }}" hint-placeholder-val="{{ true }}">
+    <div role="note" data-noprint="" style="background:#EDF0F5;border-bottom:1px solid #C9CAD5">
+      <div style="max-width:1320px;margin:0 auto;padding:0 24px;min-height:40px;display:flex;align-items:center;gap:12px">
+        <span aria-hidden="true" style="width:10px;height:10px;background:#D64045;flex:none"></span>
+        <p style="margin:0;font-size:14px;color:#17183B;flex:1;min-width:0;text-wrap:pretty;padding:8px 0"><strong>Versión de demostración:</strong> los reportes de seguimiento son ficticios y no representan avances oficiales de Corfo.</p>
+        <button type="button" onClick="{{ hideDemo }}" style="min-height:32px;padding:0 12px;background:transparent;border:1px solid #17183B;color:#17183B;font-size:13px;font-weight:600;cursor:pointer" style-hover="background:#17183B;color:#FFFFFF">Entendido</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <main style="flex:1;width:100%;max-width:1320px;margin:0 auto;padding:20px 24px 48px;display:flex;flex-direction:column;gap:28px">
+    <a href="{{ backHref }}" data-noprint="" style="align-self:flex-start;display:flex;align-items:center;gap:8px;min-height:44px;font-size:14px;font-weight:600;color:#221E7C" style-hover="color:#D64045">← Volver a Resultados Clave</a>
+
+    <sc-if value="{{ notFound }}" hint-placeholder-val="{{ false }}">
+      <p style="margin:0;padding:16px;background:#EDF0F5;font-size:14px;color:#17183B">No se encontró el Resultado Clave solicitado. Seleccione uno desde Resultados Clave.</p>
+    </sc-if>
+
+    <sc-if value="{{ found }}" hint-placeholder-val="{{ true }}">
+      <section style="display:flex;flex-direction:column;gap:10px;max-width:960px">
+        <div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:13px;color:#3F3F3F">
+          <strong style="font-size:14px;color:#17183B;font-variant-numeric:tabular-nums">{{ k.id }}</strong>
+          <span>Meta {{ k.periodText }}</span>
+          <sc-if value="{{ k.hasType }}" hint-placeholder-val="{{ false }}"><span style="padding:2px 8px;border:1px solid #C9CAD5;font-size:12px">{{ k.type }}</span></sc-if>
+        </div>
+        <h1 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(22px,2.4vw,30px);line-height:1.2;letter-spacing:-0.02em;color:#17183B;text-wrap:pretty">{{ k.name }}</h1>
+        <span aria-hidden="true" style="display:block;width:56px;height:4px;background:#D64045"></span>
+        <p style="margin:4px 0 0;font-size:15px;color:#3F3F3F">Definición, avance y trayectoria del Resultado Clave.</p>
+      </section>
+
+      <section aria-labelledby="last-title" style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <h2 id="last-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Último reporte</h2>
+          <span style="font-size:13px;color:#3F3F3F">{{ last.meta }}</span>
+          <sc-if value="{{ last.demo }}" hint-placeholder-val="{{ false }}"><span style="padding:2px 8px;background:#EDF0F5;color:#3F3F3F;font-size:12px">Dato ficticio (demostración)</span></sc-if>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px">
+          <div style="{{ last.statusCard }}">
+            <span style="font-size:13px;font-weight:700;color:#17183B">Estatus (semáforo)</span>
+            <span title="{{ last.statusEn }}" style="{{ last.badgeStyle }}"><span aria-hidden="true">{{ last.glyph }}</span>{{ last.statusLabel }}</span>
+            <span style="font-size:12px;color:#3F3F3F">Lectura experta del owner</span>
+          </div>
+          <div style="background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid #17183B">
+            <span style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#17183B">Progreso numérico
+              <span style="position:relative;display:inline-flex">
+                <button type="button" aria-label="Cómo se calcula el progreso numérico" aria-describedby="tip-prog" aria-expanded="{{ tipProg.expanded }}" onClick="{{ tipProg.toggle }}" onMouseEnter="{{ tipProg.open }}" onMouseLeave="{{ tipProg.close }}" onFocus="{{ tipProg.open }}" style="width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid #9197AE;color:#221E7C;font-size:12px;font-weight:700;cursor:pointer">i</button>
+                <sc-if value="{{ tipProg.show }}" hint-placeholder-val="{{ false }}">
+                  <span role="tooltip" id="tip-prog" onMouseEnter="{{ tipProg.open }}" onMouseLeave="{{ tipProg.close }}" style="position:absolute;top:30px;left:-100px;z-index:30;width:280px;padding:12px 14px;background:#17183B;color:#FFFFFF;font-size:13px;font-weight:400;line-height:1.45;display:flex;flex-direction:column;gap:8px">{{ tipProg.text }}<a href="{{ tipProg.href }}" style="color:#FFFFFF;text-decoration:underline;font-weight:600">Ver más</a></span>
+                </sc-if>
+              </span>
+            </span>
+            <strong style="font-family:var(--font-display);font-size:26px;line-height:1.1;color:#17183B">{{ last.progress }}</strong>
+            <sc-if value="{{ last.hasBar }}" hint-placeholder-val="{{ false }}">
+              <span role="img" aria-label="{{ last.barAria }}" style="position:relative;display:block;height:10px;background:#C9CAD5"><span style="position:absolute;left:0;top:0;bottom:0;width:{{ last.barWidth }};background:{{ last.barColor }}"></span><span style="position:absolute;left:80%;top:-4px;bottom:-4px;width:2px;background:#17183B"></span></span>
+            </sc-if>
+            <sc-if value="{{ last.hasPath }}" hint-placeholder-val="{{ false }}">
+              <dl style="margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">
+                <div><dt style="font-size:11px;color:#3F3F3F">Línea base</dt><dd style="margin:0;font-weight:700;color:#17183B">{{ last.baseline }}</dd></div>
+                <div><dt style="font-size:11px;color:#3F3F3F">→ Valor actual</dt><dd style="margin:0;font-weight:700;color:#17183B">{{ last.current }}</dd></div>
+                <div><dt style="font-size:11px;color:#3F3F3F">→ Meta</dt><dd style="margin:0;font-weight:700;color:#17183B">{{ last.target }}</dd></div>
+              </dl>
+            </sc-if>
+          </div>
+          <div style="background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid #9197AE">
+            <span style="font-size:13px;font-weight:700;color:#17183B">Estado del hito</span>
+            <span style="align-self:flex-start;padding:3px 8px;background:#FFFFFF;border:1px solid #C9CAD5;color:#3F3F3F;font-size:14px;font-weight:600">{{ last.exec }}</span>
+            <span style="font-size:12px;color:#3F3F3F">Métrica secundaria</span>
+          </div>
+        </div>
+        <sc-if value="{{ last.hasFields }}" hint-placeholder-val="{{ false }}">
+          <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:0 32px">
+            <sc-for list="{{ last.fields }}" as="x" hint-placeholder-count="4">
+              <div style="display:flex;flex-direction:column;gap:4px;padding:10px 0;border-bottom:1px solid #C9CAD5">
+                <dt style="font-size:12px;font-weight:700;color:#3F3F3F">{{ x.label }}</dt>
+                <dd style="margin:0;font-size:14px;line-height:1.45;color:#17183B;text-wrap:pretty">{{ x.value }}</dd>
+              </div>
+            </sc-for>
+          </dl>
+        </sc-if>
+      </section>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px 48px;align-items:start">
+        <section aria-labelledby="def-title" style="display:flex;flex-direction:column;gap:10px">
+          <h2 id="def-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B;border-top:3px solid #17183B;padding-top:14px">Definición estratégica</h2>
+          <dl style="margin:0;display:flex;flex-direction:column">
+            <sc-for list="{{ def }}" as="x" hint-placeholder-count="8">
+              <div style="display:grid;grid-template-columns:minmax(120px,180px) minmax(0,1fr);gap:12px;padding:10px 0;border-bottom:1px solid #C9CAD5">
+                <dt style="font-size:13px;font-weight:700;color:#3F3F3F">{{ x.label }}</dt>
+                <dd style="margin:0;font-size:14px;line-height:1.45;color:#17183B;text-wrap:pretty">{{ x.value }}</dd>
+              </div>
+            </sc-for>
+          </dl>
+          <a href="{{ objHref }}" style="align-self:flex-start;min-height:40px;display:flex;align-items:center;font-size:14px;font-weight:600" style-hover="color:#D64045">{{ objLinkText }}</a>
+        </section>
+
+        <section aria-labelledby="hist-title" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:4px;border-top:3px solid #17183B;padding-top:14px">
+            <h2 id="hist-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Historial</h2>
+            <p style="margin:0;font-size:14px;color:#3F3F3F">{{ histText }}</p>
+          </div>
+          <sc-for list="{{ history }}" as="q" hint-placeholder-count="1">
+            <div style="display:flex;flex-direction:column;gap:0">
+              <h3 style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C">{{ q.label }}</h3>
+              <ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+                <sc-for list="{{ q.items }}" as="h" hint-placeholder-count="3">
+                  <li style="position:relative;display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;padding-bottom:18px">
+                    <span aria-hidden="true" style="position:absolute;left:11px;top:18px;bottom:0;width:2px;background:#C9CAD5"></span>
+                    <span aria-hidden="true" style="{{ h.dot }}"></span>
+                    <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+                      <div style="display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline">
+                        <strong style="font-family:var(--font-display);font-size:15px;color:#17183B">{{ h.instance }}</strong>
+                        <span style="font-size:13px;color:#3F3F3F">{{ h.date }} · {{ h.moment }}</span>
+                      </div>
+                      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+                        <span title="{{ h.statusEn }}" style="{{ h.badgeStyle }}"><span aria-hidden="true">{{ h.glyph }}</span>{{ h.statusLabel }}</span>
+                        <span style="font-size:13px;color:#17183B">Progreso: {{ h.progress }}</span>
+                        <span style="padding:2px 8px;border:1px solid #C9CAD5;font-size:12px;color:#3F3F3F">{{ h.exec }}</span>
+                      </div>
+                      <sc-if value="{{ h.changed }}" hint-placeholder-val="{{ false }}"><span style="font-size:12px;font-weight:700;color:#D64045">{{ h.changeText }}</span></sc-if>
+                      <p style="margin:0;font-size:14px;line-height:1.45;color:#3F3F3F;text-wrap:pretty">{{ h.comment }}</p>
+                    </div>
+                  </li>
+                </sc-for>
+              </ol>
+            </div>
+          </sc-for>
+        </section>
+      </div>
+    </sc-if>
+  </main>
+
+  <footer style="border-top:1px solid #C9CAD5">
+    <div style="max-width:1320px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:#3F3F3F">
+      <span>Corfo - Gerencia de Estrategia</span>
+      <span>Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { d:null, f:null, id:null, tip:false, demoHidden:false };
+
+  componentDidMount() {
+    try { if (sessionStorage.getItem('okr-demo-ok') === '1') this.setState({demoHidden:true}); } catch (e) {}
+    this._esc = e => { if (e.key === 'Escape') this.setState({tip:false}); };
+    window.addEventListener('keydown', this._esc);
+    const wait = () => window.OKR ? window.OKR.load().then(d => this.setState({d, f:window.OKR.readFilters(), id:new URLSearchParams(location.search).get('kr')})) : setTimeout(wait, 20);
+    wait();
+  }
+  componentWillUnmount() { window.removeEventListener('keydown', this._esc); }
+
+  renderVals() {
+    const O = window.OKR, {d, f, tip} = this.state;
+    const g = O ? O.GLOSSARY.progreso : {text:'', href:'#'};
+    const base = {showDemo:!this.state.demoHidden, backHref: O ? O.href('krs') : '#',
+      hideDemo: () => { try { sessionStorage.setItem('okr-demo-ok','1'); } catch (e) {} this.setState({demoHidden:true}); },
+      tipProg:{show:tip, expanded: tip ? 'true' : 'false', text:g.text, href:g.href, toggle: () => this.setState(s => ({tip:!s.tip})), open: () => this.setState({tip:true}), close: () => this.setState({tip:false})}};
+    if (!O || !d || !f) return Object.assign(base, {found:false, notFound:false, k:{}, last:{fields:[]}, def:[], history:[]});
+
+    const kr = d.byId.get(this.state.id || '') || (!this.state.id ? d.krs[0] : null);
+    if (!kr) return Object.assign(base, {found:false, notFound:true, k:{}, last:{fields:[]}, def:[], history:[]});
+    try { document.title = `${kr.id} | Panel de Seguimiento Corfo`; } catch (e) {}
+
+    let r = O.latest(d.records, kr.id, f.period), fromAll = false;
+    if (!r && f.period !== 'todos') { r = O.latest(d.records, kr.id, 'todos'); fromAll = !!r; }
+    const S = O.status(r && r.status), p = r && r.progress != null ? Number(r.progress) : null;
+    const nv = v => v === null || v === undefined || String(v).trim() === '' ? 'No informado' : String(v);
+    const clean = v => nv(v).replace(/^\[DEMO\]\s*/, '');
+    const last = {
+      meta: !r ? `Sin reporte en ${O.periodLabel(f.period)}` : `${O.periodLabel(r.period)} · ${O.INSTANCE[r.instance] || r.instance} · ${O.longDate(r.date)} · ${O.MOMENT[r.moment] || r.moment}${fromAll ? ' (último disponible)' : ''}`,
+      demo:!!(r && r.demo), statusLabel:S.label, statusEn:S.en, glyph:S.glyph,
+      statusCard:`background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid ${S.fill}`,
+      badgeStyle:`align-self:flex-start;display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:${S.bg};color:${S.color};font-size:15px;font-weight:700`,
+      progress: !r ? 'Sin reporte' : p == null ? 'No aplica (KR tipo hito)' : O.pct(p),
+      hasBar: p != null, barWidth:O.clamp(p) + '%', barColor:S.fill, barAria:`Progreso ${O.pct(p)}, umbral 80%`,
+      hasPath: !!(r && r.baseline != null && r.target != null), baseline:r ? O.num(r.baseline) : '', current:r ? (O.num(r.current) || 'No informado') : '', target:r ? O.num(r.target) : '',
+      exec: !r ? 'Sin reporte' : r.execution ? O.EXEC[r.execution].label : 'No informado',
+      hasFields: !!r,
+      fields: r ? [{label:'Comentario cualitativo', value:clean(r.comment)}, {label:'Evidencia o soporte', value:clean(r.evidence)}, {label:'Aprendizaje', value:clean(r.learning)},
+        {label:'¿Quedó pendiente?', value:nv(r.pending)}, {label:'Tratamiento del pendiente', value:nv(r.pending_treatment)}, {label:'Periodo de traspaso', value: r.transfer_period ? O.periodLabel(r.transfer_period) : 'No informado'}] : []
+    };
+    const def = [
+      {label:'Objetivo Estratégico', value:`${kr.objCode} · ${kr.objName}`},
+      {label:'Subobjetivo', value:`${kr.subCode}: ${kr.subText}`},
+      {label:'Dimensión', value:O.OBJECTIVES[kr.obj - 1].dim},
+      {label:'Periodo meta', value:O.periodLabel(kr.target_period)},
+      {label:'Fecha meta', value:O.longDate(kr.target_date)},
+      {label:'Área que lidera', value:nv(kr.area)},
+      {label:'Owner', value:nv(kr.owner)},
+      {label:'Suplentes', value:nv(kr.substitutes)},
+      {label:'Producto asociado estimado', value:nv(kr.product)},
+      {label:'Medio de verificación estimado', value:nv(kr.verification)},
+      {label:'Comentarios de estrategia', value:nv(kr.comments)}
+    ];
+
+    const log = d.records.filter(x => x.id === kr.id).sort((a, b) => O.periodSort(a.period, b.period) || O.INSTANCE_ORDER.indexOf(a.instance) - O.INSTANCE_ORDER.indexOf(b.instance) || (a.date || '').localeCompare(b.date || ''));
+    const periods = [...new Set(log.map(x => x.period))];
+    let prev = null;
+    const history = periods.map(pp => ({label:O.periodLabel(pp), items:log.filter(x => x.period === pp).map(x => {
+      const H = O.status(x.status), changed = prev && prev !== x.status, from = prev ? O.status(prev).label : '';
+      prev = x.status;
+      return {instance:O.INSTANCE[x.instance] || x.instance, date:O.longDate(x.date), moment:O.MOMENT[x.moment] || x.moment,
+        statusLabel:H.label, statusEn:H.en, glyph:H.glyph,
+        badgeStyle:`display:inline-flex;align-items:center;gap:6px;padding:2px 8px;background:${H.bg};color:${H.color};font-size:12px;font-weight:700`,
+        dot:`position:relative;z-index:1;width:20px;height:20px;margin-top:0;background:${H.fill};border:3px solid #FFFFFF`,
+        progress: x.progress == null ? 'No aplica' : O.pct(x.progress), exec: x.execution ? O.EXEC[x.execution].label : 'No informado',
+        changed:!!changed, changeText: changed ? `Cambio de estatus: ${from} → ${H.label}` : '', comment:clean(x.comment)};
+    })}));
+
+    return Object.assign(base, {found:true, notFound:false,
+      k:{id:kr.id, name:kr.name, periodText:O.periodLabel(kr.target_period), hasType:!!kr.kr_type, type:kr.kr_type || '', objCode:kr.objCode},
+      last, def, history, objHref:O.href('estrategia', {eje:kr.obj}), objLinkText:`Ver Objetivo ${kr.objCode} en Estrategia →`,
+      histText: log.length ? `${log.length} reportes de este Resultado Clave, por trimestre e instancia.` : 'Sin reportes registrados.'});
+  }
+}
+</script>
+</body>
+</html>
