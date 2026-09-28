@@ -50,7 +50,8 @@
     const change = () => {
       const p=query();
       for(const [id,key] of [['filter-period','periodo'],['filter-objective','objetivo'],['filter-owner','owner']]) {
-        const v=document.getElementById(id).value;
+        const control=document.getElementById(id);
+        const v=control.disabled?'':control.value;
         if(v && (key!=='periodo'||v!==defaultPeriod()))p.set(key,v);else p.delete(key);
       }
       history.replaceState(null,'',location.pathname+(p.size?'?'+p:''));render();
