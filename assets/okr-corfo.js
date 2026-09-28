@@ -153,7 +153,7 @@
     const numeric=measured.length>0;
     const points=numeric?measured:rows.filter(r=>['No iniciado','En proceso','Completado'].includes(r.execution));
     if(!points.length)return `<section class="evolution-card" aria-labelledby="evolution-title"><h2 id="evolution-title">Evolución del Resultado Clave</h2><div class="chart-empty">Los reportes aún no contienen progreso numérico ni estado del hito para graficar.</div></section>`;
-    const width=Math.max(720,points.length*155),height=310,left=numeric?70:116,right=36,top=48,bottom=236;
+    const width=Math.max(720,points.length*155),height=310,left=numeric?90:116,right=90,top=48,bottom=236;
     const x=i=>points.length===1?(left+width-right)/2:left+i*(width-left-right)/(points.length-1);
     const numbers=measured.map(r=>Number(r.progress));
     const min=numeric?Math.min(0,Math.floor(Math.min(...numbers)/25)*25):0;
@@ -170,8 +170,9 @@
     const path=coords.length>1?`<polyline points="${coords.map(p=>p.join(',')).join(' ')}" fill="none" stroke="#221E7C" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>`:'';
     const marks=points.map((r,i)=>{
       const [cx,cy]=coords[i],label=numeric?percent(r.progress):executionLabel(r.execution);
+      const labelX=i===0?cx+14:cx,anchor=i===0?'start':'middle';
       return `<circle cx="${cx}" cy="${cy}" r="7" fill="#fff" stroke="#221E7C" stroke-width="3"><title>${esc(periodLabel(r.period))} · ${esc(instanceLabel(r.instance))} · ${day(r.date)} · ${esc(label)}</title></circle>
-        <text x="${cx}" y="${cy-14}" text-anchor="middle" fill="#17183B" font-weight="700" font-size="12">${esc(label)}</text>
+        <text x="${labelX}" y="${cy-14}" text-anchor="${anchor}" fill="#17183B" font-weight="700" font-size="12">${esc(label)}</text>
         <text x="${cx}" y="263" text-anchor="middle" fill="#17183B" font-size="12" font-weight="700">${esc(instanceLabel(r.instance))}</text>
         <text x="${cx}" y="282" text-anchor="middle" fill="#555b6c" font-size="11">${day(r.date)} · ${esc(periodLabel(r.period))}</text>`;
     }).join('');
