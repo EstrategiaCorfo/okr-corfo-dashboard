@@ -102,12 +102,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Estrategia"
+      "product": "",
+      "verification": "Documento del marco de indicadores",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-002",
@@ -115,12 +123,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Estrategia"
+      "product": "",
+      "verification": "Acta de validación / registro de instrumentos priorizados",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-003",
@@ -128,12 +144,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Estrategia"
+      "product": "",
+      "verification": "Reporte interno publicado",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-004",
@@ -141,12 +165,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Estrategia"
+      "product": "",
+      "verification": "Reporte público publicado / cuenta pública 2027",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-005",
@@ -154,12 +186,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2027/Q4",
+      "target_year": "2027",
+      "quarter": "Q4",
       "periods": [
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte interno publicado",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-006",
@@ -167,12 +207,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte público publicado / cuenta pública 2028",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-007",
@@ -180,12 +228,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Sistema operando + reporte anual publicado",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-008",
@@ -193,12 +249,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2028/Q4",
+      "target_year": "2028",
+      "quarter": "Q4",
       "periods": [
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte interno publicado",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-009",
@@ -206,12 +270,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte público publicado / cuenta pública 2029",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-010",
@@ -219,12 +291,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2029/Q4",
+      "target_year": "2029",
+      "quarter": "Q4",
       "periods": [
         "2029/Q4"
       ],
       "target_date": "2029-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte interno publicado",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-011",
@@ -232,12 +312,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Memoria institucional publicada",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-012",
@@ -245,12 +333,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.2: Diseñar un plan de desarrollo de cultura interna sobre los indicadores de impacto de Corfo",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Emprendimiento y Gerencia de Innovacion"
+      "product": "",
+      "verification": "Documento de diagnóstico y plan de gestión del cambio",
+      "area": "Gerencia de Emprendimiento y Gerencia de Innovacion",
+      "owner": "Jocelyn Olivari y Maricho Gálvez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-013",
@@ -258,12 +354,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.2: Diseñar un plan de desarrollo de cultura interna sobre los indicadores de impacto de Corfo",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Emprendimiento y Gerencia de Innovacion"
+      "product": "",
+      "verification": "Documento de diseño del programa",
+      "area": "Gerencia de Emprendimiento y Gerencia de Innovacion",
+      "owner": "Jocelyn Olivari y Maricho Gálvez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-014",
@@ -271,12 +375,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.2: Diseñar un plan de desarrollo de cultura interna sobre los indicadores de impacto de Corfo",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Emprendimiento y Gerencia de Innovacion"
+      "product": "",
+      "verification": "Registro de asistencia a talleres / lanzamiento",
+      "area": "Gerencia de Emprendimiento y Gerencia de Innovacion",
+      "owner": "Carolina Bravo",
+      "substitutes": "Sebastián Arias y Patricia Fuentealba",
+      "comments": "No habla de porcentaje de implementación. Dado que al año siguiente se \"consolida\", la meta para este año podría ser la implementación en nivel central, aunque no encuentro lógica de excluir a regiones dada la importancia de difundirlo a toda la institución."
     },
     {
       "id": "KR-015",
@@ -284,7 +396,10 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.2: Diseñar un plan de desarrollo de cultura interna sobre los indicadores de impacto de Corfo",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2028/Q1-Q4",
+      "target_year": "2028",
+      "quarter": "Q1-Q4",
       "periods": [
         "2028/Q1",
         "2028/Q2",
@@ -292,7 +407,12 @@
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": "Se desprende que se debe alcanzar el 100% de la institución (consolidado). Yo creo que en la etapa anterior se debería cubrir a toda la institución, por lo que este resultado sobraría."
     },
     {
       "id": "KR-016",
@@ -300,12 +420,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Documento de plan de comunicaciones",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Antonieta de la Fuente",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-017",
@@ -313,12 +441,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Piezas comunicacionales desarrolladas",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Antonieta de la Fuente",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-018",
@@ -326,12 +462,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Registro de difusión interna",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Andrea Ulloa",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-019",
@@ -339,12 +483,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Registro de participación en cuenta pública 2027",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Andrea Ulloa",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-020",
@@ -352,12 +504,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2027/Q4",
+      "target_year": "2027",
+      "quarter": "Q4",
       "periods": [
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Documento del plan de comunicación externa",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-021",
@@ -365,12 +525,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro de participación en cuenta pública 2028",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-022",
@@ -378,12 +546,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2028/Q4",
+      "target_year": "2028",
+      "quarter": "Q4",
       "periods": [
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Documento de voceros y mensajes",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-023",
@@ -391,12 +567,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro de campaña y participación en cuenta pública 2029",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-024",
@@ -404,14 +588,22 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2029/Q2-Q4",
+      "target_year": "2029",
+      "quarter": "Q2-Q4",
       "periods": [
         "2029/Q2",
         "2029/Q3",
         "2029/Q4"
       ],
       "target_date": "2029-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-025",
@@ -419,12 +611,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro de participación en cuenta pública 2030",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-026",
@@ -432,13 +632,21 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2029/Q4 - 2030/Q1",
+      "target_year": "2029",
+      "quarter": "Q4",
       "periods": [
         "2029/Q4",
         "2030/Q1"
       ],
       "target_date": "2029-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-027",
@@ -446,14 +654,22 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2030/Q2-Q4",
+      "target_year": "2030",
+      "quarter": "Q2-Q4",
       "periods": [
         "2030/Q2",
         "2030/Q3",
         "2030/Q4"
       ],
       "target_date": "2030-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de evaluación",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-028",
@@ -461,12 +677,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.4: Desarrollar las capacidades institucionales para la medición y evaluación de impacto mediante el uso integrado de datos internos y externos",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Documento de arquitectura de integración de datos",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-029",
@@ -474,12 +698,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.4: Desarrollar las capacidades institucionales para la medición y evaluación de impacto mediante el uso integrado de datos internos y externos",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Informe de resultados del piloto",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-030",
@@ -487,12 +719,20 @@
       "objective": "Objetivo 1: Impacto",
       "subobjective": "SO1.4: Desarrollar las capacidades institucionales para la medición y evaluación de impacto mediante el uso integrado de datos internos y externos",
       "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Informe de evaluación de impacto consolidada",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-031",
@@ -500,12 +740,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.1: Fortalecer la industria de capital de riesgo mediante un Fondo de Inversión internacional o institucional participando directamente, o través de otro fondo, del financiamiento aportado por Corfo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Inversión y Financiamiento"
+      "product": "",
+      "verification": "Documento de hoja de ruta validado y firmado",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Víctor Besoaín",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-032",
@@ -513,12 +761,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.1: Fortalecer la industria de capital de riesgo mediante un Fondo de Inversión internacional o institucional participando directamente, o través de otro fondo, del financiamiento aportado por Corfo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Inversión y Financiamiento"
+      "product": "",
+      "verification": "Plan de Marketing aprobado (documento)",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Víctor Besoaín",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-033",
@@ -526,12 +782,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.1: Fortalecer la industria de capital de riesgo mediante un Fondo de Inversión internacional o institucional participando directamente, o través de otro fondo, del financiamiento aportado por Corfo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2027/Q2",
+      "target_year": "2027",
+      "quarter": "Q2",
       "periods": [
         "2027/Q2"
       ],
       "target_date": "2027-06-30",
-      "area": ""
+      "product": "",
+      "verification": "Resolución/acta de aprobación del CCR",
+      "area": "",
+      "owner": "Joaquín Santibáñez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-034",
@@ -539,12 +803,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.1: Fortalecer la industria de capital de riesgo mediante un Fondo de Inversión internacional o institucional participando directamente, o través de otro fondo, del financiamiento aportado por Corfo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2027/Q3",
+      "target_year": "2027",
+      "quarter": "Q3",
       "periods": [
         "2027/Q3"
       ],
       "target_date": "2027-09-30",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "Joaquín Santibáñez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-035",
@@ -552,12 +824,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.1: Fortalecer la industria de capital de riesgo mediante un Fondo de Inversión internacional o institucional participando directamente, o través de otro fondo, del financiamiento aportado por Corfo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro de postulación en Corfo",
+      "area": "",
+      "owner": "Joaquín Santibáñez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-036",
@@ -565,12 +845,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.1: Fortalecer la industria de capital de riesgo mediante un Fondo de Inversión internacional o institucional participando directamente, o través de otro fondo, del financiamiento aportado por Corfo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "Joaquín Santibáñez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-037",
@@ -578,12 +866,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Inversión y Financiamiento"
+      "product": "",
+      "verification": "Plan de Marketing aprobado (documento)",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Joaquín Santibáñez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-038",
@@ -591,12 +887,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Inversión y Financiamiento"
+      "product": "",
+      "verification": "Acta de aprobación del CEC",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Joaquín Santibáñez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-039",
@@ -604,12 +908,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Inversión y Financiamiento"
+      "product": "",
+      "verification": "Acta de aprobación del CEC",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Joaquín Santibáñez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-040",
@@ -617,12 +929,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Inversión y Financiamiento"
+      "product": "",
+      "verification": "Por definir",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Joaquín Santibáñez",
+      "substitutes": "",
+      "comments": "¿Cuánto aumenta?"
     },
     {
       "id": "KR-041",
@@ -630,12 +950,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Inversión y Financiamiento"
+      "product": "",
+      "verification": "Por definir",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Joaquín Santibáñez",
+      "substitutes": "",
+      "comments": "¿Cuánto aumenta?"
     },
     {
       "id": "KR-042",
@@ -643,12 +971,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Inversión y Financiamiento"
+      "product": "",
+      "verification": "Documento metodológico validado",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Joaquín Santibáñez",
+      "substitutes": "",
+      "comments": "¿Validado por?"
     },
     {
       "id": "KR-043",
@@ -656,12 +992,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2027/Q3",
+      "target_year": "2027",
+      "quarter": "Q3",
       "periods": [
         "2027/Q3"
       ],
       "target_date": "2027-09-30",
-      "area": ""
+      "product": "",
+      "verification": "Informe de implementación del proceso de monitoreo",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": "¿Qué nivel de siniestralidad es aceptable?"
     },
     {
       "id": "KR-044",
@@ -669,12 +1013,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2027/Q4",
+      "target_year": "2027",
+      "quarter": "Q4",
       "periods": [
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Resolución con toma de razón de CGR",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-045",
@@ -682,12 +1034,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de colocaciones (comparativo)",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-046",
@@ -695,12 +1055,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de colocaciones (comparativo, cierre de ciclo)",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-047",
@@ -708,12 +1076,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.3: Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Plan de Marketing aprobado (documento)",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Antonieta de la Fuente",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-048",
@@ -721,12 +1097,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.3: Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Convenios firmados con IFIs",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Santiago Marin/Manuel Martinez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-049",
@@ -734,12 +1118,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.3: Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2027/Q4",
+      "target_year": "2027",
+      "quarter": "Q4",
       "periods": [
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Informes de evaluación de IFIs",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-050",
@@ -747,12 +1139,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.3: Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Convenios firmados con IFIs",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-051",
@@ -760,12 +1160,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.3: Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2028/Q4",
+      "target_year": "2028",
+      "quarter": "Q4",
       "periods": [
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Informes de evaluación de IFIs",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-052",
@@ -773,12 +1181,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.3: Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Convenios firmados con IFIs",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-053",
@@ -786,12 +1202,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.3: Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2029/Q4",
+      "target_year": "2029",
+      "quarter": "Q4",
       "periods": [
         "2029/Q4"
       ],
       "target_date": "2029-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Informes de evaluación de IFIs",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-054",
@@ -799,12 +1223,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.3: Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro consolidado de IFIs",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-055",
@@ -812,12 +1244,20 @@
       "objective": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
       "subobjective": "SO2.3: Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro consolidado de IFIs",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-056",
@@ -825,12 +1265,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.1: Posicionar la red para generar demanda empresarial",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Documento de estrategia de posicionamiento",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Santiago Marin",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-057",
@@ -838,12 +1286,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.1: Posicionar la red para generar demanda empresarial",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Registro de acciones de posicionamiento desplegadas",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Santiago Marin",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-058",
@@ -851,12 +1307,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.1: Posicionar la red para generar demanda empresarial",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2028/Q2",
+      "target_year": "2028",
+      "quarter": "Q2",
       "periods": [
         "2028/Q2"
       ],
       "target_date": "2028-06-30",
-      "area": ""
+      "product": "",
+      "verification": "Sistema de medición operando",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-059",
@@ -864,12 +1328,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.1: Posicionar la red para generar demanda empresarial",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-060",
@@ -877,12 +1349,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.1: Posicionar la red para generar demanda empresarial",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2029/Q4",
+      "target_year": "2029",
+      "quarter": "Q4",
       "periods": [
         "2029/Q4"
       ],
       "target_date": "2029-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de evaluación y propuestas de mejora",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-061",
@@ -890,12 +1370,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.2: Integrar la Red a la oferta de desarrollo productivo y al ecosistema",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Capacidades Tecnológicas"
+      "product": "",
+      "verification": "Documento de integración + registro de pilotos",
+      "area": "Gerencia de Capacidades Tecnológicas",
+      "owner": "Gerardo Gallardo",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-062",
@@ -903,12 +1391,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.2: Integrar la Red a la oferta de desarrollo productivo y al ecosistema",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2027/Q4",
+      "target_year": "2027",
+      "quarter": "Q4",
       "periods": [
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro de derivaciones / convenios de articulación",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-063",
@@ -916,12 +1412,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.2: Integrar la Red a la oferta de desarrollo productivo y al ecosistema",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Resolución de institucionalización",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-064",
@@ -929,12 +1433,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.2: Integrar la Red a la oferta de desarrollo productivo y al ecosistema",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de evaluación",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-065",
@@ -942,12 +1454,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.3: Consolidar modelo de sostenibilidad financiera",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Capacidades Tecnológicas"
+      "product": "",
+      "verification": "Documento del modelo + informe del piloto",
+      "area": "Gerencia de Capacidades Tecnológicas",
+      "owner": "Fernando Hentzschel",
+      "substitutes": "Gerardo Gallardo",
+      "comments": ""
     },
     {
       "id": "KR-066",
@@ -955,12 +1475,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.3: Consolidar modelo de sostenibilidad financiera",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Documento de validación del modelo",
+      "area": "",
+      "owner": "Gerardo Gallardo",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-067",
@@ -968,12 +1496,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.3: Consolidar modelo de sostenibilidad financiera",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte de seguimiento con indicadores DIPRES",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-068",
@@ -981,12 +1517,20 @@
       "objective": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
       "subobjective": "SO3.3: Consolidar modelo de sostenibilidad financiera",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de evaluación y recomendaciones",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-069",
@@ -994,12 +1538,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.1: Homologación y madurez institucional y operacional de los CDPR",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Desarrollo Territorial"
+      "product": "",
+      "verification": "Documento de estándares comunes",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Jaime Guillisasti",
+      "substitutes": "Romina Álvarez y Pablo Lincoñir",
+      "comments": ""
     },
     {
       "id": "KR-070",
@@ -1007,12 +1559,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.1: Homologación y madurez institucional y operacional de los CDPR",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Desarrollo Territorial"
+      "product": "",
+      "verification": "Documento metodológico del Índice de Madurez CDPR",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Jaime Guillisasti",
+      "substitutes": "Romina Álvarez y Pablo Lincoñir",
+      "comments": ""
     },
     {
       "id": "KR-071",
@@ -1020,12 +1580,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.1: Homologación y madurez institucional y operacional de los CDPR",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Desarrollo Territorial"
+      "product": "",
+      "verification": "Informe de diagnóstico de madurez",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Jaime Guillisasti",
+      "substitutes": "Romina Álvarez y Pablo Lincoñir",
+      "comments": ""
     },
     {
       "id": "KR-072",
@@ -1033,12 +1601,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.1: Homologación y madurez institucional y operacional de los CDPR",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Desarrollo Territorial"
+      "product": "",
+      "verification": "Documento de hoja de ruta",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Jaime Guillisasti",
+      "substitutes": "Romina Álvarez y Pablo Lincoñir",
+      "comments": ""
     },
     {
       "id": "KR-073",
@@ -1046,12 +1622,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.1: Homologación y madurez institucional y operacional de los CDPR",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2027/Q2",
+      "target_year": "2027",
+      "quarter": "Q2",
       "periods": [
         "2027/Q2"
       ],
       "target_date": "2027-06-30",
-      "area": ""
+      "product": "",
+      "verification": "Documento del plan de fortalecimiento",
+      "area": "",
+      "owner": "Jaime Guillisasti",
+      "substitutes": "Romina Álvarez y Pablo Lincoñir",
+      "comments": ""
     },
     {
       "id": "KR-074",
@@ -1059,12 +1643,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.1: Homologación y madurez institucional y operacional de los CDPR",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2027/Q2",
+      "target_year": "2027",
+      "quarter": "Q2",
       "periods": [
         "2027/Q2"
       ],
       "target_date": "2027-06-30",
-      "area": ""
+      "product": "",
+      "verification": "Registro de quick-wins ejecutados",
+      "area": "",
+      "owner": "Jaime Guillisasti",
+      "substitutes": "Romina Álvarez y Pablo Lincoñir",
+      "comments": ""
     },
     {
       "id": "KR-075",
@@ -1072,12 +1664,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.1: Homologación y madurez institucional y operacional de los CDPR",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2027/Q4",
+      "target_year": "2027",
+      "quarter": "Q4",
       "periods": [
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro de lanzamiento por región",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-076",
@@ -1085,12 +1685,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.1: Homologación y madurez institucional y operacional de los CDPR",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2029/Q2",
+      "target_year": "2029",
+      "quarter": "Q2",
       "periods": [
         "2029/Q2"
       ],
       "target_date": "2029-06-30",
-      "area": ""
+      "product": "",
+      "verification": "Informe de diagnóstico de madurez (2ª medición)",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-077",
@@ -1098,12 +1706,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.1: Homologación y madurez institucional y operacional de los CDPR",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2029/Q2",
+      "target_year": "2029",
+      "quarter": "Q2",
       "periods": [
         "2029/Q2"
       ],
       "target_date": "2029-06-30",
-      "area": ""
+      "product": "",
+      "verification": "Registro de CDPR homologados",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-078",
@@ -1111,12 +1727,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.2: Desarrollar un sistema integrado de inteligencia territorial que entregue información, indicadores y herramientas para apoyar la planificación, priorización y seguimiento del desarrollo productivo en las regiones",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Desarrollo Territorial"
+      "product": "",
+      "verification": "Informe de diagnóstico nacional",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Alicia Olivares",
+      "substitutes": "Daniel Rivero",
+      "comments": ""
     },
     {
       "id": "KR-079",
@@ -1124,12 +1748,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.2: Desarrollar un sistema integrado de inteligencia territorial que entregue información, indicadores y herramientas para apoyar la planificación, priorización y seguimiento del desarrollo productivo en las regiones",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Desarrollo Territorial"
+      "product": "",
+      "verification": "Informe de evaluación de integración",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Alicia Olivares",
+      "substitutes": "Daniel Rivero",
+      "comments": ""
     },
     {
       "id": "KR-080",
@@ -1137,12 +1769,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.2: Desarrollar un sistema integrado de inteligencia territorial que entregue información, indicadores y herramientas para apoyar la planificación, priorización y seguimiento del desarrollo productivo en las regiones",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2027/Q4",
+      "target_year": "2027",
+      "quarter": "Q4",
       "periods": [
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte piloto",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-081",
@@ -1150,12 +1790,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.2: Desarrollar un sistema integrado de inteligencia territorial que entregue información, indicadores y herramientas para apoyar la planificación, priorización y seguimiento del desarrollo productivo en las regiones",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2027/Q2",
+      "target_year": "2027",
+      "quarter": "Q2",
       "periods": [
         "2027/Q2"
       ],
       "target_date": "2027-06-30",
-      "area": ""
+      "product": "",
+      "verification": "Documento del plan de acciones",
+      "area": "",
+      "owner": "Alicia Olivares",
+      "substitutes": "Daniel Rivero",
+      "comments": ""
     },
     {
       "id": "KR-082",
@@ -1163,12 +1811,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.2: Desarrollar un sistema integrado de inteligencia territorial que entregue información, indicadores y herramientas para apoyar la planificación, priorización y seguimiento del desarrollo productivo en las regiones",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2027/Q4",
+      "target_year": "2027",
+      "quarter": "Q4",
       "periods": [
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte definitivo",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-083",
@@ -1176,12 +1832,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.2: Desarrollar un sistema integrado de inteligencia territorial que entregue información, indicadores y herramientas para apoyar la planificación, priorización y seguimiento del desarrollo productivo en las regiones",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2028/Q4",
+      "target_year": "2028",
+      "quarter": "Q4",
       "periods": [
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro de presentación / acta",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-084",
@@ -1189,12 +1853,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.3: Creación de un modelo de relacionamiento territorial para impulsar el encadenamiento productivo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Desarrollo Territorial"
+      "product": "",
+      "verification": "Informe de diagnóstico de actores",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Marcela Gutiérrez",
+      "substitutes": "Francisca Martínez y Rodrigo Candia",
+      "comments": ""
     },
     {
       "id": "KR-085",
@@ -1202,12 +1874,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.3: Creación de un modelo de relacionamiento territorial para impulsar el encadenamiento productivo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Desarrollo Territorial"
+      "product": "",
+      "verification": "Documento conceptual",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Marcela Gutiérrez",
+      "substitutes": "Francisca Martínez y Rodrigo Candia",
+      "comments": ""
     },
     {
       "id": "KR-086",
@@ -1215,12 +1895,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.3: Creación de un modelo de relacionamiento territorial para impulsar el encadenamiento productivo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Desarrollo Territorial"
+      "product": "",
+      "verification": "Documentos de diseño de los 3 pilotos",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Marcela Gutiérrez",
+      "substitutes": "Francisca Martínez y Rodrigo Candia",
+      "comments": ""
     },
     {
       "id": "KR-087",
@@ -1228,12 +1916,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.3: Creación de un modelo de relacionamiento territorial para impulsar el encadenamiento productivo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2027/Q2",
+      "target_year": "2027",
+      "quarter": "Q2",
       "periods": [
         "2027/Q2"
       ],
       "target_date": "2027-06-30",
-      "area": ""
+      "product": "",
+      "verification": "Informes de evaluación de pilotos",
+      "area": "",
+      "owner": "Marcela Gutiérrez",
+      "substitutes": "Francisca Martínez y Rodrigo Candia",
+      "comments": ""
     },
     {
       "id": "KR-088",
@@ -1241,12 +1937,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.3: Creación de un modelo de relacionamiento territorial para impulsar el encadenamiento productivo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2027/Q3",
+      "target_year": "2027",
+      "quarter": "Q3",
       "periods": [
         "2027/Q3"
       ],
       "target_date": "2027-09-30",
-      "area": ""
+      "product": "",
+      "verification": "Documento de estrategia de escalamiento",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-089",
@@ -1254,12 +1958,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.3: Creación de un modelo de relacionamiento territorial para impulsar el encadenamiento productivo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro de lanzamiento regional",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-090",
@@ -1267,12 +1979,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.3: Creación de un modelo de relacionamiento territorial para impulsar el encadenamiento productivo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2028/Q4",
+      "target_year": "2028",
+      "quarter": "Q4",
       "periods": [
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de evaluación",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-091",
@@ -1280,12 +2000,20 @@
       "objective": "Objetivo 4: Desarrollo desde los Territorios",
       "subobjective": "SO4.3: Creación de un modelo de relacionamiento territorial para impulsar el encadenamiento productivo",
       "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
       "target_period": "2029/Q4",
+      "target_year": "2029",
+      "quarter": "Q4",
       "periods": [
         "2029/Q4"
       ],
       "target_date": "2029-12-31",
-      "area": ""
+      "product": "",
+      "verification": "Resolución/instrumento de institucionalización",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-092",
@@ -1293,12 +2021,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.1: Lograr la validación temprana de soluciones innovadoras mediante un modelo de conexión con el mercado",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Emprendimiento Dinámico"
+      "product": "",
+      "verification": "Documento del modelo + informe del piloto",
+      "area": "Gerencia de Emprendimiento Dinámico",
+      "owner": "Sebastián Arias y Patricia Cruz",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-093",
@@ -1306,12 +2042,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.1: Lograr la validación temprana de soluciones innovadoras mediante un modelo de conexión con el mercado",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Emprendimiento Dinámico"
+      "product": "",
+      "verification": "% de proyectos vigentes con validación temprana efectiva (con evidencia verificable) sobre total en etapa TRL 3–7",
+      "area": "Gerencia de Emprendimiento Dinámico",
+      "owner": "Javiera Araneda",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-094",
@@ -1319,12 +2063,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.1: Lograr la validación temprana de soluciones innovadoras mediante un modelo de conexión con el mercado",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "% de proyectos vigentes con validación temprana efectiva (por región/sector)",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-095",
@@ -1332,12 +2084,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.1: Lograr la validación temprana de soluciones innovadoras mediante un modelo de conexión con el mercado",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "% de proyectos vigentes con validación temprana efectiva (nacional)",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-096",
@@ -1345,12 +2105,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.1: Lograr la validación temprana de soluciones innovadoras mediante un modelo de conexión con el mercado",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-097",
@@ -1358,12 +2126,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.2: Aumentar la tracción comercial y ventas de soluciones innovadoras mediante un modelo de conexión con el mercado",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Innovación"
+      "product": "",
+      "verification": "Documento del modelo + informe del piloto",
+      "area": "Gerencia de Innovación",
+      "owner": "Jocelyn Olivari y Alejandra Núñez",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-098",
@@ -1371,12 +2147,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.2: Aumentar la tracción comercial y ventas de soluciones innovadoras mediante un modelo de conexión con el mercado",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Innovación"
+      "product": "",
+      "verification": "% de conexiones oferta-demanda que derivan en oportunidades comerciales concretas",
+      "area": "Gerencia de Innovación",
+      "owner": "Jocelyn Olivari y Anselmo Peiñán",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-099",
@@ -1384,12 +2168,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.2: Aumentar la tracción comercial y ventas de soluciones innovadoras mediante un modelo de conexión con el mercado",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "% de conexiones oferta-demanda que derivan en oportunidades comerciales concretas",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-100",
@@ -1397,12 +2189,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.2: Aumentar la tracción comercial y ventas de soluciones innovadoras mediante un modelo de conexión con el mercado",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "% de conexiones oferta-demanda que derivan en oportunidades comerciales (nacional)",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-101",
@@ -1410,12 +2210,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.3: Aumentar la sobrevivencia de las empresas mediante un modelo de fortalecimiento de gestión empresarial y conexión con actores del ecosistema de financiamiento",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Tasa de sobrevivencia de empresas que acceden a financiamiento privado a través del modelo",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Santiago Marin",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-102",
@@ -1423,12 +2231,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.3: Aumentar la sobrevivencia de las empresas mediante un modelo de fortalecimiento de gestión empresarial y conexión con actores del ecosistema de financiamiento",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Tasa de sobrevivencia de empresas (por región)",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-103",
@@ -1436,12 +2252,20 @@
       "objective": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
       "subobjective": "SO5.3: Aumentar la sobrevivencia de las empresas mediante un modelo de fortalecimiento de gestión empresarial y conexión con actores del ecosistema de financiamiento",
       "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Tasa de sobrevivencia de empresas (nacional)",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-104",
@@ -1449,12 +2273,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.1: Alinear y visibilizar las prioridades de Corfo con las prioridades ministeriales, mediante un mapeo conjunto, presentaciones y agendas compartidas",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Documento de mapeo de incumbentes",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Santiago Marin",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-105",
@@ -1462,12 +2294,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.1: Alinear y visibilizar las prioridades de Corfo con las prioridades ministeriales, mediante un mapeo conjunto, presentaciones y agendas compartidas",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Documento de priorización validado",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Santiago Marin",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-106",
@@ -1475,12 +2315,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.1: Alinear y visibilizar las prioridades de Corfo con las prioridades ministeriales, mediante un mapeo conjunto, presentaciones y agendas compartidas",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Relaciones Corporativas"
+      "product": "",
+      "verification": "Actas de reunión",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Santiago Marin",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-107",
@@ -1488,12 +2336,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.1: Alinear y visibilizar las prioridades de Corfo con las prioridades ministeriales, mediante un mapeo conjunto, presentaciones y agendas compartidas",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Actas de reunión",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-108",
@@ -1501,12 +2357,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Estrategia"
+      "product": "",
+      "verification": "Informe de diagnóstico",
+      "area": "Gerencia de Estrategia",
+      "owner": "Viviana Pardo",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-109",
@@ -1514,12 +2378,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Gerencia de Estrategia"
+      "product": "",
+      "verification": "Informe de revisión de convenios",
+      "area": "Gerencia de Estrategia",
+      "owner": "Viviana Pardo",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-110",
@@ -1527,12 +2399,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Estrategia"
+      "product": "",
+      "verification": "Documento de levantamiento",
+      "area": "Gerencia de Estrategia",
+      "owner": "Viviana Pardo",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-111",
@@ -1540,12 +2420,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Convenios reformulados/reactivados firmados",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": "Meta a definir luego del mapeo"
     },
     {
       "id": "KR-112",
@@ -1553,12 +2441,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Documento del plan de coordinación",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-113",
@@ -1566,12 +2462,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Convenios firmados",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-114",
@@ -1579,12 +2483,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte de avance legislativo",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-115",
@@ -1592,12 +2504,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Calendario de convocatorias publicado",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-116",
@@ -1605,12 +2525,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte de avance legislativo",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-117",
@@ -1618,12 +2546,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de balance legislativo",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-118",
@@ -1631,12 +2567,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.3: Institucionalizar la gobernanza del esquema de coordinación, estableciendo una mecánica operativa de seguimiento y métricas que asegure su sostenibilidad más allá del ciclo político",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Gerencia de Estrategia"
+      "product": "",
+      "verification": "Documento de mecánica operativa",
+      "area": "Gerencia de Estrategia",
+      "owner": "Viviana Pardo",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-119",
@@ -1644,12 +2588,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.3: Institucionalizar la gobernanza del esquema de coordinación, estableciendo una mecánica operativa de seguimiento y métricas que asegure su sostenibilidad más allá del ciclo político",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte anual publicado",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-120",
@@ -1657,12 +2609,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.3: Institucionalizar la gobernanza del esquema de coordinación, estableciendo una mecánica operativa de seguimiento y métricas que asegure su sostenibilidad más allá del ciclo político",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Documentos de hoja de ruta por contraparte",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-121",
@@ -1670,12 +2630,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.3: Institucionalizar la gobernanza del esquema de coordinación, estableciendo una mecánica operativa de seguimiento y métricas que asegure su sostenibilidad más allá del ciclo político",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Documento de mecánica operativa actualizado",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-122",
@@ -1683,12 +2651,20 @@
       "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
       "subobjective": "SO6.3: Institucionalizar la gobernanza del esquema de coordinación, estableciendo una mecánica operativa de seguimiento y métricas que asegure su sostenibilidad más allá del ciclo político",
       "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de continuidad",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-123",
@@ -1696,12 +2672,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.1: Crear un programa de desarrollo de talento interno en Corfo",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Subgerencia de Personas y Desarrollo"
+      "product": "",
+      "verification": "Nómina de talentos",
+      "area": "Subgerencia de Personas y Desarrollo",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-124",
@@ -1709,12 +2693,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.1: Crear un programa de desarrollo de talento interno en Corfo",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Subgerencia de Personas y Desarrollo"
+      "product": "",
+      "verification": "Documento de propuesta del programa",
+      "area": "Subgerencia de Personas y Desarrollo",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-125",
@@ -1722,12 +2714,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.1: Crear un programa de desarrollo de talento interno en Corfo",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Subgerencia de Personas y Desarrollo"
+      "product": "",
+      "verification": "Acta de aprobación + plan comunicacional",
+      "area": "Subgerencia de Personas y Desarrollo",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-126",
@@ -1735,12 +2735,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.1: Crear un programa de desarrollo de talento interno en Corfo",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Subgerencia de Personas y Desarrollo"
+      "product": "",
+      "verification": "Registro de implementación",
+      "area": "Subgerencia de Personas y Desarrollo",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-127",
@@ -1748,12 +2756,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.1: Crear un programa de desarrollo de talento interno en Corfo",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Subgerencia de Personas y Desarrollo"
+      "product": "",
+      "verification": "Documento metodológico",
+      "area": "Subgerencia de Personas y Desarrollo",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-128",
@@ -1761,12 +2777,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.1: Crear un programa de desarrollo de talento interno en Corfo",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Mapa de talento consolidado",
+      "area": "",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-129",
@@ -1774,12 +2798,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.1: Crear un programa de desarrollo de talento interno en Corfo",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de operación en régimen",
+      "area": "",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-130",
@@ -1787,12 +2819,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.1: Crear un programa de desarrollo de talento interno en Corfo",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de evaluación",
+      "area": "",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-131",
@@ -1800,12 +2840,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.2: Formalización de la política de Desarrollo de Talentos",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Subgerencia de Personas y Desarrollo"
+      "product": "",
+      "verification": "Política de personas publicada",
+      "area": "Subgerencia de Personas y Desarrollo",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-132",
@@ -1813,12 +2861,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.2: Formalización de la política de Desarrollo de Talentos",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Resolución publicada",
+      "area": "",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-133",
@@ -1826,12 +2882,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.3: Evaluación y mejoras de la política implementada",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Subgerencia de Personas y Desarrollo"
+      "product": "",
+      "verification": "Documento de indicadores",
+      "area": "Subgerencia de Personas y Desarrollo",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-134",
@@ -1839,12 +2903,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.3: Evaluación y mejoras de la política implementada",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de medición y ajustes",
+      "area": "",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-135",
@@ -1852,12 +2924,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.3: Evaluación y mejoras de la política implementada",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de medición",
+      "area": "",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-136",
@@ -1865,12 +2945,20 @@
       "objective": "Objetivo 7: Personas y Talento Interno",
       "subobjective": "SO7.3: Evaluación y mejoras de la política implementada",
       "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de evaluación final",
+      "area": "",
+      "owner": "Maria Alejandra Solorzano",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-137",
@@ -1878,12 +2966,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.1: Facilitar la toma de decisiones y la visibilización de resultados mediante el desarrollo de una capacidad institucional de datos",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Documento de definición de campos",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-138",
@@ -1891,12 +2987,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.1: Facilitar la toma de decisiones y la visibilización de resultados mediante el desarrollo de una capacidad institucional de datos",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Registro de homologación de datos",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-139",
@@ -1904,12 +3008,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.1: Facilitar la toma de decisiones y la visibilización de resultados mediante el desarrollo de una capacidad institucional de datos",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Datalake operando",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-140",
@@ -1917,12 +3029,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.1: Facilitar la toma de decisiones y la visibilización de resultados mediante el desarrollo de una capacidad institucional de datos",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Data warehouse operando",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-141",
@@ -1930,12 +3050,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.1: Facilitar la toma de decisiones y la visibilización de resultados mediante el desarrollo de una capacidad institucional de datos",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Herramientas de visualización operando",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-142",
@@ -1943,12 +3071,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.2: Mejorar la confiabilidad, consistencia y seguridad de la información mediante la implementación de una gobernanza de datos con estándares internacionales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2026/Q3",
+      "target_year": "2026",
+      "quarter": "Q3",
       "periods": [
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Documento de levantamiento de necesidades",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-143",
@@ -1956,12 +3092,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.2: Mejorar la confiabilidad, consistencia y seguridad de la información mediante la implementación de una gobernanza de datos con estándares internacionales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Documento del plan de acción",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-144",
@@ -1969,12 +3113,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.2: Mejorar la confiabilidad, consistencia y seguridad de la información mediante la implementación de una gobernanza de datos con estándares internacionales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Documento de formalización del sistema",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": "¿Cómo se formalizará?"
     },
     {
       "id": "KR-145",
@@ -1982,12 +3134,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.2: Mejorar la confiabilidad, consistencia y seguridad de la información mediante la implementación de una gobernanza de datos con estándares internacionales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Sistema de control operando",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-146",
@@ -1995,12 +3155,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.2: Mejorar la confiabilidad, consistencia y seguridad de la información mediante la implementación de una gobernanza de datos con estándares internacionales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Documento del plan de mejora continua",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-147",
@@ -2008,12 +3176,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.2: Mejorar la confiabilidad, consistencia y seguridad de la información mediante la implementación de una gobernanza de datos con estándares internacionales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-148",
@@ -2021,12 +3197,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.3: Aumentar la agregación de valor de los colaboradores mediante la digitalización y automatización de procesos",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Documento de mapeo + línea base de tiempos",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-149",
@@ -2034,12 +3218,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.3: Aumentar la agregación de valor de los colaboradores mediante la digitalización y automatización de procesos",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2027/Q3",
+      "target_year": "2027",
+      "quarter": "Q3",
       "periods": [
         "2027/Q3"
       ],
       "target_date": "2027-09-30",
-      "area": ""
+      "product": "",
+      "verification": "Informes de resultados de pilotos",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": "Un piloto por gerencia"
     },
     {
       "id": "KR-150",
@@ -2047,12 +3239,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.3: Aumentar la agregación de valor de los colaboradores mediante la digitalización y automatización de procesos",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informes de resultados de los 5 pilotos",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-151",
@@ -2060,12 +3260,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.3: Aumentar la agregación de valor de los colaboradores mediante la digitalización y automatización de procesos",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-152",
@@ -2073,12 +3281,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.3: Aumentar la agregación de valor de los colaboradores mediante la digitalización y automatización de procesos",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informe de consolidación del modelo + indicadores de reducción de tiempos",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": "¿Cómo medir la consolidación? Se propuso en la meta:\nKPI1: 80% de procesos críticos optimizados.\nKPI2: Tiempo invertido en gestión de procesos críticos se reduce en un 20%."
     },
     {
       "id": "KR-153",
@@ -2086,12 +3302,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.4: Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
       "periods": [
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Documento de mapeo + resultados de encuesta base",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-154",
@@ -2099,12 +3323,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.4: Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Informes de resultados de pilotos",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-155",
@@ -2112,12 +3344,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.4: Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2027/Q1",
+      "target_year": "2027",
+      "quarter": "Q1",
       "periods": [
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "area": "Subgerencia de Datos y Procesos Digitales"
+      "product": "",
+      "verification": "Reporte de cumplimiento de hitos",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-156",
@@ -2125,12 +3365,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.4: Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Informes de resultados de los 5 pilotos",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-157",
@@ -2138,12 +3386,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.4: Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2028/Q1",
+      "target_year": "2028",
+      "quarter": "Q1",
       "periods": [
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte de cumplimiento de hitos",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-158",
@@ -2151,12 +3407,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.4: Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-159",
@@ -2164,12 +3428,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.4: Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2029/Q1",
+      "target_year": "2029",
+      "quarter": "Q1",
       "periods": [
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Reporte de cumplimiento de hitos",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     },
     {
       "id": "KR-160",
@@ -2177,12 +3449,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.4: Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Por definir",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": "KPI1: Tiempo invertido por clientes en interacciones con Corfo en procesos críticos se reduce en un 20% respecto de línea base.\nKPI2: Satisfacción usuaria aumenta en un 20% respecto de línea base."
     },
     {
       "id": "KR-161",
@@ -2190,12 +3470,20 @@
       "objective": "Objetivo 8: Tecnología, Datos y Procesos",
       "subobjective": "SO8.4: Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales",
       "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
       "target_period": "2030/Q1",
+      "target_year": "2030",
+      "quarter": "Q1",
       "periods": [
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "area": ""
+      "product": "",
+      "verification": "Registro de procesos disponibles electrónicamente / cumplimiento normativo",
+      "area": "",
+      "owner": "",
+      "substitutes": "",
+      "comments": ""
     }
   ]
 }

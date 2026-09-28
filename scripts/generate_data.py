@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Valida la planilla maestra y genera JSON internos o una versión pública depurada."""
+"""Valida la planilla maestra y genera JSON locales o para el sitio público."""
 
 import argparse
 import json
@@ -65,12 +65,6 @@ MOMENTS = {'Confirmado GE', 'Propuesta Owner'}
 PERIOD = re.compile(r'^(20\d{2})/Q([1-4])$')
 RANGE_SAME_YEAR = re.compile(r'^(20\d{2})/Q([1-4])-Q([1-4])$')
 RANGE_YEARS = re.compile(r'^(20\d{2})/Q([1-4])\s*-\s*(20\d{2})/Q([1-4])$')
-PUBLIC_KR_FIELDS = ('id', 'name', 'objective', 'subobjective', 'dimension',
-                    'target_period', 'periods', 'target_date', 'area')
-PUBLIC_RECORD_FIELDS = ('id', 'period', 'date', 'instance', 'moment', 'execution',
-                        'baseline', 'target', 'current', 'progress', 'status', 'source_row')
-
-
 def txt(value):
     return '' if value is None else str(value).strip()
 
@@ -184,6 +178,8 @@ def build(path):
             'dimension': txt(value(row, hs, 'dimension')),
             'vision': txt(value(row, hs, 'vision')),
             'target_period': txt(value(row, hs, 'target_period')),
+            'target_year': txt(year),
+            'quarter': txt(value(row, hs, 'quarter')),
             'periods': active,
             'target_date': due,
             'product': txt(value(row, hs, 'product')),
@@ -191,6 +187,7 @@ def build(path):
             'area': txt(value(row, hs, 'area')),
             'owner': txt(value(row, hs, 'owner')),
             'substitutes': txt(value(row, hs, 'substitutes')),
+            'comments': txt(value(row, hs, 'comments')),
         }
         krs.append(info)
         by_name[ident] = info['name']
@@ -293,16 +290,16 @@ def build(path):
 
 
 def public_view(strategy, tracking):
-    """Usa una lista cerrada de campos para evitar divulgar notas o responsables."""
+    """Publica los campos de la planilla y marca cada reporte de demostración."""
     records = []
     for record in tracking['records']:
-        safe_record = {key: record[key] for key in PUBLIC_RECORD_FIELDS}
-        safe_record['demo'] = any('[DEMO]' in str(value) for value in record.values())
-        records.append(safe_record)
+        published_record = record.copy()
+        published_record['demo'] = any('[DEMO]' in str(value) for value in record.values())
+        records.append(published_record)
     public_strategy = {
         'metadata': {'publication': 'public', 'kr_count': len(strategy['krs'])},
         'objectives': strategy['objectives'],
-        'krs': [{key: kr[key] for key in PUBLIC_KR_FIELDS} for kr in strategy['krs']],
+        'krs': strategy['krs'],
     }
     public_tracking = {
         'metadata': {
@@ -320,12 +317,21 @@ def main():
     parser.add_argument('--output', type=Path, help='Carpeta de salida (por defecto data/ o data/public/ con --public)')
     parser.add_argument('--validate-only', action='store_true', help='No escribir JSON')
     parser.add_argument('--require-real', action='store_true', help='Rechazar filas marcadas [DEMO]')
-    parser.add_argument('--public', action='store_true', help='Generar JSON públicos sin responsables ni campos cualitativos internos')
+    parser.add_argument('--public', action='store_true', help='Generar JSON públicos con todos los campos de la planilla')
+    parser.add_argument('--notes', type=Path, help='Archivo local de justificaciones por objetivo para publicar con --public')
     args = parser.parse_args()
     try:
         strategy, tracking = build(args.input)
         if args.require_real and tracking['metadata']['demo_records']:
             raise ValueError(f"Seguimiento: {tracking['metadata']['demo_records']} registros contienen [DEMO]; se requieren datos reales.")
+        if args.notes and not args.public:
+            raise ValueError('--notes requiere --public.')
+        notes = None
+        if args.notes:
+            notes = json.loads(args.notes.read_text(encoding='utf-8'))
+            names = {objective['name'] for objective in strategy['objectives']}
+            if not isinstance(notes, dict) or set(notes) != names or not all(isinstance(text, str) and text.strip() for text in notes.values()):
+                raise ValueError('Las justificaciones deben ser textos no vacíos para todos los objetivos de la planilla.')
     except (OSError, ValueError) as exc:
         print(f'ERROR de validación:\n{exc}', file=sys.stderr)
         return 1
@@ -337,13 +343,19 @@ def main():
     if not args.validate_only:
         if args.public:
             strategy, tracking = public_view(strategy, tracking)
-            print('Vista pública: omitidos Owners, suplentes, comentarios, evidencia, aprendizajes y pendientes.')
+            print('Vista pública: incluidos responsables y campos cualitativos de la planilla; reportes DEMO identificados.')
         args.output = args.output or Path('data/public' if args.public else 'data')
         args.output.mkdir(parents=True, exist_ok=True)
         for name, content in (('strategy.json', strategy), ('tracking.json', tracking)):
             target = args.output / name
             tmp = target.with_suffix('.json.tmp')
             tmp.write_text(json.dumps(content, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+            tmp.replace(target)
+            print(f'Generado: {target}')
+        if notes is not None:
+            target = args.output / 'objective-notes.json'
+            tmp = target.with_suffix('.json.tmp')
+            tmp.write_text(json.dumps(notes, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
             tmp.replace(target)
             print(f'Generado: {target}')
     return 0

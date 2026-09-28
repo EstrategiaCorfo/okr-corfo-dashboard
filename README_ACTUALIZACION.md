@@ -28,15 +28,15 @@ python scripts/generate_data.py --input "/ruta/Planilla_Maestra_Dashboard_OKR_V2
 
 Se crean `data/strategy.json` y `data/tracking.json`. No edite el HTML o JavaScript. Revise el total de KR, reportes, Owners sin informar y advertencias DEMO que aparecen en la terminal. El script calcula el progreso solo si existen Línea base, Meta y Valor actual; el estatus se conserva según la evaluación informada.
 
-El archivo local opcional `data/objective-notes.json` guarda las justificaciones tomadas del manual. Se prepara una vez con la clave exacta de cada Objetivo Estratégico y no forma parte del Excel ni del repositorio público. Si cambia el nombre de un objetivo, actualice esa clave para mantener la justificación visible.
+El archivo local `data/objective-notes.json` guarda las justificaciones tomadas del manual. Se prepara una vez con la clave exacta de cada Objetivo Estratégico. Si cambia el nombre de un objetivo, actualice esa clave para mantener la justificación visible. El documento original no forma parte del repositorio.
 
 Para generar los archivos destinados al sitio público, ejecute también:
 
 ```bash
-python scripts/generate_data.py --input "/ruta/Planilla_Maestra_Dashboard_OKR_V2.xlsx" --public
+python scripts/generate_data.py --input "/ruta/Planilla_Maestra_Dashboard_OKR_V2.xlsx" --public --notes data/objective-notes.json
 ```
 
-Esta opción crea `data/public/strategy.json` y `data/public/tracking.json`. Incluye los KR, sus periodos y los estados de seguimiento; omite Owners, suplentes, comentarios, evidencias, aprendizajes y pendientes. Si hay reportes `[DEMO]`, el sitio los identifica como ficticios. Revise ambos JSON antes de publicarlos.
+Esta opción crea `data/public/strategy.json`, `data/public/tracking.json` y, si se indica `--notes`, `data/public/objective-notes.json`. Publica todos los campos extraídos de la planilla, incluidos los Owners, suplentes, comentarios de estrategia, evidencias, aprendizajes y pendientes. El tercer archivo contiene las justificaciones extraídas del manual, pero no el documento. Si hay reportes `[DEMO]`, el sitio los identifica como ficticios. Revise los tres JSON antes de publicarlos.
 
 ## 4. Probar localmente
 
@@ -44,10 +44,10 @@ Esta opción crea `data/public/strategy.json` y `data/public/tracking.json`. Inc
 python -m http.server 8000
 ```
 
-Abra `http://localhost:8000` para revisar los archivos internos, incluido el filtro por Owner. Abra `http://localhost:8000/?publico=1` para comprobar exactamente la versión depurada que verá el público. Revise Panel general, Key Results, Detalle, Histórico y Estrategia; pruebe filtros y enlaces. Use `Ctrl+C` para detener el servidor.
+Abra `http://localhost:8000` para revisar los archivos locales. Abra `http://localhost:8000/?publico=1` para comprobar exactamente la versión que verá el público. De forma predeterminada se muestran todos los KR. Revise Panel general, Key Results, Detalle, Histórico y Estrategia; pruebe los filtros de periodo y Owner, los campos de cada reporte y los enlaces. Use `Ctrl+C` para detener el servidor.
 
 ## 5. Publicar con autorización
 
-**GitHub Pages y todas las ramas de este repositorio son públicos.** Cualquier persona puede descargar `data/public/strategy.json` y `data/public/tracking.json`. No suba la planilla, el manual, `data/strategy.json`, `data/tracking.json` ni `data/objective-notes.json` al repositorio público.
+**GitHub Pages y todas las ramas de este repositorio son públicos.** Cualquier persona puede descargar los JSON de `data/public/`, incluidos nombres y textos cualitativos. No suba la planilla, el manual, `data/strategy.json`, `data/tracking.json` ni `data/objective-notes.json` al repositorio público.
 
-La versión actual publicada es una **demostración con 51 reportes ficticios**. Para una actualización oficial, use la planilla con datos definitivos, valide con `--require-real`, genere otra vez ambos JSON públicos y revise la exposición de títulos de KR, fechas, áreas, estados, progreso y textos estratégicos antes de subirlos. Mantenga los JSON internos en un alojamiento con control de acceso si necesitan mostrar responsables y campos cualitativos.
+La versión actual publicada es una **demostración con 51 reportes ficticios**. Para una actualización oficial, use la planilla con datos definitivos, valide con `--require-real`, genere otra vez los JSON públicos y revise los datos expuestos antes de subirlos.

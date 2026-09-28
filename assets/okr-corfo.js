@@ -19,15 +19,11 @@
   const query = () => new URLSearchParams(location.search);
   const isLocal = ['localhost','127.0.0.1','[::1]'].includes(location.hostname);
   const publicSite = !isLocal || query().get('publico') === '1';
-  const publicMode = () => S.metadata?.publication === 'public';
   const demoLabel = record => record?.demo ? badge('DEMO','warning') : '';
-  const demoNotice = () => T.metadata?.demo_records ? `<section class="demo-notice" role="note"><strong>VERSIÓN DEMO</strong><span>Los ${T.metadata.demo_records} reportes señalados como DEMO son ficticios y no representan avances oficiales de Corfo. La planilla define ${S.krs.length} KR; cambie el periodo a «Todos los periodos» para verlos completos.</span></section>` : '';
+  const demoNotice = () => T.metadata?.demo_records ? `<section class="demo-notice" role="note"><strong>VERSIÓN DEMO</strong><span>Los ${T.metadata.demo_records} reportes señalados como DEMO son ficticios y no representan avances oficiales de Corfo. Se muestran los ${S.krs.length} KR de la planilla; puede seleccionar un trimestre para filtrarlos.</span></section>` : '';
   const periods = () => unique([...S.krs.flatMap(k=>k.periods||[]),...T.records.map(r=>r.period)]).sort(M.periodSort);
-  const defaultPeriod = () => {
-    const d = new Date(), now = `${d.getFullYear()}/Q${Math.ceil((d.getMonth()+1)/3)}`;
-    return periods().includes(now) ? now : unique(T.records.map(r=>r.period)).sort(M.periodSort).at(-1) || periods()[0] || 'todos';
-  };
-  const filters = () => ({period:query().get('periodo')||defaultPeriod(),objective:query().get('objetivo')||'',owner:publicMode()?'':query().get('owner')||''});
+  const defaultPeriod = () => 'todos';
+  const filters = () => ({period:query().get('periodo')||defaultPeriod(),objective:query().get('objetivo')||'',owner:query().get('owner')||''});
   function href(path,extra={}) {
     const p = new URLSearchParams(), f = filters();
     if(publicSite && isLocal)p.set('publico','1');
@@ -43,7 +39,7 @@
     return `<section class="filters card" aria-label="Filtros globales">
       <div class="field"><label for="filter-period">Periodo / Q</label><select id="filter-period">${opt('todos','Todos los periodos',f.period)}${periods().map(p=>opt(p,p,f.period)).join('')}</select></div>
       <div class="field"><label for="filter-objective">Objetivo estratégico</label><select id="filter-objective">${opt('','Todos los objetivos',f.objective)}${S.objectives.map(o=>opt(o.name,o.name,f.objective)).join('')}</select></div>
-      <div class="field"><label for="filter-owner">Owner</label>${publicMode()?'<select id="filter-owner" disabled><option>Dato no publicado</option></select>':`<select id="filter-owner">${opt('','Todos los Owners',f.owner)}${unique(S.krs.map(k=>k.owner)).sort((a,b)=>a.localeCompare(b,'es')).map(o=>opt(o,o,f.owner)).join('')}${opt('__vacio__','Sin Owner informado',f.owner)}</select>`}</div>
+      <div class="field"><label for="filter-owner">Owner</label><select id="filter-owner">${opt('','Todos los Owners',f.owner)}${unique(S.krs.map(k=>k.owner)).sort((a,b)=>a.localeCompare(b,'es')).map(o=>opt(o,o,f.owner)).join('')}${opt('__vacio__','Sin Owner informado',f.owner)}</select></div>
       <button class="button secondary" type="button" id="clear-filters">Limpiar filtros</button></section>`;
   }
   function bind() {
@@ -66,12 +62,25 @@
   }
   const hero = (title,desc,f,count) => `<section class="hero"><div><span class="eyebrow">Estrategia Corporativa 2026-2030</span><h1>${esc(title)}</h1><p>${esc(desc)}</p></div><div class="hero-number"><strong>${count}</strong><span>KR en el filtro</span></div></section>${controls(f)}`;
   const stat = (name,n,small='') => `<article class="card stat"><span>${esc(name)}</span><strong>${esc(n)}</strong><small>${esc(small)}</small></article>`;
+  const fact = (label,content) => `<div><dt>${esc(label)}</dt><dd>${content}</dd></div>`;
+  const number = n => n === null || n === undefined ? 'Sin información' : new Intl.NumberFormat('es-CL',{maximumFractionDigits:2}).format(n);
+  const reportFacts = r => `<dl class="facts report-facts">${[
+    fact('Periodo de reporte',value(r.period)),fact('Fecha de reporte',day(r.date)),
+    fact('Instancia',value(r.instance)),fact('Momento del registro',value(r.moment)),
+    fact('Estado de ejecución',value(r.execution)),fact('Estatus',statusName(r.status)),
+    fact('Línea base',number(r.baseline)),fact('Meta',number(r.target)),
+    fact('Valor actual',number(r.current)),fact('Progreso',pct(r.progress)),
+    fact('Comentario cualitativo',value(r.comment)),fact('Evidencia / soporte',value(r.evidence)),
+    fact('Aprendizaje',value(r.learning)),fact('¿Quedó pendiente?',value(r.pending)),
+    fact('Tratamiento del pendiente',value(r.pending_treatment)),
+    fact('Periodo de traspaso',value(r.transfer_period)),
+  ].join('')}</dl>`;
   function distribution(data,total,kind) {
     return `<div class="distribution">${Object.entries(data).map(([name,n])=>`<div class="distribution-row"><div class="distribution-label"><span>${esc(name)}</span><strong>${n}</strong></div><div class="distribution-track"><span class="${kind==='status'?classOf(name):name==='Completado'?'complete':name==='En proceso'?'in-progress':'not-started'}" style="width:${total?n/total*100:0}%"></span></div></div>`).join('')}</div>`;
   }
   function krCard(k,r) {
     return `<article class="card kr-card"><div class="kr-main"><div class="kr-code">${esc(k.id)} <span>${esc(k.target_period)}</span> ${demoLabel(r)}</div><h3><a href="${esc(href('detalle-kr.html',{kr:k.id}))}">${esc(krName(k))}</a></h3>
-      <p class="small">${esc(k.objective)} · ${esc(k.subobjective)}</p><p class="small"><strong>Owner:</strong> ${publicMode()?'No publicado':value(k.owner)} · <strong>Fecha meta:</strong> ${day(k.target_date)}</p>${r?.comment?`<p class="last-comment">${esc(r.comment)}</p>`:''}</div>
+      <p class="small">${esc(k.objective)} · ${esc(k.subobjective)}</p><p class="small"><strong>Owner:</strong> ${value(k.owner)} · <strong>Fecha meta:</strong> ${day(k.target_date)}</p>${r?.comment?`<p class="last-comment">${esc(r.comment)}</p>`:''}</div>
       <div class="kr-snapshot"><div><small>Estado de ejecución</small>${badge(r?.execution)}</div><div><small>Estatus</small>${badge(statusName(r?.status),classOf(r?.status))}</div><div><small>Progreso numérico</small><strong>${pct(r?.progress)}</strong>${bar(r?.progress)}</div></div></article>`;
   }
   function panel(f,krs,s) {
@@ -88,7 +97,7 @@
       <section class="card"><h2>Estatus</h2><p class="muted">Evaluación cualitativa, independiente del progreso.</p>${distribution(s.statuses,s.total,'status')}<p class="small muted">${s.noReport+s.noStatus} sin estatus informado</p></section></div>
       <div class="two-columns"><section class="card highlight"><h2>Progreso disponible</h2><strong class="big-number">${pct(s.progressMean)}</strong><p class="muted">Promedio de ${s.progressCount} KR medibles entre ${s.total} seleccionados. Los hitos sin variables numéricas no se estiman.</p></section>
       <section class="card"><h2>Evolución trimestral</h2><p>${esc(evolution)}</p></section></div>
-      <section class="section-head"><div><h2>KR que requieren atención</h2><p>${publicMode()?'Alertas y riesgos registrados en la demostración.':'Alertas, riesgos o pendientes informados.'}</p></div><a class="button" href="${esc(href('key-results.html'))}">Ver todos los KR</a></section>
+      <section class="section-head"><div><h2>KR que requieren atención</h2><p>Alertas, riesgos o pendientes informados.</p></div><a class="button" href="${esc(href('key-results.html'))}">Ver todos los KR</a></section>
       ${attention.length?`<div class="card-list">${attention.map(({kr,record})=>krCard(kr,record)).join('')}</div>`:'<div class="card empty">No hay alertas ni pendientes reportados en este filtro.</div>'}`;
   }
   function keyResults(f,krs,s) {
@@ -104,11 +113,21 @@
     const log=T.records.filter(x=>x.id===kr.id).sort((a,b)=>(a.date||'').localeCompare(b.date||'')||a.source_row-b.source_row);
     app.innerHTML=hero('Detalle de KR','Ficha estratégica e historial completo.',f,krs.length)+
       `<a class="back-link" href="${esc(href('key-results.html'))}">← Volver a Key Results</a><div class="detail-grid"><section class="card detail-main"><span class="kr-code">${esc(kr.id)}</span><h2>${esc(krName(kr))}</h2>
-      <dl class="facts"><div><dt>Objetivo estratégico</dt><dd>${esc(kr.objective)}</dd></div><div><dt>Subobjetivo</dt><dd>${esc(kr.subobjective)}</dd></div><div><dt>Owner</dt><dd>${publicMode()?'No publicado':value(kr.owner)}</dd></div><div><dt>Suplentes</dt><dd>${publicMode()?'No publicado':value(kr.substitutes)}</dd></div><div><dt>Área</dt><dd>${value(kr.area)}</dd></div><div><dt>Fecha meta</dt><dd>${day(kr.target_date)}</dd></div></dl></section>
+      <dl class="facts">${[
+        fact('Objetivo estratégico',value(kr.objective)),fact('Subobjetivo',value(kr.subobjective)),
+        fact('Dimensión',value(kr.dimension)),fact('Visión',value(kr.vision)),
+        fact('Periodo meta',value(kr.target_period)),fact('Año KR',value(kr.target_year)),
+        fact('Q',value(kr.quarter)),fact('Fecha meta',day(kr.target_date)),
+        fact('Área que lidera',value(kr.area)),fact('Owner',value(kr.owner)),
+        fact('Suplentes',value(kr.substitutes)),
+        fact('Producto asociado estimado',value(kr.product)),
+        fact('Medio de verificación estimado',value(kr.verification)),
+        fact('Comentarios de estrategia',value(kr.comments)),
+      ].join('')}</dl></section>
       <section class="card"><h2>Último reporte vigente ${demoLabel(r)}</h2><div class="snapshot-grid"><div><small>Estado de ejecución</small>${badge(r?.execution)}</div><div><small>Estatus</small>${badge(statusName(r?.status),classOf(r?.status))}</div><div><small>Progreso</small><strong>${pct(r?.progress)}</strong>${bar(r?.progress)}</div></div>
-      ${publicMode()?'<p class="small muted">Los comentarios, la evidencia y los aprendizajes no se publican en esta versión.</p>':`<h3>Comentario</h3><p>${value(r?.comment)}</p><h3>Evidencia</h3><p>${value(r?.evidence)}</p><h3>Aprendizaje</h3><p>${value(r?.learning)}</p>`}</section></div>
+      ${r?reportFacts(r):'<p>Sin reportes para el periodo seleccionado.</p>'}</section></div>
       <section class="section-head"><div><h2>Historial completo</h2><p>${log.length} observaciones de este KR, en orden cronológico.</p></div></section>
-      ${log.length?`<div class="history-list">${log.map(x=>`<article class="card history-item"><div class="history-top"><strong>${day(x.date)}</strong><span>${esc(x.period)} · ${esc(x.instance)} · ${esc(x.moment)}</span></div><div class="inline-badges">${demoLabel(x)}${badge(x.execution)}${badge(statusName(x.status),classOf(x.status))}<span>Progreso: ${pct(x.progress)}</span></div>${publicMode()?'':`<p>${value(x.comment)}</p>`}</article>`).join('')}</div>`:'<div class="card empty">Sin reportes históricos.</div>'}`;
+      ${log.length?`<div class="history-list">${log.map(x=>`<article class="card history-item"><div class="history-top"><strong>${day(x.date)}</strong><span>${esc(x.period)} · ${esc(x.instance)} · ${esc(x.moment)}</span></div><div class="inline-badges">${demoLabel(x)}${badge(x.execution)}${badge(statusName(x.status),classOf(x.status))}<span>Progreso: ${pct(x.progress)}</span></div><p>${value(x.comment)}</p><details class="report-more"><summary>Ver todos los campos del reporte</summary>${reportFacts(x)}</details></article>`).join('')}</div>`:'<div class="card empty">Sin reportes históricos.</div>'}`;
   }
   function historyPage(f) {
     const krs=M.visibleKrs(S.krs,T.records,f), byId=new Map(S.krs.map(k=>[k.id,k]));
@@ -120,7 +139,7 @@
       <div class="field"><label for="hist-execution">Estado de ejecución</label><select id="hist-execution">${opt('','Todos los estados',exec)}${['No iniciado','En proceso','Completado'].map(v=>opt(v,v,exec)).join('')}</select></div>
       <div class="field"><label for="hist-status">Estatus</label><select id="hist-status">${opt('','Todos los estatus',status)}${['On Track','Off Track','At Risk'].map(v=>opt(v,statusName(v),status)).join('')}</select></div></section>
       <section class="section-head"><div><h2>Registros de seguimiento</h2><p>${rows.length} reportes tras aplicar todos los filtros.</p></div></section>
-      ${rows.length?`<div class="table-wrap"><table><thead><tr><th>Fecha</th><th>Periodo</th><th>KR y objetivo</th><th>Instancia / Momento</th><th>Estado</th><th>Progreso</th><th>Estatus</th>${publicMode()?'':'<th>Comentario</th>'}</tr></thead><tbody>${rows.map(r=>`<tr><td>${day(r.date)} ${demoLabel(r)}</td><td>${esc(r.period)}</td><td><a href="${esc(href('detalle-kr.html',{kr:r.id}))}">${esc(r.id)}</a><small>${esc(byId.get(r.id).objective)}</small></td><td>${esc(r.instance)}<small>${esc(r.moment)}</small></td><td>${badge(r.execution)}</td><td>${pct(r.progress)}</td><td>${badge(statusName(r.status),classOf(r.status))}</td>${publicMode()?'':`<td>${value(r.comment)}</td>`}</tr>`).join('')}</tbody></table></div>`:'<div class="card empty">No hay registros para esta combinación de filtros.</div>'}`;
+      ${rows.length?`<div class="table-wrap"><table><thead><tr><th>Fecha</th><th>Periodo</th><th>KR y objetivo</th><th>Owner</th><th>Instancia / Momento</th><th>Estado</th><th>Progreso</th><th>Estatus</th><th>Comentario</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${day(r.date)} ${demoLabel(r)}</td><td>${esc(r.period)}</td><td><a href="${esc(href('detalle-kr.html',{kr:r.id}))}">${esc(r.id)}</a><small>${esc(byId.get(r.id).objective)}</small></td><td>${value(byId.get(r.id).owner)}</td><td>${esc(r.instance)}<small>${esc(r.moment)}</small></td><td>${badge(r.execution)}</td><td>${pct(r.progress)}</td><td>${badge(statusName(r.status),classOf(r.status))}</td><td>${value(r.comment)}</td></tr>`).join('')}</tbody></table></div>`:'<div class="card empty">No hay registros para esta combinación de filtros.</div>'}`;
     [['hist-kr','hist_kr'],['hist-execution','hist_estado'],['hist-status','hist_estatus']].forEach(([id,key])=>document.getElementById(id).addEventListener('change',e=>{
       const p=query();if(e.target.value)p.set(key,e.target.value);else p.delete(key);
       history.replaceState(null,'',location.pathname+(p.size?'?'+p:''));render();
@@ -138,7 +157,7 @@
       <div class="mountain-band" role="presentation"></div><div class="strategy-core"><div class="strategy-group impulse"><h2>Impulso Corfo</h2><div class="strategy-nodes">${impulse.map(o=>node(o,selected?.name)).join('')}</div></div><div class="strategy-group role"><h2>Rol de Corfo</h2><div class="strategy-nodes">${role.map(o=>node(o,selected?.name)).join('')}</div></div></div>
       <div class="strategy-group enablers"><h2>Habilitantes</h2><div class="strategy-nodes">${enablers.map(o=>node(o,selected?.name)).join('')}</div></div></section>
       ${selected?`<section class="card objective-detail" id="strategy-detail" tabindex="-1"><div class="objective-head"><div><p class="eyebrow dark">${esc(selected.dimension)} · Objetivo ${selected.number}</p><h2>${esc(selected.name)}</h2></div><strong>${all.length} KR en total</strong></div>
-      <div class="detail-grid"><div><h3>Visión</h3><p>${esc(vision(selected.vision))}</p><h3>Justificación</h3><p>${notes[selected.name]?esc(notes[selected.name]):'Texto disponible en la versión interna.'}</p><h3>Subobjetivos</h3><ul>${selected.subobjectives.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><h3>Owners</h3><p>${publicMode()?'No publicados':owners.length?owners.map(esc).join('; '):'Sin información'}</p></div>
+      <div class="detail-grid"><div><h3>Visión</h3><p>${esc(vision(selected.vision))}</p><h3>Justificación</h3><p>${notes[selected.name]?esc(notes[selected.name]):'Sin información'}</p><h3>Subobjetivos</h3><ul>${selected.subobjectives.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><h3>Owners</h3><p>${owners.length?owners.map(esc).join('; '):'Sin información'}</p></div>
       <div><h3>Seguimiento del filtro</h3><p><strong>${visible.length}</strong> KR en ${esc(f.period)}. <strong>${s.noReport}</strong> sin reporte.</p><h4>Estado de ejecución</h4>${distribution(s.executions,visible.length,'execution')}<h4>Estatus</h4>${distribution(s.statuses,visible.length,'status')}<p class="small muted">${s.noReport+s.noStatus} sin estatus informado.</p><h4>Progreso disponible</h4><p>${pct(s.progressMean)} (${s.progressCount} KR medibles)</p></div></div>
       <h3>KR relacionados en el filtro</h3>${visible.length?`<div class="objective-krs">${visible.map(k=>`<a href="${esc(href('detalle-kr.html',{kr:k.id}))}">${esc(k.id)} · ${esc(krName(k))}</a>`).join('')}</div>`:'<p>Sin KR para el filtro seleccionado.</p>'}</section>`:''}`;
     document.querySelectorAll('[data-objective]').forEach(button=>button.addEventListener('click',()=>{
@@ -164,15 +183,15 @@
     return r.json();
   }
   const folder = publicSite ? 'public/' : '';
-  Promise.all([load(`${folder}strategy.json`),load(`${folder}tracking.json`),publicSite?Promise.resolve({}):load('objective-notes.json',true)])
+  Promise.all([load(`${folder}strategy.json`),load(`${folder}tracking.json`),load(`${folder}objective-notes.json`,true)])
     .then(([strategy,tracking,descriptions])=>{
       S=strategy;T=tracking;notes=descriptions;
       if(!Array.isArray(S.krs)||!Array.isArray(S.objectives)||!Array.isArray(T.records))throw new Error('Los JSON no tienen la estructura esperada.');
-      if(publicSite && (S.metadata?.publication!=='public'||T.metadata?.publication!=='public'))throw new Error('La versión pública requiere JSON depurados.');
+      if(publicSite && (S.metadata?.publication!=='public'||T.metadata?.publication!=='public'))throw new Error('La versión pública requiere JSON publicados.');
       if(T.metadata?.demo_records)document.title=`DEMO | ${document.title}`;
       render();
     }).catch(error=>{
-      if(page!=='strategy') app.innerHTML=`<section class="card empty"><h1>Datos de seguimiento no publicados</h1><p>Los reportes de la planilla contienen información interna y todavía no se publican en este sitio. Puede consultar el <a href="./estrategia.html">esquema de la Estrategia</a>.</p></section>`;
+      app.innerHTML=`<section class="card empty"><h1>Datos no disponibles</h1><p>No se pudieron cargar los datos de la estrategia y el seguimiento. Intente actualizar la página.</p></section>`;
       console.warn('Datos no disponibles:',error.message);
     });
 })();
