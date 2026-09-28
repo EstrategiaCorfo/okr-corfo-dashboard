@@ -146,6 +146,45 @@
     fact('Aprendizaje',value(r.learning)),fact('¿Quedó pendiente?',value(r.pending)),
     fact('Tratamiento del pendiente',value(r.pending_treatment)),fact('Periodo de traspaso',value(r.transfer_period)),
   ].join('')}</dl>`;}
+  function evolutionChart(records, kr, period) {
+    const rows=records.filter(r=>period==='todos'||r.period===period);
+    if(!rows.length)return `<section class="evolution-card" aria-labelledby="evolution-title"><h2 id="evolution-title">Evolución del Resultado Clave</h2><div class="chart-empty">Todavía no hay reportes para graficar en ${esc(periodLabel(period))}.</div></section>`;
+    const measured=rows.filter(r=>r.progress!==null&&r.progress!==undefined&&Number.isFinite(Number(r.progress)));
+    const numeric=measured.length>0;
+    const points=numeric?measured:rows.filter(r=>['No iniciado','En proceso','Completado'].includes(r.execution));
+    if(!points.length)return `<section class="evolution-card" aria-labelledby="evolution-title"><h2 id="evolution-title">Evolución del Resultado Clave</h2><div class="chart-empty">Los reportes aún no contienen progreso numérico ni estado del hito para graficar.</div></section>`;
+    const width=Math.max(720,points.length*155),height=310,left=numeric?70:116,right=36,top=48,bottom=236;
+    const x=i=>points.length===1?(left+width-right)/2:left+i*(width-left-right)/(points.length-1);
+    const numbers=measured.map(r=>Number(r.progress));
+    const min=numeric?Math.min(0,Math.floor(Math.min(...numbers)/25)*25):0;
+    const max=numeric?Math.max(100,Math.ceil(Math.max(...numbers)/25)*25):2;
+    const y=value=>bottom-(Number(value)-min)/(max-min)*(bottom-top);
+    const rank={'No iniciado':0,'En proceso':1,'Completado':2};
+    const axis=numeric?Array.from({length:5},(_,i)=>min+(max-min)*i/4):[0,1,2];
+    const axisLabel=v=>numeric?`${number(v)}%`:['No iniciado','En curso','Cumplido'][v];
+    const grid=axis.map(v=>`<line x1="${left}" y1="${y(v)}" x2="${width-right}" y2="${y(v)}" stroke="#dde1e9" stroke-width="1"/><text x="${left-13}" y="${y(v)+4}" text-anchor="end" fill="#555b6c" font-size="12">${esc(axisLabel(v))}</text>`).join('');
+    const threshold=kr.cdc?100:80;
+    const reference=numeric&&threshold>=min&&threshold<=max?
+      `<line x1="${left}" y1="${y(threshold)}" x2="${width-right}" y2="${y(threshold)}" stroke="#D64045" stroke-width="2" stroke-dasharray="6 5"/><text x="${width-right}" y="${y(threshold)-7}" text-anchor="end" fill="#a82e38" font-size="11" font-weight="700">Referencia ${threshold}%</text>`:'';
+    const coords=points.map((r,i)=>[x(i),y(numeric?r.progress:rank[r.execution])]);
+    const path=coords.length>1?`<polyline points="${coords.map(p=>p.join(',')).join(' ')}" fill="none" stroke="#221E7C" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>`:'';
+    const marks=points.map((r,i)=>{
+      const [cx,cy]=coords[i],label=numeric?percent(r.progress):executionLabel(r.execution);
+      return `<circle cx="${cx}" cy="${cy}" r="7" fill="#fff" stroke="#221E7C" stroke-width="3"><title>${esc(periodLabel(r.period))} · ${esc(instanceLabel(r.instance))} · ${day(r.date)} · ${esc(label)}</title></circle>
+        <text x="${cx}" y="${cy-14}" text-anchor="middle" fill="#17183B" font-weight="700" font-size="12">${esc(label)}</text>
+        <text x="${cx}" y="263" text-anchor="middle" fill="#17183B" font-size="12" font-weight="700">${esc(instanceLabel(r.instance))}</text>
+        <text x="${cx}" y="282" text-anchor="middle" fill="#555b6c" font-size="11">${day(r.date)} · ${esc(periodLabel(r.period))}</text>`;
+    }).join('');
+    const description=points.map(r=>`${instanceLabel(r.instance)} ${day(r.date)}: ${numeric?percent(r.progress):executionLabel(r.execution)}`).join('; ');
+    const title=numeric?'Progreso numérico por reporte':'Estado del hito por reporte';
+    const note=numeric?
+      `Los puntos corresponden a porcentajes informados, con una referencia de ${threshold}%. ${measured.length<rows.length?`${rows.length-measured.length} reporte(s) sin porcentaje se consultan en el historial.`:''}`:
+      'Secuencia cualitativa del estado del hito; no representa un porcentaje de progreso.';
+    return `<section class="evolution-card" aria-labelledby="evolution-title"><div class="section-heading"><div><h2 id="evolution-title">Evolución del Resultado Clave</h2><p>${title} · ${points.length} ${points.length===1?'observación':'observaciones'}</p></div></div>
+      <div class="chart-scroll" tabindex="0" aria-label="Gráfico desplazable de evolución del KR"><svg class="evolution-chart" viewBox="0 0 ${width} ${height}" style="min-width:${width}px" role="img" aria-label="${esc(title)}. ${esc(description)}">
+        ${grid}${reference}${path}${marks}
+      </svg></div><p class="chart-note">${esc(note)}</p></section>`;
+  }
   function detail(f,krs){
     const requested=query().get('kr'),kr=requested?krs.find(k=>k.id===requested):krs[0];
     if(!kr){app.innerHTML=hero('Detalle de Resultado Clave','Seleccione un KR en Resultados Clave.',f,0);return;}
@@ -162,6 +201,7 @@
         fact('Producto asociado estimado',value(kr.product)),fact('Medio de verificación estimado',value(kr.verification)),
         fact('Comentarios de estrategia',value(kr.comments)),
       ].join('')}</dl></section><section class="detail-report"><h2>Último reporte ${r?`<span class="report-moment">${momentLabel(r.moment)}</span>`:''}</h2>${r?`<div class="snapshot-grid"><div><small>Estatus (semáforo)</small>${statusBadge(r.status)}</div><div><small>Progreso numérico (%)</small><strong>${percent(r.progress)}</strong>${progressBar(r.progress,r.status,kr.cdc)}</div><div><small>Estado del hito</small>${badge(executionLabel(r.execution))}</div></div><p>${metricPath(r)}</p>${reportFacts(r)}`:'<p>Sin reporte en este periodo.</p>'}</section></div>
+      ${evolutionChart(log,kr,f.period)}
       <div class="section-heading"><div><h2>Historial del Resultado Clave</h2><p>${log.length} reportes, por trimestre e instancia.</p></div></div>
       ${log.length?`<div class="timeline">${groups.map(period=>`<section><h3>${esc(periodLabel(period))}</h3>${log.filter(x=>x.period===period).map(x=>`<article class="history-item"><div class="history-top"><strong>${instanceLabel(x.instance)} · ${day(x.date)}</strong><span>${momentLabel(x.moment)}</span></div><div class="inline-badges">${demoLabel(x)}${statusBadge(x.status)}${badge(executionLabel(x.execution))}<span>${percent(x.progress)}</span></div><p>${value(x.comment)}</p><details class="report-more"><summary>Ver todos los campos del reporte</summary>${reportFacts(x)}</details></article>`).join('')}</section>`).join('')}</div>`:'<div class="empty">Sin reportes históricos.</div>'}`;
   }
