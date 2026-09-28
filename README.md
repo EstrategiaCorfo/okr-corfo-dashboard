@@ -8,10 +8,10 @@ El dashboard lee `data/strategy.json` y `data/tracking.json`, generados desde la
 
 Estado de ejecución, progreso numérico y estatus cualitativo son tres variables independientes. Los hitos sin variables cuantitativas no reciben un progreso estimado.
 
-La gráfica de Estrategia recrea las capas y el orden visual del PPT institucional. Los textos de justificación del manual se cargan solo desde el archivo local opcional `data/objective-notes.json`.
+La gráfica de Estrategia recrea las capas y el orden visual del PPT institucional. Los textos de justificación extraídos del manual se cargan desde `data/public/objective-notes.json` en el sitio público y desde `data/objective-notes.json` en desarrollo local.
 
 ## Uso y privacidad
 
 Vea [README_ACTUALIZACION.md](README_ACTUALIZACION.md) para validar la planilla, generar los JSON y probar el sitio.
 
-Este repositorio y GitHub Pages son públicos. El sitio carga `data/public/strategy.json` y `data/public/tracking.json`, generados desde el Excel con `--public`. Incluyen 161 KR y 51 reportes ficticios señalados como **DEMO**. Los nombres de Owners y suplentes, comentarios, evidencias, aprendizajes y pendientes se omiten de los JSON públicos. Los JSON internos, la planilla y el manual permanecen fuera de Git.
+Este repositorio y GitHub Pages son públicos. El sitio carga JSON generados desde el Excel con `--public`, incluidos los responsables, suplentes, comentarios, evidencias y pendientes. Se abre con los 161 KR y permite filtrarlos por periodo, objetivo y Owner. Los 51 reportes de seguimiento ficticios están señalados como **DEMO**. Se publican las ocho justificaciones usadas en el esquema, pero el Excel, el manual y los JSON locales originales permanecen fuera de Git.
