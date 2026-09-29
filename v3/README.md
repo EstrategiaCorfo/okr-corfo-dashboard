@@ -4,6 +4,8 @@ Esta ruta conserva el rediseño recibido el 29 de septiembre de 2026 como una ve
 
 La planilla `Planilla-Maestra-Seguimiento-Dashboard-OKR-vf.xlsx` se transformó en `data/strategy.json` y `data/tracking.json`. Contiene 161 KR de estrategia y tres reportes ficticios de un solo KR, `KR-109`, en Q4 2026. La métrica registrada es 0%, 40% y 100%; el detalle muestra su evolución. El valor de 40% informado en la revisión intermedia difiere del cálculo a partir de Línea base 0, Valor actual 0 y Meta 1, por lo que se presenta una nota en el gráfico. Son datos de demostración, no avances institucionales oficiales.
 
+El ciclo del panel muestra Q3 2026 en Apertura, semana 1, como etapa simulada para comparar el diseño. El ejemplo de KR-109 corresponde a Q4 2026 y está identificado como demostración.
+
 Para regenerar los JSON desde la planilla sin subir el archivo original:
 
 ```bash

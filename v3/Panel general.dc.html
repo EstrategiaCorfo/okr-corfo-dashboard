@@ -64,7 +64,7 @@
       <section data-avoid="" aria-labelledby="cycle-title" style="display:flex;flex-direction:column;gap:14px">
         <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
           <h2 id="cycle-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Ciclo trimestral · {{ cycleText }}</h2>
-          <span style="font-size:14px;font-weight:600;color:#D64045">Hoy · semana {{ week }} de 13</span>
+          <span style="font-size:14px;font-weight:600;color:#D64045">Etapa simulada · semana {{ week }} de 13</span>
         </div>
         <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0 16px">
           <sc-for list="{{ cycle }}" as="st" hint-placeholder-count="4">
@@ -337,7 +337,7 @@ class Component extends DCLogic {
     const enough = s.progressCount >= O.MIN_PROGRESS_SAMPLE, mean = s.progressMean == null ? 0 : Math.round(s.progressMean);
     const execRows = Object.keys(O.EXEC).map(k => ({label:O.EXEC[k].label, count:s.executions[k], width:O.pctOf(s.executions[k], total), color:O.EXEC[k].color}));
 
-    const cur = O.currentPeriod(), week = O.quarterWeek();
+    const cur = '2026/Q3', week = 1;
     const steps = [{name:'Apertura', when:'Semana 1', start:1}, {name:'Revisión intermedia', when:'Semanas 6 a 7', start:6}, {name:'Cierre de Q', when:'Semana 13', start:13}, {name:'Presentación a Vicepresidencia', when:'Semanas 1 a 2 del Q siguiente', start:14}];
     let ci = 0; steps.forEach((x, i) => { if (week >= x.start) ci = i; });
     const cycle = steps.map((x, i) => {
