@@ -79,11 +79,11 @@
                   <span>{{ r.moment }}</span>
                   <sc-if value="{{ r.demo }}" hint-placeholder-val="{{ false }}"><span style="padding:1px 6px;background:#EDF0F5">Dato ficticio (demostración)</span></sc-if>
                 </div>
-                <a href="{{ r.href }}" style="font-family:var(--font-display);font-weight:600;font-size:15px;line-height:1.35;color:#221E7C;text-wrap:pretty;text-decoration:underline;text-decoration-color:#9197AE;text-decoration-thickness:1px;text-underline-offset:4px" style-hover="color:#D64045;text-decoration-color:#D64045">{{ r.name }}</a>
+                <a href="{{ r.href }}" style="font-family:var(--font-display);font-weight:600;font-size:15px;line-height:1.35;color:#221E7C;text-wrap:pretty;text-decoration:none" style-hover="color:#D64045">{{ r.name }}</a>
                 <p style="margin:0;font-size:13px;line-height:1.45;color:#3F3F3F;text-wrap:pretty">{{ r.comment }}</p>
               </div>
               <dl style="margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-content:start">
-                <div style="display:flex;flex-direction:column;gap:4px"><dt style="font-size:11px;font-weight:600;color:#3F3F3F">Estatus</dt><dd style="margin:0"><span title="{{ r.statusEn }}" style="{{ r.badgeStyle }}"><span aria-hidden="true">{{ r.glyph }}</span>{{ r.statusLabel }}</span></dd></div>
+                <div style="display:flex;flex-direction:column;gap:4px"><dt style="font-size:11px;font-weight:600;color:#3F3F3F">Nivel de confianza</dt><dd style="margin:0"><span title="{{ r.statusEn }}" style="{{ r.badgeStyle }}"><span aria-hidden="true">{{ r.glyph }}</span>{{ r.statusLabel }}</span></dd></div>
                 <div style="display:flex;flex-direction:column;gap:4px"><dt style="font-size:11px;font-weight:600;color:#3F3F3F">Progreso numérico</dt><dd style="margin:0;font-size:13px;font-weight:600;color:#17183B">{{ r.progress }}</dd></div>
                 <div style="display:flex;flex-direction:column;gap:4px"><dt style="font-size:11px;font-weight:600;color:#3F3F3F">Estado del hito</dt><dd style="margin:0;font-size:13px;color:#17183B">{{ r.exec }}</dd></div>
               </dl>
@@ -137,7 +137,7 @@ class Component extends DCLogic {
             comment: r.comment ? String(r.comment).replace(/^\[DEMO\]\s*/, '') : 'Sin comentario',
             statusLabel:S.label, statusEn:S.en, glyph:S.glyph,
             badgeStyle:`display:inline-flex;align-items:center;gap:6px;padding:2px 8px;background:${S.bg};color:${S.color};font-size:12px;font-weight:700;line-height:1.3`,
-            progress: r.progress == null ? 'No aplica (KR tipo hito)' : O.pct(r.progress),
+            progress: r.progress == null ? 'No informado' : O.pct(r.progress),
             exec: r.execution ? O.EXEC[r.execution].label : 'No informado'};
         })};
     });

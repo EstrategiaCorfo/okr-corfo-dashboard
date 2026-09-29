@@ -57,9 +57,9 @@
   const OLD_TO_NEW = Object.fromEntries(OBJECTIVES.map(o => [o.old, o.n]));
 
   const STATUS = {
-    'On Track': {key: 'ok', label: 'En cumplimiento', en: 'On Track', glyph: '●', color: '#13815F', fill: '#13815F', bg: '#E6F6EE'},
-    'Off Track': {key: 'warn', label: 'Alerta de cumplimiento', en: 'Off Track', glyph: '▲', color: '#7A5C00', fill: '#F5C400', bg: '#FFF4C2'},
-    'At Risk': {key: 'risk', label: 'Riesgo de cumplimiento', en: 'At Risk', glyph: '■', color: '#B92F3F', fill: '#B92F3F', bg: '#FCE8EB'}
+    'On Track': {key: 'ok', label: 'Alto (On Track)', en: 'On Track', glyph: '●', color: '#13815F', fill: '#13815F', bg: '#E6F6EE'},
+    'Off Track': {key: 'warn', label: 'Medio (Off Track)', en: 'Off Track', glyph: '▲', color: '#7A5C00', fill: '#F5C400', bg: '#FFF4C2'},
+    'At Risk': {key: 'risk', label: 'Bajo (At Risk)', en: 'At Risk', glyph: '■', color: '#B92F3F', fill: '#B92F3F', bg: '#FCE8EB'}
   };
   const NO_STATUS = {key: 'none', label: 'Sin reporte', en: '', glyph: '■', color: '#6B7088', fill: '#C9CAD5', bg: '#EDF0F5'};
   const EXEC = {'No iniciado': {label: 'No iniciado', color: '#C9CAD5'}, 'En proceso': {label: 'En curso', color: '#9197AE'}, 'Completado': {label: 'Cumplido', color: '#221E7C'}};
@@ -68,11 +68,11 @@
   const MOMENT = {'Propuesta Owner': 'Propuesta del owner', 'Confirmado GE': 'Confirmado por GE'};
   const MIN_PROGRESS_SAMPLE = 5;
   const GLOSSARY = {
-    estatus: {title: 'Estatus (semáforo)', text: 'Lectura experta del owner sobre el cumplimiento del KR: en cumplimiento (On Track), alerta de cumplimiento (Off Track) o riesgo de cumplimiento (At Risk). Es independiente del progreso numérico.', anchor: 'semaforo'},
-    progreso: {title: 'Progreso numérico', text: '(Valor actual − Línea base) ÷ (Meta − Línea base) × 100. Solo aplica a KR cuantificables. Un KR con 80% se considera éxito; los KR asociados a CDC exigen 100%.', anchor: 'progreso'},
+    estatus: {title: 'Nivel de confianza', text: 'Lectura experta del owner sobre la probabilidad de cumplir el KR: alto (On Track), medio (Off Track) o bajo (At Risk). Es independiente del progreso numérico.', anchor: 'semaforo'},
+    progreso: {title: 'Progreso numérico', text: '(Valor actual − Línea base) ÷ (Meta − Línea base) × 100. Aplica a todos los KR, incluidos los cualitativos, tengan o no base de cálculo. Un KR con 80% se considera éxito; los KR asociados a CDC exigen 100%.', anchor: 'progreso'},
     hito: {title: 'Estado del hito', text: 'Situación del hito según el último reporte: no iniciado, en curso o cumplido. Métrica secundaria en tonos neutros; no es una evaluación de cumplimiento.', anchor: 'glosario'},
     owner: {title: 'Owner', text: 'Gerente o encargado responsable del objetivo o del KR.', anchor: 'glosario'},
-    lineabase: {title: 'Línea base, Valor actual y Meta', text: 'Valores que definen el progreso numérico de un KR cuantificable: punto de partida, medición más reciente y valor comprometido.', anchor: 'progreso'},
+    lineabase: {title: 'Línea base, Valor actual y Meta', text: 'Valores que definen el progreso numérico de un KR cuando existe base de cálculo: punto de partida, medición más reciente y valor comprometido.', anchor: 'progreso'},
     ciclo: {title: 'Ciclo trimestral', text: 'Cada trimestre tiene Apertura (semana 1), Revisión intermedia (semanas 6 a 7), Cierre de Q (semana 13) y Presentación a Vicepresidencia (semanas 1 a 2 del Q siguiente).', anchor: 'ciclo'}
   };
   Object.values(GLOSSARY).forEach(g => { g.href = url('guia') + '#' + g.anchor; });

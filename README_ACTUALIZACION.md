@@ -18,7 +18,7 @@ Cambie la ruta del ejemplo por la ubicación real del archivo:
 python scripts/generate_data.py --input "/ruta/Planilla_Maestra_Dashboard_OKR_V2.xlsx" --validate-only
 ```
 
-El programa informa la hoja, la fila y el campo si detecta columnas faltantes, ID KR repetidos o sin relación, periodos y fechas inválidos, estados o estatus incorrectos y métricas numéricas incompletas. La validación no modifica archivos. Para impedir el uso de reportes marcados `[DEMO]`, agregue `--require-real`.
+El programa informa la hoja, la fila y el campo si detecta columnas faltantes, ID KR repetidos o sin relación, periodos y fechas inválidos, niveles de confianza incorrectos y métricas numéricas incompletas. Acepta «Trimestre meta KR (inicial)», «Nivel de confianza», «Estado del hito» y «Progreso numérico (%)» además de los encabezados de la versión anterior. La validación no modifica archivos. Para impedir el uso de reportes marcados `[DEMO]`, agregue `--require-real`.
 
 ## 3. Generar y revisar
 
@@ -26,7 +26,7 @@ El programa informa la hoja, la fila y el campo si detecta columnas faltantes, I
 python scripts/generate_data.py --input "/ruta/Planilla_Maestra_Dashboard_OKR_V2.xlsx"
 ```
 
-Se crean `data/strategy.json`, `data/tracking.json` y `data/objective-notes.json`. Para actualizar los datos no es necesario editar el HTML o JavaScript. Revise el total de KR, reportes, Owners sin informar y advertencias DEMO que aparecen en la terminal. El script calcula el progreso solo si existen Línea base, Meta y Valor actual; el estatus se conserva según la evaluación informada.
+Se crean `data/strategy.json`, `data/tracking.json` y `data/objective-notes.json`. Para actualizar los datos no es necesario editar el HTML o JavaScript. Revise el total de KR, reportes, Owners sin informar y advertencias DEMO que aparecen en la terminal. El script calcula el progreso cuando existen Línea base, Meta y Valor actual; de otro modo acepta el porcentaje informado directamente para un KR cualitativo. El nivel de confianza se conserva según la evaluación informada.
 
 El archivo `data/strategy-catalog.json` contiene la numeración, dimensiones, enunciados, subobjetivos y justificaciones oficiales de los ocho objetivos, extraídos de la especificación recibida. La planilla original conserva su numeración antigua; el generador traduce sus datos al catálogo sin alterar los códigos de KR. Revise el catálogo antes de cambiarlo.
 
@@ -50,4 +50,4 @@ Abra `http://localhost:8000` para revisar los archivos locales. Abra `http://loc
 
 **GitHub Pages y todas las ramas de este repositorio son públicos.** Cualquier persona puede descargar los JSON de `data/public/`, incluidos nombres y textos cualitativos. No suba la planilla, el manual, `data/strategy.json`, `data/tracking.json` ni `data/objective-notes.json` al repositorio público.
 
-La versión actual publicada es una **demostración con 51 reportes ficticios**. Para una actualización oficial, use la planilla con datos definitivos, valide con `--require-real`, genere otra vez los JSON públicos y revise los datos expuestos antes de subirlos.
+Los JSON actuales todavía corresponden a una **demostración con 51 reportes ficticios**. El paquete de rediseño del 29 de septiembre no incluyó la nueva planilla con el único KR de ejemplo, por lo que hay que regenerar y publicar `data/public/` desde ese Excel antes de presentar el seguimiento como actualizado. Para una actualización oficial, use la planilla con datos definitivos, valide con `--require-real`, genere otra vez los JSON públicos y revise los datos expuestos antes de subirlos.

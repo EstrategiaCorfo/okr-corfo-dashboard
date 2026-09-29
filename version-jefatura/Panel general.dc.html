@@ -102,15 +102,15 @@
     <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px;align-items:stretch">
       <article data-avoid="" style="background:#EDF0F5;padding:20px;display:flex;flex-direction:column;gap:14px">
         <div style="display:flex;flex-direction:column;gap:4px">
-          <h2 style="margin:0;display:flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:700;font-size:18px;color:#17183B">Estatus (semáforo)
+          <h2 style="margin:0;display:flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:700;font-size:18px;color:#17183B">Nivel de confianza
             <span style="position:relative;display:inline-flex">
-              <button type="button" aria-label="Qué es el estatus" aria-describedby="tip-estatus" aria-expanded="{{ tips.estatus.expanded }}" onClick="{{ tips.estatus.toggle }}" onMouseEnter="{{ tips.estatus.open }}" onMouseLeave="{{ tips.estatus.close }}" onFocus="{{ tips.estatus.open }}" style="width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid #9197AE;color:#221E7C;font-family:var(--font-sans);font-size:13px;font-weight:700;cursor:pointer">i</button>
+              <button type="button" aria-label="Qué es el nivel de confianza" aria-describedby="tip-estatus" aria-expanded="{{ tips.estatus.expanded }}" onClick="{{ tips.estatus.toggle }}" onMouseEnter="{{ tips.estatus.open }}" onMouseLeave="{{ tips.estatus.close }}" onFocus="{{ tips.estatus.open }}" style="width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid #9197AE;color:#221E7C;font-family:var(--font-sans);font-size:13px;font-weight:700;cursor:pointer">i</button>
               <sc-if value="{{ tips.estatus.show }}" hint-placeholder-val="{{ false }}">
                 <span role="tooltip" id="tip-estatus" onMouseEnter="{{ tips.estatus.open }}" onMouseLeave="{{ tips.estatus.close }}" style="position:absolute;top:34px;left:-8px;z-index:30;width:280px;padding:12px 14px;background:#17183B;color:#FFFFFF;font-family:var(--font-sans);font-size:13px;font-weight:400;line-height:1.45;display:flex;flex-direction:column;gap:8px">{{ tips.estatus.text }}<a href="{{ tips.estatus.href }}" style="color:#FFFFFF;text-decoration:underline;font-weight:600">Ver más</a></span>
               </sc-if>
             </span>
           </h2>
-          <p style="margin:0;font-size:14px;color:#3F3F3F;text-wrap:pretty">Lectura experta del owner sobre el cumplimiento de cada KR.</p>
+          <p style="margin:0;font-size:14px;color:#3F3F3F;text-wrap:pretty">Lectura experta del owner sobre la probabilidad de cumplir cada KR.</p>
         </div>
         <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
           <div role="img" aria-label="{{ donutAria }}" style="position:relative;width:148px;height:148px;border-radius:50%;background:{{ donutBg }};flex:none">
@@ -154,9 +154,9 @@
         </sc-if>
         <sc-if value="{{ progressFew }}" hint-placeholder-val="{{ true }}">
           <strong style="font-family:var(--font-display);font-size:24px;line-height:1.1;color:#17183B">Muestra insuficiente</strong>
-          <p style="margin:0;font-size:14px;line-height:1.45;color:#3F3F3F;text-wrap:pretty">Aún no hay suficientes KR cuantificables para un promedio representativo.</p>
+          <p style="margin:0;font-size:14px;line-height:1.45;color:#3F3F3F;text-wrap:pretty">Aún no hay suficientes KR con progreso informado para un promedio representativo.</p>
         </sc-if>
-        <p style="margin:0;font-size:13px;color:#3F3F3F"><strong style="color:#17183B">{{ progressCount }} de {{ total }}</strong> KR cuantificables · mínimo para promediar: {{ minSample }}</p>
+        <p style="margin:0;font-size:13px;color:#3F3F3F"><strong style="color:#17183B">{{ progressCount }} de {{ total }}</strong> KR con progreso informado · mínimo para promediar: {{ minSample }}</p>
         <div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #C9CAD5;padding-top:14px">
         <div style="display:flex;flex-direction:column;gap:4px">
           <h2 style="margin:0;display:flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:700;font-size:16px;color:#17183B">Estado del hito
@@ -177,14 +177,14 @@
             </div>
           </sc-for>
         </div>
-        <p style="margin:0;font-size:13px;color:#3F3F3F">Métrica secundaria. No reemplaza al estatus.</p>
+        <p style="margin:0;font-size:13px;color:#3F3F3F">Métrica secundaria. No reemplaza al nivel de confianza.</p>
         </div>
       </article>
     </section>
 
     <section aria-labelledby="obj-title" style="display:flex;flex-direction:column;gap:14px">
       <div style="display:flex;flex-direction:column;gap:4px">
-        <h2 id="obj-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Estatus por Objetivo Estratégico</h2>
+        <h2 id="obj-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Nivel de confianza por Objetivo Estratégico</h2>
         <p style="margin:0;font-size:14px;color:#3F3F3F">Vista única de los ocho semáforos. Cada tarjeta abre el objetivo en Estrategia.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));gap:16px">
@@ -209,9 +209,9 @@
         </sc-for>
       </div>
       <p style="margin:0;font-size:13px;color:#3F3F3F;display:flex;flex-wrap:wrap;gap:6px 18px">
-        <span><span aria-hidden="true" style="color:#13815F">●</span> En cumplimiento</span>
-        <span><span aria-hidden="true" style="color:#7A5C00">▲</span> Alerta de cumplimiento</span>
-        <span><span aria-hidden="true" style="color:#B92F3F">■</span> Riesgo de cumplimiento</span>
+        <span><span aria-hidden="true" style="color:#13815F">●</span> Alto (On Track)</span>
+        <span><span aria-hidden="true" style="color:#7A5C00">▲</span> Medio (Off Track)</span>
+        <span><span aria-hidden="true" style="color:#B92F3F">■</span> Bajo (At Risk)</span>
         <span><span aria-hidden="true" style="color:#9197AE">■</span> Sin reporte</span>
       </p>
     </section>
@@ -220,7 +220,7 @@
       <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap">
         <div style="display:flex;flex-direction:column;gap:4px">
           <h2 id="alert-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Resultados Clave que requieren atención</h2>
-          <p style="margin:0;font-size:14px;color:#3F3F3F">KR en alerta o en riesgo de cumplimiento.</p>
+          <p style="margin:0;font-size:14px;color:#3F3F3F">KR con nivel de confianza medio o bajo.</p>
         </div>
         <a data-noprint="" href="{{ krsHref }}" style="min-height:40px;padding:0 16px;display:flex;align-items:center;background:#17183B;color:#FFFFFF;font-size:14px;font-weight:600" style-hover="background:#0C0D22;color:#FFFFFF">Ver todos los Resultados Clave</a>
       </div>
@@ -236,13 +236,13 @@
                 <span style="color:#3F3F3F">{{ k.periodText }}</span>
                 <sc-if value="{{ k.demo }}" hint-placeholder-val="{{ true }}"><span style="padding:2px 8px;background:#EDF0F5;color:#3F3F3F;font-size:12px">Dato ficticio (demostración)</span></sc-if>
               </div>
-              <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:17px;line-height:1.3;letter-spacing:-0.01em;text-wrap:pretty"><a href="{{ k.href }}" style="color:#221E7C;text-decoration:underline;text-decoration-color:#9197AE;text-decoration-thickness:1px;text-underline-offset:4px" style-hover="color:#D64045;text-decoration-color:#D64045">{{ k.name }}</a></h3>
+              <h3 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:17px;line-height:1.3;letter-spacing:-0.01em;text-wrap:pretty"><a href="{{ k.href }}" style="color:#221E7C;text-decoration:none" style-hover="color:#D64045">{{ k.name }}</a></h3>
               <p style="margin:0;font-size:13px;line-height:1.45;color:#3F3F3F;text-wrap:pretty"><strong style="color:#221E7C">{{ k.objLabel }}</strong> · {{ k.so }}</p>
               <p style="margin:0;font-size:13px;color:#3F3F3F"><strong>Fecha meta:</strong> {{ k.due }}</p>
-              <a href="{{ k.href }}" aria-hidden="true" tabindex="-1" style="align-self:flex-start;min-height:32px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#221E7C" style-hover="color:#D64045">Ver detalle del KR →</a>
+              <a href="{{ k.href }}" aria-hidden="true" tabindex="-1" style="align-self:flex-start;min-height:32px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#D64045" style-hover="color:#A3262C">Ver detalle del KR →</a>
             </div>
             <dl style="margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-content:start;background:#EDF0F5;padding:14px 16px">
-              <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Estatus</dt><dd style="margin:0"><span title="{{ k.statusEn }}" style="{{ k.badgeStyle }}"><span aria-hidden="true">{{ k.glyph }}</span>{{ k.statusLabel }}</span></dd></div>
+              <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Nivel de confianza</dt><dd style="margin:0"><span title="{{ k.statusEn }}" style="{{ k.badgeStyle }}"><span aria-hidden="true">{{ k.glyph }}</span>{{ k.statusLabel }}</span></dd></div>
               <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Progreso numérico</dt><dd style="margin:0;font-size:13px;font-weight:600;color:#17183B">{{ k.progress }}</dd></div>
               <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Estado del hito</dt><dd style="margin:0"><span style="display:inline-block;padding:3px 8px;background:#FFFFFF;border:1px solid #C9CAD5;color:#3F3F3F;font-size:13px;font-weight:600">{{ k.exec }}</span></dd></div>
             </dl>
@@ -314,7 +314,7 @@ class Component extends DCLogic {
       return {code:o.code, dim:o.dim, name:o.name, total:ss.total, attention:warn + risk, ok, warn, risk, none:ss.noStatus,
         attStyle:`font-weight:700;font-variant-numeric:tabular-nums;color:${warn + risk ? '#B92F3F' : '#3F3F3F'}`,
         progress: ss.progressCount >= O.MIN_PROGRESS_SAMPLE ? O.pct(Math.round(ss.progressMean)) : 'Muestra insuficiente',
-        aria:`Objetivo ${o.code}: ${ok} en cumplimiento, ${warn} en alerta, ${risk} en riesgo, ${ss.noStatus} sin reporte`,
+        aria:`Objetivo ${o.code}: ${ok} con confianza alta, ${warn} con confianza media, ${risk} con confianza baja, ${ss.noStatus} sin reporte`,
         href:O.href('estrategia', {eje:o.n}),
         style:`display:flex;flex-direction:column;gap:14px;padding:16px 18px;background:#EDF0F5;color:#17183B;text-decoration:none;border-top:3px solid ${sel ? '#D64045' : '#17183B'};opacity:${dim ? 0.55 : 1}`};
     });
@@ -325,7 +325,7 @@ class Component extends DCLogic {
         due:O.longDate(kr.target_date), href:O.href('detalle', {kr:kr.id}), demo:!!r.demo,
         statusLabel:S.label, statusEn:S.en, glyph:S.glyph,
         badgeStyle:`display:inline-flex;align-items:center;gap:6px;padding:3px 8px;background:${S.bg};color:${S.color};font-size:13px;font-weight:700;line-height:1.3`,
-        progress: r.progress == null ? 'No aplica (KR tipo hito)' : O.pct(r.progress),
+        progress: r.progress == null ? 'No informado' : O.pct(r.progress),
         exec: r.execution ? O.EXEC[r.execution].label : 'No informado'};
     });
 
@@ -357,11 +357,11 @@ class Component extends DCLogic {
 
     return Object.assign(base, {
       total, periodText:O.periodLabel(f.period), todayText:O.longDate(new Date()),
-      liveText:`${total} Resultados Clave mostrados`, stats, noStatusText:`${s.noStatus} sin estatus informado`,
+      liveText:`${total} Resultados Clave mostrados`, stats, noStatusText:`${s.noStatus} sin nivel de confianza informado`,
       objCards, alerts, noAlerts:alerts.length === 0,
-      noAlertsText: total ? 'Ningún Resultado Clave en alerta o en riesgo de cumplimiento.' : 'Sin reporte en este periodo.',
+      noAlertsText: total ? 'Ningún Resultado Clave con nivel de confianza medio o bajo.' : 'Sin reporte en este periodo.',
       krsHref:O.href('krs'),
-      donutBg, legend, donutAria:`${st['On Track']} en cumplimiento, ${st['Off Track']} en alerta, ${st['At Risk']} en riesgo, ${s.noStatus} sin reporte, de ${total} KR`,
+      donutBg, legend, donutAria:`${st['On Track']} con confianza alta, ${st['Off Track']} con confianza media, ${st['At Risk']} con confianza baja, ${s.noStatus} sin reporte, de ${total} KR`,
       progressEnough:enough, progressFew:!enough, progressMean:mean + '%', progressWidth:O.clamp(mean) + '%', progressAria:`Progreso ${mean}%, umbral de éxito 80%`,
       progressCount:s.progressCount, minSample:O.MIN_PROGRESS_SAMPLE, execRows,
       cycleText:O.periodLabel(cur), showCycle: f.period === cur || (f.period === 'todos' && O.PERIODS.includes(cur)), week, cycle, evolutionText
