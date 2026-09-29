@@ -60,8 +60,10 @@ COLUMN_ALIASES = {
     },
     'Seguimiento': {
         'execution': ('Estado del hito',),
-        'progress': ('Progreso numérico (%)', 'Progreso numérico'),
-        'status': ('Nivel de confianza',),
+        'moment': ('Instancia del registro',),
+        'progress': ('Progreso numérico (%)', 'Progreso numérico', 'Métrica (%)'),
+        'status': ('Nivel de confianza', 'Nivel de confianza (semáforo)'),
+        'comment': ('Comentario cualitativo (máximo 500 caracteres)',),
     },
 }
 REQUIRED_STRATEGY = {'dimension', 'objective', 'vision', 'subobjective', 'id', 'name', 'target_period', 'target_year', 'quarter', 'target_date', 'area', 'owner'}
@@ -75,6 +77,8 @@ STATUSES = {
     'Alto (On Track)': 'On Track', 'Medio (Off Track)': 'Off Track',
     'Bajo (At Risk)': 'At Risk',
     'Alto': 'On Track', 'Medio': 'Off Track', 'Bajo': 'At Risk',
+    'Alto / On Track': 'On Track', 'Medio / Off Track': 'Off Track',
+    'Bajo / At Risk': 'At Risk',
 }
 MOMENTS = {'Confirmado GE', 'Propuesta Owner'}
 PERIOD = re.compile(r'^(20\d{2})/Q([1-4])$')
@@ -295,7 +299,11 @@ def build(path):
             try:
                 given = reported_progress(row[ht['progress']])
                 if given is not None:
-                    if progress is not None and abs(given - progress) > .11:
+                    # Métrica (%) es el avance informado por el owner, incluso
+                    # para KR cualitativos con valores de referencia 0 y 1.
+                    if txt(wt.cell(1, ht['progress'] + 1).value) == 'Métrica (%)':
+                        progress = given
+                    elif progress is not None and abs(given - progress) > .11:
                         errors.append(f'{location}, Progreso: difiere del cálculo de Línea base, Meta y Valor actual')
                     elif progress is None:
                         progress = given

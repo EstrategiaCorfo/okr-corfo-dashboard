@@ -1,0 +1,10 @@
+/* Tipografía institucional: Aptos Display (títulos) y Calibri (texto).
+   Fuentes de Microsoft Office: se toman del equipo con local().
+   Sin Office instalado, Calibri cae en Carlito (mismas métricas, Google Fonts)
+   y Aptos Display en Segoe UI / Helvetica. En PowerPoint se usan las reales. */
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face{font-family:'Aptos Display';src:local('Aptos Display'),local('AptosDisplay');font-weight:400;font-style:normal}
+@font-face{font-family:'Aptos Display';src:local('Aptos Display Bold'),local('AptosDisplay-Bold'),local('Aptos Display');font-weight:600 700;font-style:normal}
+@font-face{font-family:'Calibri';src:local('Calibri');font-weight:400;font-style:normal}
+@font-face{font-family:'Calibri';src:local('Calibri Bold'),local('Calibri-Bold');font-weight:600 700;font-style:normal}
+@font-face{font-family:'Calibri';src:local('Calibri Italic'),local('Calibri-Italic');font-weight:400;font-style:italic}
