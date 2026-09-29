@@ -83,7 +83,7 @@ class Component extends DCLogic {
     const selects = [];
     if (bit) {
       selects.push(sel('inst', 'Instancia', [{value:'', label:'Todas las instancias'}, ...O.INSTANCE_ORDER.map(v => ({value:v, label:O.INSTANCE[v]}))], 1, 160));
-      selects.push(sel('status', 'Estatus', [{value:'', label:'Todos los estatus'}, ...Object.keys(O.STATUS).map(v => ({value:v, label:O.STATUS[v].label}))], 1, 170));
+      selects.push(sel('status', 'Nivel de confianza', [{value:'', label:'Todos los niveles'}, ...Object.keys(O.STATUS).map(v => ({value:v, label:O.STATUS[v].label}))], 1, 170));
       selects.push(sel('exec', 'Estado del hito', [{value:'', label:'Todos los estados'}, ...Object.keys(O.EXEC).map(v => ({value:v, label:O.EXEC[v].label}))], 1, 160));
     }
     if (showPeriod) selects.push(sel('period', 'Periodo', [{value:'todos', label:'Todos los periodos'}, ...O.PERIODS.map(p => ({value:p, label:O.periodLabel(p)}))], 1, 150));
@@ -95,7 +95,7 @@ class Component extends DCLogic {
     if (showObjective && f.objective) chips.push({label:'Objetivo ' + O.code(f.objective), aria:'Quitar filtro de objetivo', onClear:clear('objective')});
     if (showOwner && f.owner) chips.push({label: f.owner === '__vacio__' ? 'Sin Owner informado' : f.owner, aria:'Quitar filtro de Owner', onClear:clear('owner')});
     if (bit && f.inst) chips.push({label:O.INSTANCE[f.inst], aria:'Quitar filtro de instancia', onClear:clear('inst')});
-    if (bit && f.status) chips.push({label:O.STATUS[f.status].label, aria:'Quitar filtro de estatus', onClear:clear('status')});
+    if (bit && f.status) chips.push({label:O.STATUS[f.status].label, aria:'Quitar filtro de nivel de confianza', onClear:clear('status')});
     if (bit && f.exec) chips.push({label:O.EXEC[f.exec].label, aria:'Quitar filtro de estado del hito', onClear:clear('exec')});
     if (showSearch && f.q) chips.push({label:'“' + f.q + '”', aria:'Quitar búsqueda', onClear:clear('q')});
 

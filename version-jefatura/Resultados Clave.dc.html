@@ -54,19 +54,19 @@
       <p style="margin:0;font-size:15px;color:#3F3F3F"><strong style="font-family:var(--font-display);font-size:22px;color:#17183B;font-variant-numeric:tabular-nums">{{ total }}</strong> Resultados Clave mostrados</p>
     </section>
 
-    <dc-import name="Filter Bar" search="{{ true }}" on-change="{{ onFilters }}" hint-size="100%,120px" style="position:sticky;top:64px;z-index:15;display:block"></dc-import>
+    <dc-import name="Filter Bar" search="{{ true }}" on-change="{{ onFilters }}" hint-size="100%,120px" style="{{ filterWrapStyle }}"></dc-import>
 
     <div role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">{{ liveText }}</div>
 
     <section style="display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;border-bottom:1px solid #C9CAD5;padding-bottom:14px">
       <p style="margin:0;font-size:14px;color:#3F3F3F">{{ noReportText }}</p>
       <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
-        <label style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#17183B">Estatus
+        <label style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#17183B">Nivel de confianza
           <select value="{{ statusFilter }}" onChange="{{ onStatus }}" style="height:36px;padding:0 8px;border:1px solid #C9CAD5;border-radius:0;background:#FFFFFF;color:#17183B;font-size:13px">
             <option value="">Todos</option>
-            <option value="On Track">En cumplimiento</option>
-            <option value="Off Track">Alerta de cumplimiento</option>
-            <option value="At Risk">Riesgo de cumplimiento</option>
+            <option value="On Track">Alto (On Track)</option>
+            <option value="Off Track">Medio (Off Track)</option>
+            <option value="At Risk">Bajo (At Risk)</option>
             <option value="none">Sin reporte</option>
           </select>
         </label>
@@ -92,13 +92,13 @@
                 <sc-if value="{{ k.hasType }}" hint-placeholder-val="{{ false }}"><span style="padding:2px 8px;border:1px solid #C9CAD5;color:#3F3F3F;font-size:12px">{{ k.type }}</span></sc-if>
                 <sc-if value="{{ k.demo }}" hint-placeholder-val="{{ false }}"><span style="padding:2px 8px;background:#EDF0F5;color:#3F3F3F;font-size:12px">Dato ficticio (demostración)</span></sc-if>
               </div>
-              <h2 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:17px;line-height:1.3;letter-spacing:-0.01em;text-wrap:pretty"><a href="{{ k.href }}" style="color:#221E7C;text-decoration:underline;text-decoration-color:#9197AE;text-decoration-thickness:1px;text-underline-offset:4px" style-hover="color:#D64045;text-decoration-color:#D64045">{{ k.name }}</a></h2>
+              <h2 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:17px;line-height:1.3;letter-spacing:-0.01em;text-wrap:pretty"><a href="{{ k.href }}" style="color:#221E7C;text-decoration:none" style-hover="color:#D64045">{{ k.name }}</a></h2>
               <p style="margin:0;font-size:13px;line-height:1.45;color:#3F3F3F;text-wrap:pretty"><strong style="color:#221E7C">{{ k.objLabel }}</strong> · {{ k.so }}</p>
               <p style="margin:0;font-size:13px;color:#3F3F3F;display:flex;flex-wrap:wrap;gap:4px 16px"><span><strong>Fecha meta:</strong> {{ k.due }}</span><span><strong>Owner:</strong> {{ k.owner }}</span></p>
-              <a href="{{ k.href }}" aria-hidden="true" tabindex="-1" style="align-self:flex-start;min-height:32px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#221E7C" style-hover="color:#D64045">Ver detalle del KR →</a>
+              <a href="{{ k.href }}" aria-hidden="true" tabindex="-1" style="align-self:flex-start;min-height:32px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#D64045" style-hover="color:#A3262C">Ver detalle del KR →</a>
             </div>
-            <dl style="margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-content:start;background:#EDF0F5;padding:14px 16px">
-              <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Estatus</dt><dd style="margin:0"><span title="{{ k.statusEn }}" style="{{ k.badgeStyle }}"><span aria-hidden="true">{{ k.glyph }}</span>{{ k.statusLabel }}</span></dd></div>
+            <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,130px),1fr));gap:12px;align-content:start;background:#EDF0F5;padding:14px 16px">
+              <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Nivel de confianza</dt><dd style="margin:0"><span title="{{ k.statusEn }}" style="{{ k.badgeStyle }}"><span aria-hidden="true">{{ k.glyph }}</span>{{ k.statusLabel }}</span></dd></div>
               <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Progreso numérico</dt>
                 <dd style="margin:0;display:flex;flex-direction:column;gap:6px">
                   <span style="font-size:13px;font-weight:600;color:#17183B">{{ k.progress }}</span>
@@ -131,7 +131,7 @@
             <sc-for list="{{ rows }}" as="k" hint-placeholder-count="6">
               <tr style="border-bottom:1px solid #C9CAD5">
                 <td style="position:sticky;left:0;background:#FFFFFF;padding:10px 12px 10px 0;font-weight:700;white-space:nowrap;vertical-align:top"><a href="{{ k.href }}">{{ k.id }}</a></td>
-                <td style="padding:10px 12px;line-height:1.4;vertical-align:top;min-width:260px"><a href="{{ k.href }}" style="color:#221E7C;text-decoration:underline;text-decoration-color:#9197AE;text-decoration-thickness:1px;text-underline-offset:4px" style-hover="color:#D64045;text-decoration-color:#D64045">{{ k.name }}</a></td>
+                <td style="padding:10px 12px;line-height:1.4;vertical-align:top;min-width:260px"><a href="{{ k.href }}" style="color:#221E7C;text-decoration:none" style-hover="color:#D64045">{{ k.name }}</a></td>
                 <td style="padding:10px 12px;vertical-align:top;white-space:nowrap;color:#221E7C;font-weight:700">{{ k.objCode }}</td>
                 <td style="padding:10px 12px;vertical-align:top;white-space:nowrap">{{ k.subCode }}</td>
                 <td style="padding:10px 12px;vertical-align:top;white-space:nowrap">{{ k.periodText }}</td>
@@ -157,15 +157,17 @@
 <script type="text/x-dc" data-dc-script>
 const COLS = [
   {key:'id', label:'Código'}, {key:'name', label:'Resultado Clave'}, {key:'obj', label:'Objetivo'}, {key:'sub', label:'Subobjetivo'},
-  {key:'period', label:'Periodo meta'}, {key:'status', label:'Estatus'}, {key:'progress', label:'Progreso'}, {key:'exec', label:'Estado del hito'}
+  {key:'period', label:'Periodo meta'}, {key:'status', label:'Nivel de confianza'}, {key:'progress', label:'Progreso'}, {key:'exec', label:'Estado del hito'}
 ];
 const STATUS_RANK = {'At Risk':0, 'Off Track':1, 'On Track':2};
 const EXEC_RANK = {'No iniciado':0, 'En proceso':1, 'Completado':2};
 
 class Component extends DCLogic {
-  state = { d:null, f:null, view:'tarjetas', sortKey:'id', sortDir:'asc', statusFilter:'', demoHidden:false };
+  state = { d:null, f:null, view:'tarjetas', sortKey:'id', sortDir:'asc', statusFilter:'', demoHidden:false, narrow:false };
 
+  componentWillUnmount() { window.removeEventListener('resize', this._r); }
   componentDidMount() {
+    this._r = () => this.setState({narrow: window.innerWidth < 760}); this._r(); window.addEventListener('resize', this._r);
     try { if (sessionStorage.getItem('okr-demo-ok') === '1') this.setState({demoHidden:true}); } catch (e) {}
     const p = new URLSearchParams(location.search);
     this.setState({view: p.get('vista') === 'tabla' ? 'tabla' : 'tarjetas', statusFilter: p.get('estatus') || ''});
@@ -177,7 +179,7 @@ class Component extends DCLogic {
   renderVals() {
     const O = window.OKR, {d, f, view, sortKey, sortDir, statusFilter} = this.state;
     const btn = on => `min-height:36px;padding:0 14px;border:0;font-size:13px;font-weight:600;cursor:pointer;background:${on ? '#17183B' : '#FFFFFF'};color:${on ? '#FFFFFF' : '#17183B'}`;
-    const base = {onFilters: nf => this.setState({f:nf}), showDemo:!this.state.demoHidden,
+    const base = {filterWrapStyle: this.state.narrow ? 'display:block' : 'position:sticky;top:64px;z-index:15;display:block', onFilters: nf => this.setState({f:nf}), showDemo:!this.state.demoHidden,
       hideDemo: () => { try { sessionStorage.setItem('okr-demo-ok','1'); } catch (e) {} this.setState({demoHidden:true}); },
       isCards: view !== 'tabla', isTable: view === 'tabla', cardsPressed: view !== 'tabla' ? 'true' : 'false', tablePressed: view === 'tabla' ? 'true' : 'false',
       cardsBtn:btn(view !== 'tabla'), tableBtn:btn(view === 'tabla'),
@@ -200,8 +202,8 @@ class Component extends DCLogic {
         hasType:!!kr.kr_type, type:kr.kr_type || '', demo:!!(r && r.demo),
         statusLabel:S.label, statusEn:S.en, glyph:S.glyph,
         badgeStyle:`display:inline-flex;align-items:center;gap:6px;padding:3px 8px;background:${S.bg};color:${S.color};font-size:13px;font-weight:700;line-height:1.3;white-space:nowrap`,
-        progress: !r ? 'Sin reporte' : p == null ? 'No aplica (KR tipo hito)' : O.pct(p),
-        progressShort: !r ? 'Sin reporte' : p == null ? 'No aplica' : O.pct(p),
+        progress: !r ? 'Sin reporte' : p == null ? 'No informado' : O.pct(p),
+        progressShort: !r ? 'Sin reporte' : p == null ? 'No informado' : O.pct(p),
         hasBar: p != null, barWidth:O.clamp(p) + '%', barColor:S.fill, barAria:`Progreso ${O.pct(p)}, umbral 80%`,
         path: hasPath ? `Línea base ${O.num(r.baseline)} → Valor actual ${O.num(r.current)} → Meta ${O.num(r.target)}` : '',
         exec: !r ? 'Sin reporte' : r.execution ? O.EXEC[r.execution].label : 'No informado'};

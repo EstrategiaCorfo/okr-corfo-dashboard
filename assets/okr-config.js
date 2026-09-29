@@ -14,9 +14,9 @@ window.OKRConfig = Object.freeze({
     ],
   },
   status: {
-    'On Track': {label: 'En cumplimiento', icon: '●', hint: 'Trayectoria prevista de cumplimiento'},
-    'Off Track': {label: 'Alerta de cumplimiento', icon: '▲', hint: 'Requiere atención y medidas correctivas'},
-    'At Risk': {label: 'Riesgo de cumplimiento', icon: '■', hint: 'Riesgo relevante de incumplimiento'},
+    'On Track': {label: 'Alto (On Track)', icon: '●', hint: 'Confianza alta en el cumplimiento'},
+    'Off Track': {label: 'Medio (Off Track)', icon: '▲', hint: 'Confianza media; requiere atención'},
+    'At Risk': {label: 'Bajo (At Risk)', icon: '■', hint: 'Confianza baja; requiere medidas correctivas'},
   },
   execution: {
     'No iniciado': 'No iniciado', 'En proceso': 'En curso', 'Completado': 'Cumplido',
@@ -27,8 +27,8 @@ window.OKRConfig = Object.freeze({
     objetivo: 'Resultado institucional que busca alcanzar la estrategia. Se organiza en subobjetivos y Resultados Clave.',
     kr: 'Resultado Clave: evidencia concreta y verificable del avance de un subobjetivo.',
     owner: 'Gerente o encargado responsable del objetivo o del Resultado Clave.',
-    estatus: 'Lectura experta del owner sobre la posibilidad de cumplir el Resultado Clave.',
-    progreso: 'Para KR cuantificables: (Valor actual − Línea base) ÷ (Meta − Línea base) × 100.',
+    estatus: 'Nivel de confianza: lectura experta del owner sobre la posibilidad de cumplir el Resultado Clave; alto, medio o bajo.',
+    progreso: 'Porcentaje informado para cada KR. Si hay base de cálculo: (Valor actual − Línea base) ÷ (Meta − Línea base) × 100.',
     hito: 'Situación del entregable o actividad: No iniciado, En curso o Cumplido.',
     ciclo: 'El seguimiento trimestral contempla Apertura, Revisión intermedia, Cierre de Q y Presentación a Vicepresidencia.',
   },

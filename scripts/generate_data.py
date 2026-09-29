@@ -54,6 +54,16 @@ TRACKING_COLUMNS = {
     'pending_treatment': 'Tratamiento del pendiente',
     'transfer_period': 'Periodo de traspaso',
 }
+COLUMN_ALIASES = {
+    'Estrategia': {
+        'target_period': ('Trimestre meta KR (inicial)',),
+    },
+    'Seguimiento': {
+        'execution': ('Estado del hito',),
+        'progress': ('Progreso numérico (%)', 'Progreso numérico'),
+        'status': ('Nivel de confianza',),
+    },
+}
 REQUIRED_STRATEGY = {'dimension', 'objective', 'vision', 'subobjective', 'id', 'name', 'target_period', 'target_year', 'quarter', 'target_date', 'area', 'owner'}
 REQUIRED_TRACKING = {'id', 'period', 'date', 'instance', 'moment', 'execution', 'baseline', 'target', 'current', 'progress', 'status', 'comment', 'evidence', 'learning'}
 EXECUTIONS = {'No iniciado', 'En proceso', 'Completado'}
@@ -62,6 +72,9 @@ STATUSES = {
     'Alerta de cumplimiento / Off Track': 'Off Track',
     'Riesgo de cumplimiento / At Risk': 'At Risk',
     'On Track': 'On Track', 'Off Track': 'Off Track', 'At Risk': 'At Risk',
+    'Alto (On Track)': 'On Track', 'Medio (Off Track)': 'Off Track',
+    'Bajo (At Risk)': 'At Risk',
+    'Alto': 'On Track', 'Medio': 'Off Track', 'Bajo': 'At Risk',
 }
 MOMENTS = {'Confirmado GE', 'Propuesta Owner'}
 PERIOD = re.compile(r'^(20\d{2})/Q([1-4])$')
@@ -116,9 +129,17 @@ def periods(value):
 
 def headers(sheet, row, required, definitions, errors):
     cells = [txt(c.value) for c in sheet[row]]
-    found = {key: cells.index(label) for key, label in definitions.items() if label in cells}
+    aliases = COLUMN_ALIASES.get(sheet.title, {})
+    found = {}
+    for key, label in definitions.items():
+        matches = [cells.index(candidate) for candidate in (label, *aliases.get(key, ())) if candidate in cells]
+        if len(matches) > 1:
+            errors.append(f'{sheet.title}, encabezado fila {row}: hay dos columnas para «{label}»')
+        if matches:
+            found[key] = matches[0]
     for key in sorted(required - found.keys()):
-        errors.append(f'{sheet.title}, encabezado fila {row}: falta columna «{definitions[key]}»')
+        accepted = ', '.join(f'«{x}»' for x in (definitions[key], *aliases.get(key, ())))
+        errors.append(f'{sheet.title}, encabezado fila {row}: falta columna {accepted}')
     if len(cells) != len(set(c for c in cells if c)):
         errors.append(f'{sheet.title}, encabezado fila {row}: hay columnas duplicadas')
     return found
@@ -126,6 +147,17 @@ def headers(sheet, row, required, definitions, errors):
 
 def value(row, mapping, key):
     return row[mapping[key]].value if key in mapping else None
+
+
+def reported_progress(cell):
+    """Lee un porcentaje escrito directamente, incluso si Excel lo almacena como fracción."""
+    raw = cell.value
+    if raw is None or raw == '' or (isinstance(raw, str) and raw.startswith('=')):
+        return None
+    if isinstance(raw, str) and raw.strip().endswith('%'):
+        return numeric(raw.strip()[:-1])
+    result = numeric(raw)
+    return result * 100 if '%' in cell.number_format else result
 
 
 def build(path):
@@ -241,7 +273,7 @@ def build(path):
         if execution and execution not in EXECUTIONS:
             errors.append(f'{location}, Estado de ejecución: «{execution}» no es válido')
         if status and status not in STATUSES:
-            errors.append(f'{location}, Estatus: «{status}» no es válido')
+            errors.append(f'{location}, Nivel de confianza: «{status}» no es válido')
         if moment not in MOMENTS:
             errors.append(f'{location}, Momento del registro: usar Confirmado GE o Propuesta Owner')
         vals = []
@@ -259,16 +291,16 @@ def build(path):
                 errors.append(f'{location}: Meta no puede ser igual a Línea base')
             else:
                 progress = (vals[2] - vals[0]) / (vals[1] - vals[0]) * 100
-        reported = value(row, ht, 'progress')
-        if reported is not None and reported != '' and not (isinstance(reported, str) and reported.startswith('=')):
+        if 'progress' in ht:
             try:
-                given = numeric(reported)
-                if progress is None:
-                    errors.append(f'{location}, Progreso %: no hay variables cuantitativas para respaldarlo')
-                elif abs(given * (100 if abs(given) <= 1 else 1) - progress) > .11:
-                    errors.append(f'{location}, Progreso %: difiere del cálculo de Línea base, Meta y Valor actual')
+                given = reported_progress(row[ht['progress']])
+                if given is not None:
+                    if progress is not None and abs(given - progress) > .11:
+                        errors.append(f'{location}, Progreso: difiere del cálculo de Línea base, Meta y Valor actual')
+                    elif progress is None:
+                        progress = given
             except ValueError as exc:
-                errors.append(f'{location}, Progreso %: {exc}')
+                errors.append(f'{location}, Progreso: {exc}')
         if 'name' in ht and ident in by_id:
             given_name = value(row, ht, 'name')
             expected = by_name[ident]

@@ -57,7 +57,7 @@
     <dc-import name="Filter Bar" on-change="{{ onFilters }}" hint-size="100%,120px" style="position:sticky;top:64px;z-index:15;display:block"></dc-import>
 
     <section aria-label="Esquema de la Estrategia Corporativa 2026-2030" style="display:flex;flex-direction:column;gap:0">
-      <div style="background:#17183B;color:#FFFFFF;padding:20px 24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,420px);gap:16px 32px;align-items:center">
+      <div style="background:#17183B;color:#FFFFFF;padding:20px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px 32px;align-items:center">
         <div style="display:flex;flex-direction:column;gap:6px">
           <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#C9CAD5">Impacto · objetivo agregador</span>
           <p style="margin:0;display:flex;flex-wrap:wrap;gap:6px 24px;font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-0.015em">
@@ -148,7 +148,7 @@
               <p style="margin:0;font-size:13px;color:#3F3F3F">{{ periodText }} · {{ seg.total }} KR del periodo · {{ seg.noReport }} aún sin reporte</p>
             </div>
             <div style="display:flex;flex-direction:column;gap:8px">
-              <span style="font-size:13px;font-weight:700;color:#17183B">Estatus (semáforo)</span>
+              <span style="font-size:13px;font-weight:700;color:#17183B">Nivel de confianza</span>
               <div role="img" aria-label="{{ seg.aria }}" style="display:flex;height:12px;gap:2px;background:#C9CAD5">
                 <span style="background:#13815F;flex:{{ seg.ok }}"></span>
                 <span style="background:#F5C400;flex:{{ seg.warn }}"></span>
@@ -182,7 +182,7 @@
         <div style="display:flex;flex-direction:column;gap:12px">
           <div style="display:flex;flex-direction:column;gap:4px">
             <h3 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Resultados Clave por subobjetivo</h3>
-            <p style="margin:0;font-size:14px;color:#3F3F3F">Estatus y progreso según el último reporte de {{ periodText }}.</p>
+            <p style="margin:0;font-size:14px;color:#3F3F3F">Nivel de confianza y progreso según el último reporte de {{ periodText }}.</p>
           </div>
           <div style="display:flex;flex-direction:column;border-top:3px solid #17183B">
             <sc-for list="{{ tree }}" as="s" hint-placeholder-count="3">
@@ -277,7 +277,7 @@ class Component extends DCLogic {
       const dc = DIM_COLOR[o.dim] || '#17183B';
       return {code:o.code, name:o.name, pressed: sel ? 'true' : 'false', select: () => this.select(o.n), glyph:S.glyph,
         dotStyle:`color:${dark && !w ? '#C9CAD5' : dark ? '#FFFFFF' : S.color};font-size:11px`,
-        statusText: !ss.total ? 'Sin KR en el periodo' : !w ? 'Sin reporte' : att ? `${att} KR en alerta o riesgo` : 'En cumplimiento',
+        statusText: !ss.total ? 'Sin KR en el periodo' : !w ? 'Sin reporte' : att ? `${att} KR con confianza media o baja` : 'Confianza alta',
         style:`min-height:100px;padding:16px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;background:${sel ? '#FFFFFF' : '#EDF0F5'};border:0;border-top:5px solid ${dc};outline:${sel ? `2px solid ${dc}` : 'none'};outline-offset:-2px;cursor:pointer`,
         darkStyle:`padding:14px 16px;display:flex;align-items:center;gap:16px;background:transparent;color:#FFFFFF;border:1px solid ${sel ? '#D64045' : 'rgba(255,255,255,0.28)'};border-bottom:${sel ? '4px solid #D64045' : '1px solid rgba(255,255,255,0.28)'};cursor:pointer`};
     };
@@ -302,9 +302,9 @@ class Component extends DCLogic {
     const legend = [...Object.keys(O.STATUS).map(k => ({label:O.STATUS[k].label, count:ss.statuses[k], glyph:O.STATUS[k].glyph, glyphStyle:`color:${O.STATUS[k].color};width:14px`})),
       {label:'Sin reporte', count:ss.noStatus, glyph:'■', glyphStyle:'color:#9197AE;width:14px'}];
     const seg = {total:ss.total, noReport:ss.noReport, ok:ss.statuses['On Track'], warn:ss.statuses['Off Track'], risk:ss.statuses['At Risk'], none:ss.noStatus,
-      aria:`${ss.statuses['On Track']} en cumplimiento, ${ss.statuses['Off Track']} en alerta, ${ss.statuses['At Risk']} en riesgo, ${ss.noStatus} sin reporte`, legend,
-      progressText: ss.progressCount >= O.MIN_PROGRESS_SAMPLE ? O.pct(Math.round(ss.progressMean)) : 'Aún no hay suficientes KR cuantificables para un promedio representativo.',
-      progressBase:`${ss.progressCount} de ${ss.total} KR cuantificables · mínimo para promediar: ${O.MIN_PROGRESS_SAMPLE}`,
+      aria:`${ss.statuses['On Track']} con confianza alta, ${ss.statuses['Off Track']} con confianza media, ${ss.statuses['At Risk']} con confianza baja, ${ss.noStatus} sin reporte`, legend,
+      progressText: ss.progressCount >= O.MIN_PROGRESS_SAMPLE ? O.pct(Math.round(ss.progressMean)) : 'Aún no hay suficientes KR con progreso informado para un promedio representativo.',
+      progressBase:`${ss.progressCount} de ${ss.total} KR con progreso informado · mínimo para promediar: ${O.MIN_PROGRESS_SAMPLE}`,
       exec:Object.keys(O.EXEC).map(k => ({label:O.EXEC[k].label, count:ss.executions[k], width:O.pctOf(ss.executions[k], ss.total), color:O.EXEC[k].color}))};
 
     const open = this.state.openSubs;
@@ -316,11 +316,11 @@ class Component extends DCLogic {
         expanded: isOpen ? 'true' : 'false', caret: isOpen ? '▼' : '▶',
         toggle: () => this.setState(st => ({openSubs:Object.assign({}, st.openSubs, {[i]:!st.openSubs[i]})})),
         ok:s2.statuses['On Track'], warn:s2.statuses['Off Track'], risk:s2.statuses['At Risk'], none:s2.noStatus,
-        aria:`${s2.statuses['On Track']} en cumplimiento, ${s2.statuses['Off Track']} en alerta, ${s2.statuses['At Risk']} en riesgo, ${s2.noStatus} sin reporte`,
+        aria:`${s2.statuses['On Track']} con confianza alta, ${s2.statuses['Off Track']} con confianza media, ${s2.statuses['At Risk']} con confianza baja, ${s2.noStatus} sin reporte`,
         krs:s2.rows.map(({kr, record:r}) => {
           const S = O.status(r && r.status), p = r && r.progress != null ? Number(r.progress) : null;
           return {id:kr.id, name:kr.name, periodText:O.periodLabel(kr.target_period), href:O.href('detalle', {kr:kr.id}),
-            progress: !r ? 'Sin reporte' : p == null ? 'No aplica (KR tipo hito)' : 'Progreso ' + O.pct(p),
+            progress: !r ? 'Sin reporte' : p == null ? 'No informado' : 'Progreso ' + O.pct(p),
             barWidth: (p == null ? 0 : O.clamp(p)) + '%', barColor:S.fill, barAria: p == null ? 'Sin progreso numérico' : `Progreso ${O.pct(p)}, umbral 80%`,
             statusLabel:S.label, statusEn:S.en, glyph:S.glyph,
             badgeStyle:`flex:0 0 auto;white-space:nowrap;display:inline-flex;align-items:center;gap:6px;padding:3px 8px;background:${S.bg};color:${S.color};font-size:13px;font-weight:700;line-height:1.3`};

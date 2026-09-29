@@ -70,7 +70,7 @@
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px">
           <div style="{{ last.statusCard }}">
-            <span style="font-size:13px;font-weight:700;color:#17183B">Estatus (semáforo)</span>
+            <span style="font-size:13px;font-weight:700;color:#17183B">Nivel de confianza</span>
             <span title="{{ last.statusEn }}" style="{{ last.badgeStyle }}"><span aria-hidden="true">{{ last.glyph }}</span>{{ last.statusLabel }}</span>
             <span style="font-size:12px;color:#3F3F3F">Lectura experta del owner</span>
           </div>
@@ -206,7 +206,7 @@ class Component extends DCLogic {
       demo:!!(r && r.demo), statusLabel:S.label, statusEn:S.en, glyph:S.glyph,
       statusCard:`background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid ${S.fill}`,
       badgeStyle:`align-self:flex-start;display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:${S.bg};color:${S.color};font-size:15px;font-weight:700`,
-      progress: !r ? 'Sin reporte' : p == null ? 'No aplica (KR tipo hito)' : O.pct(p),
+      progress: !r ? 'Sin reporte' : p == null ? 'No informado' : O.pct(p),
       hasBar: p != null, barWidth:O.clamp(p) + '%', barColor:S.fill, barAria:`Progreso ${O.pct(p)}, umbral 80%`,
       hasPath: !!(r && r.baseline != null && r.target != null), baseline:r ? O.num(r.baseline) : '', current:r ? (O.num(r.current) || 'No informado') : '', target:r ? O.num(r.target) : '',
       exec: !r ? 'Sin reporte' : r.execution ? O.EXEC[r.execution].label : 'No informado',
@@ -238,8 +238,8 @@ class Component extends DCLogic {
         statusLabel:H.label, statusEn:H.en, glyph:H.glyph,
         badgeStyle:`display:inline-flex;align-items:center;gap:6px;padding:2px 8px;background:${H.bg};color:${H.color};font-size:12px;font-weight:700`,
         dot:`position:relative;z-index:1;width:20px;height:20px;margin-top:0;background:${H.fill};border:3px solid #FFFFFF`,
-        progress: x.progress == null ? 'No aplica' : O.pct(x.progress), exec: x.execution ? O.EXEC[x.execution].label : 'No informado',
-        changed:!!changed, changeText: changed ? `Cambio de estatus: ${from} → ${H.label}` : '', comment:clean(x.comment)};
+        progress: x.progress == null ? 'No informado' : O.pct(x.progress), exec: x.execution ? O.EXEC[x.execution].label : 'No informado',
+        changed:!!changed, changeText: changed ? `Cambio de nivel de confianza: ${from} → ${H.label}` : '', comment:clean(x.comment)};
     })}));
 
     return Object.assign(base, {found:true, notFound:false,
