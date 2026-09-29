@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "publication": "public",
+    "record_count": 3,
+    "demo_records": 3
+  },
+  "records": [
+    {
+      "id": "KR-109",
+      "period": "2026/Q4",
+      "date": "2026-11-16",
+      "instance": "Apertura",
+      "moment": "Confirmado GE",
+      "execution": "En proceso",
+      "baseline": 0.0,
+      "target": 1.0,
+      "current": 0.0,
+      "progress": 0.0,
+      "status": "On Track",
+      "comment": "[DEMO] Inicio del Q4: Tenemos confianza alta de lograr cumplir con el KR durante este Q. Ya identificamos la forma en cómo obtener la información y establecimos las primeras conversaciones con oficina de partes, quienes nos apoyarán en la obtención de la información.",
+      "evidence": "[DEMO] Registro de reunión de apertura.",
+      "learning": "",
+      "pending": "No",
+      "pending_treatment": "Se cierra",
+      "transfer_period": "No aplica",
+      "source_row": 2,
+      "demo": true
+    },
+    {
+      "id": "KR-109",
+      "period": "2026/Q4",
+      "date": "2026-11-16",
+      "instance": "Revisión intermedia",
+      "moment": "Confirmado GE",
+      "execution": "En proceso",
+      "baseline": 0.0,
+      "target": 1.0,
+      "current": 0.0,
+      "progress": 40.0,
+      "status": "On Track",
+      "comment": "[DEMO] Intermedia del Q4: Oficina de partes nos ha compartida la base de datos histórica de convenios período 2014-2026, los cuales estamos analizando con apoyo de herramientas de IA. Mantenemos la confianza alta de lograr el KR. Estimamos un 40% de avance a la fecha.",
+      "evidence": "[DEMO] Base de datos desde oficina de partes con consolidado de correspondencia y documentación.",
+      "learning": "",
+      "pending": "No",
+      "pending_treatment": "Se cierra",
+      "transfer_period": "No aplica",
+      "source_row": 3,
+      "demo": true
+    },
+    {
+      "id": "KR-109",
+      "period": "2026/Q4",
+      "date": "2026-11-16",
+      "instance": "Cierre",
+      "moment": "Confirmado GE",
+      "execution": "Completado",
+      "baseline": 0.0,
+      "target": 1.0,
+      "current": 1.0,
+      "progress": 100.0,
+      "status": "On Track",
+      "comment": "[DEMO] Cierre del Q4: Hemos terminado el análisis de los convenios, habiendo identificado la existencia de 51 convenios con otras instituciones públicas y privadas. Se preparó un reporte con el detalle, el que servirá de insumo para el siguiente KR. Este KR se logra en un 100%.",
+      "evidence": "[DEMO] Informe que sistematiza los 51 convenio identificados como resultado del cumplimiento del KR.",
+      "learning": "El aprendizaje al cierre del Q es que el levantamiento evidenció la importancia de contar con una fuente de información centralizada y criterios comunes para identificar, validar y caracterizar los convenios vigentes. El uso de la información de Oficina de Partes permitió ampliar y sistematizar el levantamiento inicial, pero también mostró la necesidad de complementar distintas fuentes y realizar procesos de validación con las áreas responsables para asegurar la vigencia y trazabilidad de los convenios identificados.",
+      "pending": "No",
+      "pending_treatment": "Se cierra",
+      "transfer_period": "No aplica",
+      "source_row": 4,
+      "demo": true
+    }
+  ]
+}
