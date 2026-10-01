@@ -1,0 +1,8 @@
+:root{
+/* Degradé de portada y cierre — único degradé del sistema */
+--gradient-cover:radial-gradient(110% 85% at 74% 16%, #2B2A86 0%, rgba(43,42,134,0) 62%), radial-gradient(85% 70% at 10% 100%, #1C1D4A 0%, rgba(28,29,74,0) 60%), linear-gradient(132deg, #0C0D22 0%, #17183B 58%, #221E7C 100%); /* @kind color */
+/* Degradé sutil de los divisores de sección */
+--gradient-divider:linear-gradient(158deg, #1C1D46 0%, #17183B 52%, #131433 100%); /* @kind color */
+/* Sin sombras en el sistema */
+--shadow-none:none;
+}

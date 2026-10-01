@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "publication": "public",
+    "kr_count": 2,
+    "visibility": "reported-only",
+    "catalog_kr_count": 161
+  },
+  "objectives": [
+    {
+      "name": "Objetivo 1: Impacto",
+      "number": 1,
+      "dimension": "Marco global",
+      "vision": "Visión 1: Ser el motor que impulsa el progreso productivo del país, transformando la evidencia en decisiones y relatos que visibilicen el impacto de nuestros instrumentos en el crecimiento, el desarrollo de empresas y territorios, y el bienestar de las personas.",
+      "subobjectives": [
+        "SO1.1: Redefinir la manera en la que medimos nuestro instrumental, agregando el impacto como variable crítica",
+        "SO1.2: Diseñar un plan de desarrollo de cultura interna sobre los indicadores de impacto de Corfo",
+        "SO1.3: Diseñar un plan de comunicaciones (internos y externos) que nos permita difundir e informar a nuestro impacto",
+        "SO1.4: Desarrollar las capacidades institucionales para la medición y evaluación de impacto mediante el uso integrado de datos internos y externos"
+      ]
+    },
+    {
+      "name": "Objetivo 2: Financiamiento que Impulsa la Inversión y el Crecimiento",
+      "number": 2,
+      "dimension": "Impulso Corfo",
+      "vision": "Visión 2: Posicionar a Corfo como articulador del financiamiento para el crecimiento productivo, movilizando capital a través de una red de intermediarios financieros.",
+      "subobjectives": [
+        "SO2.1: Fortalecer la industria de capital de riesgo mediante un Fondo de Inversión internacional o institucional participando directamente, o través de otro fondo, del financiamiento aportado por Corfo",
+        "SO2.2: Aumentar la colocación de los programas de cobertura Corfo, optimizando su capacidad de operación",
+        "SO2.3: Incrementar el número de intermediarios de los programas Crédito Mipyme y Crédito Verde posicionando a Corfo en el mercado de financiamiento"
+      ]
+    },
+    {
+      "name": "Objetivo 3: Capacidades Tecnológicas al Servicio de las Empresas",
+      "number": 3,
+      "dimension": "Impulso Corfo",
+      "vision": "Visión 3: Fortalecer las capacidades tecnológicas de las empresas mediante una Red de Centros Tecnológicos de Corfo, consolidada como infraestructura de política pública, con cobertura nacional y un modelo de financiamiento sostenible en el largo plazo.",
+      "subobjectives": [
+        "SO3.1: Posicionar la red para generar demanda empresarial",
+        "SO3.2: Integrar la Red a la oferta de desarrollo productivo y al ecosistema",
+        "SO3.3: Consolidar modelo de sostenibilidad financiera"
+      ]
+    },
+    {
+      "name": "Objetivo 4: Desarrollo desde los Territorios",
+      "number": 4,
+      "dimension": "Impulso Corfo",
+      "vision": "Visión 4: Impulsar desde los territorios una nueva etapa de desarrollo productivo, consolidando a los CDPR como plataformas regionales que conectan capacidades públicas, privadas, académicas y sectoriales para generar crecimiento, inversión y empleo.",
+      "subobjectives": [
+        "SO4.1: Homologación y madurez institucional y operacional de los CDPR",
+        "SO4.2: Desarrollar un sistema integrado de inteligencia territorial que entregue información, indicadores y herramientas para apoyar la planificación, priorización y seguimiento del desarrollo productivo en las regiones",
+        "SO4.3: Creación de un modelo de relacionamiento territorial para impulsar el encadenamiento productivo"
+      ]
+    },
+    {
+      "name": "Objetivo 5: Conexión Empresarial: Soluciones que Escalan",
+      "number": 5,
+      "dimension": "Rol Corfo",
+      "vision": "Visión 5: Consolidar Programa de conexión empresarial que integre de manera efectiva al sector productivo con soluciones provenientes de emprendimientos dinámicos, startups, pymes innovadoras y empresas establecidas, habilitando su validación de mercado, el escalamiento y el apalancamiento de inversión privada, para impulsar el crecimiento económico y la productividad del país.",
+      "subobjectives": [
+        "SO5.1: Lograr la validación temprana de soluciones innovadoras mediante un modelo de conexión con el mercado",
+        "SO5.2: Aumentar la tracción comercial y ventas de soluciones innovadoras mediante un modelo de conexión con el mercado",
+        "SO5.3: Aumentar la sobrevivencia de las empresas mediante un modelo de fortalecimiento de gestión empresarial y conexión con actores del ecosistema de financiamiento"
+      ]
+    },
+    {
+      "name": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
+      "number": 6,
+      "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
+      "subobjectives": [
+        "SO6.1: Alinear y visibilizar las prioridades de Corfo con las prioridades ministeriales, mediante un mapeo conjunto, presentaciones y agendas compartidas",
+        "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
+        "SO6.3: Institucionalizar la gobernanza del esquema de coordinación, estableciendo una mecánica operativa de seguimiento y métricas que asegure su sostenibilidad más allá del ciclo político"
+      ]
+    },
+    {
+      "name": "Objetivo 7: Personas y Talento Interno",
+      "number": 7,
+      "dimension": "Habilitante",
+      "vision": "Visión 7: Fomentar y potenciar el talento interno, generando oportunidades de aprendizaje y desarrollo para asumir nuevos desafíos, y fortaleciendo una cultura de confianza, compromiso e innovación que proyecte a Corfo como un servicio público de alto rendimiento.",
+      "subobjectives": [
+        "SO7.1: Crear un programa de desarrollo de talento interno en Corfo",
+        "SO7.2: Formalización de la política de Desarrollo de Talentos",
+        "SO7.3: Evaluación y mejoras de la política implementada"
+      ]
+    },
+    {
+      "name": "Objetivo 8: Tecnología, Datos y Procesos",
+      "number": 8,
+      "dimension": "Habilitante",
+      "vision": "Visión 8: Optimizar la gestión institucional mediante el uso inteligente de datos, la automatización de procesos críticos y una gobernanza de datos que mejore la experiencia de colaboradores y empresas, consolidando una institución ágil y eficiente.",
+      "subobjectives": [
+        "SO8.1: Facilitar la toma de decisiones y la visibilización de resultados mediante el desarrollo de una capacidad institucional de datos",
+        "SO8.2: Mejorar la confiabilidad, consistencia y seguridad de la información mediante la implementación de una gobernanza de datos con estándares internacionales",
+        "SO8.3: Aumentar la agregación de valor de los colaboradores mediante la digitalización y automatización de procesos",
+        "SO8.4: Mejora de la experiencia del usuario externo a través de una relación basada en procesos más simples, ágiles y digitales"
+      ]
+    }
+  ],
+  "krs": [
+    {
+      "id": "KR-108",
+      "name": "KR-108: Diagnóstico de duplicidades, nudos críticos y oportunidades de coordinación con otros servicios finalizado",
+      "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
+      "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
+      "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
+      "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
+      "periods": [
+        "2026/Q4"
+      ],
+      "target_date": "2026-12-31",
+      "product": "",
+      "verification": "Informe de diagnóstico",
+      "area": "Gerencia de Estrategia",
+      "owner": "Viviana Pardo",
+      "substitutes": "",
+      "comments": "",
+      "kr_type": null,
+      "cdc": null
+    },
+    {
+      "id": "KR-109",
+      "name": "KR-109: Revisión de convenios de colaboración activos finalizada",
+      "objective": "Objetivo 6: Un Estado más Coordinado para el Desarrollo Productivo",
+      "subobjective": "SO6.2: Coordinar la oferta de instrumentos con otras instituciones, formalizando convenios y resolviendo duplicidades y nudos críticos que dificultan su ejecución",
+      "dimension": "Rol Corfo",
+      "vision": "Visión 6: Potenciar el impacto de las políticas públicas donde Corfo actúa, mediante una coordinación sistemática con ministerios y servicios que alinee agendas, eficiente la oferta pública y mejore la asignación de recursos del Estado.",
+      "target_period": "2026/Q4",
+      "target_year": "2026",
+      "quarter": "Q4",
+      "periods": [
+        "2026/Q4"
+      ],
+      "target_date": "2026-12-31",
+      "product": "",
+      "verification": "Informe de revisión de convenios",
+      "area": "Gerencia de Estrategia",
+      "owner": "Viviana Pardo",
+      "substitutes": "",
+      "comments": "",
+      "kr_type": null,
+      "cdc": null
+    }
+  ]
+}

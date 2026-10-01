@@ -1,0 +1,42 @@
+:root{
+--font-display:'Aptos Display', 'Aptos', 'Segoe UI', Helvetica, Arial, sans-serif;
+--font-sans:'Calibri', 'Carlito', 'Segoe UI', Helvetica, Arial, sans-serif;
+--font-mono:'Consolas', 'Courier New', monospace;
+--weight-regular:400;
+--weight-medium:500;
+--weight-semibold:600;
+--weight-bold:700;
+
+/* Escala sobre lienzo 1920 × 1080 */
+--size-cover-title:92px;
+--size-section-title:88px;
+--size-numeral-hero:280px;
+--size-slide-title:56px;
+--size-slide-title-sm:48px;
+--size-block-title:46px;
+--size-card-title:40px;
+--size-panel-title:36px;
+--size-numeral:56px;
+--size-numeral-sm:30px;
+--size-lead:34px;
+--size-lead-sm:29px;
+--size-body:27px;
+--size-body-sm:26px;
+--size-caption:22px;
+--size-footer:12px;
+
+--line-display:1.06; /* @kind font */
+--line-title:1.1; /* @kind font */
+--line-block:1.15; /* @kind font */
+--line-lead:1.35; /* @kind font */
+--line-body:1.4; /* @kind font */
+--line-body-loose:1.45; /* @kind font */
+
+--track-cover:-0.025em;
+--track-section:-0.03em;
+--track-title:-0.022em;
+--track-block:-0.015em;
+--track-numeral-hero:-0.05em;
+--track-eyebrow:0.14em;
+--track-numeral-sm:0.08em;
+}
