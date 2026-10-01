@@ -9,7 +9,7 @@ Sitio estático de seguimiento de la Estrategia Corporativa 2026 a 2030. Incluye
 | Panel anterior | `index.html` | Conserva la versión anterior. |
 | Propuesta de jefatura | `version-jefatura/Panel general.dc.html` | Conserva la propuesta anterior. |
 | V3 | `v3/index.html` | Diseño del 29 de septiembre; un KR de demostración. |
-| V4 | `v4/index.html` | Diseño del 1 de octubre; solo KR presentes en Seguimiento. Actualmente KR-108 y KR-109, con seis reportes DEMO en Q4 2026. |
+| V4 | `v4/index.html` | Diseño del 1 de octubre. Resultados Clave muestra los 161 KR; Panel general considera los reportados en Seguimiento. Actualmente KR-108 y KR-109, con seis reportes DEMO en Q4 2026. |
 
 La documentación de los JSON y el comando de actualización de v4 están en [v4/README.md](v4/README.md). La descripción siguiente corresponde al panel anterior de la raíz.
 

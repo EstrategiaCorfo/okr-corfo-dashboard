@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera los JSON de v4 con los KR presentes en Seguimiento, sin publicar el Excel."""
+"""Genera el catálogo completo y los reportes de v4, sin publicar el Excel."""
 
 import argparse
 import json
@@ -18,11 +18,11 @@ def main():
     strategy, tracking = build(args.input)
     catalog_count = len(strategy['krs'])
     reported_ids = {record['id'] for record in tracking['records']}
-    strategy['krs'] = [kr for kr in strategy['krs'] if kr['id'] in reported_ids]
     strategy, tracking = public_view(strategy, tracking)
     strategy['metadata'].update({
-        'visibility': 'reported-only',
+        'visibility': 'full-catalog',
         'catalog_kr_count': catalog_count,
+        'reported_kr_count': len(reported_ids),
     })
     tracking['metadata']['reported_kr_count'] = len(reported_ids)
     folder = Path(__file__).resolve().parent / 'data'
