@@ -102,11 +102,11 @@
         return (period === 'todos' ? periodSort(b.period, a.period) : 0) || pr(b) - pr(a) || (b.date || '').localeCompare(a.date || '') || (b.source_row || 0) - (a.source_row || 0);
       })[0] || null;
   }
-  function visibleKrs(krs, records, f) {
+  function visibleKrs(krs, records, f, includeUnreported = false) {
     const q = norm(f.q);
     const reported = new Set(records.filter(r => f.period === 'todos' || r.period === f.period).map(r => r.id));
     return krs.filter(k =>
-      reported.has(k.id) &&
+      (includeUnreported ? f.period === 'todos' || (k.periods || []).includes(f.period) || reported.has(k.id) : reported.has(k.id)) &&
       (!f.objective || String(k.obj) === String(f.objective)) &&
       (!f.type || k.kr_type === f.type) &&
       (!f.owner || (f.owner === '__vacio__' ? !k.owner : k.owner === f.owner)) &&
@@ -155,18 +155,21 @@
     const get = f => fetch('data/' + f, {cache: 'no-store'}).then(r => { if (!r.ok) throw new Error(f); return r.json(); });
     cache = Promise.all([get('strategy.json'), get('tracking.json')]).then(([S, T]) => {
       const reported = new Set(T.records.map(r => r.id));
-      const krs = S.krs.filter(k => reported.has(k.id)).map(k => {
+      const allKrs = S.krs.map(k => {
         const old = Number((/Objetivo\s+(\d+)/.exec(k.objective) || [])[1]);
         const n = OLD_TO_NEW[old], o = OBJECTIVES[n - 1];
         const m = Number((/^SO\d+\.(\d+)/.exec(k.subobjective) || [])[1]) || 1;
         return Object.assign({}, k, {obj: n, subIndex: m - 1, subCode: `SO${n}.${m}`, subText: o.subs[m - 1] || k.subobjective.replace(/^SO\d+\.\d+:\s*/, ''),
           name: k.name.replace(/^KR-\d+:?\s*/i, ''), objCode: o.code, objName: o.name});
       });
-      const byId = new Map(krs.map(k => [k.id, k]));
+      const byId = new Map(allKrs.map(k => [k.id, k]));
+      const krs = allKrs.filter(k => reported.has(k.id));
       const records = T.records.filter(r => byId.has(r.id)).map(r => Object.assign({}, r, {obj: byId.get(r.id).obj}));
       const owners = [...new Set(krs.map(k => k.owner).filter(Boolean))].sort((x, y) => x.localeCompare(y, 'es'));
       const areas = [...new Set(krs.map(k => k.area).filter(Boolean))].sort((x, y) => x.localeCompare(y, 'es'));
-      return {krs, records, byId, owners, areas, demo: !!(T.metadata && T.metadata.demo_records), hasTypes: krs.some(k => k.kr_type)};
+      const allOwners = [...new Set(allKrs.map(k => k.owner).filter(Boolean))].sort((x, y) => x.localeCompare(y, 'es'));
+      const allAreas = [...new Set(allKrs.map(k => k.area).filter(Boolean))].sort((x, y) => x.localeCompare(y, 'es'));
+      return {krs, allKrs, records, byId, owners, areas, allOwners, allAreas, demo: !!(T.metadata && T.metadata.demo_records), hasTypes: allKrs.some(k => k.kr_type)};
     });
     return cache;
   }

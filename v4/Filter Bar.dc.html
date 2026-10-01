@@ -58,7 +58,7 @@ class Component extends DCLogic {
     const wait = () => {
       if (!window.OKR) return setTimeout(wait, 20);
       const f = window.OKR.readFilters(); this.setState({f, qInput:f.q});
-      window.OKR.load().then(d => this.setState({owners:d.owners, areas:d.areas || []}));
+      window.OKR.load().then(d => this.setState({owners:this.props.catalog ? d.allOwners : d.owners, areas:(this.props.catalog ? d.allAreas : d.areas) || []}));
     };
     wait();
   }

@@ -49,12 +49,12 @@
         <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C">Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
         <h1 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.4vw,30px);line-height:1.1;letter-spacing:-0.022em;color:#17183B">Resultados Clave (KR)</h1>
         <span aria-hidden="true" style="display:block;width:56px;height:4px;background:#D64045"></span>
-        <p style="margin:4px 0 0;font-size:16px;color:#3F3F3F;text-wrap:pretty">Solo los KR registrados en Seguimiento, con su último reporte del periodo seleccionado.</p>
+        <p style="margin:4px 0 0;font-size:16px;color:#3F3F3F;text-wrap:pretty">Todos los KR de la Estrategia Corporativa. Los que aún no tienen seguimiento se muestran como Sin reporte.</p>
       </div>
       <p style="margin:0;font-size:15px;color:#3F3F3F"><strong style="font-family:var(--font-display);font-size:22px;color:#17183B;font-variant-numeric:tabular-nums">{{ total }}</strong> Resultados Clave mostrados</p>
     </section>
 
-    <dc-import name="Filter Bar" area="{{ true }}" search="{{ true }}" on-change="{{ onFilters }}" hint-size="100%,120px" style="{{ filterWrapStyle }}"></dc-import>
+    <dc-import name="Filter Bar" catalog="{{ true }}" area="{{ true }}" search="{{ true }}" on-change="{{ onFilters }}" hint-size="100%,120px" style="{{ filterWrapStyle }}"></dc-import>
 
     <div role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">{{ liveText }}</div>
 
@@ -187,8 +187,8 @@ class Component extends DCLogic {
       statusFilter, onStatus: e => { const v = e.target.value; window.OKR && window.OKR.writeParams({estatus:v}); this.setState({statusFilter:v}); }};
     if (!O || !d || !f) return Object.assign(base, {total:'', rows:[], cols:[], isEmpty:false, noReportText:''});
 
-    const krs = O.visibleKrs(d.krs, d.records, f), s = O.summarize(krs, d.records, f.period);
-    let rows = s.rows.filter(({record:r}) => !statusFilter || (statusFilter === 'none' ? !(r && r.status) : r && r.status === statusFilter));
+    const krs = O.visibleKrs(d.allKrs, d.records, f, true), s = O.summarize(krs, d.records, f.period);
+    let rows = s.rows.filter(({record:r}) => !statusFilter || (statusFilter === 'none' ? !r : r && r.status === statusFilter));
     const val = ({kr, record:r}) => ({id:kr.id, name:O.norm(kr.name), obj:kr.obj, sub:kr.subCode, period:O.PERIODS.indexOf(kr.target_period),
       status: r && r.status in STATUS_RANK ? STATUS_RANK[r.status] : 9, progress: r && r.progress != null ? Number(r.progress) : -1, exec: r && r.execution in EXEC_RANK ? EXEC_RANK[r.execution] : -1})[sortKey];
     const coll = new Intl.Collator('es', {numeric:true});
