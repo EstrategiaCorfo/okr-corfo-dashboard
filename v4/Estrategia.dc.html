@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Estrategia | Panel de Seguimiento Corfo</title>
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/base.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/styles.css">
+  <script src="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/_ds_bundle.js"></script>
+  <script src="okr-app.js"></script>
+  <style>
+    html,body{margin:0;background:#FFFFFF;color:#3F3F3F;font-family:var(--font-sans);font-size:15px;-webkit-font-smoothing:antialiased}
+    *{box-sizing:border-box}
+    a{color:#221E7C;text-decoration:none}
+    a:hover{color:#D64045}
+    button,select,input{font-family:inherit}
+    :focus-visible{outline:2px solid #D64045;outline-offset:2px}
+    @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+    @media print{[data-noprint]{display:none!important}}
+  </style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#FFFFFF">
+  <dc-import name="Site Header" active="estrategia" filters="{{ false }}" hint-size="100%,64px" style="position:sticky;top:0;z-index:20;display:block"></dc-import>
+
+  <sc-if value="{{ showDemo }}" hint-placeholder-val="{{ true }}">
+    <div role="note" data-noprint="" style="background:#EDF0F5;border-bottom:1px solid #C9CAD5">
+      <div style="max-width:1320px;margin:0 auto;padding:0 24px;min-height:40px;display:flex;align-items:center;gap:12px">
+        <span aria-hidden="true" style="width:10px;height:10px;background:#D64045;flex:none"></span>
+        <p style="margin:0;font-size:14px;color:#17183B;flex:1;min-width:0;text-wrap:pretty;padding:8px 0"><strong>Panel en versión beta:</strong> si identifica algún error o inconsistencia, agradeceremos informarlo a <a href="mailto:estrategia@corfo.cl" style="color:#221E7C">estrategia@corfo.cl</a>.</p>
+        <button type="button" onClick="{{ hideDemo }}" style="min-height:32px;padding:0 12px;background:transparent;border:1px solid #17183B;color:#17183B;font-size:13px;font-weight:600;cursor:pointer" style-hover="background:#17183B;color:#FFFFFF">Entendido</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <main style="flex:1;width:100%;max-width:1320px;margin:0 auto;padding:24px 24px 48px;display:flex;flex-direction:column;gap:32px">
+    <section style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px 32px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:8px;min-width:0;max-width:760px">
+        <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C">Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
+        <h1 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.4vw,30px);line-height:1.1;letter-spacing:-0.022em;color:#17183B">Estrategia</h1>
+        <span aria-hidden="true" style="display:block;width:56px;height:4px;background:#D64045"></span>
+        <p style="margin:4px 0 0;font-size:16px;color:#3F3F3F;text-wrap:pretty">Seleccione un objetivo para ver su definición, sus subobjetivos y los Resultados Clave que lo materializan.</p>
+      </div>
+      <p style="margin:0;font-size:15px;color:#3F3F3F"><strong style="font-family:var(--font-display);font-size:22px;color:#17183B;font-variant-numeric:tabular-nums">{{ total }}</strong> Resultados Clave mostrados</p>
+    </section>
+
+    <section aria-label="Esquema de la Estrategia Corporativa 2026-2030" style="display:flex;flex-direction:column;gap:0">
+      <div style="background:#17183B;color:#FFFFFF;padding:20px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px 32px;align-items:center">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#C9CAD5">Impacto · objetivo agregador</span>
+          <p style="margin:0;display:flex;flex-wrap:wrap;gap:6px 24px;font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-0.015em">
+            <span>+Productividad</span><span>+Inversión</span><span>+Crecimiento</span>
+          </p>
+        </div>
+        <sc-for list="{{ impactNodes }}" as="o" hint-placeholder-count="1">
+          <button type="button" aria-pressed="{{ o.pressed }}" aria-controls="ficha" onClick="{{ o.select }}" style="{{ o.darkStyle }}" style-hover="background:rgba(255,255,255,0.12)">
+            <span style="font-family:var(--font-display);font-weight:700;font-size:30px;line-height:1;letter-spacing:-0.03em;font-variant-numeric:tabular-nums">{{ o.code }}</span>
+            <span style="display:flex;flex-direction:column;gap:4px;min-width:0;text-align:left">
+              <strong style="font-family:var(--font-display);font-size:16px;line-height:1.2">{{ o.name }}</strong>
+              
+            </span>
+          </button>
+        </sc-for>
+      </div>
+      <div role="presentation" style="height:110px;background:#FFFFFF url('assets/estrategia-montanas.webp') center bottom / cover no-repeat;border-left:1px solid #C9CAD5;border-right:1px solid #C9CAD5"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px;padding-top:16px;align-items:stretch">
+        <sc-for list="{{ coreNodes }}" as="o" hint-placeholder-count="5">
+          <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+            <div style="height:28px;display:flex;align-items:flex-start">
+              <sc-if value="{{ o.showLabel }}" hint-placeholder-val="{{ false }}"><h2 style="{{ o.labelStyle }}">{{ o.group }}</h2></sc-if>
+            </div>
+            <button type="button" aria-pressed="{{ o.pressed }}" aria-controls="ficha" onClick="{{ o.select }}" style="{{ o.fillStyle }}" style-hover="background:#E2E6EE">
+                <span style="font-family:var(--font-display);font-weight:700;font-size:28px;line-height:1;letter-spacing:-0.03em;color:#221E7C;font-variant-numeric:tabular-nums">{{ o.code }}</span>
+                <strong style="font-family:var(--font-display);font-size:15px;line-height:1.25;color:#17183B;text-align:left;text-wrap:pretty">{{ o.name }}</strong>
+                
+              </button>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;padding-top:16px">
+        <h2 style="{{ habLabelStyle }}">Habilitantes</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px;align-items:stretch">
+          <sc-for list="{{ habNodes }}" as="o" hint-placeholder-count="2">
+            <button type="button" aria-pressed="{{ o.pressed }}" aria-controls="ficha" onClick="{{ o.select }}" style="{{ o.style }}" style-hover="background:#E2E6EE">
+                <span style="font-family:var(--font-display);font-weight:700;font-size:28px;line-height:1;letter-spacing:-0.03em;color:#221E7C;font-variant-numeric:tabular-nums">{{ o.code }}</span>
+                <strong style="font-family:var(--font-display);font-size:15px;line-height:1.25;color:#17183B;text-align:left;text-wrap:pretty">{{ o.name }}</strong>
+                
+              </button>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <sc-if value="{{ hasSel }}" hint-placeholder-val="{{ true }}">
+      <section id="ficha" aria-labelledby="ficha-title" style="display:flex;flex-direction:column;gap:28px;border-top:3px solid #17183B;padding-top:24px;margin-top:40px;scroll-margin-top:150px">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px 32px;flex-wrap:wrap">
+          <div style="display:flex;align-items:flex-start;gap:20px;min-width:0">
+            <span style="font-family:var(--font-display);font-weight:700;font-size:64px;line-height:0.9;letter-spacing:-0.04em;color:#221E7C;font-variant-numeric:tabular-nums">{{ sel.code }}</span>
+            <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+              <span style="display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3F3F3F"><span aria-hidden="true" style="{{ sel.dimSwatch }}"></span>{{ sel.dim }} · Objetivo Estratégico {{ sel.code }}</span>
+              <h2 id="ficha-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(22px,2.2vw,28px);line-height:1.15;letter-spacing:-0.02em;color:#17183B;text-wrap:pretty">{{ sel.name }}</h2>
+            </div>
+          </div>
+          <p style="margin:0;font-size:15px;color:#3F3F3F"><strong style="font-family:var(--font-display);font-size:22px;color:#17183B">{{ sel.krTotal }}</strong> Resultados Clave en total</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:24px 40px;align-items:start">
+          <div style="display:flex;flex-direction:column;gap:22px;max-width:72ch">
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <h3 style="margin:0;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C">Objetivo Estratégico</h3>
+              <blockquote style="margin:0;padding:0 0 0 18px;border-left:4px solid {{ sel.dimColor }};font-family:var(--font-display);font-weight:600;font-size:19px;line-height:1.4;color:#17183B;text-wrap:pretty">{{ sel.statement }}</blockquote>
+            </div>
+            <sc-if value="{{ sel.hasJust }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <h3 style="margin:0;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C">Justificación</h3>
+                <p style="margin:0;font-size:15px;line-height:1.55;color:#3F3F3F;text-wrap:pretty">{{ sel.just }}</p>
+              </div>
+            </sc-if>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <h3 style="margin:0;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C">Subobjetivos</h3>
+              <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+                <sc-for list="{{ sel.subs }}" as="s" hint-placeholder-count="3">
+                  <li style="display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:12px;padding:10px 0;border-bottom:1px solid #C9CAD5;font-size:14px;line-height:1.45;color:#3F3F3F">
+                    <strong style="color:#221E7C;font-variant-numeric:tabular-nums">{{ s.code }}</strong>
+                    <span style="text-wrap:pretty">{{ s.text }}</span>
+                    <span style="white-space:nowrap;font-weight:600;color:#17183B">{{ s.countText }}</span>
+                  </li>
+                </sc-for>
+              </ul>
+            </div>
+          </div>
+
+          <aside aria-labelledby="seg-title" style="background:#EDF0F5;padding:20px;display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <h3 id="seg-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:18px;color:#17183B">Seguimiento del periodo</h3>
+              <p style="margin:0;font-size:13px;color:#3F3F3F">{{ periodText }} · {{ seg.total }} KR del periodo · {{ seg.noReport }} aún sin reporte</p>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <span style="font-size:13px;font-weight:700;color:#17183B">Estado del hito</span>
+              <sc-for list="{{ seg.exec }}" as="e" hint-placeholder-count="3">
+                <div style="display:grid;grid-template-columns:96px minmax(0,1fr) 28px;gap:10px;align-items:center;font-size:13px;color:#17183B">
+                  <span>{{ e.label }}</span>
+                  <span style="height:8px;background:#FFFFFF"><span style="display:block;height:100%;width:{{ e.width }};background:{{ e.color }}"></span></span>
+                  <strong style="text-align:right;font-variant-numeric:tabular-nums">{{ e.count }}</strong>
+                </div>
+              </sc-for>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #C9CAD5;padding-top:12px">
+              <span style="font-size:13px;font-weight:700;color:#17183B">Nivel de confianza</span>
+              <div role="img" aria-label="{{ seg.aria }}" style="display:flex;height:12px;gap:2px;background:#C9CAD5">
+                <span style="background:#13815F;flex:{{ seg.ok }}"></span>
+                <span style="background:#F5C400;flex:{{ seg.warn }}"></span>
+                <span style="background:#B92F3F;flex:{{ seg.risk }}"></span>
+                <span style="background:#C9CAD5;flex:{{ seg.none }}"></span>
+              </div>
+              <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px">
+                <sc-for list="{{ seg.legend }}" as="l" hint-placeholder-count="4">
+                  <li style="display:flex;align-items:center;gap:8px;font-size:13px;color:#17183B"><span aria-hidden="true" style="{{ l.glyphStyle }}">{{ l.glyph }}</span><span style="flex:1">{{ l.label }}</span><strong style="font-variant-numeric:tabular-nums">{{ l.count }}</strong></li>
+                </sc-for>
+              </ul>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;border-top:1px solid #C9CAD5;padding-top:12px">
+              <span style="font-size:13px;font-weight:700;color:#17183B">Progreso numérico promedio</span>
+              <span style="font-size:14px;color:#17183B">{{ seg.progressText }}</span>
+              <span style="font-size:12px;color:#3F3F3F">{{ seg.progressBase }}</span>
+            </div>
+          </aside>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:12px;padding-top:32px">
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <h3 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Resultados Clave por subobjetivo</h3>
+            <p style="margin:0;font-size:14px;color:#3F3F3F">Nivel de confianza y progreso según el último reporte de {{ periodText }}.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;border-top:3px solid #17183B">
+            <sc-for list="{{ tree }}" as="s" hint-placeholder-count="3">
+              <div style="border-bottom:1px solid #C9CAD5">
+                <button type="button" aria-expanded="{{ s.expanded }}" onClick="{{ s.toggle }}" style="width:100%;min-height:56px;padding:14px 4px;display:grid;grid-template-columns:24px 64px minmax(0,1fr) minmax(90px,140px) 64px;gap:12px;align-items:center;background:transparent;border:0;cursor:pointer;text-align:left;color:#17183B;font-family:inherit" style-hover="background:#EDF0F5">
+                  <span aria-hidden="true" style="font-size:12px;color:#D64045">{{ s.caret }}</span>
+                  <strong style="font-size:14px;color:#221E7C;font-variant-numeric:tabular-nums">{{ s.code }}</strong>
+                  <span style="font-size:14px;line-height:1.4;font-weight:600;text-wrap:pretty">{{ s.text }}</span>
+                  <span role="img" aria-label="{{ s.aria }}" style="display:flex;height:8px;gap:2px;background:#C9CAD5">
+                    <span style="background:#13815F;flex:{{ s.ok }}"></span>
+                    <span style="background:#F5C400;flex:{{ s.warn }}"></span>
+                    <span style="background:#B92F3F;flex:{{ s.risk }}"></span>
+                    <span style="background:#C9CAD5;flex:{{ s.none }}"></span>
+                  </span>
+                  <span style="font-size:13px;font-weight:600;text-align:right;white-space:nowrap;padding-right:8px">{{ s.count }} KR</span>
+                </button>
+                <sc-if value="{{ s.showKrs }}" hint-placeholder-val="{{ false }}">
+                  <ul style="list-style:none;margin:0 0 8px;padding:0 0 0 36px;display:flex;flex-direction:column">
+                    <sc-for list="{{ s.krs }}" as="k" hint-placeholder-count="3">
+                      <li style="display:grid;grid-template-columns:12px minmax(0,1fr);gap:16px;align-items:start;padding:12px 0;border-top:1px solid #EDF0F5">
+                        <span aria-hidden="true" style="margin-top:5px;width:10px;height:10px;background:#D64045"></span>
+                        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;min-width:0">
+                        <div style="display:flex;flex-direction:column;gap:4px;min-width:0;flex:1 1 360px">
+                          <span style="display:flex;gap:10px;font-size:12px;color:#3F3F3F"><strong style="color:#17183B;font-variant-numeric:tabular-nums">{{ k.id }}</strong><span>Meta {{ k.periodText }}</span></span>
+                          <a href="{{ k.href }}" style="font-size:14px;line-height:1.4;color:#17183B;text-wrap:pretty" style-hover="color:#D64045">{{ k.name }}</a>
+                        </div>
+                        <div style="display:flex;flex-direction:column;gap:4px;flex:0 1 200px;min-width:160px">
+                          <div role="img" aria-label="{{ k.barAria }}" style="position:relative;height:8px;background:#C9CAD5">
+                            <span style="position:absolute;left:0;top:0;bottom:0;width:{{ k.barWidth }};background:{{ k.barColor }}"></span>
+                            <span style="position:absolute;left:80%;top:-3px;bottom:-3px;width:2px;background:#17183B"></span>
+                          </div>
+                          <span style="font-size:12px;color:#3F3F3F">{{ k.progress }}</span>
+                        </div>
+                        <span title="{{ k.statusEn }}" style="{{ k.badgeStyle }}"><span aria-hidden="true">{{ k.glyph }}</span>{{ k.statusLabel }}</span>
+                        </div>
+                      </li>
+                    </sc-for>
+                  </ul>
+                </sc-if>
+                <sc-if value="{{ s.showEmpty }}" hint-placeholder-val="{{ false }}">
+                  <p style="margin:0;padding:12px 12px 14px;font-size:13px;color:#3F3F3F">Sin Resultados Clave asociados.</p>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </section>
+    </sc-if>
+  </main>
+
+  <footer style="border-top:1px solid #C9CAD5">
+    <div style="max-width:1320px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:#3F3F3F">
+      <span>Corfo - Gerencia de Estrategia</span>
+      <span>Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const DIM_COLOR = {'Impulso Corfo':'#21DBA6', 'Rol de Corfo':'#E9595D', 'Habilitantes':'#31A3DE', 'Impacto':'#17183B'};
+
+class Component extends DCLogic {
+  state = { d:null, f:null, eje:null, openSubs:{}, demoHidden:false };
+
+  componentDidMount() {
+    try { if (sessionStorage.getItem('okr-demo-ok') === '1') this.setState({demoHidden:true}); } catch (e) {}
+    const wait = () => window.OKR ? window.OKR.load().then(d => {
+      const f = Object.assign(window.OKR.readFilters(), {objective:'', owner:'', area:'', q:'', period:window.OKR.defaultPeriod()}), e = Number(new URLSearchParams(location.search).get('eje')) || 1;
+      this.setState({d, f, eje:e});
+    }) : setTimeout(wait, 20);
+    wait();
+  }
+
+  select(n) {
+    window.OKR.writeParams({eje:n});
+    this.setState({eje:n, openSubs:{}});
+    setTimeout(() => { const el = document.getElementById('ficha'); if (el) { window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - 150, behavior:'smooth'}); } }, 30);
+  }
+
+  renderVals() {
+    const O = window.OKR, {d, f, eje} = this.state;
+    const base = {onFilters: nf => this.setState(s => ({f:nf, eje: nf.objective ? Number(nf.objective) : s.eje})), showDemo:!this.state.demoHidden,
+      hideDemo: () => { try { sessionStorage.setItem('okr-demo-ok','1'); } catch (e) {} this.setState({demoHidden:true}); }};
+    if (!O || !d || !f) return Object.assign(base, {total:'', impactNodes:[], groups:[], coreNodes:[], habNodes:[], hasSel:false, tree:[], sel:{subs:[]}, seg:{legend:[], exec:[]}});
+
+    const krs = O.visibleKrs(d.krs, d.records, f);
+    const pk = O.visibleKrs(d.krs, d.records, Object.assign({}, f, {objective:'', q:''}));
+    const worst = ss => ss.statuses['At Risk'] ? 'At Risk' : ss.statuses['Off Track'] ? 'Off Track' : ss.statuses['On Track'] ? 'On Track' : null;
+    const node = (o, dark) => {
+      const ss = O.summarize(pk.filter(k => k.obj === o.n), d.records, f.period), w = worst(ss), S = O.status(w), sel = o.n === eje;
+      const att = ss.statuses['Off Track'] + ss.statuses['At Risk'];
+      const dc = DIM_COLOR[o.dim] || '#17183B';
+      return {code:o.code, name:o.name, pressed: sel ? 'true' : 'false', select: () => this.select(o.n), glyph:S.glyph,
+        dotStyle:`color:${dark && !w ? '#C9CAD5' : dark ? '#FFFFFF' : S.color};font-size:11px`,
+        statusText: !ss.total ? 'Sin KR en el periodo' : !w ? 'Sin reporte' : att ? `${att} KR con confianza media o baja` : 'Confianza alta',
+        style:`min-height:100px;padding:16px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;background:${sel ? '#FFFFFF' : '#EDF0F5'};border:0;border-top:5px solid ${dc};outline:${sel ? `2px solid ${dc}` : 'none'};outline-offset:-2px;cursor:pointer`,
+        darkStyle:`padding:14px 16px;display:flex;align-items:center;gap:16px;background:transparent;color:#FFFFFF;border:1px solid ${sel ? '#D64045' : 'rgba(255,255,255,0.28)'};border-bottom:${sel ? '4px solid #D64045' : '1px solid rgba(255,255,255,0.28)'};cursor:pointer`};
+    };
+    const by = dim => O.OBJECTIVES.filter(o => o.dim === dim).sort((a, b) => a.n - b.n);
+    const labelStyle = dim => `margin:0;padding:6px 12px;background:${DIM_COLOR[dim]};color:#17183B;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;white-space:nowrap`;
+    const core = [...by('Impulso Corfo'), ...by('Rol de Corfo')];
+    const coreNodes = core.map((o, i) => Object.assign(node(o, false), {group:o.dim, showLabel: i === 0 || core[i - 1].dim !== o.dim, labelStyle:labelStyle(o.dim)}));
+    coreNodes.forEach(n => { n.fillStyle = n.style + ';flex:1'; });
+    const habNodes = by('Habilitantes').map(o => node(o, false));
+    const groups = [
+      {name:'Impulso Corfo', list:by('Impulso Corfo'), cols:3, span:false},
+      {name:'Rol de Corfo', list:by('Rol de Corfo'), cols:2, span:false},
+      {name:'Habilitantes', list:by('Habilitantes'), cols:2, span:true}
+    ].map(g => ({name:g.name, nodes:g.list.map(o => node(o, false)),
+      labelStyle:`align-self:flex-start;margin:0;padding:6px 12px;background:${DIM_COLOR[g.name]};color:#17183B;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase`,
+      style:`display:flex;flex-direction:column;gap:10px;${g.span ? 'grid-column:1 / -1;' : ''}`,
+      gridStyle:`flex:1;grid-auto-rows:1fr;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,${g.span ? 260 : 170}px),1fr));gap:12px`}));
+
+    const o = O.OBJECTIVES[(eje || 1) - 1];
+    const all = d.krs.filter(k => k.obj === o.n);
+    const segKrs = pk.filter(k => k.obj === o.n), ss = O.summarize(segKrs, d.records, f.period);
+    const legend = [...Object.keys(O.STATUS).map(k => ({label:O.STATUS[k].label, count:ss.statuses[k], glyph:O.STATUS[k].glyph, glyphStyle:`color:${O.STATUS[k].color};width:14px`})),
+      {label:'Sin reporte', count:ss.noStatus, glyph:'■', glyphStyle:'color:#9197AE;width:14px'}];
+    const seg = {total:ss.total, noReport:ss.noReport, ok:ss.statuses['On Track'], warn:ss.statuses['Off Track'], risk:ss.statuses['At Risk'], none:ss.noStatus,
+      aria:`${ss.statuses['On Track']} con confianza alta, ${ss.statuses['Off Track']} con confianza media, ${ss.statuses['At Risk']} con confianza baja, ${ss.noStatus} sin reporte`, legend,
+      progressText: ss.progressCount >= O.MIN_PROGRESS_SAMPLE ? O.pct(Math.round(ss.progressMean)) : 'Aún no hay suficientes KR con progreso informado para un promedio representativo.',
+      progressBase:`${ss.progressCount} de ${ss.total} KR con progreso informado · mínimo para promediar: ${O.MIN_PROGRESS_SAMPLE}`,
+      exec:Object.keys(O.EXEC).map(k => ({label:O.EXEC[k].label, count:ss.executions[k], width:O.pctOf(ss.executions[k], ss.total), color:O.EXEC[k].color}))};
+
+    const open = this.state.openSubs;
+    const tree = o.subs.map((text, i) => {
+      const list = all.filter(k => k.subIndex === i).sort((a, b) => O.periodSort(a.target_period, b.target_period) || a.id.localeCompare(b.id));
+      const s2 = O.summarize(list, d.records, f.period);
+      const isOpen = !!open[i];
+      return {code:o.subCodes[i], text, count:list.length, showKrs:isOpen && list.length > 0, showEmpty:isOpen && list.length === 0,
+        expanded: isOpen ? 'true' : 'false', caret: isOpen ? '▼' : '▶',
+        toggle: () => this.setState(st => ({openSubs:Object.assign({}, st.openSubs, {[i]:!st.openSubs[i]})})),
+        ok:s2.statuses['On Track'], warn:s2.statuses['Off Track'], risk:s2.statuses['At Risk'], none:s2.noStatus,
+        aria:`${s2.statuses['On Track']} con confianza alta, ${s2.statuses['Off Track']} con confianza media, ${s2.statuses['At Risk']} con confianza baja, ${s2.noStatus} sin reporte`,
+        krs:s2.rows.map(({kr, record:r}) => {
+          const S = O.status(r && r.status), p = r && r.progress != null ? Number(r.progress) : null;
+          return {id:kr.id, name:kr.name, periodText:O.periodLabel(kr.target_period), href:O.href('detalle', {kr:kr.id}),
+            progress: !r ? 'Sin reporte' : p == null ? 'No informado' : 'Progreso ' + O.pct(p),
+            barWidth: (p == null ? 0 : O.clamp(p)) + '%', barColor:S.fill, barAria: p == null ? 'Sin progreso numérico' : `Progreso ${O.pct(p)}, umbral 80%`,
+            statusLabel:S.label, statusEn:S.en, glyph:S.glyph,
+            badgeStyle:`flex:0 0 auto;white-space:nowrap;display:inline-flex;align-items:center;gap:6px;padding:3px 8px;background:${S.bg};color:${S.color};font-size:13px;font-weight:700;line-height:1.3`};
+        })};
+    });
+
+    return Object.assign(base, {
+      total:krs.length, periodText:O.periodLabel(f.period),
+      impactNodes:O.OBJECTIVES.filter(x => x.dim === 'Impacto').map(x => node(x, true)), groups, coreNodes, habNodes, habLabelStyle:labelStyle('Habilitantes').replace('margin:0;', 'margin:0;align-self:flex-start;'),
+      hasSel:true,
+      sel:{code:o.code, dim:o.dim, name:o.name, dimColor:DIM_COLOR[o.dim] || '#17183B', dimSwatch:`width:12px;height:12px;background:${DIM_COLOR[o.dim] || '#17183B'}`, statement:o.statement, just:o.just, hasJust:!!o.just, krTotal:all.length,
+        subs:o.subs.map((t, i) => { const n = all.filter(k => k.subIndex === i).length; return {code:o.subCodes[i], text:t, countText:`${n} KR`}; })},
+      seg, tree
+    });
+  }
+}
+</script>
+</body>
+</html>

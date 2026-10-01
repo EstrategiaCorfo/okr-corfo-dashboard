@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Resultados Clave | Panel de Seguimiento Corfo</title>
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/base.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/styles.css">
+  <script src="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/_ds_bundle.js"></script>
+  <script src="okr-app.js"></script>
+  <style>
+    html,body{margin:0;background:#FFFFFF;color:#3F3F3F;font-family:var(--font-sans);font-size:15px;-webkit-font-smoothing:antialiased}
+    *{box-sizing:border-box}
+    a{color:#221E7C;text-decoration:none}
+    a:hover{color:#D64045}
+    button,select,input{font-family:inherit}
+    :focus-visible{outline:2px solid #D64045;outline-offset:2px}
+    @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+    @media print{[data-noprint]{display:none!important}}
+  </style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#FFFFFF">
+  <dc-import name="Site Header" active="krs" filters="{{ false }}" hint-size="100%,64px" style="position:sticky;top:0;z-index:20;display:block"></dc-import>
+
+  <sc-if value="{{ showDemo }}" hint-placeholder-val="{{ true }}">
+    <div role="note" data-noprint="" style="background:#EDF0F5;border-bottom:1px solid #C9CAD5">
+      <div style="max-width:1320px;margin:0 auto;padding:0 24px;min-height:40px;display:flex;align-items:center;gap:12px">
+        <span aria-hidden="true" style="width:10px;height:10px;background:#D64045;flex:none"></span>
+        <p style="margin:0;font-size:14px;color:#17183B;flex:1;min-width:0;text-wrap:pretty;padding:8px 0"><strong>Panel en versión beta:</strong> si identifica algún error o inconsistencia, agradeceremos informarlo a <a href="mailto:estrategia@corfo.cl" style="color:#221E7C">estrategia@corfo.cl</a>.</p>
+        <button type="button" onClick="{{ hideDemo }}" style="min-height:32px;padding:0 12px;background:transparent;border:1px solid #17183B;color:#17183B;font-size:13px;font-weight:600;cursor:pointer" style-hover="background:#17183B;color:#FFFFFF">Entendido</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <main style="flex:1;width:100%;max-width:1320px;margin:0 auto;padding:24px 24px 48px;display:flex;flex-direction:column;gap:24px">
+    <section style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px 32px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:8px;min-width:0">
+        <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C">Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
+        <h1 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.4vw,30px);line-height:1.1;letter-spacing:-0.022em;color:#17183B">Resultados Clave (KR)</h1>
+        <span aria-hidden="true" style="display:block;width:56px;height:4px;background:#D64045"></span>
+        <p style="margin:4px 0 0;font-size:16px;color:#3F3F3F;text-wrap:pretty">Solo los KR registrados en Seguimiento, con su último reporte del periodo seleccionado.</p>
+      </div>
+      <p style="margin:0;font-size:15px;color:#3F3F3F"><strong style="font-family:var(--font-display);font-size:22px;color:#17183B;font-variant-numeric:tabular-nums">{{ total }}</strong> Resultados Clave mostrados</p>
+    </section>
+
+    <dc-import name="Filter Bar" area="{{ true }}" search="{{ true }}" on-change="{{ onFilters }}" hint-size="100%,120px" style="{{ filterWrapStyle }}"></dc-import>
+
+    <div role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">{{ liveText }}</div>
+
+    <section style="display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;border-bottom:1px solid #C9CAD5;padding-bottom:14px">
+      <p style="margin:0;font-size:14px;color:#3F3F3F">{{ noReportText }}</p>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+        <label style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#17183B">Nivel de confianza
+          <select value="{{ statusFilter }}" onChange="{{ onStatus }}" style="height:36px;padding:0 8px;border:1px solid #C9CAD5;border-radius:0;background:#FFFFFF;color:#17183B;font-size:13px">
+            <option value="">Todos</option>
+            <option value="On Track">Alto (On Track)</option>
+            <option value="Off Track">Medio (Off Track)</option>
+            <option value="At Risk">Bajo (At Risk)</option>
+            <option value="none">Sin reporte</option>
+          </select>
+        </label>
+        <div role="group" aria-label="Tipo de vista" style="display:flex;border:1px solid #17183B">
+          <button type="button" aria-pressed="{{ tablePressed }}" onClick="{{ showTable }}" style="{{ tableBtn }}">Tabla</button>
+          <button type="button" aria-pressed="{{ cardsPressed }}" onClick="{{ showCards }}" style="{{ cardsBtn }}">Tarjetas</button>
+        </div>
+      </div>
+    </section>
+
+    <sc-if value="{{ isEmpty }}" hint-placeholder-val="{{ false }}">
+      <p style="margin:0;padding:16px;background:#EDF0F5;font-size:14px;color:#17183B">No hay Resultados Clave para esta combinación de filtros.</p>
+    </sc-if>
+
+    <sc-if value="{{ isCards }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;flex-direction:column;border-top:3px solid #17183B">
+        <sc-for list="{{ rows }}" as="k" hint-placeholder-count="4">
+          <article style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:16px 32px;padding:18px 0;border-bottom:1px solid #C9CAD5">
+            <div style="display:flex;flex-direction:column;gap:8px;min-width:0">
+              <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px">
+                <strong style="color:#17183B;font-variant-numeric:tabular-nums">{{ k.id }}</strong>
+                <span style="color:#3F3F3F">Meta {{ k.periodText }}</span>
+                <sc-if value="{{ k.hasType }}" hint-placeholder-val="{{ false }}"><span style="padding:2px 8px;border:1px solid #C9CAD5;color:#3F3F3F;font-size:12px">{{ k.type }}</span></sc-if>
+                <sc-if value="{{ k.demo }}" hint-placeholder-val="{{ false }}"><span style="padding:2px 8px;background:#EDF0F5;color:#3F3F3F;font-size:12px">Dato ficticio (demostración)</span></sc-if>
+              </div>
+              <h2 style="margin:0;font-family:var(--font-display);font-weight:600;font-size:17px;line-height:1.3;letter-spacing:-0.01em;text-wrap:pretty"><a href="{{ k.href }}" style="color:#221E7C;text-decoration:none" style-hover="color:#D64045">{{ k.name }}</a></h2>
+              <p style="margin:0;font-size:13px;line-height:1.45;color:#3F3F3F;text-wrap:pretty"><strong style="color:#221E7C">{{ k.objLabel }}</strong> · {{ k.so }}</p>
+              <p style="margin:0;font-size:13px;color:#3F3F3F;display:flex;flex-wrap:wrap;gap:4px 16px"><span><strong>Fecha meta:</strong> {{ k.due }}</span><span><strong>Owner:</strong> {{ k.owner }}</span></p>
+              <a href="{{ k.href }}" aria-hidden="true" tabindex="-1" style="align-self:flex-start;min-height:32px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#D64045" style-hover="color:#A3262C">Ver detalle del KR →</a>
+            </div>
+            <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,130px),1fr));gap:12px;align-content:start;background:#EDF0F5;padding:14px 16px">
+              <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Nivel de confianza</dt><dd style="margin:0"><span title="{{ k.statusEn }}" style="{{ k.badgeStyle }}"><span aria-hidden="true">{{ k.glyph }}</span>{{ k.statusLabel }}</span></dd></div>
+              <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Progreso numérico</dt>
+                <dd style="margin:0;display:flex;flex-direction:column;gap:6px">
+                  <span style="font-size:13px;font-weight:600;color:#17183B">{{ k.progress }}</span>
+                  <sc-if value="{{ k.hasBar }}" hint-placeholder-val="{{ false }}">
+                    <span role="img" aria-label="{{ k.barAria }}" style="position:relative;display:block;height:8px;background:#C9CAD5"><span style="position:absolute;left:0;top:0;bottom:0;width:{{ k.barWidth }};background:{{ k.barColor }}"></span><span style="position:absolute;left:80%;top:-3px;bottom:-3px;width:2px;background:#17183B"></span></span>
+                    <span style="font-size:12px;color:#3F3F3F">{{ k.path }}</span>
+                  </sc-if>
+                </dd>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:6px"><dt style="font-size:12px;font-weight:600;color:#3F3F3F">Estado del hito</dt><dd style="margin:0"><span style="display:inline-block;padding:3px 8px;background:#FFFFFF;border:1px solid #C9CAD5;color:#3F3F3F;font-size:13px;font-weight:600">{{ k.exec }}</span></dd></div>
+            </dl>
+          </article>
+        </sc-for>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isTable }}" hint-placeholder-val="{{ false }}">
+      <div style="overflow-x:auto;border-top:3px solid #17183B">
+        <table style="width:100%;min-width:1080px;border-collapse:collapse;font-size:13px;color:#17183B">
+          <thead>
+            <tr>
+              <sc-for list="{{ cols }}" as="c" hint-placeholder-count="8">
+                <th aria-sort="{{ c.sort }}" style="{{ c.thStyle }}">
+                  <button type="button" onClick="{{ c.onSort }}" style="display:flex;align-items:center;gap:6px;min-height:36px;padding:0;background:transparent;border:0;color:#17183B;font-size:12px;font-weight:700;text-align:left;cursor:pointer" style-hover="color:#D64045">{{ c.label }}<span aria-hidden="true" style="color:#D64045">{{ c.arrow }}</span></button>
+                </th>
+              </sc-for>
+            </tr>
+          </thead>
+          <tbody>
+            <sc-for list="{{ rows }}" as="k" hint-placeholder-count="6">
+              <tr style="border-bottom:1px solid #C9CAD5">
+                <td style="position:sticky;left:0;background:#FFFFFF;padding:10px 12px 10px 0;font-weight:700;white-space:nowrap;vertical-align:top"><a href="{{ k.href }}">{{ k.id }}</a></td>
+                <td style="padding:10px 12px;line-height:1.4;vertical-align:top;min-width:260px"><a href="{{ k.href }}" style="color:#221E7C;text-decoration:none" style-hover="color:#D64045">{{ k.name }}</a></td>
+                <td style="padding:10px 12px;vertical-align:top;white-space:nowrap;color:#221E7C;font-weight:700">{{ k.objCode }}</td>
+                <td style="padding:10px 12px;vertical-align:top;white-space:nowrap">{{ k.subCode }}</td>
+                <td style="padding:10px 12px;vertical-align:top;white-space:nowrap">{{ k.periodText }}</td>
+                <td style="padding:10px 12px;vertical-align:top"><span title="{{ k.statusEn }}" style="{{ k.badgeStyle }}"><span aria-hidden="true">{{ k.glyph }}</span>{{ k.statusLabel }}</span></td>
+                <td style="padding:10px 12px;vertical-align:top;white-space:nowrap">{{ k.progressShort }}</td>
+                <td style="padding:10px 12px;vertical-align:top;white-space:nowrap">{{ k.exec }}</td>
+              </tr>
+            </sc-for>
+          </tbody>
+        </table>
+      </div>
+    </sc-if>
+  </main>
+
+  <footer style="border-top:1px solid #C9CAD5">
+    <div style="max-width:1320px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:#3F3F3F">
+      <span>Corfo - Gerencia de Estrategia</span>
+      <span>Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const COLS = [
+  {key:'id', label:'Código'}, {key:'name', label:'Resultado Clave'}, {key:'obj', label:'Objetivo'}, {key:'sub', label:'Subobjetivo'},
+  {key:'period', label:'Periodo meta'}, {key:'status', label:'Nivel de confianza'}, {key:'progress', label:'Progreso'}, {key:'exec', label:'Estado del hito'}
+];
+const STATUS_RANK = {'At Risk':0, 'Off Track':1, 'On Track':2};
+const EXEC_RANK = {'No iniciado':0, 'En proceso':1, 'Completado':2};
+
+class Component extends DCLogic {
+  state = { d:null, f:null, view:'tabla', sortKey:'id', sortDir:'asc', statusFilter:'', demoHidden:false, narrow:false };
+
+  componentWillUnmount() { window.removeEventListener('resize', this._r); }
+  componentDidMount() {
+    this._r = () => this.setState({narrow: window.innerWidth < 760}); this._r(); window.addEventListener('resize', this._r);
+    try { if (sessionStorage.getItem('okr-demo-ok') === '1') this.setState({demoHidden:true}); } catch (e) {}
+    const p = new URLSearchParams(location.search);
+    this.setState({view: p.get('vista') === 'tarjetas' ? 'tarjetas' : 'tabla', statusFilter: p.get('estatus') || ''});
+    const wait = () => window.OKR ? window.OKR.load().then(d => this.setState({d, f:window.OKR.readFilters()})) : setTimeout(wait, 20);
+    wait();
+  }
+  setView(v) { window.OKR && window.OKR.writeParams({vista: v === 'tarjetas' ? 'tarjetas' : ''}); this.setState({view:v}); }
+
+  renderVals() {
+    const O = window.OKR, {d, f, view, sortKey, sortDir, statusFilter} = this.state;
+    const btn = on => `min-height:36px;padding:0 14px;border:0;font-size:13px;font-weight:600;cursor:pointer;background:${on ? '#17183B' : '#FFFFFF'};color:${on ? '#FFFFFF' : '#17183B'}`;
+    const base = {filterWrapStyle: this.state.narrow ? 'display:block' : 'position:sticky;top:64px;z-index:15;display:block', onFilters: nf => this.setState({f:nf}), showDemo:!this.state.demoHidden,
+      hideDemo: () => { try { sessionStorage.setItem('okr-demo-ok','1'); } catch (e) {} this.setState({demoHidden:true}); },
+      isCards: view === 'tarjetas', isTable: view !== 'tarjetas', cardsPressed: view === 'tarjetas' ? 'true' : 'false', tablePressed: view !== 'tarjetas' ? 'true' : 'false',
+      cardsBtn:btn(view === 'tarjetas'), tableBtn:btn(view !== 'tarjetas'),
+      showCards: () => this.setView('tarjetas'), showTable: () => this.setView('tabla'),
+      statusFilter, onStatus: e => { const v = e.target.value; window.OKR && window.OKR.writeParams({estatus:v}); this.setState({statusFilter:v}); }};
+    if (!O || !d || !f) return Object.assign(base, {total:'', rows:[], cols:[], isEmpty:false, noReportText:''});
+
+    const krs = O.visibleKrs(d.krs, d.records, f), s = O.summarize(krs, d.records, f.period);
+    let rows = s.rows.filter(({record:r}) => !statusFilter || (statusFilter === 'none' ? !(r && r.status) : r && r.status === statusFilter));
+    const val = ({kr, record:r}) => ({id:kr.id, name:O.norm(kr.name), obj:kr.obj, sub:kr.subCode, period:O.PERIODS.indexOf(kr.target_period),
+      status: r && r.status in STATUS_RANK ? STATUS_RANK[r.status] : 9, progress: r && r.progress != null ? Number(r.progress) : -1, exec: r && r.execution in EXEC_RANK ? EXEC_RANK[r.execution] : -1})[sortKey];
+    const coll = new Intl.Collator('es', {numeric:true});
+    rows = rows.slice().sort((a, b) => { const x = val(a), y = val(b); const c = typeof x === 'number' ? x - y : coll.compare(x, y); return (sortDir === 'asc' ? c : -c) || coll.compare(a.kr.id, b.kr.id); });
+
+    const out = rows.map(({kr, record:r}) => {
+      const S = O.status(r && r.status), p = r && r.progress != null ? Number(r.progress) : null;
+      const hasPath = r && r.baseline != null && r.target != null;
+      return {id:kr.id, name:kr.name, href:O.href('detalle', {kr:kr.id}), periodText:O.periodLabel(kr.target_period), due:O.longDate(kr.target_date),
+        objLabel:`${kr.objCode} · ${kr.objName}`, objCode:kr.objCode, subCode:kr.subCode, so:`${kr.subCode}: ${kr.subText}`, owner:kr.owner || 'No informado',
+        hasType:!!kr.kr_type, type:kr.kr_type || '', demo:!!(r && r.demo),
+        statusLabel:S.label, statusEn:S.en, glyph:S.glyph,
+        badgeStyle:`display:inline-flex;align-items:center;gap:6px;padding:3px 8px;background:${S.bg};color:${S.color};font-size:13px;font-weight:700;line-height:1.3;white-space:nowrap`,
+        progress: !r ? 'Sin reporte' : p == null ? 'No informado' : O.pct(p),
+        progressShort: !r ? 'Sin reporte' : p == null ? 'No informado' : O.pct(p),
+        hasBar: p != null, barWidth:O.clamp(p) + '%', barColor:S.fill, barAria:`Progreso ${O.pct(p)}, umbral 80%`,
+        path: hasPath ? `Línea base ${O.num(r.baseline)} → Valor actual ${O.num(r.current)} → Meta ${O.num(r.target)}` : '',
+        exec: !r ? 'Sin reporte' : r.execution ? O.EXEC[r.execution].label : 'No informado'};
+    });
+    const cols = COLS.map((c, i) => {
+      const on = c.key === sortKey;
+      return {label:c.label, sort: on ? (sortDir === 'asc' ? 'ascending' : 'descending') : 'none', arrow: on ? (sortDir === 'asc' ? '▲' : '▼') : '',
+        onSort: () => this.setState(st => ({sortKey:c.key, sortDir: st.sortKey === c.key && st.sortDir === 'asc' ? 'desc' : 'asc'})),
+        thStyle:`text-align:left;padding:4px 12px 4px ${i ? 12 : 0}px;border-bottom:1px solid #17183B;white-space:nowrap;background:#FFFFFF;${i ? '' : 'position:sticky;left:0;z-index:1;'}`};
+    });
+    return Object.assign(base, {total:out.length, rows:out, cols, isEmpty:out.length === 0,
+      liveText:`${out.length} Resultados Clave encontrados`,
+      noReportText: f.period === 'todos' ? `${s.noReport} Resultados Clave aún sin reporte.` : `${s.noReport} Resultados Clave aún sin reporte en este periodo.`});
+  }
+}
+</script>
+</body>
+</html>

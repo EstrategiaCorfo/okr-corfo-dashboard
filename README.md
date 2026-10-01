@@ -2,6 +2,17 @@
 
 Sitio estático de seguimiento de la Estrategia Corporativa 2026 a 2030. Incluye Panel general, Estrategia, Resultados Clave, Histórico y una guía para interpretar el seguimiento.
 
+## Versiones independientes
+
+| Versión | Entrada | Datos y criterios |
+| --- | --- | --- |
+| Panel anterior | `index.html` | Conserva la versión anterior. |
+| Propuesta de jefatura | `version-jefatura/Panel general.dc.html` | Conserva la propuesta anterior. |
+| V3 | `v3/index.html` | Diseño del 29 de septiembre; un KR de demostración. |
+| V4 | `v4/index.html` | Diseño del 1 de octubre; solo KR presentes en Seguimiento. Actualmente KR-108 y KR-109, con seis reportes DEMO en Q4 2026. |
+
+La documentación de los JSON y el comando de actualización de v4 están en [v4/README.md](v4/README.md). La descripción siguiente corresponde al panel anterior de la raíz.
+
 ## Modelo de datos
 
 El dashboard lee `data/public/strategy.json`, `data/public/tracking.json` y `data/public/objective-notes.json` en GitHub Pages. Se generan desde las hojas **Estrategia** y **Seguimiento** de la planilla maestra y desde el catálogo oficial `data/strategy-catalog.json`, extraído de los anexos A y B de la especificación UX/UI. El catálogo aplica la numeración y los textos oficiales a los JSON sin cambiar los 161 ID de KR de la planilla. El ID KR relaciona ambas hojas. Todas las filas de Seguimiento se conservan; la vista prioriza Confirmado GE y luego la fecha más reciente, con Propuesta Owner como alternativa.
