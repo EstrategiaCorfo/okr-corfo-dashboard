@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Cómo leer este panel | Panel de Seguimiento Corfo</title>
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/base.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/styles.css">
+  <script src="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/_ds_bundle.js"></script>
+  <script src="okr-app.js"></script>
+  <style>
+    html,body{margin:0;background:#FFFFFF;color:#3F3F3F;font-family:var(--font-sans);font-size:15px;-webkit-font-smoothing:antialiased}
+    *{box-sizing:border-box}
+    html{scroll-padding-top:80px}
+    a{color:#221E7C;text-decoration:none}
+    a:hover{color:#D64045}
+    :focus-visible{outline:2px solid #D64045;outline-offset:2px}
+    @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+  </style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#FFFFFF">
+  <dc-import name="Site Header" active="guia" filters="{{ false }}" hint-size="100%,64px" style="position:sticky;top:0;z-index:20;display:block"></dc-import>
+
+  <main style="flex:1;width:100%;max-width:1320px;margin:0 auto;padding:24px 24px 56px;display:flex;flex-wrap:wrap;gap:32px 56px;align-items:flex-start">
+    <nav aria-label="Secciones de la guía" style="{{ navStyle }}">
+      <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C;padding-bottom:6px">En esta guía</span>
+      <a href="#jerarquia" style="min-height:36px;display:flex;align-items:center;font-size:14px;color:#17183B;border-bottom:1px solid #C9CAD5" style-hover="color:#D64045">Estructura de la estrategia</a>
+      <a href="#glosario" style="min-height:36px;display:flex;align-items:center;font-size:14px;color:#17183B;border-bottom:1px solid #C9CAD5" style-hover="color:#D64045">Glosario</a>
+      <a href="#semaforo" style="min-height:36px;display:flex;align-items:center;font-size:14px;color:#17183B;border-bottom:1px solid #C9CAD5" style-hover="color:#D64045">Nivel de confianza</a>
+      <a href="#progreso" style="min-height:36px;display:flex;align-items:center;font-size:14px;color:#17183B;border-bottom:1px solid #C9CAD5" style-hover="color:#D64045">Progreso numérico</a>
+      <a href="#ciclo" style="min-height:36px;display:flex;align-items:center;font-size:14px;color:#17183B;border-bottom:1px solid #C9CAD5" style-hover="color:#D64045">Ciclo trimestral</a>
+    </nav>
+
+    <div style="flex:1 1 560px;display:flex;flex-direction:column;gap:48px;min-width:0;max-width:880px">
+      <section style="display:flex;flex-direction:column;gap:8px">
+        <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C">Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
+        <h1 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.4vw,30px);line-height:1.1;letter-spacing:-0.022em;color:#17183B">Cómo leer este panel</h1>
+        <span aria-hidden="true" style="display:block;width:56px;height:4px;background:#D64045"></span>
+        <p style="margin:4px 0 0;font-size:16px;line-height:1.55;color:#3F3F3F;text-wrap:pretty">El panel muestra el avance de la Estrategia Corporativa bajo la metodología OKR descrita en el Manual de Implementación. Esta guía resume los conceptos necesarios para interpretarlo.</p>
+      </section>
+
+      <section id="jerarquia" aria-labelledby="h-jer" style="display:flex;flex-direction:column;gap:16px">
+        <h2 id="h-jer" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-0.015em;color:#17183B;border-top:3px solid #17183B;padding-top:14px">Estructura de la estrategia</h2>
+        <p style="margin:0;font-size:15px;line-height:1.55;text-wrap:pretty">Cada Objetivo Estratégico se descompone en subobjetivos, y cada subobjetivo se materializa en Resultados Clave medibles con fecha meta.</p>
+        <div role="img" aria-label="Jerarquía: Objetivo Estratégico, luego Subobjetivo, luego Resultado Clave. Los KPI se miden en paralelo." style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px;align-items:stretch">
+          <div style="background:#17183B;color:#FFFFFF;padding:16px 18px;display:flex;flex-direction:column;gap:6px">
+            <span style="font-family:var(--font-display);font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.03em">01 a 08</span>
+            <strong style="font-family:var(--font-display);font-size:16px">Objetivo Estratégico</strong>
+            <span style="font-size:13px;line-height:1.45;color:#FFFFFF">Qué busca Corfo en el periodo 2026-2030, agrupado en cuatro dimensiones.</span>
+          </div>
+          <div style="background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:6px;border-top:3px solid #17183B">
+            <span style="font-family:var(--font-display);font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#221E7C">SO1.1</span>
+            <strong style="font-family:var(--font-display);font-size:16px;color:#17183B">Subobjetivo</strong>
+            <span style="font-size:13px;line-height:1.45">Línea de trabajo concreta dentro del objetivo. Toma el número de su objetivo.</span>
+          </div>
+          <div style="background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:6px;border-top:3px solid #D64045">
+            <span style="font-family:var(--font-display);font-weight:700;font-size:26px;line-height:1;letter-spacing:-0.03em;color:#221E7C">KR-001</span>
+            <strong style="font-family:var(--font-display);font-size:16px;color:#17183B">Resultado Clave (KR)</strong>
+            <span style="font-size:13px;line-height:1.45">Resultado verificable, con owner, periodo y fecha meta. Es la unidad de seguimiento.</span>
+          </div>
+        </div>
+        <p style="margin:0;padding:12px 16px;background:#EDF0F5;font-size:14px;line-height:1.5;color:#17183B;text-wrap:pretty"><strong>KPI:</strong> indicador de salud de la operación que se mide en paralelo a los Resultados Clave. No forma parte de este panel.</p>
+        <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:0 24px">
+          <div style="padding:10px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Impulso Corfo</dt><dd style="margin:2px 0 0;font-size:13px">Objetivos 02, 03 y 04</dd></div>
+          <div style="padding:10px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Rol de Corfo</dt><dd style="margin:2px 0 0;font-size:13px">Objetivos 05 y 06</dd></div>
+          <div style="padding:10px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Habilitantes</dt><dd style="margin:2px 0 0;font-size:13px">Objetivos 07 y 08</dd></div>
+          <div style="padding:10px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Impacto</dt><dd style="margin:2px 0 0;font-size:13px">Objetivo 01, agregador</dd></div>
+        </dl>
+      </section>
+
+      <section id="glosario" aria-labelledby="h-glo" style="display:flex;flex-direction:column;gap:12px">
+        <h2 id="h-glo" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-0.015em;color:#17183B;border-top:3px solid #17183B;padding-top:14px">Glosario</h2>
+        <dl style="margin:0;display:flex;flex-direction:column">
+          <div style="display:grid;grid-template-columns:minmax(140px,220px) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Owner</dt><dd style="margin:0;line-height:1.5">Gerente o encargado responsable del objetivo o del KR.</dd></div>
+          <div style="display:grid;grid-template-columns:minmax(140px,220px) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Nivel de confianza</dt><dd style="margin:0;line-height:1.5">Lectura experta del owner sobre la probabilidad de cumplir el KR: alto, medio o bajo. Es la métrica principal del panel.</dd></div>
+          <div style="display:grid;grid-template-columns:minmax(140px,220px) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Progreso numérico</dt><dd style="margin:0;line-height:1.5">Métrica (%) informada en la planilla, incluida la estimación de avance de los KR cualitativos. Si falta la métrica y existen línea base, meta y valor actual válidos, se calcula con esos valores. Una meta igual a la línea base no permite calcular la fórmula.</dd></div>
+          <div style="display:grid;grid-template-columns:minmax(140px,220px) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Estado del KR</dt><dd style="margin:0;line-height:1.5">Situación del KR según el último reporte: No iniciado, En curso o Cumplido. Es una métrica secundaria y se muestra en tonos neutros.</dd></div>
+          <div style="display:grid;grid-template-columns:minmax(140px,220px) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Tipo de KR</dt><dd style="margin:0;line-height:1.5">Resultado final (meta a año cerrado) o Paso intermedio.</dd></div>
+          <div style="display:grid;grid-template-columns:minmax(140px,220px) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Periodo</dt><dd style="margin:0;line-height:1.5">Trimestre del año, escrito como Q3 2026.</dd></div>
+          <div style="display:grid;grid-template-columns:minmax(140px,220px) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid #C9CAD5"><dt style="font-weight:700;color:#17183B">Momento del registro</dt><dd style="margin:0;line-height:1.5">Propuesta del owner o Confirmado por GE. El panel muestra primero el reporte confirmado por la Gerencia de Estrategia.</dd></div>
+        </dl>
+      </section>
+
+      <section id="semaforo" aria-labelledby="h-sem" style="display:flex;flex-direction:column;gap:14px">
+        <h2 id="h-sem" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-0.015em;color:#17183B;border-top:3px solid #17183B;padding-top:14px">Nivel de confianza</h2>
+        <p style="margin:0;font-size:15px;line-height:1.55;text-wrap:pretty">El owner registra su lectura experta sobre el cumplimiento de cada KR. Es independiente del progreso numérico. Cada nivel se identifica por su color, su ícono y su nombre.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px">
+          <div style="background:#E6F6EE;padding:16px 18px;display:flex;flex-direction:column;gap:8px;border-top:3px solid #13815F">
+            <strong style="display:flex;align-items:center;gap:8px;font-size:15px;color:#13815F"><span aria-hidden="true">●</span>Alto (On Track)</strong>
+            <p style="margin:0;font-size:14px;line-height:1.5;color:#17183B">El KR avanza según lo planificado y se espera alcanzar la meta en el plazo.</p>
+          </div>
+          <div style="background:#FFF4C2;padding:16px 18px;display:flex;flex-direction:column;gap:8px;border-top:3px solid #F5C400">
+            <strong style="display:flex;align-items:center;gap:8px;font-size:15px;color:#7A5C00"><span aria-hidden="true">▲</span>Medio (Off Track)</strong>
+            <p style="margin:0;font-size:14px;line-height:1.5;color:#17183B">Existen desviaciones que pueden comprometer la meta. Requiere atención y ajustes.</p>
+          </div>
+          <div style="background:#FCE8EB;padding:16px 18px;display:flex;flex-direction:column;gap:8px;border-top:3px solid #B92F3F">
+            <strong style="display:flex;align-items:center;gap:8px;font-size:15px;color:#B92F3F"><span aria-hidden="true">■</span>Bajo (At Risk)</strong>
+            <p style="margin:0;font-size:14px;line-height:1.5;color:#17183B">Es probable que la meta no se cumpla sin acciones correctivas.</p>
+          </div>
+        </div>
+        <p style="margin:0;font-size:13px;color:#3F3F3F">Los KR sin seguimiento se muestran como Sin reporte. Si la planilla indica No iniciado en el nivel de confianza, se conserva esa indicación en gris, sin asignar un nivel alto, medio o bajo.</p>
+      </section>
+
+      <section id="progreso" aria-labelledby="h-pro" style="display:flex;flex-direction:column;gap:14px">
+        <h2 id="h-pro" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-0.015em;color:#17183B;border-top:3px solid #17183B;padding-top:14px">Progreso numérico</h2>
+        <p style="margin:0;font-size:15px;line-height:1.55;text-wrap:pretty">Se muestra la Métrica (%) informada por el owner, incluida la estimación de los KR cualitativos. Si no está informada, se calcula con la fórmula cuando existen línea base, meta y valor actual y la meta difiere de la línea base. Los campos vacíos se mantienen como no informados.</p>
+        <div style="background:#17183B;color:#FFFFFF;padding:20px 24px;display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#C9CAD5">Fórmula</span>
+          <p style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(17px,2vw,22px);line-height:1.35;letter-spacing:-0.01em">(Valor actual − Línea base) ÷ (Meta − Línea base) × 100</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px 32px;align-items:start">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <strong style="font-size:14px;color:#17183B">Ejemplo</strong>
+            <p style="margin:0;font-size:14px;line-height:1.5">Línea base 12 → Valor actual 13 → Meta 14. Progreso: (13 − 12) ÷ (14 − 12) × 100 = 50%.</p>
+            <div role="img" aria-label="Barra de progreso al 50% con umbral de éxito en 80%" style="position:relative;height:10px;background:#C9CAD5;margin-top:4px">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:50%;background:#13815F"></span>
+              <span style="position:absolute;left:80%;top:-4px;bottom:-4px;width:2px;background:#17183B"></span>
+            </div>
+            <span style="font-size:12px;color:#3F3F3F">La barra toma el color del nivel de confianza. La marca vertical indica el umbral de éxito.</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <strong style="font-size:14px;color:#17183B">Estándar de ambición</strong>
+            <p style="margin:0;font-size:14px;line-height:1.5;text-wrap:pretty">Un KR que alcanza el 80% se considera un éxito. Los KR asociados a una meta del Convenio de Desempeño Colectivo (CDC) exigen el 100%.</p>
+            <p style="margin:0;font-size:14px;line-height:1.5;text-wrap:pretty">El promedio del panel solo se muestra cuando hay al menos cinco KR con progreso informado, siempre junto a su base de cálculo.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="ciclo" aria-labelledby="h-cic" style="display:flex;flex-direction:column;gap:14px">
+        <h2 id="h-cic" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-0.015em;color:#17183B;border-top:3px solid #17183B;padding-top:14px">Ciclo trimestral</h2>
+        <p style="margin:0;font-size:15px;line-height:1.55;text-wrap:pretty">Cada trimestre tiene 13 semanas y cuatro instancias de revisión. En el Panel general, una línea de tiempo indica la semana en curso.</p>
+        <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:0 16px">
+          <li style="display:flex;flex-direction:column;gap:10px">
+            <div style="position:relative;height:20px"><span aria-hidden="true" style="position:absolute;left:0;right:-16px;top:9px;height:2px;background:#C9CAD5"></span><span aria-hidden="true" style="position:relative;display:block;width:20px;height:20px;background:#17183B"></span></div>
+            <div style="background:#EDF0F5;padding:12px 14px;display:flex;flex-direction:column;gap:4px;height:100%"><strong style="font-family:var(--font-display);color:#17183B">Apertura</strong><span style="font-size:13px">Semana 1</span><span style="font-size:13px;line-height:1.45">Se confirman alcance, responsables y condiciones de ejecución de los KR del trimestre.</span></div>
+          </li>
+          <li style="display:flex;flex-direction:column;gap:10px">
+            <div style="position:relative;height:20px"><span aria-hidden="true" style="position:absolute;left:0;right:-16px;top:9px;height:2px;background:#C9CAD5"></span><span aria-hidden="true" style="position:relative;display:block;width:20px;height:20px;background:#17183B"></span></div>
+            <div style="background:#EDF0F5;padding:12px 14px;display:flex;flex-direction:column;gap:4px;height:100%"><strong style="font-family:var(--font-display);color:#17183B">Revisión intermedia</strong><span style="font-size:13px">Semanas 6 a 7</span><span style="font-size:13px;line-height:1.45">Se revisa si cada hito está cumplido, en curso o retrasado.</span></div>
+          </li>
+          <li style="display:flex;flex-direction:column;gap:10px">
+            <div style="position:relative;height:20px"><span aria-hidden="true" style="position:absolute;left:0;right:-16px;top:9px;height:2px;background:#C9CAD5"></span><span aria-hidden="true" style="position:relative;display:block;width:20px;height:20px;background:#17183B"></span></div>
+            <div style="background:#EDF0F5;padding:12px 14px;display:flex;flex-direction:column;gap:4px;height:100%"><strong style="font-family:var(--font-display);color:#17183B">Cierre de Q</strong><span style="font-size:13px">Semana 13</span><span style="font-size:13px;line-height:1.45">Se registran el nivel de confianza y el progreso final de cada KR.</span></div>
+          </li>
+          <li style="display:flex;flex-direction:column;gap:10px">
+            <div style="position:relative;height:20px"><span aria-hidden="true" style="position:relative;display:block;width:20px;height:20px;background:#D64045"></span></div>
+            <div style="background:#EDF0F5;padding:12px 14px;display:flex;flex-direction:column;gap:4px;height:100%"><strong style="font-family:var(--font-display);color:#17183B">Presentación a Vicepresidencia</strong><span style="font-size:13px">Semanas 1 a 2 del Q siguiente</span><span style="font-size:13px;line-height:1.45">Se presenta la vista única de los ocho semáforos.</span></div>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <footer style="border-top:1px solid #C9CAD5">
+    <div style="max-width:1320px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:#3F3F3F">
+      <span>Corfo - Gerencia de Estrategia</span>
+      <span>Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { narrow:false };
+  componentDidMount() { this._r = () => this.setState({narrow: window.innerWidth < 760}); this._r(); window.addEventListener('resize', this._r); }
+  componentWillUnmount() { window.removeEventListener('resize', this._r); }
+  renderVals() {
+    const n = this.state.narrow;
+    return { navStyle: `${n ? 'position:static;flex:1 1 100%;' : 'position:sticky;top:88px;flex:0 1 220px;'}display:flex;flex-direction:column;gap:2px;border-top:3px solid #17183B;padding-top:12px;min-width:200px;background:#FFFFFF` };
+  }
+}
+</script>
+</body>
+</html>
