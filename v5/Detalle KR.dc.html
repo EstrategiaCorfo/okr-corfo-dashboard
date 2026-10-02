@@ -233,7 +233,7 @@ class Component extends DCLogic {
       execCard:`background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid ${execColor}`,
       execDot:`width:12px;height:12px;flex:none;background:${execColor}`,
       hasFields: !!r,
-      fields: r ? [{label:'Owner del registro', value:nv(r.owner)}, {label:'Comentario cualitativo último reporte', value:clean(r.comment)}, {label:'Evidencia o soporte', value:clean(r.evidence)}, {label:'Aprendizaje', value:clean(r.learning)}] : []
+      fields: r ? [{label:r.owner ? 'Owner del registro' : 'Owner definido en Estrategia', value:nv(r.owner || kr.owner)}, {label:'Comentario cualitativo último reporte', value:clean(r.comment)}, {label:'Evidencia o soporte', value:clean(r.evidence)}, {label:'Aprendizaje', value:clean(r.learning)}] : []
     };
     const def = [
       {label:'Dimensión', value:O.OBJECTIVES[kr.obj - 1].dim},

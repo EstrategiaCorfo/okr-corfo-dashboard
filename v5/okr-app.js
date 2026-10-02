@@ -63,8 +63,8 @@
   };
   const NO_STATUS = {key: 'none', label: 'Sin reporte', en: '', glyph: '■', color: '#6B7088', fill: '#C9CAD5', bg: '#EDF0F5'};
   const EXEC = {'No iniciado': {label: 'No iniciado', color: '#C9CAD5'}, 'En proceso': {label: 'En curso', color: '#9197AE'}, 'Completado': {label: 'Cumplido', color: '#221E7C'}};
-  const INSTANCE = {'Apertura': 'Apertura', 'Revisión intermedia': 'Revisión intermedia', 'Cierre': 'Cierre de Q'};
-  const INSTANCE_ORDER = ['Apertura', 'Revisión intermedia', 'Cierre'];
+  const INSTANCE = {'Pendiente': 'Pendiente', 'Apertura': 'Apertura', 'Revisión intermedia': 'Revisión intermedia', 'Cierre': 'Cierre de Q'};
+  const INSTANCE_ORDER = ['Pendiente', 'Apertura', 'Revisión intermedia', 'Cierre'];
   const MOMENT = {'Propuesta Owner': 'Propuesta del owner', 'Confirmado GE': 'Confirmado por GE'};
   const MIN_PROGRESS_SAMPLE = 5;
   const GLOSSARY = {
