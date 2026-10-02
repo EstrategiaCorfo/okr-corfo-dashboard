@@ -1,0 +1,410 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "assets/**",
+              "components/core/**",
+              "components/slides/**",
+              "tools/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Aptos Display|Calibri|Carlito))/i]",
+        "message": "Font not provided by the design system. Available: Aptos Display, Calibri, Carlito."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='AccentRule'] > JSXAttribute > JSXIdentifier[name!=/^(?:width|height|color|style|key|ref|className|style|children)$/]",
+        "message": "<AccentRule> doesn't accept that prop. Declared props: width, height, color, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='BulletItem'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|divider|size|style|key|ref|className|style|children)$/]",
+        "message": "<BulletItem> doesn't accept that prop. Declared props: children, divider, size, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ColumnCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:number|title|children|style|key|ref|className|style|children)$/]",
+        "message": "<ColumnCard> doesn't accept that prop. Declared props: number, title, children, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CorfoLogo'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|height|base|style|key|ref|className|style|children)$/]",
+        "message": "<CorfoLogo> doesn't accept that prop. Declared props: variant, height, base, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CorfoLogo'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:azul|blanco)$/]",
+        "message": "<CorfoLogo> variant must be one of 'azul' | 'blanco'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Eyebrow'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|color|style|key|ref|className|style|children)$/]",
+        "message": "<Eyebrow> doesn't accept that prop. Declared props: children, color, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='FlowStep'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|subtitle|variant|style|key|ref|className|style|children)$/]",
+        "message": "<FlowStep> doesn't accept that prop. Declared props: title, subtitle, variant, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='FlowStep'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:outline|solid)$/]",
+        "message": "<FlowStep> variant must be one of 'outline' | 'solid'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='NoteBanner'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|style|key|ref|className|style|children)$/]",
+        "message": "<NoteBanner> doesn't accept that prop. Declared props: children, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='NumberedItem'] > JSXAttribute > JSXIdentifier[name!=/^(?:number|title|description|divider|style|key|ref|className|style|children)$/]",
+        "message": "<NumberedItem> doesn't accept that prop. Declared props: number, title, description, divider, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SlideAgenda'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|items|number|footerLabel|assetsBase|style|key|ref|className|style|children)$/]",
+        "message": "<SlideAgenda> doesn't accept that prop. Declared props: title, items, number, footerLabel, assetsBase, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SlideColumns'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|lead|columns|note|number|footerLabel|assetsBase|style|key|ref|className|style|children)$/]",
+        "message": "<SlideColumns> doesn't accept that prop. Declared props: title, lead, columns, note, number, footerLabel, assetsBase, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SlideContentPanel'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|lead|bullets|steps|number|footerLabel|assetsBase|style|key|ref|className|style|children)$/]",
+        "message": "<SlideContentPanel> doesn't accept that prop. Declared props: title, lead, bullets, steps, number, footerLabel, assetsBase, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SlideCover'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|date|assetsBase|style|key|ref|className|style|children)$/]",
+        "message": "<SlideCover> doesn't accept that prop. Declared props: title, date, assetsBase, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SlideFooter'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|number|onDark|style|key|ref|className|style|children)$/]",
+        "message": "<SlideFooter> doesn't accept that prop. Declared props: label, number, onDark, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SlidePhotoFull'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|text|image|assetsBase|style|key|ref|className|style|children)$/]",
+        "message": "<SlidePhotoFull> doesn't accept that prop. Declared props: title, text, image, assetsBase, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SlideQuote'] > JSXAttribute > JSXIdentifier[name!=/^(?:quote|author|role|portrait|number|footerLabel|assetsBase|style|key|ref|className|style|children)$/]",
+        "message": "<SlideQuote> doesn't accept that prop. Declared props: quote, author, role, portrait, number, footerLabel, assetsBase, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SlideSection'] > JSXAttribute > JSXIdentifier[name!=/^(?:number|title|subtitle|assetsBase|style|key|ref|className|style|children)$/]",
+        "message": "<SlideSection> doesn't accept that prop. Declared props: number, title, subtitle, assetsBase, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SlideTimeline'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|lead|milestones|number|footerLabel|assetsBase|style|key|ref|className|style|children)$/]",
+        "message": "<SlideTimeline> doesn't accept that prop. Declared props: title, lead, milestones, number, footerLabel, assetsBase, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StatFigure'] > JSXAttribute > JSXIdentifier[name!=/^(?:value|label|description|size|style|key|ref|className|style|children)$/]",
+        "message": "<StatFigure> doesn't accept that prop. Declared props: value, label, description, size, style."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "AccentRule": {
+        "replaces": []
+      },
+      "BulletItem": {
+        "replaces": []
+      },
+      "ColumnCard": {
+        "replaces": []
+      },
+      "CorfoLogo": {
+        "replaces": []
+      },
+      "Eyebrow": {
+        "replaces": []
+      },
+      "FlowStep": {
+        "replaces": []
+      },
+      "NoteBanner": {
+        "replaces": []
+      },
+      "NumberedItem": {
+        "replaces": []
+      },
+      "SlideAgenda": {
+        "replaces": []
+      },
+      "SlideColumns": {
+        "replaces": []
+      },
+      "SlideContentPanel": {
+        "replaces": []
+      },
+      "SlideCover": {
+        "replaces": []
+      },
+      "SlideFooter": {
+        "replaces": []
+      },
+      "SlidePhotoFull": {
+        "replaces": []
+      },
+      "SlideQuote": {
+        "replaces": []
+      },
+      "SlideSection": {
+        "replaces": []
+      },
+      "SlideTimeline": {
+        "replaces": []
+      },
+      "StatFigure": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--accent",
+      "--accent-secondary",
+      "--border-on-dark",
+      "--border-rule",
+      "--border-rule-strong",
+      "--bullet-size",
+      "--bullet-size-lg",
+      "--col-agenda",
+      "--col-numeral",
+      "--col-panel",
+      "--corfo-azul",
+      "--corfo-azul-brillo",
+      "--corfo-azul-noche",
+      "--corfo-azul-oscuro",
+      "--corfo-azul-panel",
+      "--corfo-azul-panel-alt",
+      "--corfo-azul-panel-bajo",
+      "--corfo-blanco",
+      "--corfo-gris",
+      "--corfo-gris-claro",
+      "--corfo-gris-medio",
+      "--corfo-gris-oscuro",
+      "--corfo-rojo",
+      "--corfo-verde",
+      "--corfo-verde-claro",
+      "--font-display",
+      "--font-mono",
+      "--font-sans",
+      "--gradient-cover",
+      "--gradient-divider",
+      "--line-block",
+      "--line-body",
+      "--line-body-loose",
+      "--line-display",
+      "--line-lead",
+      "--line-title",
+      "--link",
+      "--link-hover",
+      "--logo-height",
+      "--logo-height-cover",
+      "--margin-bottom",
+      "--margin-top",
+      "--margin-top-cover",
+      "--margin-x",
+      "--margin-x-inner",
+      "--numeral-on-dark",
+      "--radius",
+      "--rule-accent-height",
+      "--rule-accent-width",
+      "--rule-accent-width-sm",
+      "--rule-column",
+      "--rule-hairline",
+      "--rule-on-dark",
+      "--shadow-none",
+      "--size-block-title",
+      "--size-body",
+      "--size-body-sm",
+      "--size-caption",
+      "--size-card-title",
+      "--size-cover-title",
+      "--size-footer",
+      "--size-lead",
+      "--size-lead-sm",
+      "--size-numeral",
+      "--size-numeral-hero",
+      "--size-numeral-sm",
+      "--size-panel-title",
+      "--size-section-title",
+      "--size-slide-title",
+      "--size-slide-title-sm",
+      "--slide-height",
+      "--slide-ratio",
+      "--slide-width",
+      "--space-1",
+      "--space-10",
+      "--space-2",
+      "--space-3",
+      "--space-4",
+      "--space-5",
+      "--space-6",
+      "--space-7",
+      "--space-8",
+      "--space-9",
+      "--surface-accent",
+      "--surface-card",
+      "--surface-dark",
+      "--surface-page",
+      "--text-accent",
+      "--text-body",
+      "--text-heading",
+      "--text-muted",
+      "--text-on-dark",
+      "--text-on-dark-muted",
+      "--track-block",
+      "--track-cover",
+      "--track-eyebrow",
+      "--track-numeral-hero",
+      "--track-numeral-sm",
+      "--track-section",
+      "--track-title",
+      "--weight-bold",
+      "--weight-medium",
+      "--weight-regular",
+      "--weight-semibold"
+    ],
+    "tokenKinds": {
+      "--corfo-azul-noche": "color",
+      "--corfo-azul-oscuro": "color",
+      "--corfo-azul-panel": "color",
+      "--corfo-azul-panel-alt": "color",
+      "--corfo-azul-panel-bajo": "color",
+      "--corfo-azul": "color",
+      "--corfo-azul-brillo": "color",
+      "--corfo-rojo": "color",
+      "--corfo-verde": "color",
+      "--corfo-verde-claro": "color",
+      "--corfo-gris-oscuro": "color",
+      "--corfo-gris": "color",
+      "--corfo-gris-medio": "color",
+      "--corfo-gris-claro": "color",
+      "--corfo-blanco": "color",
+      "--text-heading": "font",
+      "--text-body": "font",
+      "--text-muted": "font",
+      "--text-accent": "font",
+      "--text-on-dark": "font",
+      "--text-on-dark-muted": "font",
+      "--surface-page": "color",
+      "--surface-card": "color",
+      "--surface-dark": "color",
+      "--surface-accent": "color",
+      "--border-rule": "color",
+      "--border-rule-strong": "color",
+      "--border-on-dark": "color",
+      "--rule-on-dark": "color",
+      "--accent": "color",
+      "--accent-secondary": "color",
+      "--numeral-on-dark": "color",
+      "--link": "color",
+      "--link-hover": "color",
+      "--font-display": "font",
+      "--font-sans": "font",
+      "--font-mono": "font",
+      "--weight-regular": "font",
+      "--weight-medium": "font",
+      "--weight-semibold": "font",
+      "--weight-bold": "font",
+      "--size-cover-title": "spacing",
+      "--size-section-title": "spacing",
+      "--size-numeral-hero": "spacing",
+      "--size-slide-title": "spacing",
+      "--size-slide-title-sm": "spacing",
+      "--size-block-title": "spacing",
+      "--size-card-title": "spacing",
+      "--size-panel-title": "spacing",
+      "--size-numeral": "spacing",
+      "--size-numeral-sm": "spacing",
+      "--size-lead": "spacing",
+      "--size-lead-sm": "spacing",
+      "--size-body": "spacing",
+      "--size-body-sm": "spacing",
+      "--size-caption": "spacing",
+      "--size-footer": "spacing",
+      "--line-display": "font",
+      "--line-title": "font",
+      "--line-block": "font",
+      "--line-lead": "font",
+      "--line-body": "font",
+      "--line-body-loose": "font",
+      "--track-cover": "spacing",
+      "--track-section": "spacing",
+      "--track-title": "spacing",
+      "--track-block": "spacing",
+      "--track-numeral-hero": "spacing",
+      "--track-eyebrow": "spacing",
+      "--track-numeral-sm": "spacing",
+      "--slide-width": "spacing",
+      "--slide-height": "spacing",
+      "--slide-ratio": "other",
+      "--margin-x": "spacing",
+      "--margin-top": "spacing",
+      "--margin-top-cover": "spacing",
+      "--margin-bottom": "spacing",
+      "--margin-x-inner": "spacing",
+      "--col-panel": "spacing",
+      "--col-agenda": "spacing",
+      "--col-numeral": "spacing",
+      "--space-1": "spacing",
+      "--space-2": "spacing",
+      "--space-3": "spacing",
+      "--space-4": "spacing",
+      "--space-5": "spacing",
+      "--space-6": "spacing",
+      "--space-7": "spacing",
+      "--space-8": "spacing",
+      "--space-9": "spacing",
+      "--space-10": "spacing",
+      "--rule-hairline": "spacing",
+      "--rule-column": "spacing",
+      "--rule-accent-height": "spacing",
+      "--rule-accent-width": "spacing",
+      "--rule-accent-width-sm": "spacing",
+      "--bullet-size": "spacing",
+      "--bullet-size-lg": "spacing",
+      "--logo-height-cover": "spacing",
+      "--logo-height": "spacing",
+      "--radius": "radius",
+      "--gradient-cover": "color",
+      "--gradient-divider": "color",
+      "--shadow-none": "shadow"
+    },
+    "fontFamilies": [
+      "Aptos Display",
+      "Calibri",
+      "Carlito"
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/typography.css">
+  <script src="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/_ds_bundle.js"></script>
+  <script src="okr-app.js"></script>
+</helmet>
+<div style="width:100%;font-family:var(--font-sans)">
+  <header data-noprint="" style="background:#17183B;color:#FFFFFF">
+    <div style="max-width:1320px;margin:0 auto;padding:0 24px;min-height:64px;display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+      <a href="Estrategia.dc.html" aria-label="Ir a Estrategia" style="display:flex;align-items:center;gap:16px;color:#FFFFFF;padding:10px 0;text-decoration:none">
+        <img src="assets/logo-corfo-blanco.png" alt="Corfo" style="height:28px;width:auto;display:block">
+        <span style="display:flex;flex-direction:column;gap:2px;border-left:1px solid rgba(255,255,255,0.22);padding-left:16px">
+          <strong style="font-family:var(--font-display);font-weight:700;font-size:17px;line-height:1.1;letter-spacing:-0.01em">Panel de Seguimiento</strong>
+          <small style="font-size:12px;color:#C9CAD5">Estrategia Corporativa 2026-2030</small>
+        </span>
+      </a>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button type="button" aria-expanded="{{ navOpenStr }}" aria-controls="main-nav" onClick="{{ toggleNav }}" style="margin-left:auto;min-height:44px;min-width:44px;padding:0 14px;background:transparent;color:#FFFFFF;border:1px solid rgba(255,255,255,0.28);font-family:inherit;font-size:14px;cursor:pointer">Menú</button>
+      </sc-if>
+      <sc-if value="{{ showNav }}" hint-placeholder-val="{{ true }}">
+        <nav id="main-nav" aria-label="Navegación principal" style="{{ navStyle }}">
+          <sc-for list="{{ nav }}" as="item" hint-placeholder-count="5">
+            <a href="{{ item.href }}" aria-current="{{ item.current }}" style="{{ item.style }}" style-hover="color:#FFFFFF;border-bottom-color:#D64045">{{ item.label }}</a>
+          </sc-for>
+        </nav>
+      </sc-if>
+    </div>
+  </header>
+
+  <sc-if value="{{ showFilters }}" hint-placeholder-val="{{ false }}">
+    <section data-noprint="" aria-label="Filtros" style="background:#FFFFFF;border-bottom:1px solid #C9CAD5">
+      <div style="max-width:1320px;margin:0 auto;padding:10px 24px;display:flex;flex-direction:column;gap:8px">
+        <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+          <button type="button" aria-expanded="{{ filtOpenStr }}" onClick="{{ toggleFilt }}" style="min-height:44px;padding:0 14px;background:#EDF0F5;border:0;color:#17183B;font-family:inherit;font-size:14px;font-weight:600;text-align:left;cursor:pointer">{{ filtToggleText }}</button>
+        </sc-if>
+        <sc-if value="{{ showFields }}" hint-placeholder-val="{{ true }}">
+          <div style="{{ gridStyle }}">
+            <label style="display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:600;color:#17183B;min-width:0">Periodo
+              <select value="{{ f.period }}" onChange="{{ onPeriod }}" style="height:40px;padding:0 10px;border:1px solid #C9CAD5;border-radius:0;background:#FFFFFF;color:#17183B;font-family:inherit;font-size:14px;width:100%">
+                <sc-for list="{{ periodOptions }}" as="p" hint-placeholder-count="3">
+                  <option value="{{ p.value }}">{{ p.label }}</option>
+                </sc-for>
+              </select>
+            </label>
+            <label style="display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:600;color:#17183B;min-width:0">Objetivo Estratégico
+              <select value="{{ f.objective }}" onChange="{{ onObjective }}" style="height:40px;padding:0 10px;border:1px solid #C9CAD5;border-radius:0;background:#FFFFFF;color:#17183B;font-family:inherit;font-size:14px;width:100%">
+                <option value="">Todos los objetivos</option>
+                <sc-for list="{{ objectiveOptions }}" as="o" hint-placeholder-count="8">
+                  <option value="{{ o.value }}">{{ o.label }}</option>
+                </sc-for>
+              </select>
+            </label>
+            <sc-if value="{{ showSearch }}" hint-placeholder-val="{{ false }}">
+              <label style="display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:600;color:#17183B;min-width:0">Buscar Resultado Clave
+                <input type="search" value="{{ qInput }}" onChange="{{ onQuery }}" placeholder="Código o palabra clave" style="height:40px;padding:0 10px;border:1px solid #C9CAD5;border-radius:0;background:#FFFFFF;color:#17183B;font-family:inherit;font-size:14px;width:100%"></input>
+              </label>
+            </sc-if>
+            <button type="button" onClick="{{ clearAll }}" style="height:40px;padding:0 16px;background:#17183B;border:0;color:#FFFFFF;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer" style-hover="background:#0C0D22">Limpiar filtros</button>
+          </div>
+        </sc-if>
+        <sc-if value="{{ hasChips }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+            <span style="font-size:12px;color:#3F3F3F">Filtros activos:</span>
+            <sc-for list="{{ chips }}" as="c" hint-placeholder-count="1">
+              <button type="button" onClick="{{ c.onClear }}" aria-label="{{ c.aria }}" style="min-height:28px;padding:0 10px;display:flex;align-items:center;gap:8px;background:#EDF0F5;border:0;color:#17183B;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer" style-hover="color:#D64045">{{ c.label }}<span aria-hidden="true">×</span></button>
+            </sc-for>
+          </div>
+        </sc-if>
+      </div>
+    </section>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;1280px&quot;,&quot;height&quot;:&quot;160px&quot;},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;panel&quot;,&quot;estrategia&quot;,&quot;krs&quot;,&quot;bitacora&quot;,&quot;guia&quot;],&quot;default&quot;:&quot;panel&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;filters&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;showSearch&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;},&quot;onChange&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;(f: object) =&gt; void&quot;}}">
+const NAV = [
+  {key:'estrategia', file:'Estrategia.dc.html', label:'Estrategia'},
+  {key:'panel', file:'Panel general.dc.html', label:'Panel general'},
+  {key:'krs', file:'Resultados Clave.dc.html', label:'Resultados clave (KR)'},
+  {key:'bitacora', file:'Bitacora de avances.dc.html', label:'Bitácora de avances'},
+  {key:'guia', file:'Como leer este panel.dc.html', label:'Cómo leer este panel'}
+];
+const DEF = {period:'', objective:'', q:''};
+
+class Component extends DCLogic {
+  state = { isMobile:false, navOpen:false, filtOpen:false, f:DEF, qInput:'', ready:false };
+
+  componentDidMount() {
+    this._mq = () => this.setState({isMobile: window.innerWidth < 700});
+    this._mq(); window.addEventListener('resize', this._mq);
+    this._esc = e => { if (e.key === 'Escape') this.setState({navOpen:false}); };
+    window.addEventListener('keydown', this._esc);
+    const wait = () => window.OKR ? this.init() : setTimeout(wait, 20); wait();
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this._mq); window.removeEventListener('keydown', this._esc); clearTimeout(this._deb); }
+  init() { const f = window.OKR.readFilters(); this.setState({f, qInput:f.q, ready:true}); }
+
+  update(patch) {
+    const O = window.OKR; if (!O) return;
+    const f = Object.assign({}, this.state.f, patch);
+    O.writeParams({periodo:f.period, objetivo:f.objective, q:f.q});
+    this.setState({f, qInput: f.q});
+    if (this.props.onChange) this.props.onChange(f);
+  }
+
+  renderVals() {
+    const O = window.OKR, {isMobile, navOpen, filtOpen, f, ready} = this.state;
+    const active = this.props.active || 'panel';
+    const showSearch = !!this.props.showSearch;
+    const chips = [];
+    if (ready && O) {
+      if (f.period !== O.defaultPeriod()) chips.push({label:O.periodLabel(f.period), aria:'Volver al periodo en curso', onClear:() => this.update({period:O.defaultPeriod()})});
+      if (f.objective) chips.push({label:'Objetivo ' + O.code(f.objective), aria:'Quitar filtro de objetivo', onClear:() => this.update({objective:''})});
+      if (f.q) chips.push({label:'“' + f.q + '”', aria:'Quitar búsqueda', onClear:() => this.update({q:''})});
+    }
+    const cols = showSearch ? 'minmax(140px,0.8fr) minmax(200px,1.4fr) minmax(180px,1.2fr) auto' : 'minmax(160px,1fr) minmax(220px,1.6fr) auto';
+    return {
+      isMobile, navOpenStr: navOpen ? 'true' : 'false', showNav: !isMobile || navOpen,
+      toggleNav: () => this.setState(s => ({navOpen: !s.navOpen})),
+      navStyle: isMobile ? 'display:flex;flex-direction:column;width:100%;padding-bottom:8px' : 'display:flex;gap:4px;margin-left:auto;flex-wrap:wrap',
+      nav: NAV.map(n => {
+        const act = n.key === active;
+        let h = encodeURI(n.file);
+        if (ready && O && n.key !== 'guia') h = O.href(n.key);
+        return {label:n.label, href:h, current: act ? 'page' : undefined,
+          style:`display:flex;align-items:center;min-height:44px;padding:0 12px;font-size:14px;font-weight:600;text-decoration:none;color:${act ? '#FFFFFF' : '#C9CAD5'};border-bottom:3px solid ${act ? '#D64045' : 'transparent'}`};
+      }),
+      showFilters: !!this.props.filters,
+      showFields: !isMobile || filtOpen,
+      filtOpenStr: filtOpen ? 'true' : 'false',
+      filtToggleText: (filtOpen ? 'Ocultar filtros' : 'Filtros') + (chips.length ? ` (${chips.length} activos)` : ''),
+      toggleFilt: () => this.setState(s => ({filtOpen: !s.filtOpen})),
+      gridStyle: `display:grid;grid-template-columns:${isMobile ? '1fr' : cols};gap:12px;align-items:end`,
+      f, qInput: this.state.qInput, showSearch,
+      periodOptions: O ? [{value:'todos', label:'Todos los periodos'}, ...O.PERIODS.map(p => ({value:p, label:O.periodLabel(p)}))] : [],
+      objectiveOptions: O ? O.OBJECTIVES.map(o => ({value:String(o.n), label:`${o.code} · ${o.name}`})) : [],
+      onPeriod: e => this.update({period:e.target.value}),
+      onObjective: e => this.update({objective:e.target.value}),
+      onQuery: e => { const v = e.target.value; this.setState({qInput:v}); clearTimeout(this._deb); this._deb = setTimeout(() => this.update({q:v.trim()}), 200); },
+      clearAll: () => this.update({period: O ? O.defaultPeriod() : '', objective:'', q:''}),
+      chips, hasChips: chips.length > 0
+    };
+  }
+}
+</script>
+</body>
+</html>
