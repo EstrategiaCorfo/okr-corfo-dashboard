@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exporta Estrategia y Seguimiento_KR de la planilla v5, sin publicar los ejemplos."""
+"""Exporta Estrategia y Seguimiento_KR de la planilla v5, conservando las marcas DEMO."""
 
 import argparse
 import json
@@ -34,17 +34,18 @@ TRACKING = {
     'transfer_period': 'Periodo de traspaso',
 }
 INSTANCES = {'Apertura': 'Apertura', 'Apertura de Q': 'Apertura',
-             'Revisión intermedia': 'Revisión intermedia', 'Cierre': 'Cierre', 'Cierre de Q': 'Cierre'}
+             'Revisión intermedia': 'Revisión intermedia', 'Cierre': 'Cierre', 'Cierre de Q': 'Cierre',
+             'Pendiente': 'Pendiente'}
 
 
-def columns(sheet, row, definitions):
+def columns(sheet, row, definitions, optional=()):
     labels = [txt(cell.value).split('\n', 1)[0].strip() for cell in sheet[row]]
     if len([v for v in labels if v]) != len(set(v for v in labels if v)):
         raise ValueError(f'{sheet.title}: encabezados duplicados')
-    missing = set(definitions.values()) - set(labels)
+    missing = {label for key, label in definitions.items() if key not in optional} - set(labels)
     if missing:
         raise ValueError(f'{sheet.title}: faltan columnas {sorted(missing)}')
-    return {key: labels.index(label) for key, label in definitions.items()}
+    return {key: labels.index(label) for key, label in definitions.items() if label in labels}
 
 
 def build(path):
@@ -54,7 +55,7 @@ def build(path):
     if not {'Estrategia', 'Seguimiento_KR'} <= set(wb.sheetnames):
         raise ValueError('Se requieren las hojas Estrategia y Seguimiento_KR')
     ws, wt = wb['Estrategia'], wb['Seguimiento_KR']
-    hs, ht = columns(ws, 4, STRATEGY), columns(wt, 2, TRACKING)
+    hs, ht = columns(ws, 4, STRATEGY), columns(wt, 2, TRACKING, optional=('owner',))
     krs, by_id, objectives = [], {}, {}
     for number, row in enumerate(ws.iter_rows(min_row=5), 5):
         kr = {key: txt(row[col].value) for key, col in hs.items()}
@@ -88,7 +89,7 @@ def build(path):
             continue
         if ident not in by_id:
             raise ValueError(f'Seguimiento_KR, fila {number}: KR no definido en Estrategia')
-        record = {}
+        record = {'owner': ''}
         for key, col in ht.items():
             cell = row[col]
             raw = cell.value
@@ -164,7 +165,7 @@ def main():
     for name, payload in [('strategy.json', strategy), ('tracking.json', tracking), ('objective-notes.json', notes)]:
         (folder / name).write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f"v5: {len(strategy['krs'])} KR, {len(tracking['records'])} registros de Seguimiento_KR, "
-          f"{tracking['metadata']['demo_records']} registros DEMO; ejemplos excluidos.")
+          f"{tracking['metadata']['demo_records']} registros DEMO.")
 
 
 if __name__ == '__main__':
