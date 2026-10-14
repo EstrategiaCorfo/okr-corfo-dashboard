@@ -16,7 +16,23 @@
       "sha256": "dae01d984e8ee4b5c50d070ec5c34505c4ea990f9b54eaebfc1244fc6f91dbb2"
     },
     "generated_at": "2026-10-14T17:51:13+00:00",
-    "moment_override": "Confirmado GE"
+    "moment_override": "Confirmado GE",
+    "updated_at": "2026-10-14T18:15:44.661Z",
+    "manual_updates": [
+      {
+        "id": "KR-001",
+        "period": "2026/Q3",
+        "instance": "Cierre",
+        "updated_at": "2026-10-14T18:15:44.661Z",
+        "source": "Actualización solicitada por el equipo",
+        "fields": [
+          "progress",
+          "status",
+          "execution",
+          "comment"
+        ]
+      }
+    ]
   },
   "records": [
     {
@@ -27,13 +43,13 @@
       "owner": "Santiago Brown",
       "instance": "Cierre",
       "moment": "Confirmado GE",
-      "execution": "No iniciado",
+      "execution": "Completado",
       "baseline": 0.0,
       "target": 0.0,
       "current": 0.0,
-      "progress": 0.0,
-      "status": "No iniciado",
-      "comment": "",
+      "progress": 100.0,
+      "status": "On Track",
+      "comment": "Se diseñó el marco común y el set de indicadores por instrumento. El archivo desarrolla criterios, indicadores y fórmulas para crecimiento, empleo, productividad e inversión, con pasos para generar el proceso final de evaluación de impacto. La validación institucional corresponde al KR-002 y no condiciona el cierre de este hito. El marco común se definió a partir del concepto \"impacto\" y las variables que permiten medirlo adecuadamente.",
       "evidence": "",
       "learning": "",
       "pending": "",
