@@ -1,0 +1,46 @@
+:root{
+/* Base — azules institucionales */
+--corfo-azul-noche:#0C0D22;
+--corfo-azul-oscuro:#17183B;
+--corfo-azul-panel:#1C1D4A;
+--corfo-azul-panel-alt:#1C1D46;
+--corfo-azul-panel-bajo:#131433;
+--corfo-azul:#221E7C;
+--corfo-azul-brillo:#2B2A86;
+/* Base — acento */
+--corfo-rojo:#D64045;
+/* Base — reservados (no usados en presentaciones) */
+--corfo-verde:#0FF4C6;
+--corfo-verde-claro:#DEFFF2;
+/* Base — neutros */
+--corfo-gris-oscuro:#3F3F3F;
+--corfo-gris:#9197AE;
+--corfo-gris-medio:#C9CAD5;
+--corfo-gris-claro:#EDF0F5;
+--corfo-blanco:#FFFFFF;
+
+/* Semánticos — texto */
+--text-heading:var(--corfo-azul-oscuro);
+--text-body:var(--corfo-gris-oscuro);
+--text-muted:var(--corfo-gris);
+--text-accent:var(--corfo-azul);
+--text-on-dark:var(--corfo-blanco);
+--text-on-dark-muted:var(--corfo-gris-medio);
+/* Semánticos — superficies */
+--surface-page:var(--corfo-blanco);
+--surface-card:var(--corfo-gris-claro);
+--surface-dark:var(--corfo-azul-oscuro);
+--surface-accent:var(--corfo-rojo);
+/* Semánticos — bordes */
+--border-rule:var(--corfo-gris-medio);
+--border-rule-strong:var(--corfo-azul-oscuro);
+--border-on-dark:rgba(255,255,255,0.28);
+--rule-on-dark:rgba(255,255,255,0.22);
+/* Semánticos — acento */
+--accent:var(--corfo-rojo);
+--accent-secondary:var(--corfo-azul);
+/* Marcas de agua y numerales sobre oscuro */
+--numeral-on-dark:rgba(255,255,255,0.16);
+--link:var(--corfo-azul);
+--link-hover:var(--corfo-rojo);
+}
