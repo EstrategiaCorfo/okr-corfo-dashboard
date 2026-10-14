@@ -1,7 +1,13 @@
 {
   "metadata": {
     "publication": "public",
-    "kr_count": 161
+    "version": "v6",
+    "kr_count": 161,
+    "source": {
+      "filename": "Planilla(1).xlsx",
+      "sha256": "dae01d984e8ee4b5c50d070ec5c34505c4ea990f9b54eaebfc1244fc6f91dbb2"
+    },
+    "generated_at": "2026-10-14T17:51:13+00:00"
   },
   "objectives": [
     {
@@ -110,12 +116,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Documento del marco de indicadores",
+      "product": "• Documento metodológico de Marco común de indicadores de resultados e impacto\n• Fichas de indicadores por instrumento",
+      "verification": "",
       "area": "Gerencia de Estrategia",
       "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 5
     },
     {
       "id": "KR-002",
@@ -131,12 +139,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Acta de validación / registro de instrumentos priorizados",
+      "product": "• Marco común de indicadores validado por gerencias y subgerencias\n• Reporte de implementación inicial en instrumentos priorizados",
+      "verification": "",
       "area": "Gerencia de Estrategia",
       "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 6
     },
     {
       "id": "KR-003",
@@ -152,12 +162,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Reporte interno publicado",
+      "product": "Primer reporte interno de resultados e impacto",
+      "verification": "",
       "area": "Gerencia de Estrategia",
       "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 7
     },
     {
       "id": "KR-004",
@@ -173,12 +185,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Reporte público publicado / cuenta pública 2027",
+      "product": "• Reporte público de resultados e impacto, Versión 1\n• Cuenta pública 2027 con el reporte incorporado",
+      "verification": "",
       "area": "Gerencia de Estrategia",
       "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 8
     },
     {
       "id": "KR-005",
@@ -194,12 +208,14 @@
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "product": "",
-      "verification": "Reporte interno publicado",
-      "area": "",
-      "owner": "",
+      "product": "Segundo reporte interno de resultados e impacto",
+      "verification": "",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 9
     },
     {
       "id": "KR-006",
@@ -215,12 +231,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Reporte público publicado / cuenta pública 2028",
-      "area": "",
-      "owner": "",
+      "product": "• Reporte público de resultados e impacto, Versión 2\n• Cuenta pública 2028 con el reporte incorporado",
+      "verification": "",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 10
     },
     {
       "id": "KR-007",
@@ -236,12 +254,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Sistema operando + reporte anual publicado",
-      "area": "",
-      "owner": "",
+      "product": "• Sistema de seguimiento post intervención en operación\n• Reporte anual de resultados post intervención",
+      "verification": "",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 11
     },
     {
       "id": "KR-008",
@@ -257,12 +277,14 @@
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "product": "",
-      "verification": "Reporte interno publicado",
-      "area": "",
-      "owner": "",
+      "product": "Tercer reporte interno de resultados e impacto",
+      "verification": "",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 12
     },
     {
       "id": "KR-009",
@@ -278,12 +300,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Reporte público publicado / cuenta pública 2029",
-      "area": "",
-      "owner": "",
+      "product": "• Reporte público de resultados e impacto, Versión 3\n• Cuenta pública 2029 con el reporte incorporado",
+      "verification": "",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 13
     },
     {
       "id": "KR-010",
@@ -299,12 +323,14 @@
         "2029/Q4"
       ],
       "target_date": "2029-12-31",
-      "product": "",
-      "verification": "Reporte interno publicado",
-      "area": "",
-      "owner": "",
+      "product": "Cuarto reporte interno de resultados e impacto",
+      "verification": "",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 14
     },
     {
       "id": "KR-011",
@@ -320,12 +346,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Memoria institucional publicada",
-      "area": "",
-      "owner": "",
+      "product": "Reporte público de resultados e impacto, Versión 4 (Memoria institucional)",
+      "verification": "",
+      "area": "Gerencia de Estrategia",
+      "owner": "Santiago Brown",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 15
     },
     {
       "id": "KR-012",
@@ -341,12 +369,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Documento de diagnóstico y plan de gestión del cambio",
-      "area": "Gerencia de Emprendimiento y Gerencia de Innovacion",
+      "product": "• Informe de diagnóstico de cultura interna\n• Plan de gestión del cambio",
+      "verification": "",
+      "area": "Gerencia de Emprendimiento y Gerencia de Innovación",
       "owner": "Jocelyn Olivari y Maricho Gálvez",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 16
     },
     {
       "id": "KR-013",
@@ -362,12 +392,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Documento de diseño del programa",
-      "area": "Gerencia de Emprendimiento y Gerencia de Innovacion",
+      "product": "Diseño del programa de cultura de impacto",
+      "verification": "",
+      "area": "Gerencia de Emprendimiento y Gerencia de Innovación",
       "owner": "Jocelyn Olivari y Maricho Gálvez",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 17
     },
     {
       "id": "KR-014",
@@ -383,12 +415,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Registro de asistencia a talleres / lanzamiento",
-      "area": "Gerencia de Emprendimiento y Gerencia de Innovacion",
+      "product": "• Informe de implementación del programa de cultura de impacto\n• Narrativa institucional publicada y difundida",
+      "verification": "",
+      "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Carolina Bravo",
       "substitutes": "Sebastián Arias y Patricia Fuentealba",
-      "comments": "No habla de porcentaje de implementación. Dado que al año siguiente se \"consolida\", la meta para este año podría ser la implementación en nivel central, aunque no encuentro lógica de excluir a regiones dada la importancia de difundirlo a toda la institución."
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 18
     },
     {
       "id": "KR-015",
@@ -407,12 +441,14 @@
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": "Se desprende que se debe alcanzar el 100% de la institución (consolidado). Yo creo que en la etapa anterior se debería cubrir a toda la institución, por lo que este resultado sobraría."
+      "product": "Reporte de participación de unidades organizacionales en el programa",
+      "verification": "",
+      "area": "Subgerencia de Personas y Desarrollo",
+      "owner": "Carolina Bravo",
+      "substitutes": "Sebastián Arias y Patricia Fuentealba",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 19
     },
     {
       "id": "KR-016",
@@ -428,12 +464,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Documento de plan de comunicaciones",
+      "product": "Plan de comunicaciones de impacto",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
       "owner": "Antonieta de la Fuente",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 20
     },
     {
       "id": "KR-017",
@@ -449,12 +487,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Piezas comunicacionales desarrolladas",
+      "product": "Piezas comunicacionales y narrativa base",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
       "owner": "Antonieta de la Fuente",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 21
     },
     {
       "id": "KR-018",
@@ -470,12 +510,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Registro de difusión interna",
+      "product": "Informe de la campaña de difusión interna",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
       "owner": "Andrea Ulloa",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 22
     },
     {
       "id": "KR-019",
@@ -491,12 +533,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Registro de participación en cuenta pública 2027",
+      "product": "Cuenta pública 2027 con contenidos del Reporte público Versión 1",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
       "owner": "Andrea Ulloa",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 23
     },
     {
       "id": "KR-020",
@@ -512,12 +556,14 @@
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "product": "",
-      "verification": "Documento del plan de comunicación externa",
-      "area": "",
-      "owner": "",
+      "product": "Plan de comunicación externa ampliado",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 24
     },
     {
       "id": "KR-021",
@@ -533,12 +579,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Registro de participación en cuenta pública 2028",
-      "area": "",
-      "owner": "",
+      "product": "Cuenta pública 2028 con contenidos del Reporte público Versión 2",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 25
     },
     {
       "id": "KR-022",
@@ -554,12 +602,14 @@
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "product": "",
-      "verification": "Documento de voceros y mensajes",
-      "area": "",
-      "owner": "",
+      "product": "Documento de mensajes clave y voceros",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 26
     },
     {
       "id": "KR-023",
@@ -575,12 +625,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Registro de campaña y participación en cuenta pública 2029",
-      "area": "",
-      "owner": "",
+      "product": "• Informe de la campaña de comunicación externa\n• Cuenta pública 2029 con contenidos del Reporte público Versión 3",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 27
     },
     {
       "id": "KR-024",
@@ -598,12 +650,14 @@
         "2029/Q4"
       ],
       "target_date": "2029-12-31",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "",
+      "product": "Informes trimestrales de cobertura mediática y percepción pública 2029",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 28
     },
     {
       "id": "KR-025",
@@ -619,12 +673,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Registro de participación en cuenta pública 2030",
-      "area": "",
-      "owner": "",
+      "product": "Cuenta pública 2030 con contenidos del Reporte público Versión 4",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 29
     },
     {
       "id": "KR-026",
@@ -641,12 +697,14 @@
         "2030/Q1"
       ],
       "target_date": "2029-12-31",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "",
+      "product": "• Procedimiento institucional de comunicación de impacto\n• Reporte anual de acciones de comunicación ejecutadas",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 30
     },
     {
       "id": "KR-027",
@@ -664,12 +722,14 @@
         "2030/Q4"
       ],
       "target_date": "2030-12-31",
-      "product": "",
-      "verification": "Informe de evaluación",
-      "area": "",
-      "owner": "",
+      "product": "Informe de evaluación del plan de comunicaciones y propuestas de mejora",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 31
     },
     {
       "id": "KR-028",
@@ -685,12 +745,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Documento de arquitectura de integración de datos",
+      "product": "• Catastro priorizado de fuentes de datos externas\n• Arquitectura de integración de datos",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 32
     },
     {
       "id": "KR-029",
@@ -706,12 +768,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Informe de resultados del piloto",
+      "product": "Informe de resultados del piloto de interoperabilidad con el SII",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 33
     },
     {
       "id": "KR-030",
@@ -727,12 +791,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Informe de evaluación de impacto consolidada",
+      "product": "Informe de evaluación de impacto consolidada",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 34
     },
     {
       "id": "KR-031",
@@ -748,12 +814,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Documento de hoja de ruta validado y firmado",
+      "product": "Hoja de ruta para el desarrollo de la industria de capital de riesgo",
+      "verification": "",
       "area": "Gerencia de Inversión y Financiamiento",
       "owner": "Víctor Besoaín",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 35
     },
     {
       "id": "KR-032",
@@ -769,12 +837,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Plan de Marketing aprobado (documento)",
+      "product": "Plan de Marketing 2027 a 2030 de Venture Capital Chile",
+      "verification": "",
       "area": "Gerencia de Inversión y Financiamiento",
       "owner": "Víctor Besoaín",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 36
     },
     {
       "id": "KR-033",
@@ -790,12 +860,14 @@
         "2027/Q2"
       ],
       "target_date": "2027-06-30",
-      "product": "",
-      "verification": "Resolución/acta de aprobación del CCR",
-      "area": "",
-      "owner": "Joaquín Santibáñez",
-      "substitutes": "",
-      "comments": ""
+      "product": "Normativa de programas de capital de riesgo aprobada por el CCR",
+      "verification": "",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Por definir",
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 37
     },
     {
       "id": "KR-034",
@@ -811,12 +883,14 @@
         "2027/Q3"
       ],
       "target_date": "2027-09-30",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "Joaquín Santibáñez",
-      "substitutes": "",
-      "comments": ""
+      "product": "Registro de VC extranjeros o institucionales con solicitud de reunión",
+      "verification": "",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Por definir",
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 38
     },
     {
       "id": "KR-035",
@@ -832,12 +906,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Registro de postulación en Corfo",
-      "area": "",
-      "owner": "Joaquín Santibáñez",
-      "substitutes": "",
-      "comments": ""
+      "product": "Postulación formal registrada en Corfo",
+      "verification": "",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Por definir",
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 39
     },
     {
       "id": "KR-036",
@@ -853,12 +929,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "Joaquín Santibáñez",
-      "substitutes": "",
-      "comments": ""
+      "product": "Reporte de fondos operando bajo la marca Venture Capital Chile",
+      "verification": "",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Por definir",
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 40
     },
     {
       "id": "KR-037",
@@ -874,12 +952,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Plan de Marketing aprobado (documento)",
+      "product": "Plan de Marketing de Garantía Escala Pro Inversión",
+      "verification": "",
       "area": "Gerencia de Inversión y Financiamiento",
       "owner": "Joaquín Santibáñez",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 41
     },
     {
       "id": "KR-038",
@@ -895,12 +975,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Acta de aprobación del CEC",
+      "product": "Metodología de cupos adicionales aprobada por el CEC",
+      "verification": "",
       "area": "Gerencia de Inversión y Financiamiento",
       "owner": "Joaquín Santibáñez",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 42
     },
     {
       "id": "KR-039",
@@ -916,12 +998,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Acta de aprobación del CEC",
+      "product": "Metodología de asignación de cupos aprobada por el CEC",
+      "verification": "",
       "area": "Gerencia de Inversión y Financiamiento",
       "owner": "Joaquín Santibáñez",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 43
     },
     {
       "id": "KR-040",
@@ -937,12 +1021,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Por definir",
+      "product": "Reporte de recursos del Fondo de Cobertura ProInversión",
+      "verification": "",
       "area": "Gerencia de Inversión y Financiamiento",
       "owner": "Joaquín Santibáñez",
-      "substitutes": "",
-      "comments": "¿Cuánto aumenta?"
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 44
     },
     {
       "id": "KR-041",
@@ -958,12 +1044,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Por definir",
+      "product": "Reporte de colocaciones de los programas de cobertura por IFI",
+      "verification": "",
       "area": "Gerencia de Inversión y Financiamiento",
       "owner": "Joaquín Santibáñez",
-      "substitutes": "",
-      "comments": "¿Cuánto aumenta?"
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 45
     },
     {
       "id": "KR-042",
@@ -979,12 +1067,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Documento metodológico validado",
+      "product": "• Metodología de medición de impacto de Escala Pro Inversión\n• Informe de línea base",
+      "verification": "",
       "area": "Gerencia de Inversión y Financiamiento",
       "owner": "Joaquín Santibáñez",
-      "substitutes": "",
-      "comments": "¿Validado por?"
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 46
     },
     {
       "id": "KR-043",
@@ -1000,12 +1090,14 @@
         "2027/Q3"
       ],
       "target_date": "2027-09-30",
-      "product": "",
-      "verification": "Informe de implementación del proceso de monitoreo",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": "¿Qué nivel de siniestralidad es aceptable?"
+      "product": "• Procedimiento de monitoreo de alertas tempranas\n• Reporte de siniestralidad de los programas de cobertura",
+      "verification": "",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Por definir",
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 47
     },
     {
       "id": "KR-044",
@@ -1021,12 +1113,14 @@
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "product": "",
-      "verification": "Resolución con toma de razón de CGR",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Resolución con toma de razón de la CGR",
+      "verification": "",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Por definir",
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 48
     },
     {
       "id": "KR-045",
@@ -1042,12 +1136,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Informe de colocaciones (comparativo)",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Reporte de colocaciones respecto de la línea base 2025",
+      "verification": "",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Por definir",
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 49
     },
     {
       "id": "KR-046",
@@ -1063,12 +1159,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Informe de colocaciones (comparativo, cierre de ciclo)",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Reporte de colocaciones respecto de la línea base 2025",
+      "verification": "",
+      "area": "Gerencia de Inversión y Financiamiento",
+      "owner": "Por definir",
+      "substitutes": "Marycela Márquez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 50
     },
     {
       "id": "KR-047",
@@ -1084,12 +1182,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Plan de Marketing aprobado (documento)",
+      "product": "Plan de Marketing de Crédito Corfo Mipyme y Crédito Verde Corfo",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
       "owner": "Antonieta de la Fuente",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 51
     },
     {
       "id": "KR-048",
@@ -1105,12 +1205,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Convenios firmados con IFIs",
+      "product": "• Convenios con nuevas IFIs en Crédito Mipyme\n• Reporte de colocaciones por IFI",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
-      "owner": "Santiago Marin/Manuel Martinez",
+      "owner": "Santiago Marín y Manuel Martinez",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 52
     },
     {
       "id": "KR-049",
@@ -1126,12 +1228,14 @@
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "product": "",
-      "verification": "Informes de evaluación de IFIs",
-      "area": "",
-      "owner": "",
+      "product": "Informes de evaluación de nuevas IFIs",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 53
     },
     {
       "id": "KR-050",
@@ -1147,12 +1251,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Convenios firmados con IFIs",
-      "area": "",
-      "owner": "",
+      "product": "• Convenios con nuevas IFIs\n• Reporte de colocaciones por IFI",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 54
     },
     {
       "id": "KR-051",
@@ -1168,12 +1274,14 @@
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "product": "",
-      "verification": "Informes de evaluación de IFIs",
-      "area": "",
-      "owner": "",
+      "product": "Informes de evaluación de nuevas IFIs",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 55
     },
     {
       "id": "KR-052",
@@ -1189,12 +1297,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Convenios firmados con IFIs",
-      "area": "",
-      "owner": "",
+      "product": "• Convenios con nuevas IFIs\n• Reporte de colocaciones por IFI",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 56
     },
     {
       "id": "KR-053",
@@ -1210,12 +1320,14 @@
         "2029/Q4"
       ],
       "target_date": "2029-12-31",
-      "product": "",
-      "verification": "Informes de evaluación de IFIs",
-      "area": "",
-      "owner": "",
+      "product": "Informes de evaluación de nuevas IFIs",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 57
     },
     {
       "id": "KR-054",
@@ -1231,12 +1343,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Registro consolidado de IFIs",
-      "area": "",
-      "owner": "",
+      "product": "Reporte de IFIs con colocaciones en Crédito Mipyme",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 58
     },
     {
       "id": "KR-055",
@@ -1252,12 +1366,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Registro consolidado de IFIs",
-      "area": "",
-      "owner": "",
+      "product": "Reporte de IFIs con colocaciones en Crédito Verde",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 59
     },
     {
       "id": "KR-056",
@@ -1273,12 +1389,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Documento de estrategia de posicionamiento",
+      "product": "Estrategia de posicionamiento de la Red de Centros Tecnológicos",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
-      "owner": "Santiago Marin",
+      "owner": "Santiago Marín",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 60
     },
     {
       "id": "KR-057",
@@ -1294,12 +1412,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Registro de acciones de posicionamiento desplegadas",
+      "product": "Informe de implementación de la estrategia de posicionamiento",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
-      "owner": "Santiago Marin",
+      "owner": "Santiago Marín",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 61
     },
     {
       "id": "KR-058",
@@ -1315,12 +1435,14 @@
         "2028/Q2"
       ],
       "target_date": "2028-06-30",
-      "product": "",
-      "verification": "Sistema de medición operando",
-      "area": "",
-      "owner": "",
+      "product": "Sistema de medición de efectividad del posicionamiento en operación",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 62
     },
     {
       "id": "KR-059",
@@ -1336,12 +1458,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "",
+      "product": "Informe de análisis de posicionamiento y demanda",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 63
     },
     {
       "id": "KR-060",
@@ -1357,12 +1481,14 @@
         "2029/Q4"
       ],
       "target_date": "2029-12-31",
-      "product": "",
-      "verification": "Informe de evaluación y propuestas de mejora",
-      "area": "",
-      "owner": "",
+      "product": "Informe de aprendizajes y propuestas de mejora",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 64
     },
     {
       "id": "KR-061",
@@ -1378,12 +1504,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Documento de integración + registro de pilotos",
+      "product": "• Modelo de integración de los Centros validado\n• Informe de pilotos de articulación",
+      "verification": "",
       "area": "Gerencia de Capacidades Tecnológicas",
       "owner": "Gerardo Gallardo",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 65
     },
     {
       "id": "KR-062",
@@ -1399,12 +1527,14 @@
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "product": "",
-      "verification": "Registro de derivaciones / convenios de articulación",
-      "area": "",
-      "owner": "",
+      "product": "• Procedimiento de derivación hacia los Centros\n• Reporte de derivaciones realizadas",
+      "verification": "",
+      "area": "Gerencia de Capacidades Tecnológicas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 66
     },
     {
       "id": "KR-063",
@@ -1420,12 +1550,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Resolución de institucionalización",
-      "area": "",
-      "owner": "",
+      "product": "Resolución de institucionalización de los Centros Tecnológicos",
+      "verification": "",
+      "area": "Gerencia de Capacidades Tecnológicas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 67
     },
     {
       "id": "KR-064",
@@ -1441,12 +1573,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Informe de evaluación",
-      "area": "",
-      "owner": "",
+      "product": "Informe de evaluación de herramientas de integración",
+      "verification": "",
+      "area": "Gerencia de Capacidades Tecnológicas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 68
     },
     {
       "id": "KR-065",
@@ -1462,12 +1596,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Documento del modelo + informe del piloto",
+      "product": "• Modelo de sostenibilidad financiera de la Red\n• Informe del piloto en CTEC y CETA",
+      "verification": "",
       "area": "Gerencia de Capacidades Tecnológicas",
       "owner": "Fernando Hentzschel",
       "substitutes": "Gerardo Gallardo",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 69
     },
     {
       "id": "KR-066",
@@ -1483,12 +1619,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Documento de validación del modelo",
-      "area": "",
+      "product": "Modelo de sostenibilidad financiera validado",
+      "verification": "",
+      "area": "Gerencia de Capacidades Tecnológicas",
       "owner": "Gerardo Gallardo",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 70
     },
     {
       "id": "KR-067",
@@ -1504,12 +1642,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Reporte de seguimiento con indicadores DIPRES",
-      "area": "",
-      "owner": "",
+      "product": "Reporte de seguimiento del piloto con indicadores Dipres",
+      "verification": "",
+      "area": "Gerencia de Capacidades Tecnológicas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 71
     },
     {
       "id": "KR-068",
@@ -1525,12 +1665,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Informe de evaluación y recomendaciones",
-      "area": "",
-      "owner": "",
+      "product": "Informe de evaluación del modelo de financiamiento",
+      "verification": "",
+      "area": "Gerencia de Capacidades Tecnológicas",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 72
     },
     {
       "id": "KR-069",
@@ -1546,12 +1688,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Documento de estándares comunes",
+      "product": "Estándares comunes de operación de los CDPR",
+      "verification": "",
       "area": "Gerencia de Desarrollo Territorial",
       "owner": "Jaime Guillisasti",
       "substitutes": "Romina Álvarez y Pablo Lincoñir",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 73
     },
     {
       "id": "KR-070",
@@ -1567,12 +1711,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Documento metodológico del Índice de Madurez CDPR",
+      "product": "Metodología del Índice de Madurez CDPR",
+      "verification": "",
       "area": "Gerencia de Desarrollo Territorial",
       "owner": "Jaime Guillisasti",
       "substitutes": "Romina Álvarez y Pablo Lincoñir",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 74
     },
     {
       "id": "KR-071",
@@ -1588,12 +1734,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Informe de diagnóstico de madurez",
+      "product": "Informe del primer diagnóstico de madurez CDPR",
+      "verification": "",
       "area": "Gerencia de Desarrollo Territorial",
       "owner": "Jaime Guillisasti",
       "substitutes": "Romina Álvarez y Pablo Lincoñir",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 75
     },
     {
       "id": "KR-072",
@@ -1609,12 +1757,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Documento de hoja de ruta",
+      "product": "Hoja de ruta de homologación CDPR 1.0",
+      "verification": "",
       "area": "Gerencia de Desarrollo Territorial",
       "owner": "Jaime Guillisasti",
       "substitutes": "Romina Álvarez y Pablo Lincoñir",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 76
     },
     {
       "id": "KR-073",
@@ -1630,12 +1780,14 @@
         "2027/Q2"
       ],
       "target_date": "2027-06-30",
-      "product": "",
-      "verification": "Documento del plan de fortalecimiento",
-      "area": "",
+      "product": "Plan de fortalecimiento de capacidades CDPR",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
       "owner": "Jaime Guillisasti",
       "substitutes": "Romina Álvarez y Pablo Lincoñir",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 77
     },
     {
       "id": "KR-074",
@@ -1651,12 +1803,14 @@
         "2027/Q2"
       ],
       "target_date": "2027-06-30",
-      "product": "",
-      "verification": "Registro de quick-wins ejecutados",
-      "area": "",
+      "product": "Reporte de avance de la hoja de ruta con quick wins ejecutados",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
       "owner": "Jaime Guillisasti",
       "substitutes": "Romina Álvarez y Pablo Lincoñir",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 78
     },
     {
       "id": "KR-075",
@@ -1672,12 +1826,14 @@
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "product": "",
-      "verification": "Registro de lanzamiento por región",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Reporte de lanzamiento del plan en las 16 regiones",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Jaime Guillisasti",
+      "substitutes": "Romina Álvarez y Pablo Lincoñir",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 79
     },
     {
       "id": "KR-076",
@@ -1693,12 +1849,14 @@
         "2029/Q2"
       ],
       "target_date": "2029-06-30",
-      "product": "",
-      "verification": "Informe de diagnóstico de madurez (2ª medición)",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Informe del segundo diagnóstico de madurez CDPR",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Jaime Guillisasti",
+      "substitutes": "Romina Álvarez y Pablo Lincoñir",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 80
     },
     {
       "id": "KR-077",
@@ -1714,12 +1872,14 @@
         "2029/Q2"
       ],
       "target_date": "2029-06-30",
-      "product": "",
-      "verification": "Registro de CDPR homologados",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Reporte de CDPR operando bajo el modelo homologado",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Jaime Guillisasti",
+      "substitutes": "Romina Álvarez y Pablo Lincoñir",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 81
     },
     {
       "id": "KR-078",
@@ -1735,12 +1895,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Informe de diagnóstico nacional",
+      "product": "Informe de diagnóstico nacional de oportunidades de desarrollo",
+      "verification": "",
       "area": "Gerencia de Desarrollo Territorial",
       "owner": "Alicia Olivares",
       "substitutes": "Daniel Rivero",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 82
     },
     {
       "id": "KR-079",
@@ -1756,12 +1918,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Informe de evaluación de integración",
+      "product": "Informe de evaluación de integración con otros servicios",
+      "verification": "",
       "area": "Gerencia de Desarrollo Territorial",
       "owner": "Alicia Olivares",
       "substitutes": "Daniel Rivero",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 83
     },
     {
       "id": "KR-080",
@@ -1777,12 +1941,14 @@
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "product": "",
-      "verification": "Reporte piloto",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Reporte piloto de Identificación de Oportunidades de Desarrollo",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Alicia Olivares",
+      "substitutes": "Daniel Rivero",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 84
     },
     {
       "id": "KR-081",
@@ -1798,12 +1964,14 @@
         "2027/Q2"
       ],
       "target_date": "2027-06-30",
-      "product": "",
-      "verification": "Documento del plan de acciones",
-      "area": "",
+      "product": "Plan de acciones de la Dirección Regional y el CDPR",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
       "owner": "Alicia Olivares",
       "substitutes": "Daniel Rivero",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 85
     },
     {
       "id": "KR-082",
@@ -1819,12 +1987,14 @@
         "2027/Q4"
       ],
       "target_date": "2027-12-31",
-      "product": "",
-      "verification": "Reporte definitivo",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Reporte definitivo de Identificación de Oportunidades de Desarrollo",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Alicia Olivares",
+      "substitutes": "Daniel Rivero",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 86
     },
     {
       "id": "KR-083",
@@ -1840,12 +2010,14 @@
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "product": "",
-      "verification": "Registro de presentación / acta",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Acta de presentación al Gobierno Regional",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Alicia Olivares",
+      "substitutes": "Daniel Rivero",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 87
     },
     {
       "id": "KR-084",
@@ -1861,12 +2033,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Informe de diagnóstico de actores",
+      "product": "Informe de diagnóstico de actores del encadenamiento productivo",
+      "verification": "",
       "area": "Gerencia de Desarrollo Territorial",
       "owner": "Marcela Gutiérrez",
       "substitutes": "Francisca Martínez y Rodrigo Candia",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 88
     },
     {
       "id": "KR-085",
@@ -1882,12 +2056,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Documento conceptual",
+      "product": "Documento conceptual consensuado",
+      "verification": "",
       "area": "Gerencia de Desarrollo Territorial",
       "owner": "Marcela Gutiérrez",
       "substitutes": "Francisca Martínez y Rodrigo Candia",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 89
     },
     {
       "id": "KR-086",
@@ -1903,12 +2079,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Documentos de diseño de los 3 pilotos",
+      "product": "Diseño de los tres pilotos de relacionamiento territorial",
+      "verification": "",
       "area": "Gerencia de Desarrollo Territorial",
       "owner": "Marcela Gutiérrez",
       "substitutes": "Francisca Martínez y Rodrigo Candia",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 90
     },
     {
       "id": "KR-087",
@@ -1924,12 +2102,14 @@
         "2027/Q2"
       ],
       "target_date": "2027-06-30",
-      "product": "",
-      "verification": "Informes de evaluación de pilotos",
-      "area": "",
+      "product": "Informes de evaluación de los tres pilotos",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
       "owner": "Marcela Gutiérrez",
       "substitutes": "Francisca Martínez y Rodrigo Candia",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 91
     },
     {
       "id": "KR-088",
@@ -1945,12 +2125,14 @@
         "2027/Q3"
       ],
       "target_date": "2027-09-30",
-      "product": "",
-      "verification": "Documento de estrategia de escalamiento",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "• Informe de validación de hipótesis\n• Estrategia de escalamiento del modelo",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Marcela Gutiérrez",
+      "substitutes": "Francisca Martínez y Rodrigo Candia",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 92
     },
     {
       "id": "KR-089",
@@ -1966,12 +2148,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Registro de lanzamiento regional",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Reporte de lanzamiento de la estrategia en las 16 regiones",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Marcela Gutiérrez",
+      "substitutes": "Francisca Martínez y Rodrigo Candia",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 93
     },
     {
       "id": "KR-090",
@@ -1987,12 +2171,14 @@
         "2028/Q4"
       ],
       "target_date": "2028-12-31",
-      "product": "",
-      "verification": "Informe de evaluación",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Informe de evaluación y ajustes de la estrategia",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Marcela Gutiérrez",
+      "substitutes": "Francisca Martínez y Rodrigo Candia",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 94
     },
     {
       "id": "KR-091",
@@ -2008,12 +2194,14 @@
         "2029/Q4"
       ],
       "target_date": "2029-12-31",
-      "product": "",
-      "verification": "Resolución/instrumento de institucionalización",
-      "area": "",
-      "owner": "",
-      "substitutes": "",
-      "comments": ""
+      "product": "Resolución de institucionalización del modelo de relacionamiento territorial",
+      "verification": "",
+      "area": "Gerencia de Desarrollo Territorial",
+      "owner": "Marcela Gutiérrez",
+      "substitutes": "Francisca Martínez y Rodrigo Candia",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 95
     },
     {
       "id": "KR-092",
@@ -2029,12 +2217,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Documento del modelo + informe del piloto",
+      "product": "• Modelo de validación temprana de mercado\n• Informe del piloto",
+      "verification": "",
       "area": "Gerencia de Emprendimiento Dinámico",
       "owner": "Sebastián Arias y Patricia Cruz",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 96
     },
     {
       "id": "KR-093",
@@ -2050,12 +2240,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "% de proyectos vigentes con validación temprana efectiva (con evidencia verificable) sobre total en etapa TRL 3–7",
+      "product": "Reporte de proyectos con validación temprana en Corfo Central",
+      "verification": "",
       "area": "Gerencia de Emprendimiento Dinámico",
       "owner": "Javiera Araneda",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 97
     },
     {
       "id": "KR-094",
@@ -2071,12 +2263,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "% de proyectos vigentes con validación temprana efectiva (por región/sector)",
-      "area": "",
-      "owner": "",
+      "product": "• Reporte de resultados en Corfo Central\n• Informe de pilotos en regiones y sectores",
+      "verification": "",
+      "area": "Gerencia de Emprendimiento Dinámico",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 98
     },
     {
       "id": "KR-095",
@@ -2092,12 +2286,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "% de proyectos vigentes con validación temprana efectiva (nacional)",
-      "area": "",
-      "owner": "",
+      "product": "Reporte nacional de operación del modelo de validación temprana",
+      "verification": "",
+      "area": "Gerencia de Emprendimiento Dinámico",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 99
     },
     {
       "id": "KR-096",
@@ -2113,12 +2309,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "",
+      "product": "Informe de sobrevivencia y crecimiento de empresas apoyadas",
+      "verification": "",
+      "area": "Gerencia de Emprendimiento Dinámico",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 100
     },
     {
       "id": "KR-097",
@@ -2134,12 +2332,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Documento del modelo + informe del piloto",
+      "product": "• Modelo de tracción comercial\n• Informe del piloto",
+      "verification": "",
       "area": "Gerencia de Innovación",
-      "owner": "Jocelyn Olivari y Alejandra Núñez",
-      "substitutes": "",
-      "comments": ""
+      "owner": "Jocelyn Olivari",
+      "substitutes": "Alejandra Núñez",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 101
     },
     {
       "id": "KR-098",
@@ -2155,12 +2355,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "% de conexiones oferta-demanda que derivan en oportunidades comerciales concretas",
+      "product": "Reporte de conexiones y oportunidades comerciales en Corfo Central",
+      "verification": "",
       "area": "Gerencia de Innovación",
-      "owner": "Jocelyn Olivari y Anselmo Peiñán",
-      "substitutes": "",
-      "comments": ""
+      "owner": "Jocelyn Olivari",
+      "substitutes": "Anselmo Peiñán",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 102
     },
     {
       "id": "KR-099",
@@ -2176,12 +2378,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "% de conexiones oferta-demanda que derivan en oportunidades comerciales concretas",
-      "area": "",
-      "owner": "",
+      "product": "• Reporte de resultados en Corfo Central\n• Informe de pilotos regionales",
+      "verification": "",
+      "area": "Gerencia de Innovación",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 103
     },
     {
       "id": "KR-100",
@@ -2197,12 +2401,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "% de conexiones oferta-demanda que derivan en oportunidades comerciales (nacional)",
-      "area": "",
-      "owner": "",
+      "product": "Reporte nacional de operación del modelo de tracción comercial",
+      "verification": "",
+      "area": "Gerencia de Innovación",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 104
     },
     {
       "id": "KR-101",
@@ -2218,12 +2424,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Tasa de sobrevivencia de empresas que acceden a financiamiento privado a través del modelo",
+      "product": "• Modelo de fortalecimiento de gestión empresarial\n• Reporte de puesta en marcha",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
-      "owner": "Santiago Marin",
+      "owner": "Santiago Marín",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 105
     },
     {
       "id": "KR-102",
@@ -2239,12 +2447,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Tasa de sobrevivencia de empresas (por región)",
-      "area": "",
-      "owner": "",
+      "product": "• Reporte de resultados en Corfo Central\n• Informe de pilotos regionales",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Santiago Marín",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 106
     },
     {
       "id": "KR-103",
@@ -2260,12 +2470,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Tasa de sobrevivencia de empresas (nacional)",
-      "area": "",
-      "owner": "",
+      "product": "Reporte nacional de operación del modelo de gestión empresarial",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Santiago Marín",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 107
     },
     {
       "id": "KR-104",
@@ -2281,12 +2493,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Documento de mapeo de incumbentes",
+      "product": "Mapeo de incumbentes por gerencia",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
-      "owner": "Santiago Marin",
+      "owner": "Santiago Marín",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 108
     },
     {
       "id": "KR-105",
@@ -2302,12 +2516,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Documento de priorización validado",
+      "product": "Priorización validada de incumbentes",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
-      "owner": "Santiago Marin",
+      "owner": "Santiago Marín",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 109
     },
     {
       "id": "KR-106",
@@ -2323,12 +2539,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Actas de reunión",
+      "product": "Actas de reunión con el primer grupo de incumbentes",
+      "verification": "",
       "area": "Gerencia de Relaciones Corporativas",
-      "owner": "Santiago Marin",
+      "owner": "Santiago Marín",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 110
     },
     {
       "id": "KR-107",
@@ -2344,12 +2562,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Actas de reunión",
-      "area": "",
-      "owner": "",
+      "product": "Actas de reunión con el segundo grupo de incumbentes",
+      "verification": "",
+      "area": "Gerencia de Relaciones Corporativas",
+      "owner": "Santiago Marín",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 111
     },
     {
       "id": "KR-108",
@@ -2365,12 +2585,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Informe de diagnóstico",
+      "product": "Informe de diagnóstico de duplicidades y oportunidades de coordinación",
+      "verification": "",
       "area": "Gerencia de Estrategia",
       "owner": "Viviana Pardo",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 112
     },
     {
       "id": "KR-109",
@@ -2386,12 +2608,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Informe de revisión de convenios",
+      "product": "Informe de revisión de convenios activos",
+      "verification": "",
       "area": "Gerencia de Estrategia",
       "owner": "Viviana Pardo",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 113
     },
     {
       "id": "KR-110",
@@ -2407,12 +2631,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Documento de levantamiento",
+      "product": "Levantamiento de nuevos convenios y agenda legislativa",
+      "verification": "",
       "area": "Gerencia de Estrategia",
       "owner": "Viviana Pardo",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 114
     },
     {
       "id": "KR-111",
@@ -2428,12 +2654,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Convenios reformulados/reactivados firmados",
-      "area": "",
-      "owner": "",
+      "product": "Convenios reformulados o reactivados firmados",
+      "verification": "",
+      "area": "Gerencia de Estrategia",
+      "owner": "Viviana Pardo",
       "substitutes": "",
-      "comments": "Meta a definir luego del mapeo"
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 115
     },
     {
       "id": "KR-112",
@@ -2449,12 +2677,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Documento del plan de coordinación",
-      "area": "",
-      "owner": "",
+      "product": "Plan de coordinación conjunto con servicios afines",
+      "verification": "",
+      "area": "Gerencia de Estrategia",
+      "owner": "Viviana Pardo",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 116
     },
     {
       "id": "KR-113",
@@ -2470,12 +2700,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Convenios firmados",
-      "area": "",
-      "owner": "",
+      "product": "Nuevos convenios de colaboración firmados",
+      "verification": "",
+      "area": "Gerencia de Estrategia",
+      "owner": "Viviana Pardo",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 117
     },
     {
       "id": "KR-114",
@@ -2491,12 +2723,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Reporte de avance legislativo",
-      "area": "",
-      "owner": "",
+      "product": "Reporte de avance legislativo",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 118
     },
     {
       "id": "KR-115",
@@ -2512,12 +2746,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Calendario de convocatorias publicado",
-      "area": "",
-      "owner": "",
+      "product": "Calendario de convocatorias publicado",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 119
     },
     {
       "id": "KR-116",
@@ -2533,12 +2769,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Reporte de avance legislativo",
-      "area": "",
-      "owner": "",
+      "product": "Reporte de avance legislativo 2029",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 120
     },
     {
       "id": "KR-117",
@@ -2554,12 +2792,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Informe de balance legislativo",
-      "area": "",
-      "owner": "",
+      "product": "Informe de balance de la agenda legislativa 2026 a 2030",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 121
     },
     {
       "id": "KR-118",
@@ -2575,12 +2815,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Documento de mecánica operativa",
+      "product": "• Mecánica operativa de coordinación\n• Primer reporte de seguimiento",
+      "verification": "",
       "area": "Gerencia de Estrategia",
       "owner": "Viviana Pardo",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 122
     },
     {
       "id": "KR-119",
@@ -2596,12 +2838,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Reporte anual publicado",
-      "area": "",
-      "owner": "",
+      "product": "Reporte anual del objetivo estratégico",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 123
     },
     {
       "id": "KR-120",
@@ -2617,12 +2861,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Documentos de hoja de ruta por contraparte",
-      "area": "",
-      "owner": "",
+      "product": "Hojas de ruta por contraparte",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 124
     },
     {
       "id": "KR-121",
@@ -2638,12 +2884,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Documento de mecánica operativa actualizado",
-      "area": "",
-      "owner": "",
+      "product": "Mecánica operativa actualizada",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 125
     },
     {
       "id": "KR-122",
@@ -2659,12 +2907,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Informe de continuidad",
-      "area": "",
-      "owner": "",
+      "product": "Informe de continuidad del objetivo estratégico",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 126
     },
     {
       "id": "KR-123",
@@ -2680,12 +2930,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Nómina de talentos",
+      "product": "Nómina del primer grupo de talentos",
+      "verification": "",
       "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 127
     },
     {
       "id": "KR-124",
@@ -2701,12 +2953,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Documento de propuesta del programa",
+      "product": "Propuesta del Programa de Desarrollo de Talento",
+      "verification": "",
       "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 128
     },
     {
       "id": "KR-125",
@@ -2722,12 +2976,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Acta de aprobación + plan comunicacional",
+      "product": "• Programa de Desarrollo de Talento aprobado\n• Plan comunicacional",
+      "verification": "",
       "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 129
     },
     {
       "id": "KR-126",
@@ -2743,12 +2999,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Registro de implementación",
+      "product": "Informe de implementación del programa",
+      "verification": "",
       "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 130
     },
     {
       "id": "KR-127",
@@ -2764,12 +3022,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Documento metodológico",
+      "product": "Metodología de identificación y desarrollo de talento",
+      "verification": "",
       "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 131
     },
     {
       "id": "KR-128",
@@ -2785,12 +3045,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Mapa de talento consolidado",
-      "area": "",
+      "product": "Mapa de Talento de los demás grupos de cargos",
+      "verification": "",
+      "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 132
     },
     {
       "id": "KR-129",
@@ -2806,12 +3068,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Informe de operación en régimen",
-      "area": "",
+      "product": "Informe de operación del programa en toda la institución",
+      "verification": "",
+      "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 133
     },
     {
       "id": "KR-130",
@@ -2827,12 +3091,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Informe de evaluación",
-      "area": "",
+      "product": "Informe de evaluación de la Política de Desarrollo de Talento",
+      "verification": "",
+      "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 134
     },
     {
       "id": "KR-131",
@@ -2848,12 +3114,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Política de personas publicada",
+      "product": "Política de personas actualizada y aprobada",
+      "verification": "",
       "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 135
     },
     {
       "id": "KR-132",
@@ -2869,12 +3137,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Resolución publicada",
-      "area": "",
+      "product": "Resolución que actualiza la Res. N° 312 (2021)",
+      "verification": "",
+      "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 136
     },
     {
       "id": "KR-133",
@@ -2890,12 +3160,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Documento de indicadores",
+      "product": "Indicadores y métricas de la política de talento",
+      "verification": "",
       "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 137
     },
     {
       "id": "KR-134",
@@ -2911,12 +3183,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Informe de medición y ajustes",
-      "area": "",
+      "product": "Informe de medición del piloto con ajustes incorporados",
+      "verification": "",
+      "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 138
     },
     {
       "id": "KR-135",
@@ -2932,12 +3206,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Informe de medición",
-      "area": "",
+      "product": "Informe de medición de cohortes y propuestas de mejora",
+      "verification": "",
+      "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 139
     },
     {
       "id": "KR-136",
@@ -2953,12 +3229,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Informe de evaluación final",
-      "area": "",
+      "product": "Informe de evaluación de la política con mejoras implementadas",
+      "verification": "",
+      "area": "Subgerencia de Personas y Desarrollo",
       "owner": "Maria Alejandra Solorzano",
-      "substitutes": "",
-      "comments": ""
+      "substitutes": "Carolina Bravo",
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 140
     },
     {
       "id": "KR-137",
@@ -2974,12 +3252,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Documento de definición de campos",
+      "product": "Diccionario de datos de la Base de Datos Corporativa Unificada",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 141
     },
     {
       "id": "KR-138",
@@ -2995,12 +3275,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Registro de homologación de datos",
+      "product": "Catálogo de datos homologados",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 142
     },
     {
       "id": "KR-139",
@@ -3016,12 +3298,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Datalake operando",
-      "area": "",
-      "owner": "",
+      "product": "Datalake institucional en operación",
+      "verification": "",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 143
     },
     {
       "id": "KR-140",
@@ -3037,12 +3321,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Data warehouse operando",
-      "area": "",
-      "owner": "",
+      "product": "• Data warehouse institucional en operación\n• Catálogo de reglas de negocio y validadores",
+      "verification": "",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 144
     },
     {
       "id": "KR-141",
@@ -3058,12 +3344,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Herramientas de visualización operando",
-      "area": "",
-      "owner": "",
+      "product": "Herramientas de visualización internas y externas publicadas",
+      "verification": "",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 145
     },
     {
       "id": "KR-142",
@@ -3079,12 +3367,14 @@
         "2026/Q3"
       ],
       "target_date": "2026-09-30",
-      "product": "",
-      "verification": "Documento de levantamiento de necesidades",
+      "product": "Levantamiento de necesidades de gobernanza de datos",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 146
     },
     {
       "id": "KR-143",
@@ -3100,12 +3390,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Documento del plan de acción",
+      "product": "Plan de acción de gobernanza de datos",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 147
     },
     {
       "id": "KR-144",
@@ -3121,12 +3413,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Documento de formalización del sistema",
-      "area": "",
-      "owner": "",
+      "product": "Resolución que formaliza el Sistema de Gobernanza de Datos",
+      "verification": "",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": "¿Cómo se formalizará?"
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 148
     },
     {
       "id": "KR-145",
@@ -3142,12 +3436,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Sistema de control operando",
-      "area": "",
-      "owner": "",
+      "product": "• Sistema de control de gobernanza de datos\n• Primer reporte de control",
+      "verification": "",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 149
     },
     {
       "id": "KR-146",
@@ -3163,12 +3459,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Documento del plan de mejora continua",
-      "area": "",
-      "owner": "",
+      "product": "Plan de mejora continua de gobernanza de datos",
+      "verification": "",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 150
     },
     {
       "id": "KR-147",
@@ -3184,12 +3482,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "",
+      "product": "Informe de cumplimiento del estándar de gobernanza de datos",
+      "verification": "",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 151
     },
     {
       "id": "KR-148",
@@ -3205,12 +3505,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Documento de mapeo + línea base de tiempos",
+      "product": "• Mapa de procesos priorizados por gerencia\n• Informe de línea base de tiempos",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 152
     },
     {
       "id": "KR-149",
@@ -3226,12 +3528,14 @@
         "2027/Q3"
       ],
       "target_date": "2027-09-30",
-      "product": "",
-      "verification": "Informes de resultados de pilotos",
-      "area": "",
-      "owner": "",
+      "product": "Informes de resultados de pilotos por gerencia",
+      "verification": "",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": "Un piloto por gerencia"
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 153
     },
     {
       "id": "KR-150",
@@ -3247,12 +3551,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Informes de resultados de los 5 pilotos",
-      "area": "",
-      "owner": "",
+      "product": "Informes de resultados de nuevos pilotos de automatización",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 154
     },
     {
       "id": "KR-151",
@@ -3268,12 +3574,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "",
+      "product": "Informe de reducción de tiempos en procesos priorizados",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 155
     },
     {
       "id": "KR-152",
@@ -3289,12 +3597,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Informe de consolidación del modelo + indicadores de reducción de tiempos",
-      "area": "",
-      "owner": "",
+      "product": "Informe de consolidación del modelo de mejora continua",
+      "verification": "",
+      "area": "Por definir",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": "¿Cómo medir la consolidación? Se propuso en la meta:\nKPI1: 80% de procesos críticos optimizados.\nKPI2: Tiempo invertido en gestión de procesos críticos se reduce en un 20%."
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 156
     },
     {
       "id": "KR-153",
@@ -3310,12 +3620,14 @@
         "2026/Q4"
       ],
       "target_date": "2026-12-31",
-      "product": "",
-      "verification": "Documento de mapeo + resultados de encuesta base",
+      "product": "• Mapa de interacciones críticas con usuarios externos\n• Informe de línea base de la encuesta",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 157
     },
     {
       "id": "KR-154",
@@ -3331,12 +3643,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Informes de resultados de pilotos",
+      "product": "Informes de resultados de pilotos de experiencia externa",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 158
     },
     {
       "id": "KR-155",
@@ -3352,12 +3666,14 @@
         "2027/Q1"
       ],
       "target_date": "2027-03-31",
-      "product": "",
-      "verification": "Reporte de cumplimiento de hitos",
+      "product": "Reporte de cumplimiento de hitos del Plan de Transformación Digital",
+      "verification": "",
       "area": "Subgerencia de Datos y Procesos Digitales",
       "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 159
     },
     {
       "id": "KR-156",
@@ -3373,12 +3689,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Informes de resultados de los 5 pilotos",
-      "area": "",
-      "owner": "",
+      "product": "Informes de resultados de nuevos pilotos de experiencia externa",
+      "verification": "",
+      "area": "Subgerencia de Datos y Procesos Digitales",
+      "owner": "Paulina Guerra",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 160
     },
     {
       "id": "KR-157",
@@ -3394,12 +3712,14 @@
         "2028/Q1"
       ],
       "target_date": "2028-03-31",
-      "product": "",
-      "verification": "Reporte de cumplimiento de hitos",
-      "area": "",
-      "owner": "",
+      "product": "Reporte de cumplimiento de hitos del Plan de Transformación Digital",
+      "verification": "",
+      "area": "Gerencia General",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 161
     },
     {
       "id": "KR-158",
@@ -3415,12 +3735,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "",
+      "product": "Informe de satisfacción y tiempos de respuesta",
+      "verification": "",
+      "area": "Gerencia General",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 162
     },
     {
       "id": "KR-159",
@@ -3436,12 +3758,14 @@
         "2029/Q1"
       ],
       "target_date": "2029-03-31",
-      "product": "",
-      "verification": "Reporte de cumplimiento de hitos",
-      "area": "",
-      "owner": "",
+      "product": "Reporte de cumplimiento de hitos del Plan de Transformación Digital",
+      "verification": "",
+      "area": "Gerencia General",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 163
     },
     {
       "id": "KR-160",
@@ -3457,12 +3781,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Por definir",
-      "area": "",
-      "owner": "",
+      "product": "Informe del índice de experiencia usuaria",
+      "verification": "",
+      "area": "Gerencia General",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": "KPI1: Tiempo invertido por clientes en interacciones con Corfo en procesos críticos se reduce en un 20% respecto de línea base.\nKPI2: Satisfacción usuaria aumenta en un 20% respecto de línea base."
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 164
     },
     {
       "id": "KR-161",
@@ -3478,12 +3804,14 @@
         "2030/Q1"
       ],
       "target_date": "2030-03-31",
-      "product": "",
-      "verification": "Registro de procesos disponibles electrónicamente / cumplimiento normativo",
-      "area": "",
-      "owner": "",
+      "product": "Catálogo de trámites disponibles electrónicamente",
+      "verification": "",
+      "area": "Gerencia General",
+      "owner": "Por definir",
       "substitutes": "",
-      "comments": ""
+      "comments": "",
+      "source_sheet": "BD-Estrategia-Consolidada",
+      "source_row": 165
     }
   ]
 }

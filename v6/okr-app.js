@@ -59,7 +59,8 @@
   const STATUS = {
     'On Track': {key: 'ok', label: 'Alto (On Track)', en: 'On Track', glyph: '●', color: '#13815F', fill: '#13815F', bg: '#E6F6EE'},
     'Off Track': {key: 'warn', label: 'Medio (Off Track)', en: 'Off Track', glyph: '▲', color: '#7A5C00', fill: '#F5C400', bg: '#FFF4C2'},
-    'At Risk': {key: 'risk', label: 'Bajo (At Risk)', en: 'At Risk', glyph: '■', color: '#B92F3F', fill: '#B92F3F', bg: '#FCE8EB'}
+    'At Risk': {key: 'risk', label: 'Bajo (At Risk)', en: 'At Risk', glyph: '■', color: '#B92F3F', fill: '#B92F3F', bg: '#FCE8EB'},
+    'No iniciado': {key: 'not_started', label: 'No iniciado', en: '', glyph: '■', color: '#6B7088', fill: '#C9CAD5', bg: '#EDF0F5'}
   };
   const NO_STATUS = {key: 'none', label: 'Sin reporte', en: '', glyph: '■', color: '#6B7088', fill: '#C9CAD5', bg: '#EDF0F5'};
   const EXEC = {'No iniciado': {label: 'No iniciado', color: '#C9CAD5'}, 'En proceso': {label: 'En curso', color: '#9197AE'}, 'Completado': {label: 'Cumplido', color: '#221E7C'}};

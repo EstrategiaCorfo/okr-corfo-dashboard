@@ -213,7 +213,11 @@ class Component extends DCLogic {
       execCard:`background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid ${execColor}`,
       execDot:`width:12px;height:12px;flex:none;background:${execColor}`,
       hasFields: !!r,
-      fields: r ? [{label:'Comentario cualitativo último reporte', value:clean(r.comment)}, {label:'Evidencia o soporte', value:clean(r.evidence)}, {label:'Aprendizaje', value:clean(r.learning)}] : []
+      fields: r ? [{label:'Comentario cualitativo último reporte', value:clean(r.comment)}, {label:'Evidencia o soporte', value:clean(r.evidence)}, {label:'Aprendizaje', value:clean(r.learning)},
+        ...(r.strategy_learning && r.strategy_learning !== r.learning ? [{label:'Aprendizaje de Estrategia', value:clean(r.strategy_learning)}] : []),
+        ...(r.pending ? [{label:'Pendiente de logro', value:clean(r.pending)}] : []),
+        ...(r.pending_treatment ? [{label:'Tratamiento del pendiente', value:clean(r.pending_treatment)}] : []),
+        ...(r.transfer_period ? [{label:'Nota de traspaso', value:clean(r.transfer_period)}] : [])] : []
     };
     const def = [
       {label:'Dimensión', value:O.OBJECTIVES[kr.obj - 1].dim},
