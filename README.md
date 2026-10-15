@@ -12,8 +12,9 @@ Sitio estático de seguimiento de la Estrategia Corporativa 2026 a 2030. Incluye
 | V4 | `v4/index.html` | Diseño del 1 de octubre. Resultados Clave muestra los 161 KR; Panel general considera los reportados en Seguimiento. Actualmente KR-108 y KR-109, con seis reportes DEMO en Q4 2026. |
 | V5 | `v5/index.html` | Diseño del 2 de octubre y planilla corregida. Catálogo de 161 KR y siete registros de Seguimiento_KR en Q4 2026: seis DEMO de KR-108 y KR-109, más KR-110 en instancia Pendiente. Los 158 KR restantes figuran Sin reporte. |
 | V6 | `v6/index.html` | Rediseño del 14 de octubre con el catálogo actualizado de 161 KR y 17 cierres reales de Q3 2026, todos Confirmado GE: 9 completados y 8 en proceso. |
+| V7 | `v7/index.html` | Rediseño del 15 de octubre y planilla actualizada: 161 KR y 17 cierres reales de Q3 2026, todos Confirmado GE; 9 completados y 8 en proceso. Incluye acciones realizadas, próximos KR y el owner corregido Santiago Browne. |
 
-La documentación y los comandos de actualización están en [v4/README.md](v4/README.md) y [v5/README.md](v5/README.md) y [v6/README.md](v6/README.md). La descripción siguiente corresponde al panel anterior de la raíz.
+La documentación y los comandos de actualización están en [v4/README.md](v4/README.md) y [v5/README.md](v5/README.md) y [v6/README.md](v6/README.md) y [v7/README.md](v7/README.md). La descripción siguiente corresponde al panel anterior de la raíz.
 
 ## Modelo de datos
 
