@@ -1,0 +1,40 @@
+:root{
+/* Lienzo */
+--slide-width:1920px;
+--slide-height:1080px;
+--slide-ratio:16 / 9; /* @kind other */
+/* Márgenes de lámina */
+--margin-x:110px;
+--margin-top:56px;
+--margin-top-cover:72px;
+--margin-bottom:44px;
+--margin-x-inner:72px;
+/* Columnas fijas */
+--col-panel:660px;
+--col-agenda:520px;
+--col-numeral:150px;
+/* Ritmo vertical */
+--space-1:8px;
+--space-2:12px;
+--space-3:16px;
+--space-4:20px;
+--space-5:24px;
+--space-6:28px;
+--space-7:32px;
+--space-8:44px;
+--space-9:52px;
+--space-10:72px;
+/* Reglas y marcas */
+--rule-hairline:1px;
+--rule-column:3px;
+--rule-accent-height:4px;
+--rule-accent-width:120px;
+--rule-accent-width-sm:96px;
+--bullet-size:12px;
+--bullet-size-lg:14px;
+/* Logo */
+--logo-height-cover:80px;
+--logo-height:44px;
+/* Sin esquinas redondeadas en ningún elemento */
+--radius:0;
+}
