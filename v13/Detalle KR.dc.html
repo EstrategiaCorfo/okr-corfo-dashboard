@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Detalle de Resultado Clave | Panel de Seguimiento Corfo</title>
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/effects.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/tokens/base.css">
+  <link rel="stylesheet" href="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/styles.css">
+  <script src="_ds/corfo-presentaciones-sistema-de-dise-o-89cd5d5e-c76f-481a-a3fe-1b1397a92a05/_ds_bundle.js"></script>
+  <script src="okr-app.js?v=14.1"></script>
+  <style>
+    html,body{margin:0;background:#FFFFFF;color:#3F3F3F;font-family:var(--font-sans);font-size:15px;-webkit-font-smoothing:antialiased}
+    *{box-sizing:border-box}
+    a{color:#221E7C;text-decoration:none}
+    a:hover{color:#D64045}
+    button,select,input{font-family:inherit}
+    :focus-visible{outline:2px solid #D64045;outline-offset:2px}
+    .kr-change-history{container-type:inline-size;display:flex;flex-direction:column;gap:22px;border-top:3px solid #17183B;padding-top:14px}
+    .kr-change-list{margin:0;padding:0;list-style:none}
+    .kr-change-event{display:grid;grid-template-columns:124px minmax(0,1fr);column-gap:26px}
+    .kr-change-agreement{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:0 0 28px;min-width:0;color:#697287}
+    .kr-change-label{font-size:11px;font-weight:700;letter-spacing:.035em;line-height:1.45;text-transform:uppercase;color:#697287}
+    .kr-change-date{font-family:var(--font-display);font-size:24px;font-weight:700;line-height:1.2;letter-spacing:-.025em;color:#17183B}
+    .kr-change-effective{font-size:13px;line-height:1.5}
+    .kr-change-effective span{display:block}
+    .kr-change-body{position:relative;min-width:0;border-left:1px solid #C9CAD5;padding:0 0 28px 24px;color:#17183B}
+    .kr-change-event:not(:last-child) .kr-change-body{padding-bottom:36px}
+    .kr-change-marker{position:absolute;top:2px;left:-7.5px;width:14px;height:14px;outline:5px solid #FFFFFF}
+    .kr-change-id{margin:0 0 6px;font-size:13px;line-height:1.35;color:#697287}
+    .kr-change-title{margin:0;font-family:var(--font-display);font-size:22px;font-weight:700;line-height:1.2;letter-spacing:-.02em;color:#17183B}
+    .kr-change-reason{margin:14px 0 0;font-size:14px;line-height:1.6;white-space:pre-line;overflow-wrap:anywhere;text-wrap:pretty}
+    .kr-change-comparison{display:flex;flex-direction:column;gap:18px;margin:22px 0 0;padding-top:20px;border-top:1px solid #C9CAD5}
+    .kr-change-comparison dt{margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.025em;line-height:1.45;text-transform:uppercase;color:#697287}
+    .kr-change-comparison dd{margin:0;font-size:14px;line-height:1.55;white-space:pre-line;overflow-wrap:anywhere;text-wrap:pretty;color:#17183B}
+    .kr-change-comparison .kr-change-next{font-weight:700}
+    .kr-change-note{margin:22px 0 0;font-size:13px;line-height:1.6;white-space:pre-line;overflow-wrap:anywhere;color:#697287;text-wrap:pretty}
+    @container (max-width:520px){.kr-change-event{grid-template-columns:98px minmax(0,1fr);column-gap:18px}.kr-change-body{padding-left:18px}.kr-change-date{font-size:21px}.kr-change-title{font-size:20px}}
+    @container (max-width:400px){.kr-change-event{grid-template-columns:minmax(0,1fr)}.kr-change-agreement{padding:0 0 16px 20px;gap:5px}.kr-change-effective span{display:inline}.kr-change-effective span+span{margin-left:4px}.kr-change-body{margin-left:0;padding-left:20px}.kr-change-comparison{margin-top:18px;padding-top:16px}}
+    @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+    @media print{[data-noprint]{display:none!important}}
+  </style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#FFFFFF">
+  <dc-import name="Site Header" active="krs" filters="{{ false }}" hint-size="100%,64px" style="position:sticky;top:0;z-index:20;display:block"></dc-import>
+
+
+  <main style="flex:1;width:100%;max-width:1320px;margin:0 auto;padding:20px 24px 48px;display:flex;flex-direction:column;gap:28px">
+    <a href="{{ backHref }}" data-noprint="" style="align-self:flex-start;display:flex;align-items:center;gap:8px;min-height:44px;font-size:14px;font-weight:600;color:#221E7C" style-hover="color:#D64045">← Volver a Resultados Clave</a>
+
+    <sc-if value="{{ notFound }}" hint-placeholder-val="{{ false }}">
+      <p style="margin:0;padding:16px;background:#EDF0F5;font-size:14px;color:#17183B">No se encontró el Resultado Clave solicitado. Seleccione uno desde Resultados Clave.</p>
+    </sc-if>
+
+    <sc-if value="{{ found }}" hint-placeholder-val="{{ true }}">
+      <section style="display:flex;flex-direction:column;gap:10px;max-width:960px">
+        <div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:13px;color:#3F3F3F">
+          <strong style="font-size:14px;color:#17183B;font-variant-numeric:tabular-nums">{{ k.id }}</strong>
+          <sc-if value="{{ k.reprogrammed }}" hint-placeholder-val="{{ false }}"><span>Periodo meta original: {{ k.originalPeriod }}</span><strong>Periodo meta actual: {{ k.currentPeriod }}</strong></sc-if>
+          <sc-if value="{{ k.singlePeriod }}" hint-placeholder-val="{{ true }}"><span>Meta {{ k.periodText }}</span></sc-if>
+          <sc-if value="{{ k.hasType }}" hint-placeholder-val="{{ false }}"><span style="padding:2px 8px;border:1px solid #C9CAD5;font-size:12px">{{ k.type }}</span></sc-if>
+        </div>
+        <h1 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(22px,2.4vw,30px);line-height:1.2;letter-spacing:-0.02em;color:#17183B;text-wrap:pretty">{{ k.name }}</h1>
+        <span aria-hidden="true" style="display:block;width:56px;height:4px;background:#D64045"></span>
+        <p style="margin:4px 0 0;font-size:15px;color:#3F3F3F">Definición, avance y trayectoria del Resultado Clave.</p>
+      </section>
+
+      <section aria-labelledby="last-title" style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap">
+          <h2 id="last-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Último reporte</h2>
+          <span style="font-size:13px;color:#3F3F3F">{{ last.meta }}</span>
+          <sc-if value="{{ last.demo }}" hint-placeholder-val="{{ false }}"><span style="padding:2px 8px;background:#EDF0F5;color:#3F3F3F;font-size:12px">Dato ficticio (demostración)</span></sc-if>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px">
+          <div style="{{ last.execCard }}">
+            <span style="font-size:13px;font-weight:700;color:#17183B">Estado del KR</span>
+            <span style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;padding:4px 10px;background:#FFFFFF;border:1px solid #C9CAD5;color:#17183B;font-size:15px;font-weight:700"><span aria-hidden="true" style="{{ last.execDot }}"></span>{{ last.exec }}</span>
+          </div>
+          <div style="background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid #17183B">
+            <span style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#17183B">Progreso numérico
+              <span style="position:relative;display:inline-flex">
+                <button type="button" aria-label="Cómo se calcula el progreso numérico" aria-describedby="tip-prog" aria-expanded="{{ tipProg.expanded }}" onClick="{{ tipProg.toggle }}" onMouseEnter="{{ tipProg.open }}" onMouseLeave="{{ tipProg.close }}" onFocus="{{ tipProg.open }}" style="width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid #9197AE;color:#221E7C;font-size:12px;font-weight:700;cursor:pointer">i</button>
+                <sc-if value="{{ tipProg.show }}" hint-placeholder-val="{{ false }}">
+                  <span role="tooltip" id="tip-prog" onMouseEnter="{{ tipProg.open }}" onMouseLeave="{{ tipProg.close }}" style="position:absolute;top:30px;left:-100px;z-index:30;width:280px;padding:12px 14px;background:#17183B;color:#FFFFFF;font-size:13px;font-weight:400;line-height:1.45;display:flex;flex-direction:column;gap:8px">{{ tipProg.text }}<a href="{{ tipProg.href }}" style="color:#FFFFFF;text-decoration:underline;font-weight:600">Ver más</a></span>
+                </sc-if>
+              </span>
+            </span>
+            <strong style="font-family:var(--font-display);font-size:26px;line-height:1.1;color:#17183B">{{ last.progress }}</strong>
+            <sc-if value="{{ last.hasBar }}" hint-placeholder-val="{{ false }}">
+              <span role="img" aria-label="{{ last.barAria }}" style="position:relative;display:block;height:10px;background:#C9CAD5"><span style="position:absolute;left:0;top:0;bottom:0;width:{{ last.barWidth }};background:{{ last.barColor }}"></span><span style="position:absolute;left:80%;top:-4px;bottom:-4px;width:2px;background:#D64045"></span></span>
+            </sc-if>
+            <sc-if value="{{ last.hasPath }}" hint-placeholder-val="{{ false }}">
+              <dl style="margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">
+                <div><dt style="font-size:11px;color:#3F3F3F">Línea base</dt><dd style="margin:0;font-weight:700;color:#17183B">{{ last.baseline }}</dd></div>
+                <div><dt style="font-size:11px;color:#3F3F3F">→ Valor actual</dt><dd style="margin:0;font-weight:700;color:#17183B">{{ last.current }}</dd></div>
+                <div><dt style="font-size:11px;color:#3F3F3F">→ Meta</dt><dd style="margin:0;font-weight:700;color:#17183B">{{ last.target }}</dd></div>
+              </dl>
+            </sc-if>
+          </div>
+          <div style="{{ last.statusCard }}">
+            <span style="font-size:13px;font-weight:700;color:#17183B">Nivel de confianza</span>
+            <span title="{{ last.statusEn }}" style="{{ last.badgeStyle }}"><span aria-hidden="true">{{ last.glyph }}</span>{{ last.statusLabel }}</span>
+            <span style="font-size:12px;color:#3F3F3F">Lectura experta del owner</span>
+          </div>
+        </div>
+        <sc-if value="{{ last.hasFields }}" hint-placeholder-val="{{ false }}">
+          <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:0 32px">
+            <sc-for list="{{ last.fields }}" as="x" hint-placeholder-count="4">
+              <div style="display:flex;flex-direction:column;gap:4px;padding:10px 0;border-bottom:1px solid #C9CAD5">
+                <dt style="font-size:12px;font-weight:700;color:#3F3F3F">{{ x.label }}</dt>
+                <dd style="margin:0;font-size:14px;line-height:1.45;color:#17183B;text-wrap:pretty">{{ x.value }}</dd>
+              </div>
+            </sc-for>
+          </dl>
+        </sc-if>
+      </section>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px 48px;align-items:start">
+        <section aria-labelledby="def-title" style="display:flex;flex-direction:column;gap:10px">
+          <h2 id="def-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B;border-top:3px solid #17183B;padding-top:14px">Ficha resumen</h2>
+          <dl style="margin:0;display:flex;flex-direction:column">
+            <sc-for list="{{ def }}" as="x" hint-placeholder-count="8">
+              <div style="display:grid;grid-template-columns:minmax(120px,180px) minmax(0,1fr);gap:12px;padding:10px 0;border-bottom:1px solid #C9CAD5">
+                <dt style="font-size:13px;font-weight:700;color:#3F3F3F">{{ x.label }}</dt>
+                <dd style="margin:0;font-size:14px;line-height:1.45;color:#17183B;text-wrap:pretty">{{ x.value }}</dd>
+              </div>
+            </sc-for>
+          </dl>
+          <a href="{{ objHref }}" style="align-self:flex-start;min-height:40px;display:flex;align-items:center;font-size:14px;font-weight:600" style-hover="color:#D64045">{{ objLinkText }}</a>
+        </section>
+
+        <section aria-labelledby="hist-title" style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;flex-direction:column;gap:4px;border-top:3px solid #17183B;padding-top:14px">
+            <h2 id="hist-title" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.015em;color:#17183B">Historial</h2>
+            <p style="margin:0;font-size:14px;color:#3F3F3F">{{ histText }}</p>
+          </div>
+          <sc-for list="{{ history }}" as="q" hint-placeholder-count="1">
+            <div style="display:flex;flex-direction:column;gap:0">
+              <h3 style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#221E7C">{{ q.label }}</h3>
+              <ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+                <sc-for list="{{ q.items }}" as="h" hint-placeholder-count="3">
+                  <li style="position:relative;display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;padding-bottom:18px">
+                    <span aria-hidden="true" style="position:absolute;left:11px;top:18px;bottom:0;width:2px;background:#C9CAD5"></span>
+                    <span aria-hidden="true" style="{{ h.dot }}"></span>
+                    <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+                      <div style="display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline">
+                        <strong style="font-family:var(--font-display);font-size:15px;color:#17183B">{{ h.instance }}</strong>
+                        <span style="font-size:13px;color:#3F3F3F">{{ h.date }} · {{ h.moment }}</span>
+                      </div>
+                      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+                        <span title="{{ h.statusEn }}" style="{{ h.badgeStyle }}"><span aria-hidden="true">{{ h.glyph }}</span>{{ h.statusLabel }}</span>
+                        <span style="font-size:13px;color:#17183B">Progreso: {{ h.progress }}</span>
+                        <span style="padding:2px 8px;border:1px solid #C9CAD5;font-size:12px;color:#3F3F3F">{{ h.exec }}</span>
+                      </div>
+                      <sc-if value="{{ h.changed }}" hint-placeholder-val="{{ false }}"><span style="font-size:12px;font-weight:700;color:#D64045">{{ h.changeText }}</span></sc-if>
+                      <p style="margin:0;font-size:12px;line-height:1.45;color:#3F3F3F">Nombre al reportar: {{ h.name }}</p>
+                      <p style="margin:0;font-size:14px;line-height:1.45;color:#3F3F3F;text-wrap:pretty">{{ h.comment }}</p>
+                    </div>
+                  </li>
+                </sc-for>
+              </ol>
+            </div>
+          </sc-for>
+          <sc-if value="{{ hasChanges }}" hint-placeholder-val="{{ false }}">
+            <div class="kr-change-history">
+              <h3 style="margin:0;font-family:var(--font-display);font-size:20px;font-weight:700;letter-spacing:-.015em;color:#17183B">Historial de cambios</h3>
+              <ol class="kr-change-list" aria-label="Acuerdos de modificación del KR">
+                <sc-for list="{{ changes }}" as="c" hint-placeholder-count="1">
+                  <li class="kr-change-event">
+                    <div class="kr-change-agreement">
+                      <span class="kr-change-label">Acuerdo</span>
+                      <sc-if value="{{ c.hasDate }}" hint-placeholder-val="{{ true }}"><time class="kr-change-date" datetime="{{ c.dateIso }}" title="{{ c.date }}">{{ c.dateShort }}</time></sc-if>
+                      <sc-if value="{{ c.missingDate }}" hint-placeholder-val="{{ false }}"><span class="kr-change-date">{{ c.dateShort }}</span></sc-if>
+                      <span class="kr-change-effective"><span>Vigente desde</span><span>{{ c.effective }}</span></span>
+                    </div>
+                    <div class="kr-change-body">
+                      <img class="kr-change-marker" src="assets/icons/circle-fill.svg" alt="" width="14" height="14" aria-hidden="true">
+                      <p class="kr-change-id">{{ c.krId }}</p>
+                      <h4 class="kr-change-title">{{ c.title }}</h4>
+                      <sc-if value="{{ c.hasReason }}" hint-placeholder-val="{{ true }}"><p class="kr-change-reason">{{ c.reasonLead }}</p></sc-if>
+                      <dl class="kr-change-comparison">
+                        <div><dt>{{ c.previousLabel }}</dt><dd>{{ c.previous }}</dd></div>
+                        <div><dt>{{ c.nextLabel }}</dt><dd class="kr-change-next">{{ c.next }}</dd></div>
+                      </dl>
+                      <sc-if value="{{ c.hasNote }}" hint-placeholder-val="{{ false }}"><p class="kr-change-note">{{ c.reasonNote }}</p></sc-if>
+                    </div>
+                  </li>
+                </sc-for>
+              </ol>
+            </div>
+          </sc-if>
+        </section>
+      </div>
+    </sc-if>
+  </main>
+
+  <footer style="border-top:1px solid #C9CAD5">
+    <div style="max-width:1320px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:#3F3F3F">
+      <span>Corfo - Gerencia de Estrategia</span>
+      <span>Panel de Seguimiento · Estrategia Corporativa 2026-2030</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { d:null, f:null, id:null, tip:false, demoHidden:false };
+
+  componentDidMount() {
+    try { if (sessionStorage.getItem('okr-demo-ok') === '1') this.setState({demoHidden:true}); } catch (e) {}
+    this._esc = e => { if (e.key === 'Escape') this.setState({tip:false}); };
+    window.addEventListener('keydown', this._esc);
+    const wait = () => window.OKR ? window.OKR.load().then(d => this.setState({d, f:window.OKR.readFilters(), id:new URLSearchParams(location.search).get('kr')})) : setTimeout(wait, 20);
+    wait();
+  }
+  componentWillUnmount() { window.removeEventListener('keydown', this._esc); }
+
+  renderVals() {
+    const O = window.OKR, {d, f, tip} = this.state;
+    const g = O ? O.GLOSSARY.progreso : {text:'', href:'#'};
+    const base = {showDemo:!this.state.demoHidden, backHref: O ? O.href('krs') : '#',
+      hideDemo: () => { try { sessionStorage.setItem('okr-demo-ok','1'); } catch (e) {} this.setState({demoHidden:true}); },
+      tipProg:{show:tip, expanded: tip ? 'true' : 'false', text:g.text, href:g.href, toggle: () => this.setState(s => ({tip:!s.tip})), open: () => this.setState({tip:true}), close: () => this.setState({tip:false})}};
+    if (!O || !d || !f) return Object.assign(base, {found:false, notFound:false, k:{}, last:{fields:[]}, def:[], history:[]});
+
+    const sourceKr = d.byId.get(this.state.id || '') || (!this.state.id ? d.krs[0] : null);
+    if (!sourceKr) return Object.assign(base, {found:false, notFound:true, k:{}, last:{fields:[]}, def:[], history:[]});
+    const kr = O.krAt(sourceKr, f.period);
+    try { document.title = `${kr.id} | Panel de Seguimiento Corfo`; } catch (e) {}
+
+    const r = O.reportForPeriod(d.records, kr.id, f.period);
+    const S = O.status(r && r.status), p = r && r.progress != null ? Number(r.progress) : null;
+    const nv = v => v === null || v === undefined || String(v).trim() === '' ? 'No informado' : String(v);
+    const clean = v => nv(v).replace(/^\[DEMO\]\s*/, '');
+    const execColor = ({'No iniciado':'#9197AE', 'En proceso':'#F5C400', 'Completado':'#13815F'})[r && r.execution] || '#C9CAD5';
+    const last = {
+      meta: [O.reportContext(r, f.period), ...(r ? [O.INSTANCE[r.instance] || r.instance, O.longDate(r.date), O.MOMENT[r.moment] || r.moment] : [])].filter(Boolean).join(' · '),
+      demo:!!(r && r.demo), statusLabel:S.label, statusEn:S.en, glyph:S.glyph,
+      statusCard:`background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid ${S.fill}`,
+      badgeStyle:`align-self:flex-start;display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:${S.bg};color:${S.color};font-size:15px;font-weight:700`,
+      progress: !r ? 'Sin reporte' : p == null ? 'No informado' : O.pct(p),
+      hasBar: p != null, barWidth:O.clamp(p) + '%', barColor:'#221E7C', barAria:`Progreso ${O.pct(p)}, umbral 80%`,
+      hasPath: !!(r && r.baseline != null && r.target != null), baseline:r ? O.num(r.baseline) : '', current:r ? (O.num(r.current) || 'No informado') : '', target:r ? O.num(r.target) : '',
+      exec: !r ? 'Sin reporte' : r.execution ? O.EXEC[r.execution].label : 'No informado',
+      execCard:`background:#EDF0F5;padding:16px 18px;display:flex;flex-direction:column;gap:10px;border-top:3px solid ${execColor}`,
+      execDot:`width:12px;height:12px;flex:none;background:${execColor}`,
+      hasFields: !!r,
+      fields: r ? [{label:'Comentario cualitativo último reporte', value:clean(r.comment)}, {label:'Evidencia o soporte', value:clean(r.evidence)}, {label:'Aprendizaje', value:clean(r.learning)}] : []
+    };
+    const def = [
+      {label:'Dimensión', value:O.OBJECTIVES[kr.obj - 1].dim},
+      {label:'Objetivo Estratégico', value:`${kr.objCode} · ${kr.objName}`},
+      {label:'Subobjetivo', value:`${kr.subCode}: ${kr.subText}`},
+      ...(kr.reprogrammed ? [
+        {label:'Periodo meta original', value:O.periodLabel(kr.original_target_period)},
+        {label:'Periodo meta actual', value:O.periodLabel(kr.current_target_period)},
+        {label:'Fecha meta original', value:O.longDate(kr.original_target_date)},
+        {label:'Fecha meta actual', value:O.longDate(kr.current_target_date)}
+      ] : [{label:'Periodo meta', value:O.periodLabel(kr.target_period)}, {label:'Fecha meta', value:O.longDate(kr.target_date)}]),
+      {label:'Área que lidera', value:nv(kr.area)},
+      {label:'Owner', value:nv(kr.owner)},
+      {label:'Suplentes', value:nv(kr.substitutes)},
+      {label:'Producto asociado al KR (Referencial)', value:nv(kr.product)}
+    ];
+
+    const log = d.records.filter(x => x.id === kr.id).sort((a, b) => O.periodSort(a.period, b.period) || O.INSTANCE_ORDER.indexOf(a.instance) - O.INSTANCE_ORDER.indexOf(b.instance) || (a.date || '').localeCompare(b.date || ''));
+    const periods = [...new Set(log.map(x => x.period))];
+    let prev = null;
+    const history = periods.map(pp => ({label:O.periodLabel(pp), items:log.filter(x => x.period === pp).map(x => {
+      const H = O.status(x.status), changed = prev && prev !== x.status, from = prev ? O.status(prev).label : '';
+      prev = x.status;
+      return {instance:O.INSTANCE[x.instance] || x.instance, date:O.longDate(x.date), moment:O.MOMENT[x.moment] || x.moment,
+        statusLabel:H.label, statusEn:H.en, glyph:H.glyph,
+        badgeStyle:`display:inline-flex;align-items:center;gap:6px;padding:2px 8px;background:${H.bg};color:${H.color};font-size:12px;font-weight:700`,
+        dot:`position:relative;z-index:1;width:20px;height:20px;margin-top:0;background:${H.fill};border:3px solid #FFFFFF`,
+        name:O.krAt(sourceKr, x.period).name, progress: x.progress == null ? 'No informado' : O.pct(x.progress), exec: x.execution ? O.EXEC[x.execution].label : 'No informado',
+        changed:!!changed, changeText: changed ? `Cambio de nivel de confianza: ${from} → ${H.label}` : '', comment:clean(x.comment)};
+    })}));
+
+    const changes = [...kr.changes].sort((a, b) => O.periodSort(b.effective_period, a.effective_period) || (b.agreement_date || '').localeCompare(a.agreement_date || '') || (b.source_row || 0) - (a.source_row || 0)).map(c => {
+      const isName = c.field_key === 'name', isPeriod = c.field_key === 'target_period';
+      const wording = v => String(v || '').replace(/^KR-\d+(?::\s*|\s+|$)/i, '');
+      const reason = String(c.reason || c.summary_text || '').trim();
+      const parts = isName && reason.match(/^([\s\S]*?[.!?])\s+([\s\S]+)$/);
+      const hasDate = /^\d{4}-\d{2}-\d{2}$/.test(c.agreement_date || '') && !Number.isNaN(Date.parse(c.agreement_date));
+      const isCurrentName = isName && wording(c.new_value) === sourceKr.current_name;
+      return {field:c.field, krId:kr.id,
+        title:isName ? (/reformul/i.test(reason) ? 'Reformulación del KR' : 'Cambio de nombre del KR') : isPeriod ? 'Reprogramación del KR' : c.field,
+        previous:isPeriod ? O.periodLabel(c.previous_value) : isName ? wording(c.previous_value) : c.previous_value,
+        next:isPeriod ? O.periodLabel(c.new_value) : isName ? wording(c.new_value) : c.new_value,
+        previousLabel:isName ? 'Formulación anterior' : isPeriod ? 'Periodo anterior' : 'Valor anterior',
+        nextLabel:isName ? (isCurrentName ? 'Formulación vigente' : 'Nueva formulación') : isPeriod ? 'Nuevo periodo meta' : 'Nuevo valor',
+        effective:O.periodLabel(c.effective_period), date:c.agreement_date ? O.longDate(c.agreement_date) : c.agreement_date_source || 'Por completar',
+        hasDate, missingDate:!hasDate, dateIso:hasDate ? c.agreement_date : '',
+        dateShort:hasDate ? new Intl.DateTimeFormat('es-CL', {day:'numeric', month:'short', year:'numeric', timeZone:'UTC'}).format(new Date(c.agreement_date + 'T12:00:00Z')).replace(/\./g, '') : c.agreement_date_source || 'Por completar',
+        reason, hasReason:!!reason, reasonLead:parts ? parts[1] : reason, reasonNote:parts ? parts[2] : '', hasNote:!!parts};
+    });
+
+    return Object.assign(base, {found:true, notFound:false,
+      k:{id:kr.id, name:kr.name, periodText:O.periodLabel(kr.target_period), reprogrammed:kr.reprogrammed, singlePeriod:!kr.reprogrammed, originalPeriod:O.periodLabel(kr.original_target_period), currentPeriod:O.periodLabel(kr.current_target_period), hasType:!!kr.kr_type, type:kr.kr_type || '', objCode:kr.objCode},
+      hasChanges:changes.length > 0, changes,
+      last, def, history, objHref:O.href('estrategia', {eje:kr.obj}), objLinkText:`Ver Objetivo ${kr.objCode} en Estrategia →`,
+      histText: log.length ? `${log.length} reportes de este Resultado Clave, por trimestre e instancia.` : 'Sin reportes registrados.'});
+  }
+}
+</script>
+</body>
+</html>
